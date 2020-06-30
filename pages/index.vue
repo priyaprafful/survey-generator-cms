@@ -9,7 +9,6 @@
       <h1 class="blog-title">
         {{ $prismic.asText(homepageContent.headline) }}
       </h1>
-      <p>Hej</p>
       <!-- Template for page description -->
       <p class="blog-description">
         {{ $prismic.asText(homepageContent.description) }}
