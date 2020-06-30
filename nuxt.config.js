@@ -8,7 +8,7 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
-  target: 'static',
+  target: 'server',
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -33,6 +33,10 @@ export default {
       },
     ],
   },
+  /*
+   ** Customize the progress-bar color
+   */
+  loading: { color: '#fff' },
   /*
    ** Global CSS
    */
@@ -60,11 +64,11 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://prismic-nuxt.js.org/docs/getting-started
-    '@nuxtjs/prismic',
     // modules for full static before `nuxt export` (coming in v2.12)
     '@/modules/static',
     '@/modules/crawler',
+    // https://prismic-nuxt.js.org/
+    '@nuxtjs/prismic',
   ],
   prismic: {
     endpoint: 'https://surveygenerator-cms.cdn.prismic.io/api/v2',

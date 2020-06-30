@@ -25,7 +25,7 @@
           class="blog-post"
         >
           <!-- Here :post="post" passes the data to the component -->
-          <blog-widget :post="post"></blog-widget>
+          <BlogWidget :post="post"></BlogWidget>
         </section>
       </div>
       <!-- If no blog posts return message -->
