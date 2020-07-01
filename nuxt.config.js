@@ -13,23 +13,28 @@ export default {
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
+
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'SurveyGenerator',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: 'Enkätundersökningar för organisationer och företag',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
+   ** Customize the progress-bar color
+   */
+  loading: { color: '#fff' },
+  /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/css/resetr.css', '@/assets/css/common.css'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -53,17 +58,52 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    // Doc: https://nuxt-community.github.io/nuxt-i18n/
+    'nuxt-i18n',
+    // https://prismic-nuxt.js.org/
+    '@nuxtjs/prismic',
   ],
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
+  /**
+   * I18n module configuration
+   * See https://nuxt-community.github.io/nuxt-i18n/options-reference.html
    */
-  axios: {},
+  i18n: {
+    locales: [
+      {
+        name: 'Svenska',
+        code: 'sv',
+        iso: 'sv-SE',
+        file: 'sv.js',
+      },
+      {
+        name: 'English',
+        code: 'en',
+        iso: 'en-GB',
+        file: 'en.js',
+      },
+    ],
+    lazy: true,
+    langDir: 'langs/',
+    defaultLocale: 'sv',
+  },
+  prismic: {
+    endpoint: 'https://surveygenerator-cms.cdn.prismic.io/api/v2',
+    linkResolver: '@/plugins/link-resolver',
+    htmlSerializer: '@/plugins/html-serializer',
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
-}
+  build: {
+    /*
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {
+      config.resolve.alias.vue = 'vue/dist/vue.common';
+    },
+  },
+  generate: {
+    fallback: '404.html', // Netlify reads a 404.html, Nuxt will load as an SPA
+  },
+};
