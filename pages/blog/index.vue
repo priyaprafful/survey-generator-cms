@@ -1,19 +1,6 @@
 <template>
   <section class="home">
     <article>
-      <div
-        class="blog-avatar"
-        :style="{ backgroundImage: 'url(' + image + ')' }"
-      ></div>
-      <!-- Template for page title -->
-      <h1 class="blog-title">
-        {{ $prismic.asText(homepageContent.headline) }}
-      </h1>
-      <!-- Template for page description -->
-      <p class="blog-description">
-        {{ $prismic.asText(homepageContent.description) }}
-      </p>
-
       <!-- Check blog posts exist -->
       <div v-if="posts.length !== 0" class="blog-main">
         <!-- Template for blog posts -->
@@ -24,7 +11,8 @@
           class="blog-post"
         >
           <!-- Here :post="post" passes the data to the component -->
-          <BlogWidget :post="post"></BlogWidget>
+
+          <BlogWidget :post="post" />
         </section>
       </div>
       <!-- If no blog posts return message -->
@@ -45,6 +33,26 @@ export default {
     BlogWidget,
   },
   async asyncData({ $prismic, error, app }) {
+    const currentLocale = app.i18n.locales.filter(
+      (lang) => lang.code === app.i18n.locale
+    )[0];
+    const doc = await $prismic.api.query(
+      $prismic.predicates.at('document.type', 'post'),
+      {
+        orderings: '[document.first_publication_date desc]',
+        lang: currentLocale.iso.toLowerCase(),
+      }
+    );
+    if (doc) {
+      return {
+        posts: doc.results || doc,
+        currentLocale,
+      };
+    } else {
+      error({ statusCode: 404, message: 'Page not found' });
+    }
+  },
+  /* async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
@@ -76,7 +84,7 @@ export default {
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' });
     }
-  },
+  }, */
   head() {
     return {
       title: 'Prismic Nuxt.js Blog',

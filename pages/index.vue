@@ -2,12 +2,48 @@
   <section class="home">
     <a href="/">Home</a>
     <a href="/blog">Blog</a>
+
+    <div
+      class="blog-avatar"
+      :style="{ backgroundImage: 'url(' + image + ')' }"
+    ></div>
+    <!-- Template for page title -->
+    <h1 class="blog-title">
+      {{ $prismic.asText(homepageContent.headline) }}
+    </h1>
+    <!-- Template for page description -->
+    <p class="blog-description">
+      {{ $prismic.asText(homepageContent.description) }}
+    </p>
   </section>
 </template>
 
 <script>
 export default {
   name: 'Home',
+  async asyncData({ $prismic, error, app }) {
+    const currentLocale = app.i18n.locales.filter(
+      (lang) => lang.code === app.i18n.locale
+    )[0];
+
+    try {
+      // Query to get blog home content
+      const homepageContent = (
+        await $prismic.api.getSingle('blog_home', {
+          lang: currentLocale.iso.toLowerCase(),
+        })
+      ).data;
+
+      // Returns data to be used in template
+      return {
+        homepageContent,
+        image: homepageContent.image.url,
+      };
+    } catch (e) {
+      // Returns error page
+      error({ statusCode: 404, message: 'Page not found' });
+    }
+  },
   head() {
     return {
       title: 'Prismic Nuxt.js Blog',

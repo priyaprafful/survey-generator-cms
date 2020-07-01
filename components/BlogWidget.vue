@@ -1,5 +1,14 @@
 <template>
-  <nuxt-link :to="link">
+  <nuxt-link
+    :to="
+      localePath({
+        name: 'blog-post',
+        params: {
+          post: post.uid,
+        },
+      })
+    "
+  >
     <div class="blog-post">
       <h2>{{ $prismic.asText(post.data.title) }}</h2>
       <p class="blog-post-meta">
@@ -12,18 +21,28 @@
 
 <script>
 /* eslint-disable */
-
 import LinkResolver from '~/plugins/link-resolver.js';
 
 export default {
-  props: ['post'],
-  data: function () {
-    return {
-      link: '',
-      formattedDate: '',
-    };
+  name: 'BlogWidget',
+  props: {
+    post: {
+      type: Object,
+      default: null,
+    },
   },
-  name: 'blog-widget',
+  data: () => ({
+    link: '',
+    formattedDate: '',
+  }),
+  created() {
+    (this.link = LinkResolver(this.post)),
+      (this.formattedDate = Intl.DateTimeFormat('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: '2-digit',
+      }).format(new Date(this.post.data.date)));
+  },
   methods: {
     // Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
     getFirstParagraph(post) {
@@ -33,9 +52,9 @@ export default {
       let haveFirstParagraph = false;
 
       slices.map(function (slice) {
-        if (!haveFirstParagraph && slice.slice_type == 'text') {
+        if (!haveFirstParagraph && slice.slice_type === 'text') {
           slice.primary.text.forEach(function (block) {
-            if (block.type == 'paragraph' && !haveFirstParagraph) {
+            if (block.type === 'paragraph' && !haveFirstParagraph) {
               firstParagraph += block.text;
               haveFirstParagraph = true;
             }
@@ -51,14 +70,6 @@ export default {
         return firstParagraph;
       }
     },
-  },
-  created() {
-    (this.link = LinkResolver(this.post)),
-      (this.formattedDate = Intl.DateTimeFormat('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: '2-digit',
-      }).format(new Date(this.post.data.date)));
   },
 };
 </script>
