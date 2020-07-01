@@ -23,4 +23,4 @@ module.exports = {
       'nuxt.config.js',
     ],
   },
-}
+};

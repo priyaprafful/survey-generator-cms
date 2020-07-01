@@ -12,7 +12,7 @@
 export default {
   props: ['slice'],
   name: 'quote-slice',
-}
+};
 </script>
 
 <style lang="sass" scoped>

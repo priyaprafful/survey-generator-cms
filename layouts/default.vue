@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
-import FooterPrismic from '~/components/FooterPrismic.vue'
+import Header from '~/components/Header.vue';
+import FooterPrismic from '~/components/FooterPrismic.vue';
 
 export default {
   components: {
@@ -18,7 +18,7 @@ export default {
   head() {
     return {
       title: 'Prismic Nuxt.js Blog',
-    }
+    };
   },
-}
+};
 </script>

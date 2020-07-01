@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    Bitbull Srl - {{ $t('corporate.vat') }} 03526400043 -
+    {{ $t('corporate.vat') }} 03526400043 -
     {{ $t('corporate.share_capital') }}
 
     <Switcher />
@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import Switcher from './Switcher.vue'
+import Switcher from './Switcher.vue';
 
 export default {
   name: 'FooterPrismic',
   components: {
     Switcher,
   },
-}
+};
 </script>
 
 <style lang="sass" scoped>

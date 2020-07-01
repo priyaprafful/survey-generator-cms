@@ -10,7 +10,7 @@
 export default {
   props: ['slice'],
   name: 'text-slice',
-}
+};
 </script>
 
 <style lang="sass">

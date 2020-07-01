@@ -3,4 +3,4 @@ export default {
     vat: 'vat id',
     share_capital: 'share capital english',
   },
-}
+};

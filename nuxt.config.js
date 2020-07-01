@@ -100,10 +100,10 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      config.resolve.alias.vue = 'vue/dist/vue.common'
+      config.resolve.alias.vue = 'vue/dist/vue.common';
     },
   },
   generate: {
     fallback: '404.html', // Netlify reads a 404.html, Nuxt will load as an SPA
   },
-}
+};

@@ -18,7 +18,7 @@ export default {
   head() {
     return {
       title: 'Prismic Nuxt.js Blog',
-    }
+    };
   },
-}
+};
 </script>

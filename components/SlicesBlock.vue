@@ -23,10 +23,10 @@
 /* eslint-disable */
 
 // Imports for all slices
-const QuoteSlice = () => import('../components/slices/QuoteSlice.vue')
-const TextSlice = () => import('../components/slices/TextSlice.vue')
+const QuoteSlice = () => import('../components/slices/QuoteSlice.vue');
+const TextSlice = () => import('../components/slices/TextSlice.vue');
 const ImageCaptionSlice = () =>
-  import('../components/slices/ImageCaptionSlice.vue')
+  import('../components/slices/ImageCaptionSlice.vue');
 
 export default {
   props: ['slices'],
@@ -36,5 +36,5 @@ export default {
     TextSlice,
     ImageCaptionSlice,
   },
-}
+};
 </script>

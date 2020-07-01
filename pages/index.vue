@@ -37,41 +37,49 @@
 
 <script>
 // Importing blog posts widget
-import BlogWidget from '~/components/BlogWidget.vue'
+import BlogWidget from '~/components/BlogWidget.vue';
 
 export default {
   name: 'Home',
   components: {
     BlogWidget,
   },
-  async asyncData({ $prismic, error }) {
+  async asyncData({ $prismic, error, app }) {
+    const currentLocale = app.i18n.locales.filter(
+      (lang) => lang.code === app.i18n.locale
+    )[0];
+
     try {
       // Query to get blog home content
-      const homepageContent = (await $prismic.api.getSingle('blog_home')).data
+      const homepageContent = (
+        await $prismic.api.getSingle('blog_home', {
+          lang: currentLocale.iso.toLowerCase(),
+        })
+      ).data;
 
       // Query to get posts content to preview
       const blogPosts = await $prismic.api.query(
         $prismic.predicates.at('document.type', 'post'),
         { orderings: '[my.post.date desc]' }
-      )
+      );
 
       // Returns data to be used in template
       return {
         homepageContent,
         posts: blogPosts.results,
         image: homepageContent.image.url,
-      }
+      };
     } catch (e) {
       // Returns error page
-      error({ statusCode: 404, message: 'Page not found' })
+      error({ statusCode: 404, message: 'Page not found' });
     }
   },
   head() {
     return {
       title: 'Prismic Nuxt.js Blog',
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="sass" scoped>

@@ -18,7 +18,7 @@
 
 <script>
 // Importing all the slices components
-import SlicesBlock from '~/components/SlicesBlock.vue'
+import SlicesBlock from '~/components/SlicesBlock.vue';
 
 export default {
   name: 'Post',
@@ -28,7 +28,7 @@ export default {
   async asyncData({ $prismic, params, error }) {
     try {
       // Query to get post content
-      const post = (await $prismic.api.getByUID('post', params.uid)).data
+      const post = (await $prismic.api.getByUID('post', params.uid)).data;
 
       // Returns data to be used in template
       return {
@@ -39,16 +39,16 @@ export default {
           month: 'short',
           day: '2-digit',
         }).format(new Date(post.date)),
-      }
+      };
     } catch (e) {
       // Returns error page
-      error({ statusCode: 404, message: 'Page not found' })
+      error({ statusCode: 404, message: 'Page not found' });
     }
   },
   head() {
     return {
       title: 'Prismic Nuxt.js Blog',
-    }
+    };
   },
-}
+};
 </script>

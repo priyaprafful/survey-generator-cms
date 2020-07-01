@@ -3,4 +3,4 @@ export default {
     vat: 'p. iva',
     share_capital: 'cap. soc. svenska',
   },
-}
+};
