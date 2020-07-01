@@ -1,5 +1,10 @@
 <template>
   <footer class="footer">
+    Bitbull Srl - {{ $t('corporate.vat') }} 03526400043 -
+    {{ $t('corporate.share_capital') }}
+
+    <Switcher />
+
     <a href="https://prismic.io" target="_blank" rel="noopener">
       <img class="logo" src="../assets/img/prismic-logo.svg" alt="Prismic" />
     </a>
@@ -7,8 +12,13 @@
 </template>
 
 <script>
+import Switcher from './Switcher.vue'
+
 export default {
   name: 'FooterPrismic',
+  components: {
+    Switcher,
+  },
 }
 </script>
 

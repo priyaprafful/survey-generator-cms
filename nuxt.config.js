@@ -58,9 +58,34 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    // Doc: https://nuxt-community.github.io/nuxt-i18n/
+    'nuxt-i18n',
     // https://prismic-nuxt.js.org/
     '@nuxtjs/prismic',
   ],
+  /**
+   * I18n module configuration
+   * See https://nuxt-community.github.io/nuxt-i18n/options-reference.html
+   */
+  i18n: {
+    locales: [
+      {
+        name: 'Svenska',
+        code: 'sv',
+        iso: 'sv-SE',
+        file: 'sv.js',
+      },
+      {
+        name: 'English',
+        code: 'en',
+        iso: 'en-GB',
+        file: 'en.js',
+      },
+    ],
+    lazy: true,
+    langDir: 'langs/',
+    defaultLocale: 'sv',
+  },
   prismic: {
     endpoint: 'https://surveygenerator-cms.cdn.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',
