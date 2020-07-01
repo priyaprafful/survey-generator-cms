@@ -92,7 +92,6 @@ export default {
     line-height: 30px
     margin-bottom: 3rem
     padding-bottom: 3rem
-    font-family: 'Lato', sans-serif
     border-bottom: 1px solid #DADADA
 
 .blog-main

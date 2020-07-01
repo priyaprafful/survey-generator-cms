@@ -52,7 +52,6 @@ export default {
 .blog-header
   height: 400px
   position: relative
-  font-family: 'Lato', sans-serif
   font-weight: 400
   background-color: white
   background-size: cover
