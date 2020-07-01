@@ -2,9 +2,9 @@
   <nuxt-link
     :to="
       localePath({
-        name: 'blog-post',
+        name: 'blog-uid',
         params: {
-          post: post.uid,
+          uid: post.uid,
         },
       })
     "

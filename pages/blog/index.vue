@@ -36,26 +36,6 @@ export default {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
-    const doc = await $prismic.api.query(
-      $prismic.predicates.at('document.type', 'post'),
-      {
-        orderings: '[document.first_publication_date desc]',
-        lang: currentLocale.iso.toLowerCase(),
-      }
-    );
-    if (doc) {
-      return {
-        posts: doc.results || doc,
-        currentLocale,
-      };
-    } else {
-      error({ statusCode: 404, message: 'Page not found' });
-    }
-  },
-  /* async asyncData({ $prismic, error, app }) {
-    const currentLocale = app.i18n.locales.filter(
-      (lang) => lang.code === app.i18n.locale
-    )[0];
 
     try {
       // Query to get blog home content
@@ -84,7 +64,7 @@ export default {
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' });
     }
-  }, */
+  },
   head() {
     return {
       title: 'Prismic Nuxt.js Blog',

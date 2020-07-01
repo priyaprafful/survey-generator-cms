@@ -25,15 +25,24 @@ export default {
   components: {
     SlicesBlock,
   },
-  async asyncData({ $prismic, params, error }) {
+  async asyncData({ $prismic, params, error, app }) {
     try {
       // Query to get post content
-      const post = (await $prismic.api.getByUID('post', params.uid)).data;
+      const currentLocale = app.i18n.locales.filter(
+        (lang) => lang.code === app.i18n.locale
+      )[0];
+
+      const post = (
+        await $prismic.api.getByUID('post', params.uid, {
+          lang: currentLocale.iso.toLowerCase(),
+        })
+      ).data;
 
       // Returns data to be used in template
       return {
         document: post,
         slices: post.body,
+        currentLocale,
         formattedDate: Intl.DateTimeFormat('en-US', {
           year: 'numeric',
           month: 'short',
