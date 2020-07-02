@@ -28,7 +28,13 @@
 import BlogWidget from '~/components/BlogWidget.vue';
 
 export default {
-  name: 'Blog',
+  name: 'Nyheter',
+  nuxtI18n: {
+    paths: {
+      sv: '/nyheter',
+      en: '/news',
+    },
+  },
   components: {
     BlogWidget,
   },

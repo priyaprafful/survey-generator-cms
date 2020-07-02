@@ -2,13 +2,14 @@
   <nuxt-link
     :to="
       localePath({
-        name: 'blog-uid',
+        name: 'nyheter-post',
         params: {
-          uid: post.uid,
+          post: post.uid,
         },
       })
     "
   >
+    <!-- <nuxt-link :to="localePath('nyheter')"> -->
     <div class="blog-post">
       <h2>{{ $prismic.asText(post.data.title) }}</h2>
       <p class="blog-post-meta">

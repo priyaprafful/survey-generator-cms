@@ -2,7 +2,9 @@
   <div>
     <div class="outer-container">
       <div class="back">
-        <nuxt-link to="../">back to list</nuxt-link>
+        <nuxt-link :to="localePath('nyheter')">
+          back to list
+        </nuxt-link>
       </div>
       <!-- Template for page title -->
       <h1 class="blog-title">{{ $prismic.asText(document.title) }}</h1>
@@ -22,6 +24,12 @@ import SlicesBlock from '~/components/SlicesBlock.vue';
 
 export default {
   name: 'Post',
+  nuxtI18n: {
+    paths: {
+      sv: '/nyheter/:post',
+      en: '/news/:post',
+    },
+  },
   components: {
     SlicesBlock,
   },
@@ -33,7 +41,7 @@ export default {
       )[0];
 
       const post = (
-        await $prismic.api.getByUID('post', params.uid, {
+        await $prismic.api.getByUID('post', params.post, {
           lang: currentLocale.iso.toLowerCase(),
         })
       ).data;

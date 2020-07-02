@@ -4,6 +4,11 @@
     <nav>
       <ul>
         <li>
+          <nuxt-link :to="localePath('nyheter')">
+            {{ $t('menu.news') }}
+          </nuxt-link>
+        </li>
+        <li>
           <nuxt-link :to="localePath('kontakta-oss')">
             {{ $t('menu.contact_us') }}
           </nuxt-link>
