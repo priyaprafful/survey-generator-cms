@@ -62,36 +62,30 @@ export default {
     [
       'nuxt-i18n',
       {
+        seo: true,
         strategy: 'prefix_except_default',
+        locales: [
+          {
+            name: 'Svenska',
+            code: 'sv',
+            iso: 'sv-SE',
+            file: 'sv.json',
+          },
+          {
+            name: 'English',
+            code: 'en',
+            iso: 'en-GB',
+            file: 'en.json',
+          },
+        ],
+        lazy: true,
+        langDir: 'assets/langs/',
         defaultLocale: 'sv',
       },
     ],
     // https://prismic-nuxt.js.org/
     '@nuxtjs/prismic',
   ],
-  /**
-   * I18n module configuration
-   * See https://nuxt-community.github.io/nuxt-i18n/options-reference.html
-   */
-  i18n: {
-    locales: [
-      {
-        name: 'Svenska',
-        code: 'sv',
-        iso: 'sv-SE',
-        file: 'sv.json',
-      },
-      {
-        name: 'English',
-        code: 'en',
-        iso: 'en-GB',
-        file: 'en.json',
-      },
-    ],
-    lazy: true,
-    langDir: 'assets/langs/',
-    defaultLocale: 'sv',
-  },
   prismic: {
     endpoint: 'https://surveygenerator-cms.cdn.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',
