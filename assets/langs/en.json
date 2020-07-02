@@ -1,7 +1,10 @@
 {
   "menu": {
+    "customers": "Customers",
+    "pricing": "Pricing",
     "news": "News",
-    "contact_us": "Contact us"
+    "login": "Login",
+    "contact": "Contact"
   },
   "corporate": {
     "vat": "vat id",

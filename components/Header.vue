@@ -4,14 +4,32 @@
     <nav>
       <ul>
         <li>
+          <nuxt-link :to="localePath('vara-kunder')">
+            {{ $t('menu.customers') }}
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('priser')">
+            {{ $t('menu.pricing') }}
+          </nuxt-link>
+        </li>
+        <li>
           <nuxt-link :to="localePath('nyheter')">
             {{ $t('menu.news') }}
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('kontakta-oss')">
-            {{ $t('menu.contact_us') }}
+          <nuxt-link :to="localePath('logga-in')">
+            {{ $t('menu.login') }}
           </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('kontakt')">
+            {{ $t('menu.contact') }}
+          </nuxt-link>
+        </li>
+        <li>
+          Boka demo
         </li>
       </ul>
     </nav>

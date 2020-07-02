@@ -1,25 +1,19 @@
 <template>
   <div>
-    <h1 class="blog-title">
-      {{ $prismic.asText(contactUs.header) }}
-    </h1>
-    <!-- Template for page description -->
-    <p class="blog-description">
-      {{ $prismic.asText(contactUs.subheader) }}
-    </p>
+    <p>Priser</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'KontaktaOss',
+  name: 'Priser',
   nuxtI18n: {
     paths: {
-      sv: '/kontakta-oss',
-      en: '/contact-us',
+      sv: '/priser',
+      en: '/pricing',
     },
   },
-  async asyncData({ $prismic, error, app }) {
+  /* async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
@@ -40,6 +34,6 @@ export default {
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' });
     }
-  },
+  }, */
 };
 </script>

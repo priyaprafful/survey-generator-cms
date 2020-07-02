@@ -1,7 +1,10 @@
 {
   "menu": {
+    "customers": "Våra kunder",
+    "pricing": "Priser",
     "news": "Nyheter",
-    "contact_us": "Kontakta oss"
+    "login": "Logga in",
+    "contact": "Kontakt"
   },
   "corporate": {
     "vat": "p. iva",
