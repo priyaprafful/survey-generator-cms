@@ -1,6 +1,26 @@
 <template>
-  <header class="flex bg-gray-900">
-    <p>Header</p>
+  <header class="bg-gray-500">
+    <nuxt-link :to="localePath('/')">Home</nuxt-link>
+
+    <p
+      v-if="$store.state.menu === 'Please create a menu document'"
+      class="logo"
+    >
+      {{ $store.state.menu }}
+    </p>
+    <nav>
+      <ul>
+        <li v-for="menuLink in $store.state.menu.menu_links" :key="menuLink.id">
+          <!-- <prismic-link :field="menuLink.link">{{
+            $prismic.asText(menuLink.label)
+          }}</prismic-link> -->
+
+          <nuxt-link :to="localePath(menuLink.link.uid)">
+            {{ $prismic.asText(menuLink.label) }}
+          </nuxt-link>
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
 
@@ -11,10 +31,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-header
-    p
-        color: white
-
 .footer
   padding: 40px 0
   max-width: 700px

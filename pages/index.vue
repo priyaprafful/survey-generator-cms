@@ -1,8 +1,5 @@
 <template>
   <section class="home">
-    <a href="/">Home</a>
-    <a href="/blog">Blog</a>
-
     <div
       class="blog-avatar"
       :style="{ backgroundImage: 'url(' + image + ')' }"
@@ -21,6 +18,7 @@
 <script>
 export default {
   name: 'Home',
+  layout: 'homepage',
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
@@ -29,7 +27,7 @@ export default {
     try {
       // Query to get blog home content
       const homepageContent = (
-        await $prismic.api.getSingle('blog_home', {
+        await $prismic.api.getSingle('home', {
           lang: currentLocale.iso.toLowerCase(),
         })
       ).data;
