@@ -89,7 +89,7 @@ export default {
       },
     ],
     lazy: true,
-    langDir: 'langs/',
+    langDir: 'assets/langs/',
     defaultLocale: 'sv',
   },
   prismic: {
