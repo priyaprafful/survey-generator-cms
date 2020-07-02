@@ -20,9 +20,5 @@ export default {
       title: 'Prismic Nuxt.js Blog',
     };
   },
-  // Called before rendering the layout (even for error page)
-  async middleware({ store, $prismic }) {
-    await store.dispatch('fetchMenu', $prismic);
-  },
 };
 </script>

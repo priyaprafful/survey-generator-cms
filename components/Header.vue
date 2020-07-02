@@ -1,22 +1,11 @@
 <template>
   <header class="bg-gray-500">
     <nuxt-link :to="localePath('/')">Home</nuxt-link>
-
-    <p
-      v-if="$store.state.menu === 'Please create a menu document'"
-      class="logo"
-    >
-      {{ $store.state.menu }}
-    </p>
     <nav>
       <ul>
-        <li v-for="menuLink in $store.state.menu.menu_links" :key="menuLink.id">
-          <!-- <prismic-link :field="menuLink.link">{{
-            $prismic.asText(menuLink.label)
-          }}</prismic-link> -->
-
-          <nuxt-link :to="localePath(menuLink.link.uid)">
-            {{ $prismic.asText(menuLink.label) }}
+        <li>
+          <nuxt-link :to="localePath('kontakta-oss')">
+            {{ $t('menu.contact_us') }}
           </nuxt-link>
         </li>
       </ul>
