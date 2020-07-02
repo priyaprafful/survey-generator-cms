@@ -15,9 +15,5 @@ export default function (doc) {
     return '/blog/' + doc.uid;
   }
 
-  if (doc.type === 'contact') {
-    return doc.uid;
-  }
-
   return '/not-found';
 }

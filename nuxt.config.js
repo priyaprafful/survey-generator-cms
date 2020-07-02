@@ -59,7 +59,13 @@ export default {
    */
   modules: [
     // Doc: https://nuxt-community.github.io/nuxt-i18n/
-    'nuxt-i18n',
+    [
+      'nuxt-i18n',
+      {
+        strategy: 'prefix_except_default',
+        defaultLocale: 'sv',
+      },
+    ],
     // https://prismic-nuxt.js.org/
     '@nuxtjs/prismic',
   ],

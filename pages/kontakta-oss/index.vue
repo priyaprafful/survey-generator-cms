@@ -12,8 +12,9 @@
 
 <script>
 export default {
-  name: 'KontaktaOss',
-  i18n: {
+  // eslint-disable-next-line vue/name-property-casing
+  name: 'kontakta-oss',
+  nuxtI18n: {
     paths: {
       sv: '/kontakta-oss',
       en: '/contact-us',
