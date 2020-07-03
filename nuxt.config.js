@@ -85,7 +85,6 @@ export default {
     ],
     // https://prismic-nuxt.js.org/
     '@nuxtjs/prismic',
-    'nuxt-netlify-cache',
   ],
   prismic: {
     endpoint: 'https://surveygenerator-cms.cdn.prismic.io/api/v2',
