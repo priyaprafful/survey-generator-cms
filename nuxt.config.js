@@ -62,8 +62,6 @@ export default {
     [
       'nuxt-i18n',
       {
-        seo: true,
-        strategy: 'prefix_except_default',
         locales: [
           {
             name: 'Svenska',
@@ -78,6 +76,8 @@ export default {
             file: 'en.json',
           },
         ],
+        seo: true,
+        strategy: 'prefix_except_default',
         lazy: true,
         langDir: 'assets/langs/',
         defaultLocale: 'sv',
@@ -85,6 +85,7 @@ export default {
     ],
     // https://prismic-nuxt.js.org/
     '@nuxtjs/prismic',
+    'nuxt-netlify-cache',
   ],
   prismic: {
     endpoint: 'https://surveygenerator-cms.cdn.prismic.io/api/v2',
