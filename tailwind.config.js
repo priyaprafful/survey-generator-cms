@@ -7,7 +7,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      body: ['TT Norms, sans-serif'],
+      body: ['HelveticaNowText, sans-serif'],
     },
     extend: {
       colors: {

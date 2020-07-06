@@ -1,26 +1,26 @@
 @font-face {
-  font-family: 'TT Norms';
-  src: url('../fonts/TT_Norms_Pro_Regular.woff');
+  font-family: 'HelveticaNowText';
+  src: url('../fonts/HelveticaNowText_Regular.woff');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'TT Norms';
+  font-family: 'HelveticaNowText';
   font-weight: bold;
-  src: url('../fonts/TT_Norms_Pro_Bold.woff');
+  src: url('../fonts/HelveticaNowText_Bold.woff');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('../fonts/Gilroy_Regular.ttf');
+  font-family: 'Gilroy', 'sans-serif';
+  src: url('../fonts/Gilroy_Regular.woff');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', 'sans-serif';
   font-weight: bold;
-  src: url('../fonts/Gilroy_Bold.ttf');
+  src: url('../fonts/Gilroy_Bold.woff');
   font-display: swap;
 }
 
