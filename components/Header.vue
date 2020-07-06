@@ -1,8 +1,10 @@
 <template>
-  <header class="bg-gray-500">
-    <nuxt-link :to="localePath('/')">Home</nuxt-link>
-    <nav>
-      <ul>
+  <header class="flex items-center bg-gray-500 h-24">
+    <nav class="flex items-center">
+      <nuxt-link :to="localePath('/')">
+        <img class="h-8" src="../assets/img/sg-logo-color.svg" alt="Prismic" />
+      </nuxt-link>
+      <ul class="flex">
         <li>
           <nuxt-link :to="localePath('vara-kunder')">
             {{ $t('menu.customers') }}
@@ -41,15 +43,3 @@ export default {
   name: 'Header',
 };
 </script>
-
-<style lang="sass" scoped>
-.footer
-  padding: 40px 0
-  max-width: 700px
-  margin: 0 auto
-  text-align: center
-  border-top: 1px solid #DADADA
-
-.logo
-  width: 100px
-</style>

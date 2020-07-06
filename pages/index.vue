@@ -1,10 +1,10 @@
 <template>
   <section class="flex">
     <div>
-      <h1 class="blog-title">
+      <h1>
         {{ $prismic.asText(homepageContent.headline) }}
       </h1>
-      <p class="blog-description">
+      <p>
         {{ $prismic.asText(homepageContent.description) }}
       </p>
     </div>
