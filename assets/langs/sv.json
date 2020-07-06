@@ -4,11 +4,8 @@
     "pricing": "Priser",
     "news": "Nyheter",
     "login": "Logga in",
-    "contact": "Kontakt"
-  },
-  "corporate": {
-    "vat": "p. iva",
-    "share_capital": "cap. soc. svenska"
+    "contact": "Kontakt",
+    "book_demo": "Boka demo"
   },
   "blog": {
     "last_posts": "Lasts posts",

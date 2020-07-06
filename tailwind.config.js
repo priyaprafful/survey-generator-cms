@@ -9,8 +9,21 @@ module.exports = {
     fontFamily: {
       body: ['TT Norms, sans-serif'],
     },
+    extend: {
+      colors: {
+        blue: {
+          lighter: '#A4E9FD',
+          light: '#43A8D8',
+          default: '#258DBB',
+          dark: '#161E2E',
+        },
+        yellow: {
+          default: '#FFDE5C',
+          dark: '#735C00',
+        },
+      },
+    },
   },
-  extend: {},
   variants: {
     margin: ['responsive', 'first', 'last', 'odd', 'even'],
   },

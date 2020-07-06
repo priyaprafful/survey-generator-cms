@@ -2,7 +2,11 @@
   <header class="flex items-center bg-gray-500 h-24">
     <nav class="flex items-center">
       <nuxt-link :to="localePath('/')">
-        <img class="h-8" src="../assets/img/sg-logo-color.svg" alt="Prismic" />
+        <img
+          class="h-8"
+          src="../assets/img/sg-logo-color.png"
+          alt="SurveyGenerator"
+        />
       </nuxt-link>
       <ul class="flex">
         <li>
@@ -21,17 +25,19 @@
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('logga-in')">
-            {{ $t('menu.login') }}
-          </nuxt-link>
-        </li>
-        <li>
           <nuxt-link :to="localePath('kontakt')">
             {{ $t('menu.contact') }}
           </nuxt-link>
         </li>
         <li>
-          Boka demo
+          <nuxt-link :to="localePath('logga-in')">
+            {{ $t('menu.login') }}
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('boka-demo')">
+            {{ $t('menu.book_demo') }}
+          </nuxt-link>
         </li>
       </ul>
     </nav>

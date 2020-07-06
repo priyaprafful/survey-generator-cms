@@ -3,12 +3,9 @@
     "customers": "Customers",
     "pricing": "Pricing",
     "news": "News",
-    "login": "Login",
-    "contact": "Contact"
-  },
-  "corporate": {
-    "vat": "vat id",
-    "share_capital": "share capital english"
+    "login": "Sign in",
+    "contact": "Contact",
+    "book_demo": "Book demo"
   },
   "blog": {
     "last_posts": "Lasts posts",
