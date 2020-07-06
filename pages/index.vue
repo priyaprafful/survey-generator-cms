@@ -10,7 +10,7 @@
     </div>
 
     <div>
-      <img class="w-1/2" :src="image" />
+      <img class="w-1/2" :src="image" alt="SurveyGenerator" />
     </div>
   </section>
 </template>

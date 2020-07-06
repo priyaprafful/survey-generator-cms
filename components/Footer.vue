@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <p class="bg-yellow py-20">
-      Footer
+  <footer class="bg-yellow py-20">
+    <p>
+      © 2000 - {{ new Date().getFullYear() }} | Alstra AB, Norra Dryckesgränd 3,
+      111 30 Stockholm
     </p>
 
     <ul class="lang bg-red-400">
@@ -17,7 +18,7 @@
         </n-link>
       </li>
     </ul>
-  </div>
+  </footer>
 </template>
 
 <script>
