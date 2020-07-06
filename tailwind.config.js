@@ -22,6 +22,9 @@ module.exports = {
           dark: '#735C00',
         },
       },
+      height: {
+        almost: 'calc(-8rem + 100vh)',
+      },
     },
   },
   variants: {
