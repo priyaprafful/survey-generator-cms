@@ -12,7 +12,7 @@ export default function (doc) {
   }
 
   if (doc.type === 'post') {
-    return '/blog/' + doc.uid;
+    return '/nyheter/' + doc.uid;
   }
 
   return '/not-found';
