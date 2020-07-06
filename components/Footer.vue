@@ -1,23 +1,29 @@
 <template>
-  <footer class="bg-yellow py-20">
-    <p>
-      © 2000 - {{ new Date().getFullYear() }} | Alstra AB, Norra Dryckesgränd 3,
-      111 30 Stockholm
-    </p>
+  <footer class="bg-yellow py-20 px-12">
+    <div class="max-w-screen-xl m-auto">
+      <p>
+        © 2000 - {{ new Date().getFullYear() }} | Alstra AB, Norra Dryckesgränd
+        3, 111 30 Stockholm
+      </p>
 
-    <ul class="lang bg-red-400">
-      <li v-for="locale in $i18n.locales" :key="locale.code" class="lang__item">
-        <span v-if="$i18n.locale === locale.code">{{ locale.code }}</span>
-        <n-link
-          v-else
-          :to="switchLocalePath(locale.code)"
-          :title="locale.name"
-          exact
+      <ul class="lang bg-red-400">
+        <li
+          v-for="locale in $i18n.locales"
+          :key="locale.code"
+          class="lang__item"
         >
-          {{ locale.code }}
-        </n-link>
-      </li>
-    </ul>
+          <span v-if="$i18n.locale === locale.code">{{ locale.code }}</span>
+          <n-link
+            v-else
+            :to="switchLocalePath(locale.code)"
+            :title="locale.name"
+            exact
+          >
+            {{ locale.code }}
+          </n-link>
+        </li>
+      </ul>
+    </div>
   </footer>
 </template>
 

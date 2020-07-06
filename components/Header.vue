@@ -1,6 +1,8 @@
 <template>
-  <header class="flex items-center bg-gray-500 h-24">
-    <nav class="flex items-center">
+  <header class="sticky top-0 flex items-center bg-gray-500">
+    <nav
+      class="flex items-center justify-between w-full max-w-screen-xl m-auto py-8 px-12"
+    >
       <nuxt-link :to="localePath('/')">
         <img
           class="h-8"
@@ -49,3 +51,9 @@ export default {
   name: 'Header',
 };
 </script>
+
+<style lang="sass" scoped>
+/** nav
+  padding-left: calc(5% + 18px)
+  padding-right: calc(5% + 18px) **/
+</style>
