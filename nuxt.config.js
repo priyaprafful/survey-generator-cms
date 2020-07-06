@@ -1,3 +1,6 @@
+// Load environment variables declared in .env into env.process
+require('dotenv').config();
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -50,6 +53,8 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    // Doc: https://github.com/nuxt-community/dotenv-module
+    '@nuxtjs/dotenv',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
@@ -88,7 +93,7 @@ export default {
     '@nuxtjs/prismic',
   ],
   prismic: {
-    endpoint: 'https://surveygenerator-cms.cdn.prismic.io/api/v2',
+    endpoint: process.env.PRISMIC_URL,
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
   },
