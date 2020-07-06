@@ -1,5 +1,5 @@
 <template>
-  <div class="font-body">
+  <div>
     <Header />
     <nuxt />
     <footer-prismic />

@@ -29,6 +29,9 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    bodyAttrs: {
+      class: ['font-body'],
+    },
   },
   resourceHints: true,
   /*
@@ -94,6 +97,9 @@ export default {
   ],
   prismic: {
     endpoint: process.env.PRISMIC_URL,
+    apiOptions: {
+      accessToken: process.env.PRISMIC_API_KEY,
+    },
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
   },
