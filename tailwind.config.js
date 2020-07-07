@@ -11,6 +11,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        mainBg: '#FAF9FD',
         blue: {
           lighter: '#A4E9FD',
           light: '#43A8D8',

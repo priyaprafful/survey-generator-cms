@@ -30,7 +30,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     bodyAttrs: {
-      class: ['font-body'],
+      class: ['font-body', 'bg-mainBg'],
     },
   },
   resourceHints: true,
@@ -46,7 +46,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ['~/plugins/common.js'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
