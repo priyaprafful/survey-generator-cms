@@ -67,36 +67,7 @@ export default {
 <style lang="scss" scoped>
 .testy {
   position: absolute;
-  left: calc(50% + 120px);
-  top: -660px;
+  left: calc(50% + 130px);
+  top: -640px;
 }
-
-/** .testy
-  z-index: -1
-  position: absolute
-  top: 0
-  right: 0
-  left: 0
-  bottom: 0
-  height: 100%
-  width: 100%
-  transform: skewY(30deg)
-  transform-origin: top right
-  overflow: visible
-  background: #FAF9FD;
-
-.bg-skew
-  position: absolute
-  z-index: 1;
-  background: #FAF9FD;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  transform: skewY(30deg)
-  transform-origin: top right
-
-.cnt
-  transform: skewY(-30deg)
-  transform-origin: top right **/
 </style>
