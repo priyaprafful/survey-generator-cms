@@ -11,27 +11,28 @@
             />
           </nuxt-link>
         </li>
-        <li>
-          <nuxt-link :to="localePath('vara-kunder')">
+        <li class="li-middle">
+          <nuxt-link :to="localePath('tjanster')" class="py-2 px-4">
+            {{ $t('menu.services') }}
+          </nuxt-link>
+          <nuxt-link :to="localePath('vara-kunder')" class="py-2 px-4">
             {{ $t('menu.customers') }}
           </nuxt-link>
-          <nuxt-link :to="localePath('priser')">
+          <nuxt-link :to="localePath('priser')" class="py-2 px-4">
             {{ $t('menu.pricing') }}
           </nuxt-link>
-          <nuxt-link :to="localePath('nyheter')">
+          <nuxt-link :to="localePath('nyheter')" class="py-2 px-4">
             {{ $t('menu.news') }}
           </nuxt-link>
-          <nuxt-link :to="localePath('kontakt')">
+          <nuxt-link :to="localePath('kontakt')" class="py-2 px-4">
             {{ $t('menu.contact') }}
-          </nuxt-link>
-          <nuxt-link :to="localePath('logga-in')">
-            {{ $t('menu.login') }}
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('boka-demo')" class="bg-yellow uppercase">
-            {{ $t('menu.book_demo') }}
+          <nuxt-link :to="localePath('logga-in')" class="py-2 px-4 text-white">
+            {{ $t('menu.login') }}
           </nuxt-link>
+          <CTAButton header :text="$t('menu.book_demo')" />
         </li>
       </ul>
     </nav>
@@ -44,8 +45,10 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-/** nav
-  padding-left: calc(5% + 18px)
-  padding-right: calc(5% + 18px) **/
+<style lang="scss" scoped>
+.li-middle {
+  .nuxt-link-active {
+    font-weight: bold;
+  }
+}
 </style>

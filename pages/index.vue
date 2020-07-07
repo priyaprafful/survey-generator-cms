@@ -2,7 +2,7 @@
   <div class="bg-mainBg">
     <section class="flex h-almost max-w-screen-xl m-auto px-12 relative">
       <Blob class="testy" />
-      <Block half left class="flex flex-col justify-center z-10">
+      <Block half left class="flex flex-col items-start justify-center z-10">
         <h1 class="text-5xl leading-tight mb-6">
           {{ $prismic.asText(homepageContent.headline) }}
         </h1>

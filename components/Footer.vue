@@ -1,12 +1,22 @@
 <template>
   <footer class="bg-yellow py-20 px-12">
     <div class="max-w-screen-xl m-auto">
-      <p>
+      <div class="flex justify-center">
+        <img
+          class="w-32"
+          src="../assets/img/sg-logo-color.png"
+          alt="SurveyGenerator"
+        />
+      </div>
+    </div>
+  </footer>
+
+  <!-- <p>
         © 2000 - {{ new Date().getFullYear() }} | Alstra AB, Norra Dryckesgränd
         3, 111 30 Stockholm
       </p>
 
-      <ul class="lang bg-red-400">
+      <ul>
         <li
           v-for="locale in $i18n.locales"
           :key="locale.code"
@@ -22,9 +32,7 @@
             {{ locale.code }}
           </n-link>
         </li>
-      </ul>
-    </div>
-  </footer>
+      </ul> -->
 </template>
 
 <script>
