@@ -6,11 +6,16 @@
         <h1 class="text-5xl leading-tight mb-6">
           {{ $prismic.asText(homepageContent.headline) }}
         </h1>
-        <p class="text-lg leading-relaxed mb-6">
+        <p class="text-lg leading-relaxed mb-8">
           {{ $prismic.asText(homepageContent.description) }}
         </p>
 
-        <CTAButton :text="$t('menu.book_demo')" />
+        <div class="flex items-center">
+          <CTAButton :text="$t('menu.book_demo')" />
+          <nuxt-link :to="localePath('kontakt')" class="py-2 px-4">
+            Kontakta oss
+          </nuxt-link>
+        </div>
       </Block>
 
       <Block half right class="flex items-center justify-center z-10">
@@ -21,7 +26,7 @@
 </template>
 
 <script>
-import Blob from '@/assets/img/Blob.vue';
+import Blob from '@/components/Common/SVG/Blob.vue';
 
 export default {
   name: 'Home',

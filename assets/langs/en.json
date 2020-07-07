@@ -6,7 +6,8 @@
     "news": "News",
     "login": "Sign in",
     "contact": "Contact",
-    "book_demo": "Book demo"
+    "book_demo": "Book demo",
+    "privacy_policy": "Privacy policy"
   },
   "blog": {
     "last_posts": "Lasts posts",

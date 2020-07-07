@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-yellow py-20 px-12">
+  <footer class="bg-yellow text-yellow-dark py-20 px-12">
     <div class="max-w-screen-xl m-auto">
       <div class="flex justify-center">
         <img
@@ -8,15 +8,38 @@
           alt="SurveyGenerator"
         />
       </div>
-    </div>
-  </footer>
 
-  <!-- <p>
-        © 2000 - {{ new Date().getFullYear() }} | Alstra AB, Norra Dryckesgränd
-        3, 111 30 Stockholm
-      </p>
+      <ul class="flex justify-center">
+        <li class="li-middle">
+          <nuxt-link :to="localePath('tjanster')" class="py-2 px-4">
+            {{ $t('menu.services') }}
+          </nuxt-link>
+          <nuxt-link :to="localePath('nyheter')" class="py-2 px-4">
+            {{ $t('menu.news') }}
+          </nuxt-link>
+          <nuxt-link :to="localePath('kontakt')" class="py-2 px-4">
+            {{ $t('menu.contact') }}
+          </nuxt-link>
+          <nuxt-link :to="localePath('integritetspolicy')" class="py-2 px-4">
+            {{ $t('menu.privacy_policy') }}
+          </nuxt-link>
+        </li>
+      </ul>
 
-      <ul>
+      <ul class="flex justify-center">
+        <li class="py-2 px-4"><Facebook class="w-4" /></li>
+        <li class="py-2 px-4"><Twitter class="w-4" /></li>
+        <li class="py-2 px-4"><LinkedIn class="w-4" /></li>
+      </ul>
+
+      <div class="flex justify-center">
+        <p>
+          © 2000 - {{ new Date().getFullYear() }} | Alstra AB, Norra
+          Dryckesgränd 3, 111 30 Stockholm
+        </p>
+      </div>
+
+      <ul class="flex justify-center">
         <li
           v-for="locale in $i18n.locales"
           :key="locale.code"
@@ -32,11 +55,22 @@
             {{ locale.code }}
           </n-link>
         </li>
-      </ul> -->
+      </ul>
+    </div>
+  </footer>
 </template>
 
 <script>
+import Facebook from '@/components/Common/SVG/Facebook.vue';
+import Twitter from '@/components/Common/SVG/Twitter.vue';
+import LinkedIn from '@/components/Common/SVG/LinkedIn.vue';
+
 export default {
   name: 'Footer',
+  components: {
+    Facebook,
+    Twitter,
+    LinkedIn,
+  },
 };
 </script>

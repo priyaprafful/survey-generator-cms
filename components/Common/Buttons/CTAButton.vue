@@ -1,10 +1,10 @@
 <template>
   <nuxt-link
     :to="localePath('boka-demo')"
-    class="bg-yellow rounded-full"
+    class="bg-yellow rounded-lg font-bold"
     :class="{
-      'py-3 px-6 font-normal': header,
-      'py-4 px-8 font-bold': !header,
+      'py-3 px-6': header,
+      'py-4 px-8': !header,
     }"
   >
     {{ text }}
