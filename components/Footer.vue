@@ -1,7 +1,7 @@
 <template>
-  <footer class="bg-yellow text-yellow-dark py-20 px-12">
+  <footer class="bg-yellow text-yellow-dark text-sm py-20 px-12">
     <div class="max-w-screen-xl m-auto">
-      <div class="flex justify-center">
+      <div class="flex justify-center mb-6">
         <img
           class="w-32"
           src="../assets/img/sg-logo-color.png"
@@ -9,7 +9,7 @@
         />
       </div>
 
-      <ul class="flex justify-center">
+      <ul class="flex justify-center mb-4">
         <li class="li-middle">
           <nuxt-link :to="localePath('tjanster')" class="py-2 px-4">
             {{ $t('menu.services') }}
@@ -26,7 +26,7 @@
         </li>
       </ul>
 
-      <ul class="flex justify-center">
+      <ul class="flex justify-center mb-4">
         <li class="py-2 px-4"><Facebook class="h-4 w-4" /></li>
         <li class="py-2 px-4"><Twitter class="h-4 w-4" /></li>
         <li class="py-2 px-4"><LinkedIn class="h-4 w-4" /></li>
@@ -34,8 +34,8 @@
 
       <div class="flex justify-center">
         <p>
-          © 2000 - {{ new Date().getFullYear() }} | Alstra AB, Norra
-          Dryckesgränd 3, 111 30 Stockholm
+          © 2000 - {{ new Date().getFullYear() }} |
+          {{ $prismic.asText($store.state.contact_information.address) }}
         </p>
       </div>
 

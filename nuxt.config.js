@@ -2,6 +2,11 @@
 require('dotenv').config();
 
 export default {
+  vue: {
+    config: {
+      devtools: true,
+    },
+  },
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
