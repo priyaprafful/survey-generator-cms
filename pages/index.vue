@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-mainBg">
-    <section
+  <section class="bg-mainBg">
+    <div
       class="flex flex-col justify-center h-almost max-w-screen-xl m-auto p-12 relative"
     >
       <Blob class="testy" />
@@ -25,7 +25,7 @@
           <Hero class="w-1/2" />
         </Block>
       </div>
-    </section>
+    </div>
 
     <div class="flex justify-around max-w-screen-xl m-auto p-12">
       <SEB class="h-8" />
@@ -33,7 +33,7 @@
       <AssaAbloy class="h-8" />
       <SwedishMatch class="h-8" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
