@@ -1,13 +1,14 @@
 <template>
   <nuxt-link
     :to="localePath('boka-demo')"
-    class="bg-yellow rounded-lg font-bold"
+    class="flex bg-yellow rounded-lg font-bold"
     :class="{
       'py-3 px-6': header,
       'py-4 px-8': !header,
     }"
   >
     {{ text }}
+    <Arrow class="w-2" />
   </nuxt-link>
 </template>
 
