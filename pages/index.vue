@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-mainBg p-12">
+  <div class="bg-mainBg">
     <section
-      class="flex flex-col justify-center h-almost max-w-screen-xl m-auto relative"
+      class="flex flex-col justify-center h-almost max-w-screen-xl m-auto p-12 relative"
     >
       <Blob class="testy" />
       <div class="flex">
-        <Block half left class="flex flex-col items-start justify-center z-10">
+        <Block half left class="flex flex-col items-start justify-center">
           <h1 class="text-5xl leading-tight mb-6">
             {{ $prismic.asText(homepageContent.headline) }}
           </h1>
@@ -21,13 +21,13 @@
           </div>
         </Block>
 
-        <Block half right class="flex items-center justify-center z-10">
+        <Block half right class="flex items-center justify-center">
           <Hero class="w-1/2" />
         </Block>
       </div>
     </section>
 
-    <div class="mt-12 flex justify-around max-w-screen-xl m-auto z-10">
+    <div class="flex justify-around max-w-screen-xl m-auto p-12">
       <SEB class="h-8" />
       <SACO class="h-8" />
       <AssaAbloy class="h-8" />

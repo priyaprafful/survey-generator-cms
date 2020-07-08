@@ -1,23 +1,20 @@
 <template>
   <footer class="bg-yellow text-yellow-dark text-sm py-16 px-12">
     <div class="max-w-screen-xl m-auto">
-      <ul class="flex justify-center mb-6">
-        <li
+      <div class="flex justify-center mb-6">
+        <nuxt-link
           v-for="locale in $i18n.locales"
           :key="locale.code"
-          class="lang__item"
+          :to="switchLocalePath(locale.code)"
+          class="flex items-center font-bold"
         >
-          <span v-if="$i18n.locale === locale.code">{{ locale.code }}</span>
-          <n-link
-            v-else
-            :to="switchLocalePath(locale.code)"
-            :title="locale.name"
-            exact
-          >
-            {{ locale.code }}
-          </n-link>
-        </li>
-      </ul>
+          <BalloonBubble
+            v-if="$i18n.locale !== locale.code"
+            class="w-3 h-3 mr-2"
+          />
+          <span v-if="$i18n.locale !== locale.code">{{ locale.name }}</span>
+        </nuxt-link>
+      </div>
 
       <ul class="flex justify-center mb-4">
         <li class="li-middle">
@@ -53,6 +50,7 @@
 </template>
 
 <script>
+import BalloonBubble from '@/components/Common/SVG/BalloonBubble.vue';
 import Facebook from '@/components/Common/SVG/Facebook.vue';
 import Twitter from '@/components/Common/SVG/Twitter.vue';
 import LinkedIn from '@/components/Common/SVG/LinkedIn.vue';
@@ -60,6 +58,7 @@ import LinkedIn from '@/components/Common/SVG/LinkedIn.vue';
 export default {
   name: 'Footer',
   components: {
+    BalloonBubble,
     Facebook,
     Twitter,
     LinkedIn,

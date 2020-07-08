@@ -11,7 +11,7 @@
             />
           </nuxt-link>
         </li>
-        <li class="li-middle">
+        <li class="flex li-middle">
           <nuxt-link :to="localePath('tjanster')" class="py-2 px-4">
             {{ $t('menu.services') }}
           </nuxt-link>
@@ -28,8 +28,8 @@
             {{ $t('menu.contact') }}
           </nuxt-link>
         </li>
-        <li>
-          <nuxt-link :to="localePath('logga-in')" class="py-2 px-4 text-white">
+        <li class="flex items-center">
+          <nuxt-link :to="localePath('logga-in')" class="py-2 px-4">
             {{ $t('menu.login') }}
           </nuxt-link>
           <CTAButton header :text="$t('menu.book_demo')" />
