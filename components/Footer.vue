@@ -1,13 +1,23 @@
 <template>
-  <footer class="bg-yellow text-yellow-dark text-sm py-20 px-12">
+  <footer class="bg-yellow text-yellow-dark text-sm py-16 px-12">
     <div class="max-w-screen-xl m-auto">
-      <div class="flex justify-center mb-6">
-        <img
-          class="w-32"
-          src="../assets/img/sg-logo-color.png"
-          alt="SurveyGenerator"
-        />
-      </div>
+      <ul class="flex justify-center mb-6">
+        <li
+          v-for="locale in $i18n.locales"
+          :key="locale.code"
+          class="lang__item"
+        >
+          <span v-if="$i18n.locale === locale.code">{{ locale.code }}</span>
+          <n-link
+            v-else
+            :to="switchLocalePath(locale.code)"
+            :title="locale.name"
+            exact
+          >
+            {{ locale.code }}
+          </n-link>
+        </li>
+      </ul>
 
       <ul class="flex justify-center mb-4">
         <li class="li-middle">
@@ -38,24 +48,6 @@
           {{ $prismic.asText($store.state.contact_information.address) }}
         </p>
       </div>
-
-      <ul class="flex justify-center">
-        <li
-          v-for="locale in $i18n.locales"
-          :key="locale.code"
-          class="lang__item"
-        >
-          <span v-if="$i18n.locale === locale.code">{{ locale.code }}</span>
-          <n-link
-            v-else
-            :to="switchLocalePath(locale.code)"
-            :title="locale.name"
-            exact
-          >
-            {{ locale.code }}
-          </n-link>
-        </li>
-      </ul>
     </div>
   </footer>
 </template>

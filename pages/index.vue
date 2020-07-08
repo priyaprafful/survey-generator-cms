@@ -86,6 +86,7 @@ export default {
 
 <style lang="scss" scoped>
 .testy {
+  display: none;
   position: absolute;
   left: calc(50% + 130px);
   top: -640px;
