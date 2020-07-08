@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-mainBg">
+  <div class="bg-mainBg p-12">
     <section
-      class="flex flex-col justify-center h-almost max-w-screen-xl m-auto p-12 relative"
+      class="flex flex-col justify-center h-almost max-w-screen-xl m-auto relative"
     >
       <Blob class="testy" />
       <div class="flex">
@@ -22,21 +22,22 @@
         </Block>
 
         <Block half right class="flex items-center justify-center z-10">
-          <img class="w-1/2" :src="image" alt="SurveyGenerator" />
+          <Hero class="w-1/2" />
         </Block>
       </div>
-
-      <div class="flex justify-around absolute left-3 right-3 bottom-3">
-        <SEB class="h-8" />
-        <SACO class="h-8" />
-        <AssaAbloy class="h-8" />
-        <SwedishMatch class="h-8" />
-      </div>
     </section>
+
+    <div class="mt-12 flex justify-around max-w-screen-xl m-auto z-10">
+      <SEB class="h-8" />
+      <SACO class="h-8" />
+      <AssaAbloy class="h-8" />
+      <SwedishMatch class="h-8" />
+    </div>
   </div>
 </template>
 
 <script>
+import Hero from '@/components/Common/SVG/Hero.vue';
 import Blob from '@/components/Common/SVG/Blob.vue';
 import SEB from '@/components/Common/SVG/SEB.vue';
 import SACO from '@/components/Common/SVG/SACO.vue';
@@ -46,6 +47,7 @@ import SwedishMatch from '@/components/Common/SVG/SwedishMatch.vue';
 export default {
   name: 'Home',
   components: {
+    Hero,
     Blob,
     SEB,
     SACO,
@@ -68,7 +70,6 @@ export default {
       // Returns data to be used in template
       return {
         homepageContent,
-        image: homepageContent.image.url,
       };
     } catch (e) {
       // Returns error page

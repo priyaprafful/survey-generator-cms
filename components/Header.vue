@@ -1,6 +1,6 @@
 <template>
   <header class="sticky top-0 bg-transparent z-50">
-    <nav class="max-w-screen-xl m-auto py-8 px-12">
+    <nav class="max-w-screen-xl m-auto py-4 px-12">
       <ul class="flex items-center justify-between">
         <li>
           <nuxt-link :to="localePath('/')">

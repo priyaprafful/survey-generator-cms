@@ -27,9 +27,9 @@
       </ul>
 
       <ul class="flex justify-center">
-        <li class="py-2 px-4"><Facebook class="w-4" /></li>
-        <li class="py-2 px-4"><Twitter class="w-4" /></li>
-        <li class="py-2 px-4"><LinkedIn class="w-4" /></li>
+        <li class="py-2 px-4"><Facebook class="h-4 w-4" /></li>
+        <li class="py-2 px-4"><Twitter class="h-4 w-4" /></li>
+        <li class="py-2 px-4"><LinkedIn class="h-4 w-4" /></li>
       </ul>
 
       <div class="flex justify-center">
