@@ -16,7 +16,7 @@
           <div class="flex items-center">
             <CTAButton :text="$t('menu.book_demo')" />
             <nuxt-link :to="localePath('kontakt')" class="py-2 px-4">
-              Kontakta oss
+              {{ $t('common.contact_us') }}
             </nuxt-link>
           </div>
         </Block>

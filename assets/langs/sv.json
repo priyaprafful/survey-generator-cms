@@ -1,21 +1,20 @@
 {
-  "menu": {
-    "services": "Tjänster",
-    "customers": "Våra kunder",
-    "pricing": "Priser",
-    "news": "Nyheter",
-    "login": "Logga in",
-    "contact": "Kontakt",
-    "book_demo": "Boka demo",
-    "privacy_policy": "Integritetspolicy"
-  },
   "blog": {
-    "last_posts": "Lasts posts",
     "all_posts": "Alla inlägg",
+    "last_posts": "Lasts posts",
     "post_of": "Av"
   },
-  "post": {
-    "reading_time": "",
-    "comments": "Kommentarer"
+  "common": {
+    "contact_us": "Kontakta oss"
+  },
+  "menu": {
+    "book_demo": "Boka demo",
+    "contact": "Kontakt",
+    "customers": "Våra kunder",
+    "login": "Logga in",
+    "news": "Nyheter",
+    "pricing": "Priser",
+    "privacy_policy": "Integritetspolicy",
+    "services": "Tjänster"
   }
 }

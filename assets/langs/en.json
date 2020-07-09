@@ -1,21 +1,20 @@
 {
-  "menu": {
-    "services": "Services",
-    "customers": "Customers",
-    "pricing": "Pricing",
-    "news": "News",
-    "login": "Sign in",
-    "contact": "Contact",
-    "book_demo": "Book demo",
-    "privacy_policy": "Privacy policy"
-  },
   "blog": {
-    "last_posts": "Lasts posts",
     "all_posts": "All posts",
+    "last_posts": "Lasts posts",
     "post_of": "By"
   },
-  "post": {
-    "reading_time": "",
-    "comments": "Comments"
+  "common": {
+    "contact_us": "Contact us"
+  },
+  "menu": {
+    "book_demo": "Book demo",
+    "contact": "Contact",
+    "customers": "Customers",
+    "login": "Sign in",
+    "news": "News",
+    "pricing": "Pricing",
+    "privacy_policy": "Privacy policy",
+    "services": "Services"
   }
 }
