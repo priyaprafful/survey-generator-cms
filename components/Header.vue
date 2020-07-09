@@ -5,7 +5,7 @@
         <li>
           <nuxt-link :to="localePath('/')">
             <img
-              class="h-8"
+              class="h-8 logo"
               src="../assets/img/sg-logo-color.png"
               alt="SurveyGenerator"
             />
@@ -46,6 +46,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.logo {
+  transition: filter 0.2s;
+  &:hover {
+    filter: opacity(80%);
+    transition: filter 0.2s;
+  }
+}
+
 .li-middle {
   .nuxt-link-active {
     font-weight: bold;
