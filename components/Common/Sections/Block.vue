@@ -1,5 +1,7 @@
 <template>
-  <div :class="{ 'w-full': full, 'w-1/2': half, 'pr-6': left, 'pl-6': right }">
+  <div
+    :class="{ 'w-full': full, 'w-1/2': half, 'pr-12': left, 'pl-12': right }"
+  >
     <slot></slot>
   </div>
 </template>

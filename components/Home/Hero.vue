@@ -1,5 +1,5 @@
 <template>
-  <section class="relative">
+  <section>
     <div
       class="flex flex-col justify-center h-almost max-w-screen-xl m-auto p-12"
     >
@@ -21,8 +21,7 @@
         </Block>
 
         <Block half right class="flex items-center justify-center">
-          <Platform class="w-1/2" />
-          <Blob class="blob" />
+          <Platform class="w-3/4" />
         </Block>
       </div>
     </div>
@@ -38,7 +37,6 @@
 
 <script>
 import Platform from '@/components/Common/SVG/Platform.vue';
-import Blob from '@/components/Common/SVG/Blob.vue';
 import SEB from '@/components/Common/SVG/SEB.vue';
 import SACO from '@/components/Common/SVG/SACO.vue';
 import AssaAbloy from '@/components/Common/SVG/AssaAbloy.vue';
@@ -48,7 +46,6 @@ export default {
   name: 'Home',
   components: {
     Platform,
-    Blob,
     SEB,
     SACO,
     AssaAbloy,
@@ -62,15 +59,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.blob {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: -600px;
-  margin-left: calc(50% + 180px);
-  overflow: hidden;
-  z-index: -3;
-}
-</style>
