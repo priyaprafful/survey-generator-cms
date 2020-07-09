@@ -17,6 +17,7 @@ import CTA from '@/components/Home/CTA.vue';
 
 export default {
   name: 'Home',
+  layout: 'home',
   components: {
     Hero,
     Benefits,

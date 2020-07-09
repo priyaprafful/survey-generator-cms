@@ -9,6 +9,7 @@
           {{ $prismic.asText(testimonial.company_employee_title) }}
           {{ $prismic.asText(testimonial.company_name) }}
         </p>
+        <button class="bg-gray-500">Våra kunder</button>
       </div>
     </div>
   </section>

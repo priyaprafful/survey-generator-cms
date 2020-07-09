@@ -1,5 +1,6 @@
 import CTAButton from './Buttons/CTAButton.vue';
 import Block from './Sections/Block.vue';
+import PageTitle from './Sections/PageTitle.vue';
 import ChevronRight from './SVG/ChevronRight.vue';
 import Placeholder from './SVG/Placeholder.vue';
 
@@ -10,6 +11,7 @@ export default {
   install(Vue) {
     Vue.component('CTAButton', CTAButton);
     Vue.component('Block', Block);
+    Vue.component('PageTitle', PageTitle);
     Vue.component('ChevronRight', ChevronRight);
     Vue.component('Placeholder', Placeholder);
   },

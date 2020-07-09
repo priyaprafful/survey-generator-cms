@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-blue-dark text-white">
+  <section class="bg-blue-darker text-white">
     <div class="flex flex-col max-w-screen-xl m-auto p-24 px-12">
       <h2 class="mb-12">Från ax till limpa</h2>
       <div class="flex leading-relaxed">

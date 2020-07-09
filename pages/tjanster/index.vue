@@ -1,6 +1,9 @@
 <template>
   <div>
-    <p>Tjänster</p>
+    <PageTitle
+      title="Tjänster"
+      description="Etiam condimentum dapibus dictum."
+    />
   </div>
 </template>
 

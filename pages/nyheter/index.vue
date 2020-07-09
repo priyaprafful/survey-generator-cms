@@ -1,26 +1,32 @@
 <template>
-  <section class="home">
-    <article>
-      <!-- Check blog posts exist -->
-      <div v-if="posts.length !== 0" class="blog-main">
-        <!-- Template for blog posts -->
-        <section
-          v-for="post in posts"
-          :key="post.id"
-          :post="post"
-          class="blog-post"
-        >
-          <!-- Here :post="post" passes the data to the component -->
+  <div>
+    <PageTitle
+      title="Nyheter"
+      description="Etiam condimentum dapibus dictum."
+    />
+    <section class="home">
+      <article>
+        <!-- Check blog posts exist -->
+        <div v-if="posts.length !== 0" class="blog-main">
+          <!-- Template for blog posts -->
+          <section
+            v-for="post in posts"
+            :key="post.id"
+            :post="post"
+            class="blog-post"
+          >
+            <!-- Here :post="post" passes the data to the component -->
 
-          <BlogWidget :post="post" />
-        </section>
-      </div>
-      <!-- If no blog posts return message -->
-      <div v-else class="blog-main">
-        <p>No Posts published at this time.</p>
-      </div>
-    </article>
-  </section>
+            <BlogWidget :post="post" />
+          </section>
+        </div>
+        <!-- If no blog posts return message -->
+        <div v-else class="blog-main">
+          <p>No Posts published at this time.</p>
+        </div>
+      </article>
+    </section>
+  </div>
 </template>
 
 <script>

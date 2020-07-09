@@ -1,19 +1,22 @@
 <template>
-  <header id="header" class="sticky top-0 z-50 transition ease-in duration-500">
+  <header
+    class="sticky top-0 border-b border-transparent z-50 transition ease-in duration-500"
+    :class="{
+      'bg-mainBg': homepage,
+      'border-blue-darker': homepage && scrollPosition >= 100,
+      'bg-blue-darker text-white border-b border-white': !homepage,
+    }"
+  >
     <nav class="max-w-screen-xl m-auto text-sm font-medium py-6 px-12">
       <ul class="flex items-center justify-between">
-        <li>
+        <li class="logo">
           <nuxt-link :to="localePath('/')">
-            <img
-              class="h-8 logo"
-              src="../assets/img/sg-logo-color.png"
-              alt="SurveyGenerator"
-            />
+            <img src="../assets/img/sg-logo-color.png" alt="SurveyGenerator" />
           </nuxt-link>
         </li>
         <li class="flex li-middle">
           <nuxt-link :to="localePath('tjanster')" class="py-2 px-4">
-            {{ $t('menu.services') }} {{ scrollPosition }}
+            {{ $t('menu.services') }}
           </nuxt-link>
           <nuxt-link :to="localePath('vara-kunder')" class="py-2 px-4">
             {{ $t('menu.customers') }}
@@ -42,6 +45,12 @@
 <script>
 export default {
   name: 'Header',
+  props: {
+    homepage: {
+      type: Boolean,
+      default: null,
+    },
+  },
   data: () => ({
     scrollPosition: null,
   }),
@@ -53,21 +62,9 @@ export default {
   },
   methods: {
     updateScroll() {
-      const width = window.matchMedia('(min-width: 768px)');
+      this.scrollPosition = document.scrollingElement.scrollTop;
 
-      this.$nextTick(function () {
-        window.addEventListener('scroll', function () {
-          const header = document.getElementById('header');
-
-          if (document.scrollingElement.scrollTop >= 150 && width.matches) {
-            header.classList.add('bg-mainBg', 'border-b-2');
-            header.classList.remove('bg-transparent');
-          } else {
-            header.classList.add('bg-transparent');
-            header.classList.remove('bg-mainBg', 'border-b-2');
-          }
-        });
-      });
+      /* const width = window.matchMedia('(min-width: 768px)'); */
     },
   },
 };
@@ -75,10 +72,15 @@ export default {
 
 <style lang="scss" scoped>
 .logo {
-  transition: filter 0.2s;
-  &:hover {
-    filter: opacity(80%);
+  width: 200px;
+
+  img {
     transition: filter 0.2s;
+
+    &:hover {
+      filter: opacity(80%);
+      transition: filter 0.2s;
+    }
   }
 }
 

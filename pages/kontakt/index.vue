@@ -1,13 +1,8 @@
 <template>
-  <div>
-    <h1 class="blog-title">
-      {{ $prismic.asText(contactUs.header) }}
-    </h1>
-    <!-- Template for page description -->
-    <p class="blog-description">
-      {{ $prismic.asText(contactUs.subheader) }}
-    </p>
-  </div>
+  <PageTitle
+    :title="$prismic.asText(contactUs.header)"
+    :description="$prismic.asText(contactUs.subheader)"
+  />
 </template>
 
 <script>

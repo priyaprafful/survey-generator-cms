@@ -1,6 +1,9 @@
 <template>
   <div>
-    <p>Integritetspolicy</p>
+    <PageTitle
+      title="Integritetspolicy"
+      description="Etiam condimentum dapibus dictum."
+    />
   </div>
 </template>
 

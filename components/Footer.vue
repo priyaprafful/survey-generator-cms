@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-yellow text-yellow-dark text-sm py-16 px-12">
+  <footer class="bg-yellow text-yellow-darker text-sm py-16 px-12">
     <div class="max-w-screen-xl m-auto">
       <div class="flex justify-center mb-6">
         <nuxt-link

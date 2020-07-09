@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Priser</p>
+    <PageTitle title="Priser" description="Etiam condimentum dapibus dictum." />
   </div>
 </template>
 
