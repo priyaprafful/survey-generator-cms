@@ -8,7 +8,7 @@
     }"
   >
     {{ text }}
-    <ChevronRight v-if="!header" class="ml-3 w-almost1" />
+    <ChevronRight v-if="!header" class="ml-3 h-almost3" />
   </nuxt-link>
 </template>
 

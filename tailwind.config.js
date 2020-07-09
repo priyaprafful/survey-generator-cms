@@ -25,9 +25,7 @@ module.exports = {
       },
       height: {
         almost: 'calc(-16rem + 100vh)',
-      },
-      width: {
-        almost1: '0.35rem',
+        almost3: '0.60rem',
       },
       inset: {
         '3': '3rem',
