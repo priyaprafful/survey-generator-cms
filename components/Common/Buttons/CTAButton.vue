@@ -8,7 +8,7 @@
     }"
   >
     {{ text }}
-    <ChevronRight v-if="!header" class="ml-2 chevron" />
+    <ChevronRight v-if="!header" class="ml-3 w-almost1" />
   </nuxt-link>
 </template>
 
@@ -27,9 +27,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.chevron {
-  width: 0.35rem;
-}
-</style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero :data="homepageContent" />
-    <Benefits />
+    <Benefits :data="homepageContent" />
     <Testimonials />
     <Features />
     <CTA />

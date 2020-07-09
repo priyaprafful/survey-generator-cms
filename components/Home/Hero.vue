@@ -14,8 +14,12 @@
 
           <div class="flex items-center">
             <CTAButton :text="$t('menu.book_demo')" />
-            <nuxt-link :to="localePath('kontakt')" class="py-2 px-4">
+            <nuxt-link
+              :to="localePath('kontakt')"
+              class="flex items-center py-2 px-4"
+            >
               {{ $t('common.contact_us') }}
+              <ChevronRight class="ml-3 w-almost1" />
             </nuxt-link>
           </div>
         </Block>
