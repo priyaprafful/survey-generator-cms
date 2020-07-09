@@ -24,13 +24,13 @@
           </div>
         </Block>
 
-        <Block half right class="flex items-center justify-center">
+        <Block half right class="flex flex-col items-end justify-center">
           <Platform class="w-3/4" />
         </Block>
       </div>
     </div>
 
-    <div class="flex justify-around max-w-screen-xl m-auto p-12">
+    <div class="flex justify-between max-w-screen-xl m-auto p-12">
       <SEB class="h-8" />
       <SACO class="h-8" />
       <AssaAbloy class="h-8" />

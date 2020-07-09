@@ -4,12 +4,20 @@
       <h2 class="mb-12">{{ $prismic.asText(data.benefits_title) }}</h2>
       <div class="flex leading-relaxed">
         <Block half left>
+          <Placeholder class="w-12 mb-4" />
+          <h3 class="mb-4">
+            {{ $prismic.asText(data.benefits_content_title_left) }}
+          </h3>
           <p>
             {{ $prismic.asText(data.benefits_content_left) }}
           </p>
         </Block>
 
         <Block half right>
+          <Placeholder class="w-12 mb-4" />
+          <h3 class="mb-4">
+            {{ $prismic.asText(data.benefits_content_title_right) }}
+          </h3>
           <p>
             {{ $prismic.asText(data.benefits_content_right) }}
           </p>
