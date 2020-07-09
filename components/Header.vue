@@ -60,11 +60,11 @@ export default {
           const header = document.getElementById('header');
 
           if (document.scrollingElement.scrollTop >= 150 && width.matches) {
-            header.classList.add('bg-mainBg');
+            header.classList.add('bg-mainBg', 'border-b-2');
             header.classList.remove('bg-transparent');
           } else {
             header.classList.add('bg-transparent');
-            header.classList.remove('bg-mainBg');
+            header.classList.remove('bg-mainBg', 'border-b-2');
           }
         });
       });

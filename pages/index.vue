@@ -2,7 +2,7 @@
   <div>
     <Hero :data="homepageContent" />
     <Benefits :data="homepageContent" />
-    <Testimonials />
+    <Testimonials :data="homepageContent" />
     <Features />
     <CTA />
   </div>
