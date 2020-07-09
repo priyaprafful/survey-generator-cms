@@ -12,8 +12,9 @@
 }
 
 @font-face {
-  font-family: 'Gilroy', 'sans-serif';
-  src: url('../fonts/Gilroy_Regular.woff');
+  font-family: 'HelveticaNowText';
+  font-weight: 500;
+  src: url('../fonts/HelveticaNowText_Medium.woff');
   font-display: swap;
 }
 
