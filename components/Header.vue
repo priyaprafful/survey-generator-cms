@@ -1,5 +1,5 @@
 <template>
-  <header id="header" class="sticky top-0 z-50">
+  <header id="header" class="sticky top-0 z-50 transition ease-in duration-500">
     <nav class="max-w-screen-xl m-auto py-4 px-12">
       <ul class="flex items-center justify-between">
         <li>

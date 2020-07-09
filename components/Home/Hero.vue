@@ -1,9 +1,8 @@
 <template>
-  <section class="bg-mainBg">
+  <section class="relative">
     <div
-      class="flex flex-col justify-center h-almost max-w-screen-xl m-auto p-12 relative"
+      class="flex flex-col justify-center h-almost max-w-screen-xl m-auto p-12"
     >
-      <Blob class="testy" />
       <div class="flex">
         <Block half left class="flex flex-col items-start justify-center">
           <h1 class="text-5xl leading-tight mb-6">
@@ -23,6 +22,7 @@
 
         <Block half right class="flex items-center justify-center">
           <Platform class="w-1/2" />
+          <Blob class="blob" />
         </Block>
       </div>
     </div>
@@ -64,10 +64,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.testy {
-  display: none;
+.blob {
   position: absolute;
-  left: calc(50% + 130px);
-  top: -640px;
+  top: 0;
+  left: 0;
+  margin-top: -600px;
+  margin-left: calc(50% + 180px);
+  overflow: hidden;
+  z-index: -3;
 }
 </style>
