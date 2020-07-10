@@ -11,7 +11,7 @@
           </p>
 
           <div class="flex items-center">
-            <CTAButton :text="$t('menu.book_demo')" />
+            <CTABtn :text="$t('menu.book_demo')" />
             <nuxt-link
               :to="localePath('kontakt')"
               class="flex items-center py-2 px-4"

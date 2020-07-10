@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageTitle
-      title="Tjänster"
+      title="Verktyget"
       description="Etiam condimentum dapibus dictum."
     />
   </div>
@@ -9,11 +9,11 @@
 
 <script>
 export default {
-  name: 'Tjanster',
+  name: 'Verktyget',
   nuxtI18n: {
     paths: {
-      sv: '/tjanster',
-      en: '/services',
+      sv: '/verktyget',
+      en: '/platform',
     },
   },
   /* async asyncData({ $prismic, error, app }) {

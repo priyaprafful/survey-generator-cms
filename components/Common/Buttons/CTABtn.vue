@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'CTAButton',
+  name: 'CTABtn',
   props: {
     text: {
       type: String,

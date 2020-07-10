@@ -79,5 +79,5 @@ img {
 }
 .page-enter,
 .page-leave-to {
-  opacity: 0;
+  opacity: 0.7;
 }
