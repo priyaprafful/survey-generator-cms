@@ -7,32 +7,32 @@
       'bg-blue-darker text-white border-b border-white': !homepage,
     }"
   >
-    <nav class="max-w-screen-xl m-auto text-sm font-medium py-6 px-12">
+    <nav class="max-w-screen-xl m-auto text-sm font-medium px-12">
       <ul class="flex items-center justify-between">
-        <li class="logo">
+        <li class="flex logo">
           <nuxt-link :to="localePath('/')">
             <img src="../assets/img/sg-logo-color.png" alt="SurveyGenerator" />
           </nuxt-link>
         </li>
-        <li class="flex li-middle">
-          <nuxt-link :to="localePath('tjanster')" class="py-2 px-4">
+        <li class="flex center-nav">
+          <nuxt-link :to="localePath('tjanster')">
             {{ $t('menu.services') }}
           </nuxt-link>
-          <nuxt-link :to="localePath('vara-kunder')" class="py-2 px-4">
+          <nuxt-link :to="localePath('vara-kunder')">
             {{ $t('menu.customers') }}
           </nuxt-link>
-          <nuxt-link :to="localePath('priser')" class="py-2 px-4">
+          <nuxt-link :to="localePath('priser')">
             {{ $t('menu.pricing') }}
           </nuxt-link>
-          <nuxt-link :to="localePath('nyheter')" class="py-2 px-4">
+          <nuxt-link :to="localePath('nyheter')">
             {{ $t('menu.news') }}
           </nuxt-link>
-          <nuxt-link :to="localePath('kontakt')" class="py-2 px-4">
+          <nuxt-link :to="localePath('kontakt')">
             {{ $t('menu.contact') }}
           </nuxt-link>
         </li>
         <li class="flex items-center">
-          <nuxt-link :to="localePath('logga-in')" class="py-2 px-4">
+          <nuxt-link :to="localePath('logga-in')">
             {{ $t('menu.login') }}
           </nuxt-link>
           <CTAButton header :text="$t('menu.book_demo')" />
@@ -84,9 +84,14 @@ export default {
   }
 }
 
-.li-middle {
-  .nuxt-link-active {
-    font-weight: bold;
+li:not(.logo) {
+  a:not(.cta) {
+    padding: 3rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid transparent;
+  }
+  .nuxt-link-active:not(.cta) {
+    border-bottom: 2px solid #fff;
   }
 }
 </style>
