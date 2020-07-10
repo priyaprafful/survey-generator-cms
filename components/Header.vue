@@ -89,6 +89,12 @@ li:not(.logo) {
     padding: 2.25rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid transparent;
+    transition: border 0.2s;
+
+    &:hover {
+      border-bottom: 2px solid #a4e9fd;
+      transition: border 0.2s;
+    }
   }
   .nuxt-link-active:not(.cta) {
     border-bottom: 2px solid #fff;
