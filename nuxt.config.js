@@ -44,6 +44,18 @@ export default {
    */
   loading: process.env.NODE_ENV !== 'production',
   /*
+   ** Layout and page transitions
+   ** See https://nuxtjs.org/api/configuration-transition/
+   */
+  layoutTransition: {
+    name: 'page',
+    mode: 'out-in',
+  },
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in',
+  },
+  /*
    ** Global CSS
    */
   css: ['@/assets/css/common.css'],

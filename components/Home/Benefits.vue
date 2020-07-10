@@ -11,7 +11,7 @@
           <p>
             {{ $prismic.asText(data.benefits_content_left) }}
           </p>
-          <button class="bg-gray-500">Tjänster</button>
+          <button class="bg-gray-500">Tjänster →</button>
         </Block>
 
         <Block half right>
@@ -22,7 +22,7 @@
           <p>
             {{ $prismic.asText(data.benefits_content_right) }}
           </p>
-          <button class="bg-gray-500">Priser</button>
+          <button class="bg-gray-500">Priser →</button>
         </Block>
       </div>
     </div>

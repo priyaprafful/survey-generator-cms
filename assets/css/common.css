@@ -70,3 +70,14 @@ img {
   width: 100%;
   height: auto;
 }
+
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}

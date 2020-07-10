@@ -86,7 +86,7 @@ export default {
 
 li:not(.logo) {
   a:not(.cta) {
-    padding: 3rem 0;
+    padding: 2.25rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid transparent;
   }
