@@ -11,7 +11,7 @@
       <ul class="flex items-center justify-between">
         <li class="flex logo">
           <nuxt-link :to="localePath('/')">
-            <img src="../assets/img/sg-logo-color.png" alt="SurveyGenerator" />
+            <SGLogo />
           </nuxt-link>
         </li>
         <li class="flex center-nav">
@@ -72,7 +72,7 @@ export default {
 
 <style lang="scss" scoped>
 .logo {
-  width: 200px;
+  width: 275px;
 
   img {
     transition: filter 0.2s;
