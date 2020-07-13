@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         mainBg: '#FAF9FD',
         blue: {
+          test: '#798ea8',
+          test2: '#217AA2',
+          test3: '#E7FAFF',
           lighter: '#A4E9FD',
           light: '#43A8D8',
           default: '#258DBB',
@@ -30,6 +33,9 @@ module.exports = {
       },
       inset: {
         '3': '3rem',
+      },
+      zIndex: {
+        'neg-1': '-1',
       },
     },
   },

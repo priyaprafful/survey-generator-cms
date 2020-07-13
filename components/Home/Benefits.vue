@@ -1,6 +1,6 @@
 <template>
   <section class="bg-blue-darker text-white">
-    <div class="flex flex-col max-w-screen-xl m-auto p-24 px-12">
+    <div class="flex flex-col max-w-screen-xl m-auto py-24 px-12">
       <h2 class="mb-12">{{ $prismic.asText(data.benefits_title) }}</h2>
       <div class="flex leading-relaxed">
         <Block half left class="flex flex-col items-start">

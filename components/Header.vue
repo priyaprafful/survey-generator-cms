@@ -74,7 +74,8 @@ export default {
 .logo {
   width: 275px;
 
-  img {
+  svg {
+    width: 100%;
     transition: filter 0.2s;
 
     &:hover {
