@@ -1,36 +1,11 @@
 <template>
   <section class="bg-blue-darker text-white">
-    <Container class="py-24">
+    <Container class="benefits py-24">
       <h2 class="mb-12">{{ $prismic.asText(data.benefits_title) }}</h2>
       <div class="flex">
-        <Block half class="flex flex-col items-start">
-          <h3 class="mb-4">
-            {{ $prismic.asText(data.benefits_content_title_left) }}
-          </h3>
-          <p class="mb-6">
-            {{ $prismic.asText(data.benefits_content_left) }}
-          </p>
-          <FunnelBtn text="Verktyget →" navigate-to="verktyget" />
-        </Block>
-
-        <Block half>
-          <Placeholder class="w-12" />
-        </Block>
-      </div>
-
-      <div class="flex">
-        <Block half>
-          <Placeholder class="w-12" />
-        </Block>
-
-        <Block half class="flex flex-col items-start">
-          <h3 class="mb-4">
-            {{ $prismic.asText(data.benefits_content_title_right) }}
-          </h3>
-          <p class="mb-6">
-            {{ $prismic.asText(data.benefits_content_right) }}
-          </p>
-          <FunnelBtn text="Priser →" navigate-to="priser" />
+        <Block v-for="(benefit, index) in data.benefits" :key="index" half>
+          <prismic-rich-text :field="benefit.title" class="mb-4" />
+          <prismic-rich-text :field="benefit.content" />
         </Block>
       </div>
     </Container>

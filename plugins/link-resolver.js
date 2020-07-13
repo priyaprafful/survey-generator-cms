@@ -11,6 +11,10 @@ export default function (doc) {
     return '/';
   }
 
+  if (doc.type === 'contact') {
+    return '/kontakt';
+  }
+
   if (doc.type === 'post') {
     return '/nyheter/' + doc.uid;
   }

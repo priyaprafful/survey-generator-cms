@@ -69,5 +69,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'Features',
+};
 </script>
+
+<style lang="scss">
+.features a {
+  color: red !important;
+  font-weight: 500 !important;
+}
+</style>
