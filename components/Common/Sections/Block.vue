@@ -1,5 +1,5 @@
 <template>
-  <div class="first:pr-8 last:pl-8" :class="{ 'w-full': full, 'w-1/2': half }">
+  <div class="first:pr-8 last:pl-8" :class="{ 'w-1/2': half, 'w-1/3': third }">
     <slot></slot>
   </div>
 </template>
@@ -8,11 +8,11 @@
 export default {
   name: 'Block',
   props: {
-    full: {
+    half: {
       type: Boolean,
       default: null,
     },
-    half: {
+    third: {
       type: Boolean,
       default: null,
     },
