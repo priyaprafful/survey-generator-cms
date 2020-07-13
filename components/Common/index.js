@@ -1,4 +1,5 @@
 import SGLogo from './SVG/SGLogo.vue';
+import Container from './Sections/Container.vue';
 import Block from './Sections/Block.vue';
 import PageTitle from './Sections/PageTitle.vue';
 import CTABtn from './Buttons/CTABtn.vue';
@@ -13,6 +14,7 @@ export default {
   // the first argument
   install(Vue) {
     Vue.component('SGLogo', SGLogo);
+    Vue.component('Container', Container);
     Vue.component('Block', Block);
     Vue.component('PageTitle', PageTitle);
     Vue.component('CTABtn', CTABtn);

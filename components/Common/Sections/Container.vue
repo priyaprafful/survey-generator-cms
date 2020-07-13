@@ -1,12 +1,12 @@
 <template>
-  <div class="first:pr-8 last:pl-8" :class="{ 'w-full': full, 'w-1/2': half }">
+  <div class="max-w-screen-xl m-auto px-12">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Block',
+  name: 'Container',
   props: {
     full: {
       type: Boolean,

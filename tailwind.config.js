@@ -40,7 +40,7 @@ module.exports = {
     },
   },
   variants: {
-    padding: ['responsive'],
+    padding: ['responsive', 'first', 'last'],
     margin: ['responsive', 'first', 'last', 'odd', 'even'],
   },
   plugins: [],

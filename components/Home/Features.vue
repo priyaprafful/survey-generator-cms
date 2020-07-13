@@ -1,9 +1,9 @@
 <template>
   <section class="bg-blue-darker text-white">
-    <div class="flex flex-col max-w-screen-xl m-auto p-24 px-12">
+    <Container class="py-24">
       <h2 class="mb-12">Från ax till limpa</h2>
       <div class="flex leading-relaxed">
-        <Block half left>
+        <Block half>
           <Placeholder class="w-12 mb-4" />
           <p>
             Vi är experter på webbundersökningar och bjuder gärna på vår
@@ -13,7 +13,7 @@
             kompetens.
           </p>
         </Block>
-        <Block half right>
+        <Block half>
           <Placeholder class="w-12 mb-4" />
           <p>
             Stärk dina kunskaper kring webbundersökningar med våra utbildningar.
@@ -47,7 +47,7 @@
           främst i Microsoftmiljö.
         </p>
       </div>
-    </div>
+    </Container>
   </section>
 </template>
 

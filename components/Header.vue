@@ -35,7 +35,7 @@
           <nuxt-link :to="localePath('logga-in')">
             {{ $t('menu.login') }}
           </nuxt-link>
-          <CTABtn header :text="$t('menu.book_demo')" />
+          <CTABtn small :text="$t('menu.book_demo')" />
         </li>
       </ul>
     </nav>

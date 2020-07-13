@@ -1,8 +1,8 @@
 <template>
   <section>
-    <div class="flex h-almost max-w-screen-xl m-auto p-12">
+    <Container class="h-almost py-12">
       <div class="flex">
-        <Block half left class="flex flex-col items-start justify-center">
+        <Block half class="flex flex-col items-start justify-center">
           <h1 class="text-5xl leading-tight mb-6">
             {{ $prismic.asText(data.headline) }}
           </h1>
@@ -22,18 +22,20 @@
           </div>
         </Block>
 
-        <Block half right class="flex flex-col items-end justify-center">
+        <Block half class="flex flex-col items-end justify-center">
           <Platform class="w-3/4" />
         </Block>
       </div>
-    </div>
+    </Container>
 
-    <div class="flex justify-between max-w-screen-xl m-auto p-12">
-      <SEB class="h-8" />
-      <SACO class="h-8" />
-      <AssaAbloy class="h-8" />
-      <SwedishMatch class="h-8" />
-    </div>
+    <Container class="py-12">
+      <div class="flex justify-between">
+        <SEB class="h-8" />
+        <SACO class="h-8" />
+        <AssaAbloy class="h-8" />
+        <SwedishMatch class="h-8" />
+      </div>
+    </Container>
   </section>
 </template>
 

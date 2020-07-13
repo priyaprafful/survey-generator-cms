@@ -3,12 +3,12 @@
     :to="localePath('boka-demo')"
     class="cta flex items-center bg-yellow rounded-lg font-bold text-blue-dark"
     :class="{
-      'py-3 px-6': header,
-      'py-4 px-8': !header,
+      'py-3 px-6': small,
+      'py-4 px-8': !small,
     }"
   >
     {{ text }}
-    <ChevronRight v-if="!header" class="ml-3 h-almost3" />
+    <ChevronRight v-if="!small" class="ml-3 h-almost3" />
   </nuxt-link>
 </template>
 
@@ -20,7 +20,7 @@ export default {
       type: String,
       default: null,
     },
-    header: {
+    small: {
       type: Boolean,
       default: false,
     },

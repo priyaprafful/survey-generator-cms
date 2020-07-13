@@ -1,9 +1,9 @@
 <template>
   <section class="bg-blue-darker text-white">
-    <div class="flex flex-col max-w-screen-xl m-auto py-24 px-12">
+    <Container class="py-24">
       <h2 class="mb-12">{{ $prismic.asText(data.benefits_title) }}</h2>
       <div class="flex leading-relaxed">
-        <Block half left class="flex flex-col items-start">
+        <Block half class="flex flex-col items-start">
           <Placeholder class="w-12 mb-6" />
           <h3 class="mb-4">
             {{ $prismic.asText(data.benefits_content_title_left) }}
@@ -14,7 +14,7 @@
           <FunnelBtn text="Verktyget →" navigate-to="verktyget" />
         </Block>
 
-        <Block half right class="flex flex-col items-start">
+        <Block half class="flex flex-col items-start">
           <Placeholder class="w-12 mb-6" />
           <h3 class="mb-4">
             {{ $prismic.asText(data.benefits_content_title_right) }}
@@ -25,7 +25,7 @@
           <FunnelBtn text="Priser →" navigate-to="priser" />
         </Block>
       </div>
-    </div>
+    </Container>
   </section>
 </template>
 
