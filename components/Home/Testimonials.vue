@@ -7,6 +7,7 @@
         :left="index % 2 == 0 ? true : false"
         :right="index % 2 == 0 ? false : true"
         half
+        class="leading-7"
       >
         <img
           :src="testimonial.company_logo.url"
@@ -14,14 +15,14 @@
           class="w-12 h-12 mb-8"
         />
 
-        <div class="relative mb-6">
+        <blockquote class="relative mb-6">
           <Quote
             class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 w-6 z-neg-1"
           />
-          <p>
+          <p class="font-medium text-lg">
             {{ $prismic.asText(testimonial.company_quote) }}
           </p>
-        </div>
+        </blockquote>
 
         <p>
           {{ $prismic.asText(testimonial.employee_name) }}
@@ -33,7 +34,7 @@
       </Block>
     </div>
 
-    <button class="bg-gray-500">Våra kunder</button>
+    <MainBtn text="Våra kunder" navigate-to="vara-kunder" class="bg-gray-500" />
   </section>
 </template>
 

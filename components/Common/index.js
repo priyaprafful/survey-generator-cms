@@ -3,6 +3,7 @@ import Block from './Sections/Block.vue';
 import PageTitle from './Sections/PageTitle.vue';
 import CTABtn from './Buttons/CTABtn.vue';
 import FunnelBtn from './Buttons/FunnelBtn.vue';
+import MainBtn from './Buttons/MainBtn.vue';
 import ChevronRight from './SVG/ChevronRight.vue';
 import Placeholder from './SVG/Placeholder.vue';
 
@@ -16,6 +17,7 @@ export default {
     Vue.component('PageTitle', PageTitle);
     Vue.component('CTABtn', CTABtn);
     Vue.component('FunnelBtn', FunnelBtn);
+    Vue.component('MainBtn', MainBtn);
     Vue.component('ChevronRight', ChevronRight);
     Vue.component('Placeholder', Placeholder);
   },

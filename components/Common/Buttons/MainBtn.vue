@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'FunnelBtn',
+  name: 'MainBtn',
   props: {
     text: {
       type: String,
