@@ -1,13 +1,13 @@
 <template>
   <section class="bg-blue-darker text-white text-center">
-    <div class="flex flex-col max-w-screen-xl m-auto p-24 px-12">
+    <Container class="py-24">
       <h1 class="mb-8">
         {{ title }}
       </h1>
       <p>
         {{ description }}
       </p>
-    </div>
+    </Container>
   </section>
 </template>
 

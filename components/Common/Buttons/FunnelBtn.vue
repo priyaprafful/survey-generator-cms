@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     :to="localePath(navigateTo)"
-    class="flex items-center rounded-full border border-white py-1 px-4"
+    class="flex items-center rounded-full bg-blue border border-white py-1 px-4"
   >
     {{ text }}
   </nuxt-link>

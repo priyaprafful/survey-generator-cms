@@ -3,7 +3,7 @@
     <Container class="flex h-almost py-12">
       <div class="flex">
         <Block half class="flex flex-col items-start justify-center">
-          <h1 class="text-5xl leading-tight mb-6">
+          <h1 class="text-5xl leading-tight mb-6 testy">
             {{ $prismic.asText(data.headline) }}
           </h1>
           <p class="text-lg leading-relaxed mb-8">
@@ -63,3 +63,11 @@ export default {
   },
 };
 </script>
+
+<style>
+.testy {
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style>

@@ -7,6 +7,13 @@
   "common": {
     "contact_us": "Contact us"
   },
+  "contact": {
+    "questions": {
+      "background": "What is your background/education?",
+      "question": "What is your favourite question?",
+      "tasks": "What are your tasks at Alstra?"
+    }
+  },
   "menu": {
     "book_demo": "Book demo",
     "contact": "Contact",

@@ -35,7 +35,7 @@ module.exports = {
         '3': '3rem',
       },
       zIndex: {
-        'neg-1': '-1',
+        n1: '-1',
       },
     },
   },

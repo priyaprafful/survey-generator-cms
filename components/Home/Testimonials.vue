@@ -15,7 +15,7 @@
 
           <blockquote class="relative mb-6">
             <Quote
-              class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 w-6 z-neg-1"
+              class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 w-6 z-n1"
             />
             <prismic-rich-text
               :field="testimonial.company_quote"
