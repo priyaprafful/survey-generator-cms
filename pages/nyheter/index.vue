@@ -4,33 +4,24 @@
       title="Nyheter"
       description="Etiam condimentum dapibus dictum."
     />
-    <section class="home">
+    <Container class="py-24">
       <article>
-        <!-- Check blog posts exist -->
-        <div v-if="posts.length !== 0" class="blog-main">
-          <!-- Template for blog posts -->
-          <section
-            v-for="post in posts"
-            :key="post.id"
-            :post="post"
-            class="blog-post"
-          >
-            <!-- Here :post="post" passes the data to the component -->
-
+        <div v-if="posts.length !== 0" class="flex">
+          <Block v-for="post in posts" :key="post.id" :post="post" half>
             <BlogWidget :post="post" />
-          </section>
+          </Block>
         </div>
+
         <!-- If no blog posts return message -->
-        <div v-else class="blog-main">
+        <div v-else>
           <p>No Posts published at this time.</p>
         </div>
       </article>
-    </section>
+    </Container>
   </div>
 </template>
 
 <script>
-// Importing blog posts widget
 import BlogWidget from '~/components/BlogWidget.vue';
 
 export default {

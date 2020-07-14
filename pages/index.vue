@@ -13,7 +13,7 @@ import Hero from '@/components/Home/Hero.vue';
 import Benefits from '@/components/Home/Benefits.vue';
 import Testimonials from '@/components/Home/Testimonials.vue';
 import Features from '@/components/Home/Features.vue';
-import CTA from '@/components/Home/CTA.vue';
+import CTA from '@/components/Common/CTA.vue';
 
 export default {
   name: 'Home',

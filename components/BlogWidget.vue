@@ -11,11 +11,12 @@
   >
     <!-- <nuxt-link :to="localePath('nyheter')"> -->
     <div class="blog-post">
-      <h2>{{ $prismic.asText(post.data.title) }}</h2>
       <p class="blog-post-meta">
         <span class="created-at">{{ formattedDate }}</span>
       </p>
-      <p>{{ getFirstParagraph(post) }}</p>
+      <h2>{{ $prismic.asText(post.data.title) }}</h2>
+      <p>{{ $prismic.asText(post.data.content) }}</p>
+      <!-- <p>{{ getFirstParagraph(post) }}</p> -->
     </div>
   </nuxt-link>
 </template>

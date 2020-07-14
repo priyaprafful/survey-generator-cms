@@ -7,6 +7,7 @@
         <p>Mån - Fre 10:00 - 17:00</p>
         <FunnelBtn text="Ring oss" navigate-to="kontakt" />
         <p>info@alstra.se</p>
+        <p>support@alstra.se</p>
       </Block>
       <Block half>
         <Placeholder class="w-12 mb-4" />
