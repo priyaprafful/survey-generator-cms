@@ -1,7 +1,7 @@
 import SGLogo from './SVG/SGLogo.vue';
 import Container from './Sections/Container.vue';
 import Block from './Sections/Block.vue';
-import PageTitle from './Sections/PageTitle.vue';
+import PageHeader from './Sections/PageHeader.vue';
 import CTABtn from './Buttons/CTABtn.vue';
 import FunnelBtn from './Buttons/FunnelBtn.vue';
 import MainBtn from './Buttons/MainBtn.vue';
@@ -16,7 +16,7 @@ export default {
     Vue.component('SGLogo', SGLogo);
     Vue.component('Container', Container);
     Vue.component('Block', Block);
-    Vue.component('PageTitle', PageTitle);
+    Vue.component('PageHeader', PageHeader);
     Vue.component('CTABtn', CTABtn);
     Vue.component('FunnelBtn', FunnelBtn);
     Vue.component('MainBtn', MainBtn);

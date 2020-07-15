@@ -1,57 +1,27 @@
 <template>
   <div>
-    <PageTitle
-      title="Nyheter"
-      description="Etiam condimentum dapibus dictum."
+    <PageHeader
+      :heading="$prismic.asText(newsContent.heading)"
+      :subheading="$prismic.asText(newsContent.subheading)"
     />
     <Container class="py-24">
-      <article>
-        <div class="flex flex-wrap">
-          <div
-            v-for="post in posts"
-            :key="post.id"
-            :post="post"
-            class="flex flex-col w-1/2"
-          >
-            <time
-              :datetime="post.data.date"
-              class="text-sm leading-5 text-blue-light py-2 px-6"
-            >
-              {{
-                new Date(post.data.date).toLocaleDateString($i18n.locale, {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric',
-                })
-              }}
-            </time>
-            <nuxt-link
-              :to="
-                localePath({
-                  name: 'nyheter-post',
-                  params: {
-                    post: post.uid,
-                  },
-                })
-              "
-            >
-              <div class="bg-white p-6 rounded shadow-post">
-                <h3 class="text-xl leading-7 font-medium font-body mb-2">
-                  {{ $prismic.asText(post.data.title) }}
-                </h3>
-                <p class="leading-6">
-                  {{ getFirstParagraph($prismic.asText(post.data.content)) }}
-                </p>
-              </div>
-            </nuxt-link>
-          </div>
-        </div>
-      </article>
+      <div class="flex flex-wrap">
+        <article
+          v-for="post in posts"
+          :key="post.id"
+          :post="post"
+          class="flex flex-col w-1/2"
+        >
+          <BlogWidget :post="post" />
+        </article>
+      </div>
     </Container>
   </div>
 </template>
 
 <script>
+import BlogWidget from '@/components/News/BlogWidget.vue';
+
 export default {
   name: 'Nyheter',
   nuxtI18n: {
@@ -59,6 +29,9 @@ export default {
       sv: '/nyheter',
       en: '/news',
     },
+  },
+  components: {
+    BlogWidget,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
@@ -75,27 +48,21 @@ export default {
         }
       );
 
+      const newsContent = (
+        await $prismic.api.getSingle('news', {
+          lang: currentLocale.iso.toLowerCase(),
+        })
+      ).data;
+
       // Returns data to be used in template
       return {
         posts: blogPosts.results,
+        newsContent,
       };
     } catch (e) {
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' });
     }
-  },
-  methods: {
-    getFirstParagraph(content) {
-      const textLimit = 100;
-      const firstParagraph = content;
-      const limitedText = firstParagraph.substr(0, textLimit);
-
-      if (firstParagraph.length > textLimit) {
-        return limitedText.substr(0, limitedText.lastIndexOf(' ')) + '...';
-      } else {
-        return firstParagraph;
-      }
-    },
   },
   head() {
     return {

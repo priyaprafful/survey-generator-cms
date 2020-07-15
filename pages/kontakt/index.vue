@@ -1,8 +1,8 @@
 <template>
   <div>
-    <PageTitle
-      :title="$prismic.asText(contactContent.header)"
-      :description="$prismic.asText(contactContent.subheader)"
+    <PageHeader
+      :heading="$prismic.asText(contactContent.heading)"
+      :subheading="$prismic.asText(contactContent.subheading)"
     />
     <ContactInfo />
     <Team :data="contactContent" />

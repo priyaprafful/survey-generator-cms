@@ -1,16 +1,14 @@
 <template>
-  <div>
-    <div class="outer-container">
-      <div class="back">
-        <nuxt-link :to="localePath('nyheter')">
-          back to list
-        </nuxt-link>
-      </div>
-      <h1>{{ $prismic.asText(post.data.title) }}</h1>
-      <!-- <p>{{ formattedDate }}</p> -->
-      <prismic-rich-text :field="post.data.content" />
+  <Container class="py-24">
+    <div>
+      <nuxt-link :to="localePath('nyheter')">
+        back to list
+      </nuxt-link>
     </div>
-  </div>
+
+    <prismic-rich-text :field="post.data.title" />
+    <prismic-rich-text :field="post.data.content" />
+  </Container>
 </template>
 
 <script>

@@ -1,31 +1,37 @@
 <template>
-  <nuxt-link
-    :to="
-      localePath({
-        name: 'nyheter-post',
-        params: {
-          post: post.uid,
-        },
-      })
-    "
-  >
-    <div>
-      <p>
-        <span>
-          {{
-            new Date(post.data.date).toLocaleDateString(currentLocale, {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-            })
-          }}
-        </span>
-      </p>
-      <h2>{{ $prismic.asText(post.data.title) }}</h2>
-      <p>{{ $prismic.asText(post.data.content) }}</p>
-      <p>{{ getFirstParagraph(post) }}</p>
-    </div>
-  </nuxt-link>
+  <div>
+    <time
+      :datetime="post.data.date"
+      class="text-sm leading-5 text-blue-light py-2 px-6"
+    >
+      {{
+        new Date(post.data.date).toLocaleDateString($i18n.locale, {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        })
+      }}
+    </time>
+    <nuxt-link
+      :to="
+        localePath({
+          name: 'nyheter-post',
+          params: {
+            post: post.uid,
+          },
+        })
+      "
+    >
+      <div class="bg-white p-6 rounded shadow-post">
+        <h3 class="text-xl leading-7 font-medium font-body mb-2">
+          {{ $prismic.asText(post.data.title) }}
+        </h3>
+        <p class="leading-6">
+          {{ getFirstParagraph($prismic.asText(post.data.content)) }}
+        </p>
+      </div>
+    </nuxt-link>
+  </div>
 </template>
 
 <script>
@@ -37,22 +43,10 @@ export default {
       default: null,
     },
   },
-  computed: {
-    formattedDate() {
-      const date = Intl.DateTimeFormat('en-GB', {
-        year: 'numeric',
-        month: 'short',
-        day: '2-digit',
-      }).format(new Date(this.post.data.date));
-
-      return date;
-    },
-  },
   methods: {
-    // Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
-    getFirstParagraph(post) {
-      const textLimit = 300;
-      const firstParagraph = post.data.content;
+    getFirstParagraph(content) {
+      const textLimit = 100;
+      const firstParagraph = content;
       const limitedText = firstParagraph.substr(0, textLimit);
 
       if (firstParagraph.length > textLimit) {

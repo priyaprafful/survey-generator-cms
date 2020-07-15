@@ -1,6 +1,9 @@
 <template>
   <div>
-    <PageTitle title="Priser" description="Etiam condimentum dapibus dictum." />
+    <PageHeader
+      heading="Priser"
+      subheading="Etiam condimentum dapibus dictum."
+    />
   </div>
 </template>
 

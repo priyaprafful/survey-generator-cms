@@ -1,8 +1,8 @@
 <template>
   <div>
-    <PageTitle
-      title="Verktyget"
-      description="Etiam condimentum dapibus dictum."
+    <PageHeader
+      heading="Verktyget"
+      subheading="Etiam condimentum dapibus dictum."
     />
   </div>
 </template>

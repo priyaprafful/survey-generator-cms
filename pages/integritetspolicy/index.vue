@@ -1,8 +1,8 @@
 <template>
   <div>
-    <PageTitle
-      title="Integritetspolicy"
-      description="Etiam condimentum dapibus dictum."
+    <PageHeader
+      heading="Integritetspolicy"
+      subheading="Etiam condimentum dapibus dictum."
     />
   </div>
 </template>

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <PageTitle
-      title="Våra kunder"
-      description="Etiam condimentum dapibus dictum."
+    <PageHeader
+      heading="Våra kunder"
+      subheading="Etiam condimentum dapibus dictum."
     />
   </div>
 </template>

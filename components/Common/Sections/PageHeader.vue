@@ -2,10 +2,10 @@
   <section class="bg-blue-darker text-white text-center">
     <Container class="py-24">
       <h1 class="mb-8">
-        {{ title }}
+        {{ heading }}
       </h1>
       <p>
-        {{ description }}
+        {{ subheading }}
       </p>
     </Container>
   </section>
@@ -13,13 +13,13 @@
 
 <script>
 export default {
-  name: 'PageTitle',
+  name: 'PageHeader',
   props: {
-    title: {
+    heading: {
       type: String,
       default: null,
     },
-    description: {
+    subheading: {
       type: String,
       default: null,
     },
