@@ -4,10 +4,13 @@
       :heading="$prismic.asText(customersContent.heading)"
       :subheading="$prismic.asText(customersContent.subheading)"
     />
+    <Intro />
   </div>
 </template>
 
 <script>
+import Intro from '@/components/Customers/Intro.vue';
+
 export default {
   name: 'Kunder',
   nuxtI18n: {
@@ -15,6 +18,9 @@ export default {
       sv: '/kunder',
       en: '/customers',
     },
+  },
+  components: {
+    Intro,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
