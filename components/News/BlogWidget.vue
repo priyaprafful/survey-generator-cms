@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col">
     <time
       :datetime="post.data.date"
       class="text-sm leading-5 text-blue-light py-2 px-6"

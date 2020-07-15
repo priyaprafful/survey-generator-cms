@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Container class="flex h-almost py-12">
+    <Container class="flex flex-col justify-center h-almost py-12">
       <div class="flex">
         <Block half class="flex flex-col items-start justify-center">
           <h1 class="text-5xl leading-tight mb-6 testy">
