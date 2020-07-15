@@ -6,7 +6,7 @@
     />
     <Container class="py-24">
       <article>
-        <div v-if="posts.length !== 0" class="flex flex-wrap">
+        <div class="flex flex-wrap">
           <div
             v-for="post in posts"
             :key="post.id"
@@ -45,11 +45,6 @@
               </div>
             </nuxt-link>
           </div>
-        </div>
-
-        <!-- If no blog posts return message -->
-        <div v-else>
-          <p>No Posts published at this time.</p>
         </div>
       </article>
     </Container>
