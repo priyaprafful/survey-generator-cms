@@ -8,7 +8,7 @@
       </div>
       <h1>{{ $prismic.asText(post.data.title) }}</h1>
       <!-- <p>{{ formattedDate }}</p> -->
-      <p>{{ $prismic.asText(post.data.content) }}</p>
+      <prismic-rich-text :field="post.data.content" />
     </div>
   </div>
 </template>

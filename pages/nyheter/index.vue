@@ -6,10 +6,45 @@
     />
     <Container class="py-24">
       <article>
-        <div v-if="posts.length !== 0" class="flex">
-          <Block v-for="post in posts" :key="post.id" :post="post" half>
-            <BlogWidget :post="post" />
-          </Block>
+        <div v-if="posts.length !== 0" class="flex flex-wrap">
+          <div
+            v-for="post in posts"
+            :key="post.id"
+            :post="post"
+            class="flex flex-col w-1/2"
+          >
+            <time
+              :datetime="post.data.date"
+              class="text-sm leading-5 text-blue-light py-2 px-6"
+            >
+              {{
+                new Date(post.data.date).toLocaleDateString($i18n.locale, {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })
+              }}
+            </time>
+            <nuxt-link
+              :to="
+                localePath({
+                  name: 'nyheter-post',
+                  params: {
+                    post: post.uid,
+                  },
+                })
+              "
+            >
+              <div class="bg-white p-6 rounded shadow-post">
+                <h3 class="text-xl leading-7 font-medium font-body mb-2">
+                  {{ $prismic.asText(post.data.title) }}
+                </h3>
+                <p class="leading-6">
+                  {{ getFirstParagraph($prismic.asText(post.data.content)) }}
+                </p>
+              </div>
+            </nuxt-link>
+          </div>
         </div>
 
         <!-- If no blog posts return message -->
@@ -22,8 +57,6 @@
 </template>
 
 <script>
-import BlogWidget from '~/components/BlogWidget.vue';
-
 export default {
   name: 'Nyheter',
   nuxtI18n: {
@@ -31,9 +64,6 @@ export default {
       sv: '/nyheter',
       en: '/news',
     },
-  },
-  components: {
-    BlogWidget,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
@@ -59,6 +89,19 @@ export default {
       error({ statusCode: 404, message: 'Page not found' });
     }
   },
+  methods: {
+    getFirstParagraph(content) {
+      const textLimit = 100;
+      const firstParagraph = content;
+      const limitedText = firstParagraph.substr(0, textLimit);
+
+      if (firstParagraph.length > textLimit) {
+        return limitedText.substr(0, limitedText.lastIndexOf(' ')) + '...';
+      } else {
+        return firstParagraph;
+      }
+    },
+  },
   head() {
     return {
       title: 'Prismic Nuxt.js Blog',
@@ -66,50 +109,3 @@ export default {
   },
 };
 </script>
-
-<style lang="sass" scoped>
-.home
-  max-width: 700px
-  margin: auto
-  text-align: center
-  .blog-avatar
-    height: 140px
-    width: 140px
-    border-radius: 50%
-    background-position: center
-    background-size: cover
-    margin: 1em auto
-  .blog-description
-    font-size: 18px
-    color: #9A9A9A
-    line-height: 30px
-    margin-bottom: 3rem
-    padding-bottom: 3rem
-    border-bottom: 1px solid #DADADA
-
-.blog-main
-  max-width: 700px
-  margin: auto
-  text-align: left
-  &.single img
-    width: 100%
-    height: auto
-  &.single a
-    text-decoration: none
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 75%)
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 75%)
-    background-repeat: repeat-x
-    background-size: 2px 2px
-    background-position: 0 23px
-
-.blog-post
-  margin: 0
-  margin-bottom: 3rem
-
-@media (max-width: 767px)
-  .home
-    padding: 0 20px
-  .blog-main
-    padding: 0
-    font-size: 18px
-</style>

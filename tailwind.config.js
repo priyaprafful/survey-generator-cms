@@ -27,6 +27,9 @@ module.exports = {
           dark: '#735C00',
         },
       },
+      boxShadow: {
+        post: '0 5px 10px rgba(132, 153, 255, 0.15)',
+      },
       height: {
         almost: 'calc(-16rem + 100vh)',
         almost3: '0.60rem',
