@@ -4,6 +4,28 @@
       :heading="$prismic.asText(loginContent.heading)"
       :subheading="$prismic.asText(loginContent.subheading)"
     />
+    <Container class="py-24">
+      <div class="flex">
+        <Block third>
+          <SGLogoNoText class="w-20 h-20" />
+          <p>Sign in to your account</p>
+          <p>Or contact us to for a free trial</p>
+          <p>Email address</p>
+          <input />
+          <p>Password</p>
+          <input />
+          <input type="checkbox" />
+          <p>Remember me</p>
+          <p>Forgot your password?</p>
+          <button>Sign in</button>
+        </Block>
+        <Block twothird>
+          <img
+            src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
+          />
+        </Block>
+      </div>
+    </Container>
   </div>
 </template>
 

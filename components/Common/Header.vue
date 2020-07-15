@@ -12,7 +12,8 @@
       <ul class="flex items-center justify-between">
         <li class="flex logo">
           <nuxt-link :to="localePath('/')">
-            <SGLogo />
+            <SGLogo v-if="homepage" />
+            <SGLogoWhite v-else />
           </nuxt-link>
         </li>
         <li class="flex center-nav">
