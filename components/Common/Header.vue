@@ -1,10 +1,11 @@
 <template>
   <header
-    class="sticky top-0 border-b border-transparent z-50 transition ease-in duration-500"
+    class="sticky top-0 border-b z-50 transition duration-500"
     :class="{
       'bg-mainBg': homepage,
+      'bg-blue-darker text-white border-white': !homepage,
+      'border-mainBg': homepage && scrollPosition < 100,
       'border-blue-darker': homepage && scrollPosition >= 100,
-      'bg-blue-darker text-white border-b border-white': !homepage,
     }"
   >
     <nav class="max-w-screen-xl m-auto text-sm font-medium px-12">
@@ -72,7 +73,7 @@ export default {
 
 <style lang="scss" scoped>
 .logo {
-  width: 275px;
+  width: 200px;
 
   svg {
     width: 100%;
