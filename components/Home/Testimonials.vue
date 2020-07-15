@@ -33,7 +33,7 @@
       </div>
 
       <div class="flex justify-center">
-        <FunnelBtn text="Våra kunder" navigate-to="vara-kunder" />
+        <FunnelBtn text="Kunder" navigate-to="kunder" />
       </div>
     </Container>
   </section>

@@ -18,7 +18,7 @@
           <nuxt-link :to="localePath('verktyget')">
             {{ $t('menu.platform') }}
           </nuxt-link>
-          <nuxt-link :to="localePath('vara-kunder')">
+          <nuxt-link :to="localePath('kunder')">
             {{ $t('menu.customers') }}
           </nuxt-link>
           <nuxt-link :to="localePath('priser')">

@@ -18,8 +18,8 @@
 
       <ul class="flex justify-center mb-4">
         <li class="li-middle">
-          <nuxt-link :to="localePath('verktyget')" class="py-2 px-4">
-            {{ $t('menu.platform') }}
+          <nuxt-link :to="localePath('om-oss')" class="py-2 px-4">
+            {{ $t('menu.about') }}
           </nuxt-link>
           <nuxt-link :to="localePath('nyheter')" class="py-2 px-4">
             {{ $t('menu.news') }}

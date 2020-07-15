@@ -1,6 +1,9 @@
 <template>
   <div>
-    <p>Boka demo</p>
+    <PageHeader
+      :heading="$prismic.asText(bookingContent.heading)"
+      :subheading="$prismic.asText(bookingContent.subheading)"
+    />
   </div>
 </template>
 
@@ -13,27 +16,27 @@ export default {
       en: '/book-demo',
     },
   },
-  /* async asyncData({ $prismic, error, app }) {
+  async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
 
     try {
       // Query to get blog home content
-      const contactUs = (
-        await $prismic.api.getSingle('contact', {
+      const bookingContent = (
+        await $prismic.api.getSingle('book_demo', {
           lang: currentLocale.iso.toLowerCase(),
         })
       ).data;
 
       // Returns data to be used in template
       return {
-        contactUs,
+        bookingContent,
       };
     } catch (e) {
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' });
     }
-  }, */
+  },
 };
 </script>

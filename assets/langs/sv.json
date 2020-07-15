@@ -15,9 +15,10 @@
     }
   },
   "menu": {
+    "about": "Om oss",
     "book_demo": "Boka demo",
     "contact": "Kontakt",
-    "customers": "Våra kunder",
+    "customers": "Kunder",
     "login": "Logga in",
     "news": "Nyheter",
     "platform": "Verktyget",

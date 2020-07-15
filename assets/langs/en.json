@@ -15,6 +15,7 @@
     }
   },
   "menu": {
+    "about": "About us",
     "book_demo": "Book demo",
     "contact": "Contact",
     "customers": "Customers",

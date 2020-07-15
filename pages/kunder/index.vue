@@ -1,19 +1,19 @@
 <template>
   <div>
     <PageHeader
-      :heading="$prismic.asText(privacyContent.heading)"
-      :subheading="$prismic.asText(privacyContent.subheading)"
+      :heading="$prismic.asText(customersContent.heading)"
+      :subheading="$prismic.asText(customersContent.subheading)"
     />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Integritetspolicy',
+  name: 'Kunder',
   nuxtI18n: {
     paths: {
-      sv: '/integritetspolicy',
-      en: '/privacy-policy',
+      sv: '/kunder',
+      en: '/customers',
     },
   },
   async asyncData({ $prismic, error, app }) {
@@ -23,15 +23,15 @@ export default {
 
     try {
       // Query to get blog home content
-      const privacyContent = (
-        await $prismic.api.getSingle('privacy-policy', {
+      const customersContent = (
+        await $prismic.api.getSingle('customers', {
           lang: currentLocale.iso.toLowerCase(),
         })
       ).data;
 
       // Returns data to be used in template
       return {
-        privacyContent,
+        customersContent,
       };
     } catch (e) {
       // Returns error page

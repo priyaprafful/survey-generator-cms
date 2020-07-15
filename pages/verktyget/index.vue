@@ -1,8 +1,8 @@
 <template>
   <div>
     <PageHeader
-      heading="Verktyget"
-      subheading="Etiam condimentum dapibus dictum."
+      :heading="$prismic.asText(platformContent.heading)"
+      :subheading="$prismic.asText(platformContent.subheading)"
     />
   </div>
 </template>
@@ -16,27 +16,27 @@ export default {
       en: '/platform',
     },
   },
-  /* async asyncData({ $prismic, error, app }) {
+  async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
 
     try {
       // Query to get blog home content
-      const contactUs = (
-        await $prismic.api.getSingle('contact', {
+      const platformContent = (
+        await $prismic.api.getSingle('platform', {
           lang: currentLocale.iso.toLowerCase(),
         })
       ).data;
 
       // Returns data to be used in template
       return {
-        contactUs,
+        platformContent,
       };
     } catch (e) {
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' });
     }
-  }, */
+  },
 };
 </script>
