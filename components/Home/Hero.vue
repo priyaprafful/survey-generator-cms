@@ -66,7 +66,7 @@ export default {
 
 <style>
 .testy {
-  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  background: linear-gradient(to right, hsl(212, 63%, 23%), hsl(199, 66%, 55%));
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
