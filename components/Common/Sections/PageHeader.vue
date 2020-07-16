@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-blue-darker text-white text-center">
+  <section class="bg-blue-9 text-white text-center">
     <Container>
       <h1 class="mb-8">
         {{ heading }}

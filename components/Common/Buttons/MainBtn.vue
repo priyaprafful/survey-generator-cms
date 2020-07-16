@@ -1,5 +1,5 @@
 <template>
-  <a :href="navigateTo" class="inline-block bg-blue text-white p-6">
+  <a :href="navigateTo" class="inline-block bg-blue-7 text-white p-6">
     <slot></slot>
     {{ text }}
   </a>

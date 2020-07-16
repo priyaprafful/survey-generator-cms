@@ -25,7 +25,7 @@
 
           <prismic-rich-text :field="testimonial.employee_name" />
 
-          <p class="text-blue-test2">
+          <p class="text-blue-4">
             {{ $prismic.asText(testimonial.employee_role) }},
             {{ $prismic.asText(testimonial.company_name) }}
           </p>

@@ -35,7 +35,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     bodyAttrs: {
-      class: ['font-body', 'bg-mainBg'],
+      class: ['font-body', 'bg-bluegray-1'],
     },
   },
   resourceHints: true,

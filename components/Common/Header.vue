@@ -2,10 +2,10 @@
   <header
     class="sticky top-0 border-b z-50 transition duration-500"
     :class="{
-      'bg-mainBg': homepage,
-      'bg-blue-darker text-white border-white': !homepage,
-      'border-mainBg': homepage && scrollPosition < 100,
-      'border-blue-darker': homepage && scrollPosition >= 100,
+      'bg-bluegray-1': homepage,
+      'bg-blue-9 text-white border-white': !homepage,
+      'border-bluegray-1': homepage && scrollPosition < 100,
+      'border-blue-9': homepage && scrollPosition >= 100,
     }"
   >
     <nav class="max-w-screen-xl m-auto text-sm font-medium px-12">

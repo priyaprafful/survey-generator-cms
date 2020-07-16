@@ -11,20 +11,24 @@ module.exports = {
     },
     extend: {
       colors: {
-        mainBg: '#FAF9FD',
+        bluegray: {
+          '1': '#FAF9FD',
+          '2': '#798ea8',
+        },
         blue: {
-          test: '#798ea8',
-          test2: '#217AA2',
-          test3: '#E7FAFF',
-          lighter: '#A4E9FD',
-          light: '#43A8D8',
-          default: '#258DBB',
-          dark: '#163960',
-          darker: '#161E2E',
+          '1': '#43A8D8',
+          '2': '#3D97C3',
+          '3': '#3886AE',
+          '4': '#327498',
+          '5': '#2D6383',
+          '6': '#27526E',
+          '7': '#214159',
+          '8': '#1C2F43',
+          '9': '#161E2E',
         },
         yellow: {
-          default: '#FFDE5C',
-          dark: '#735C00',
+          '1': '#FFDE5C',
+          '2': '#735C00',
         },
       },
       boxShadow: {

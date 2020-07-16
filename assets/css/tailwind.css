@@ -1,3 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.mainGradient {
+  background-image: linear-gradient(to bottom, #faf9fd, #ffffff);
+}

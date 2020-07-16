@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-full p-5 w-16 h-16 shadow-post mb-4">
+  <div class="bg-white rounded-full p-5 w-16 h-16 shadow-post mb-8">
     <slot></slot>
   </div>
 </template>

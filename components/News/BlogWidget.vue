@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <time
       :datetime="post.data.date"
-      class="text-sm leading-5 text-blue-light py-2 px-6"
+      class="text-sm leading-5 text-blue-4 py-2 px-6"
     >
       {{
         new Date(post.data.date).toLocaleDateString($i18n.locale, {
