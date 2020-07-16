@@ -5,7 +5,7 @@
       'bg-bluegray-1': homepage,
       'bg-blue-9 text-white border-white': !homepage,
       'border-bluegray-1': homepage && scrollPosition < 100,
-      'border-blue-9': homepage && scrollPosition >= 100,
+      'border-bluegray-2': homepage && scrollPosition >= 100,
     }"
   >
     <nav class="max-w-screen-xl m-auto text-sm font-medium px-12">
@@ -95,12 +95,12 @@ li:not(.logo) {
     transition: border 0.2s;
 
     &:hover {
-      border-bottom: 2px solid #a4e9fd;
+      border-bottom: 2px solid #43a8d8;
       transition: border 0.2s;
     }
   }
   .nuxt-link-active:not(.cta) {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ffffff;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-bgMain">
+  <Wrapper>
     <Container>
       <div class="flex mb-12">
         <Block
@@ -36,7 +36,7 @@
         <FunnelBtn text="Kunder" navigate-to="kunder" />
       </div>
     </Container>
-  </section>
+  </Wrapper>
 </template>
 
 <script>

@@ -13,7 +13,9 @@ module.exports = {
       colors: {
         bluegray: {
           '1': '#FAF9FD',
-          '2': '#798ea8',
+          '2': '#CFD5E1',
+          '3': '#A4B2C4',
+          '4': '#798ea8',
         },
         blue: {
           '1': '#43A8D8',

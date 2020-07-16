@@ -1,6 +1,7 @@
 import SGLogo from './SVG/SGLogo.vue';
 import SGLogoWhite from './SVG/SGLogoWhite.vue';
 import SGLogoNoText from './SVG/SGLogoNoText.vue';
+import Wrapper from './Sections/Wrapper.vue';
 import Container from './Sections/Container.vue';
 import Block from './Sections/Block.vue';
 import PageHeader from './Sections/PageHeader.vue';
@@ -19,6 +20,7 @@ export default {
     Vue.component('SGLogo', SGLogo);
     Vue.component('SGLogoWhite', SGLogoWhite);
     Vue.component('SGLogoNoText', SGLogoNoText);
+    Vue.component('Wrapper', Wrapper);
     Vue.component('Container', Container);
     Vue.component('Block', Block);
     Vue.component('PageHeader', PageHeader);

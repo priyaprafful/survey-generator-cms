@@ -1,5 +1,5 @@
 <template>
-  <div class="mainGradient border-b border-bluegray-1">
+  <Wrapper>
     <Container>
       <div class="flex">
         <Block half>
@@ -78,7 +78,7 @@
         </Block>
       </div>
     </Container>
-  </div>
+  </Wrapper>
 </template>
 
 <script>
