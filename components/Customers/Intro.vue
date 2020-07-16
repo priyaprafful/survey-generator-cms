@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <Container class="py-24">
+    <Container>
       <p>Många områden att utforska</p>
       <p>
         Varje kund är givetvis unik och har sina egna specifika behov som vi ser

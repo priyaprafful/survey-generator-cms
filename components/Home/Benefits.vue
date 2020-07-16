@@ -1,6 +1,6 @@
 <template>
   <section class="bg-blue-darker text-white">
-    <Container class="benefits py-24">
+    <Container>
       <h2 class="mb-12">{{ $prismic.asText(data.benefits_title) }}</h2>
       <div class="flex">
         <Block v-for="(benefit, index) in data.benefits" :key="index" half>

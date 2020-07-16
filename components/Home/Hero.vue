@@ -1,6 +1,8 @@
 <template>
   <section>
-    <Container class="flex flex-col justify-center h-almost py-12">
+    <div
+      class="flex flex-col justify-center h-almost max-w-screen-xl m-auto p-12"
+    >
       <div class="flex">
         <Block half class="flex flex-col items-start justify-center">
           <h1 class="text-5xl leading-tight mb-6 testy">
@@ -26,16 +28,16 @@
           <Platform class="w-3/4" />
         </Block>
       </div>
-    </Container>
+    </div>
 
-    <Container class="py-12">
+    <div class="max-w-screen-xl m-auto p-12">
       <div class="flex justify-between">
         <SEB class="h-8" />
         <SACO class="h-8" />
         <AssaAbloy class="h-8" />
         <SwedishMatch class="h-8" />
       </div>
-    </Container>
+    </div>
   </section>
 </template>
 

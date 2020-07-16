@@ -1,5 +1,5 @@
 <template>
-  <Container class="py-24">
+  <Container>
     <div>
       <nuxt-link :to="localePath('nyheter')">
         back to list

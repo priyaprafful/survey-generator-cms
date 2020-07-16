@@ -1,6 +1,6 @@
 <template>
   <section class="bg-bgMain">
-    <Container class="py-24">
+    <Container>
       <div class="flex mb-12">
         <Block
           v-for="(testimonial, index) in data.testimonials"

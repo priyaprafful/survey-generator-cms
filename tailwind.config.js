@@ -28,7 +28,7 @@ module.exports = {
         },
       },
       boxShadow: {
-        post: '0 5px 10px rgba(132, 153, 255, 0.15)',
+        post: '0 5px 10px rgba(132, 153, 255, 0.25)',
       },
       height: {
         almost: 'calc(-16rem + 100vh)',

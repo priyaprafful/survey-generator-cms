@@ -9,6 +9,7 @@ import FunnelBtn from './Buttons/FunnelBtn.vue';
 import MainBtn from './Buttons/MainBtn.vue';
 import ChevronRight from './SVG/ChevronRight.vue';
 import Placeholder from './SVG/Placeholder.vue';
+import IconCircle from './Misc/IconCircle.vue';
 
 // This exports the plugin object.
 export default {
@@ -26,5 +27,6 @@ export default {
     Vue.component('MainBtn', MainBtn);
     Vue.component('ChevronRight', ChevronRight);
     Vue.component('Placeholder', Placeholder);
+    Vue.component('IconCircle', IconCircle);
   },
 };

@@ -6,12 +6,6 @@
     />
     <ContactInfo />
     <Team :data="contactContent" />
-    <div>
-      <p>Följ oss här</p>
-      <p>LinkedIn</p>
-      <p>Twitter</p>
-      <p>Facebook</p>
-    </div>
     <CTA />
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <section class="bg-bgMain">
-    <Container class="py-24">
+    <Container>
       <div class="flex">
         <Block half>
           <h2 class="mb-12">Redo att sätta igång?</h2>

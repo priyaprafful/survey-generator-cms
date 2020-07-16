@@ -1,10 +1,8 @@
 <template>
-  <nuxt-link
-    :to="localePath(navigateTo)"
-    class="flex items-center rounded-full border border-white py-1 px-4"
-  >
+  <a :href="navigateTo" class="inline-block bg-blue text-white p-6">
+    <slot></slot>
     {{ text }}
-  </nuxt-link>
+  </a>
 </template>
 
 <script>

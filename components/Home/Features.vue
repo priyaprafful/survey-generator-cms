@@ -1,6 +1,6 @@
 <template>
   <section class="bg-blue-darker text-white">
-    <Container class="py-24">
+    <Container>
       <h2 class="mb-12">Vad vi kan hjälpa dig med</h2>
       <div class="flex justify-between mt-8">
         <Block third>

@@ -1,10 +1,10 @@
 <template>
   <section class="bg-blue-darker text-white text-center">
-    <Container class="py-24">
+    <Container>
       <h1 class="mb-8">
         {{ heading }}
       </h1>
-      <p>
+      <p class="w-1/2 m-auto">
         {{ subheading }}
       </p>
     </Container>

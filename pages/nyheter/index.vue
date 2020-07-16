@@ -4,7 +4,7 @@
       :heading="$prismic.asText(newsContent.heading)"
       :subheading="$prismic.asText(newsContent.subheading)"
     />
-    <Container class="py-24">
+    <Container>
       <div class="flex flex-wrap">
         <article
           v-for="post in posts"
