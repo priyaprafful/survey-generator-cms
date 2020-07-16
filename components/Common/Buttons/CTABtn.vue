@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     :to="localePath('boka-demo')"
-    class="cta flex items-center bg-yellow-1 rounded-lg font-bold text-blue-7"
+    class="cta inline-flex items-center bg-yellow-1 rounded-lg font-bold text-blue-7"
     :class="{
       'py-3 px-6': small,
       'py-4 px-8': !small,

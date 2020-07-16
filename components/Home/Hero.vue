@@ -2,7 +2,7 @@
   <section class="mainGradient">
     <div class="flex justify-center h-almost max-w-screen-xl m-auto p-12">
       <div class="flex">
-        <Block half class="flex flex-col items-start justify-center">
+        <Block half class="flex flex-col justify-center">
           <h1 class="text-5xl leading-tight mb-6 testy">
             {{ $prismic.asText(data.headline) }}
           </h1>

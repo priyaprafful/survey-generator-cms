@@ -3,7 +3,7 @@
     <path
       d="M67.25,50l-3.47-4-22-25-9,7.94,18.5,21L32.75,71l9,7.94,22-25,3.47-4Z"
       transform="translate(-32.75 -21.03)"
-      style="fill: #163960;"
+      style="fill: #214159;"
     />
   </svg>
 </template>

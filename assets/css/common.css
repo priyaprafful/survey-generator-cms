@@ -41,7 +41,7 @@
 }
 
 body {
-  color: #163960;
+  color: #214159;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -66,7 +66,8 @@ h3 {
   line-height: 1;
 }
 
-img {
+img,
+svg {
   width: 100%;
   height: auto;
 }
