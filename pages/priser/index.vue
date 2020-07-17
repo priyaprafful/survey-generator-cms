@@ -6,7 +6,7 @@
     />
     <Intro />
     <SurveyTypes />
-    <Plans />
+    <Plans :data="pricingContent" />
   </div>
 </template>
 
