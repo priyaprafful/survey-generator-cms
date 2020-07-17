@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <h2>Våra prisplaner</h2>
+    <prismic-rich-text :field="data.pricing_plans_title" />
 
     <table>
       <thead>
@@ -30,21 +30,24 @@
         <tr>
           <th><prismic-rich-text :field="feature.title" /></th>
           <td v-if="feature.small_text.length < 1">
-            {{ feature.small_check }}
+            <span v-if="feature.small_check">L</span>
+            <span v-else>X</span>
           </td>
-          <td v-if="!feature.small_check">
+          <td v-if="feature.small_text.length > 0">
             <prismic-rich-text :field="feature.small_text" />
           </td>
           <td v-if="feature.medium_text.length < 1">
-            {{ feature.medium_check }}
+            <span v-if="feature.medium_check">L</span>
+            <span v-else>X</span>
           </td>
-          <td v-if="!feature.medium_check">
+          <td v-if="feature.medium_text.length > 0">
             <prismic-rich-text :field="feature.medium_text" />
           </td>
           <td v-if="feature.large_text.length < 1">
-            {{ feature.large_check }}
+            <span v-if="feature.large_check">L</span>
+            <span v-else>X</span>
           </td>
-          <td v-if="!feature.large_check">
+          <td v-if="feature.large_text.length > 0">
             <prismic-rich-text :field="feature.large_text" />
           </td>
         </tr>
