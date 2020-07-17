@@ -28,7 +28,15 @@ export default {
     )[0];
 
     try {
-      // Query to get blog home content
+      // Query to get posts content to preview
+      const customerPosts = await $prismic.api.query(
+        $prismic.predicates.at('document.type', 'customer_story'),
+        {
+          orderings: '[my.post.date desc]',
+          lang: currentLocale.iso.toLowerCase(),
+        }
+      );
+
       const customersContent = (
         await $prismic.api.getSingle('customers', {
           lang: currentLocale.iso.toLowerCase(),
@@ -37,6 +45,7 @@ export default {
 
       // Returns data to be used in template
       return {
+        posts: customerPosts.results,
         customersContent,
       };
     } catch (e) {
