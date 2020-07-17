@@ -58,7 +58,6 @@
 
 <script>
 export default {
-  name: 'Plans',
   props: {
     data: {
       type: Object,

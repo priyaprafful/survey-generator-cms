@@ -63,7 +63,13 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~/plugins/common.js'],
+  plugins: [
+    '~/plugins/common.js',
+    {
+      src: '~plugins/vue-slider.js',
+      ssr: false,
+    },
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
