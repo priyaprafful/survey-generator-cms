@@ -1,48 +1,38 @@
 <template>
   <div>
-    <PageHeader
-      :heading="$prismic.asText(customersContent.heading)"
-      :subheading="$prismic.asText(customersContent.subheading)"
-    />
-    <CustomersIntro />
+    <PageHeader heading="Verktyget" subheading="Tillval" />
   </div>
 </template>
 
 <script>
-import CustomersIntro from '@/components/Customers/CustomersIntro.vue';
-
 export default {
-  name: 'Kunder',
   nuxtI18n: {
     paths: {
-      sv: '/kunder',
-      en: '/customers',
+      sv: '/verktyget/tillval',
+      en: '/platform/options',
     },
   },
-  components: {
-    CustomersIntro,
-  },
-  async asyncData({ $prismic, error, app }) {
+  /* async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
 
     try {
       // Query to get blog home content
-      const customersContent = (
-        await $prismic.api.getSingle('customers', {
+      const platformContent = (
+        await $prismic.api.getSingle('platform', {
           lang: currentLocale.iso.toLowerCase(),
         })
       ).data;
 
       // Returns data to be used in template
       return {
-        customersContent,
+        platformContent,
       };
     } catch (e) {
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' });
     }
-  },
+  }, */
 };
 </script>

@@ -4,16 +4,18 @@
       :heading="$prismic.asText(pricingContent.heading)"
       :subheading="$prismic.asText(pricingContent.subheading)"
     />
-    <Intro />
+    <PricingIntro />
     <SurveyTypes />
-    <Plans :data="pricingContent" />
+    <PlansCards />
+    <PlansTable :data="pricingContent" />
   </div>
 </template>
 
 <script>
-import Intro from '@/components/Pricing/Intro.vue';
+import PricingIntro from '@/components/Pricing/PricingIntro.vue';
 import SurveyTypes from '@/components/Pricing/SurveyTypes.vue';
-import Plans from '@/components/Pricing/Plans.vue';
+import PlansCards from '@/components/Pricing/PlansCards.vue';
+import PlansTable from '@/components/Pricing/PlansTable.vue';
 
 export default {
   name: 'Priser',
@@ -24,9 +26,10 @@ export default {
     },
   },
   components: {
-    Intro,
+    PricingIntro,
     SurveyTypes,
-    Plans,
+    PlansCards,
+    PlansTable,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
