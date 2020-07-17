@@ -8,6 +8,7 @@
     <SurveyTypes />
     <PlansCards :data="pricingContent" />
     <PlansTable :data="pricingContent" />
+    <FAQ :data="pricingContent" />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import PricingIntro from '@/components/Pricing/PricingIntro.vue';
 import SurveyTypes from '@/components/Pricing/SurveyTypes.vue';
 import PlansCards from '@/components/Pricing/PlansCards.vue';
 import PlansTable from '@/components/Pricing/PlansTable.vue';
+import FAQ from '@/components/Pricing/FAQ.vue';
 
 export default {
   name: 'Priser',
@@ -30,6 +32,7 @@ export default {
     SurveyTypes,
     PlansCards,
     PlansTable,
+    FAQ,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(

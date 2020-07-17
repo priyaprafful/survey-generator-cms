@@ -1,7 +1,5 @@
 <template>
   <Container>
-    <prismic-rich-text :field="data.pricing_plans_title" />
-
     <table>
       <thead>
         <tr>
