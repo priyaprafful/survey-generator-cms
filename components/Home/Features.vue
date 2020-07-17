@@ -46,13 +46,13 @@
           </p>
         </Block>
         <Block half>
-          <Placeholder class="w-20" />
+          <div class="bg-blue-2 w-full h-full" />
         </Block>
       </div>
 
       <div class="flex">
         <Block half>
-          <Placeholder class="w-20" />
+          <div class="bg-blue-2 w-full h-full" />
         </Block>
         <Block half>
           <p>

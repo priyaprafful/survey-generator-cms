@@ -4,10 +4,17 @@
       :heading="$prismic.asText(pricingContent.heading)"
       :subheading="$prismic.asText(pricingContent.subheading)"
     />
+    <Intro />
+    <SurveyTypes />
+    <Plans />
   </div>
 </template>
 
 <script>
+import Intro from '@/components/Pricing/Intro.vue';
+import SurveyTypes from '@/components/Pricing/SurveyTypes.vue';
+import Plans from '@/components/Pricing/Plans.vue';
+
 export default {
   name: 'Priser',
   nuxtI18n: {
@@ -15,6 +22,11 @@ export default {
       sv: '/priser',
       en: '/pricing',
     },
+  },
+  components: {
+    Intro,
+    SurveyTypes,
+    Plans,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(

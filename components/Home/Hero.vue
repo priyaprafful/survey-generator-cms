@@ -17,7 +17,7 @@
               class="flex items-center py-2 px-4"
             >
               {{ $t('common.contact_us') }}
-              <ChevronRight class="ml-3 h-almost3" />
+              <ChevronRight class="ml-3 h-3 w-3" />
             </nuxt-link>
           </div>
         </Block>

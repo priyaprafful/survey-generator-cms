@@ -26,12 +26,12 @@
           <p class="font-bold mb-6">Support</p>
 
           <div class="flex mb-8">
-            <div class="flex flex-col justify-between mr-8">
-              <p class="text-lg font-bold">08-22 22 65</p>
+            <div class="flex flex-col justify-between">
+              <p class="text-lg font-bold mb-2">08-22 22 65</p>
               <p class="text-sm text-blue-4">Mån - Fre 10:00 - 17:00</p>
             </div>
 
-            <MainBtn text="Ring oss" navigate-to="tel:08-222265">
+            <MainBtn text="Ring oss" navigate-to="tel:08-222265" class="hidden">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path
                   d="M13,8a3,3,0,0,1,3,3,1,1,0,0,0,2,0,5,5,0,0,0-5-5,1,1,0,0,0,0,2Z"
@@ -131,7 +131,7 @@
             bilen.
           </p>
           <div class="flex justify-between">
-            <p class="text-sm text-blue-4">
+            <p class="text-sm">
               Alstra AB<br />
               Norra Dryckesgränd 3<br />
               111 30 Stockholm

@@ -29,8 +29,9 @@ module.exports = {
           '9': '#161E2E',
         },
         yellow: {
-          '1': '#FFDE5C',
-          '2': '#735C00',
+          '1': '#FFE47B',
+          '2': '#FFDE5C',
+          '3': '#735C00',
         },
       },
       boxShadow: {
@@ -38,7 +39,6 @@ module.exports = {
       },
       height: {
         almost: 'calc(-16rem + 100vh)',
-        almost3: '0.60rem',
       },
       inset: {
         '3': '3rem',
