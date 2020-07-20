@@ -42,7 +42,8 @@
       <div class="flex justify-center">
         <p>
           © 2000 - {{ new Date().getFullYear() }} |
-          {{ $prismic.asText($store.state.contact_information.address) }}
+          {{ $prismic.asText($store.state.miscellaneous.company_name) }},
+          {{ $prismic.asText($store.state.miscellaneous.address) }}
         </p>
       </div>
     </div>

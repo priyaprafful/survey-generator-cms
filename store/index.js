@@ -1,21 +1,20 @@
 export const state = () => ({
-  contact_information: {},
+  miscellaneous: {},
 });
 
 export const mutations = {
   SET_MENU(state, payload) {
-    state.contact_information = payload;
+    state.miscellaneous = payload;
   },
   SET_ERROR(state, payload) {
-    state.contact_information = payload;
+    state.miscellaneous = payload;
   },
 };
 
 export const actions = {
   async fetchContactInformation({ commit }, $prismic) {
     try {
-      const content = (await $prismic.api.getSingle('contact_information'))
-        .data;
+      const content = (await $prismic.api.getSingle('miscellaneous')).data;
 
       commit('SET_MENU', content);
     } catch (e) {
