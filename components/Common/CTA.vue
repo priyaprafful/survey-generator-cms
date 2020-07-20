@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-bgMain">
+  <section class="bg-bgMain cta-bg">
     <Container>
       <div class="flex">
         <Block half>
@@ -56,3 +56,11 @@
 <script>
 export default {};
 </script>
+
+<style>
+.cta-bg {
+  background-image: url('./SVG/cta_bg.svg');
+  background-size: cover;
+  /* background-position: center center; */
+}
+</style>

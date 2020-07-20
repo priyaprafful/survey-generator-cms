@@ -23,9 +23,7 @@
             </svg>
           </IconCircle>
 
-          <p class="font-bold mb-6">Support</p>
-
-          <div class="flex mb-8">
+          <div class="flex mb-6">
             <div class="flex flex-col justify-between">
               <p class="text-lg font-bold mb-2">08-22 22 65</p>
               <p class="text-sm text-blue-4">Mån - Fre 10:00 - 17:00</p>
@@ -124,9 +122,10 @@
               />
             </svg>
           </IconCircle>
-          <p class="font-bold mb-6">Kontor</p>
+
+          <p class="mb-4">Alstra AB är vi som utvecklar SurveyGenerator.</p>
           <p class="mb-8">
-            Alstras kontor ligger stategiskt placerat i Gamla Stan och är enkelt
+            Vårt kontor ligger stategiskt placerat i Gamla Stan och är enkelt
             att ta sig till oavsett om du går, cyklar, åker med SL eller tar
             bilen.
           </p>
