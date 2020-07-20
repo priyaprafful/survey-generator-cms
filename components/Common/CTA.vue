@@ -3,8 +3,10 @@
     <Container>
       <div class="flex">
         <Block half>
-          <h2 class="mb-12">Redo att sätta igång?</h2>
-          <p>
+          <h2 class="mb-6">
+            Redo att sätta igång?
+          </h2>
+          <p class="mb-6 leading-relaxed">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -24,9 +26,10 @@
         </Block>
 
         <Block half class="flex">
-          <div>
-            <h3>Prisplan eller skräddarsytt</h3>
-            <p>
+          <div class="mr-4">
+            <h3 class="mb-6 leading-normal">Prisplan eller skräddarsytt</h3>
+
+            <p class="mb-4 leading-relaxed">
               Du kan lätt administrera din undersökning från ax till limpa, och
               väljer hur avancerade rapporter du vill ha. Vi tillhandahåller tre
               olika modeller av verktyget, och passar de inte dina behov kan vi
@@ -36,9 +39,10 @@
             <FunnelBtn text="Priser" navigate-to="priser" />
           </div>
 
-          <div>
-            <h3>Enkelt och effektivt</h3>
-            <p>
+          <div class="ml-4">
+            <h3 class="mb-6 leading-normal">Enkelt och effektivt</h3>
+
+            <p class="mb-4 leading-relaxed">
               Vårt verktyg är erkänt enkelt och effektivt att arbeta med. Det är
               webbaserat och hjälper dig att snabbt och kostnadseffektivt
               genomföra olika former av undersökningar bland medarbetare,

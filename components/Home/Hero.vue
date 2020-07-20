@@ -3,7 +3,7 @@
     <div class="flex justify-center h-almost max-w-screen-xl m-auto p-12">
       <div class="flex">
         <Block half class="flex flex-col justify-center">
-          <h1 class="text-5xl leading-tight mb-6 testy">
+          <h1 class="text-5xl leading-tight mb-6 gradientText">
             {{ $prismic.asText(data.headline) }}
           </h1>
           <p class="text-lg leading-relaxed mb-8">
@@ -65,7 +65,7 @@ export default {
 </script>
 
 <style>
-.testy {
+.gradientText {
   background: linear-gradient(to right, hsl(212, 63%, 23%), hsl(199, 66%, 55%));
   background-clip: text;
   -webkit-text-fill-color: transparent;

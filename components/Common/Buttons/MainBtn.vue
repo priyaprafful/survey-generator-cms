@@ -18,7 +18,7 @@ export default {
     },
     navigateTo: {
       type: String,
-      default: null,
+      default: '/',
     },
   },
 };

@@ -42,7 +42,7 @@ module.exports = {
         yellow: {
           '1': '#FFE47B',
           '2': '#FFDE5C',
-          '3': '#735C00',
+          '3': '#6C5600',
         },
         tangerine: {
           '1': '#ffad5c',
