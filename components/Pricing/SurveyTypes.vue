@@ -31,13 +31,13 @@
             <h3 class="text-center">Enstaka enkät</h3>
           </div>
           <div class="p-10 rounded-br bg-tangerine-2">
-            <ul>
+            <!-- <ul>
               <li>Inga försbindelser eller avtal</li>
               <li>
                 Du betalar bara för det du använder, som till exempel antal
                 utskick och svar
               </li>
-            </ul>
+            </ul> -->
             <p>
               Med en enstaka enkät binder du dig inte till något långvarigt
               avtal utan betalar helt enkelt per enkät.
@@ -49,7 +49,7 @@
               upp en länk som respondenten går in på.
             </p>
             <br />
-            <p>
+            <p class="text-sm">
               Om du väljer enstaka enkäter får du alltid den mest avancerade
               versionen, SurveyGenerator Large.
             </p>
