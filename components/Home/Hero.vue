@@ -2,28 +2,74 @@
   <section class="mainGradient">
     <div class="flex justify-center h-almost max-w-screen-xl m-auto p-12">
       <div class="flex">
-        <Block half class="flex flex-col justify-center">
-          <h1 class="text-5xl leading-tight mb-6 gradientText">
-            {{ $prismic.asText(data.headline) }}
-          </h1>
-          <p class="text-lg leading-relaxed mb-8">
-            {{ $prismic.asText(data.description) }}
-          </p>
+        <Block half class="flex flex-col justify-center relative">
+          <div class="z-10">
+            <h1 class="text-5xl leading-tight mb-6 gradientText">
+              {{ $prismic.asText(data.headline) }}
+            </h1>
+            <p class="text-lg leading-relaxed mb-8">
+              {{ $prismic.asText(data.description) }}
+            </p>
 
-          <div class="flex items-center">
-            <CTABtn :text="$t('menu.book_demo')" />
-            <nuxt-link
-              :to="localePath('kontakt')"
-              class="flex items-center py-2 px-4"
-            >
-              {{ $t('common.contact_us') }}
-              <ChevronRight class="ml-3 h-3 w-3" />
-            </nuxt-link>
+            <div class="flex items-center">
+              <CTABtn :text="$t('menu.book_demo')" />
+              <nuxt-link
+                :to="localePath('kontakt')"
+                class="flex items-center py-2 px-4"
+              >
+                {{ $t('common.contact_us') }}
+                <ChevronRight class="ml-3 h-3 w-3" />
+              </nuxt-link>
+            </div>
           </div>
+
+          <svg
+            fill="none"
+            viewBox="0 0 404 384"
+            width="404"
+            height="384"
+            class="absolute bottom-0 right-half transform -translate-x-32 text-gray-200 fill-current"
+          >
+            <defs>
+              <pattern
+                id="shape1"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect x="0" y="0" width="4" height="4" fill="inherit"></rect>
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#shape1)"></rect>
+          </svg>
         </Block>
 
-        <Block half class="flex flex-col items-end justify-center">
-          <Platform class="w-3/4" />
+        <Block half class="flex flex-col items-end justify-center relative">
+          <Platform class="w-3/4 z-10" />
+
+          <svg
+            fill="none"
+            viewBox="0 0 404 384"
+            width="404"
+            height="384"
+            class="absolute top-0 left-half transform translate-x-32 text-gray-200 fill-current"
+          >
+            <defs>
+              <pattern
+                id="shape2"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect x="0" y="0" width="4" height="4" fill="inherit"></rect>
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#shape2)"></rect>
+          </svg>
         </Block>
       </div>
     </div>

@@ -55,9 +55,12 @@ module.exports = {
       },
       height: {
         almost: 'calc(-16rem + 100vh)',
+        '1/2-screen': '50vh',
       },
       inset: {
         '3': '3rem',
+        half: '50%',
+        full: '100%',
       },
       zIndex: {
         n1: '-1',
