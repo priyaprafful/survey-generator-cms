@@ -4,7 +4,7 @@
       <div class="flex">
         <Block half class="leading-loose">
           <IconCircle />
-          <h2 class="mb-6">Betala för det du behöver</h2>
+          <h2 class="mb-6">Lorem ipsum dolor sit</h2>
           <p>
             Du kan antingen köpa en enstaka enkät, eller ett abonnemang med
             obegränsat antal enkäter. Vilken form som passar dig bäst beror på

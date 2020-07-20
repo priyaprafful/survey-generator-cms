@@ -67,6 +67,9 @@ module.exports = {
   variants: {
     padding: ['responsive', 'first', 'last'],
     margin: ['responsive', 'first', 'last', 'odd', 'even'],
+    gridColumnStart: ['last'],
+    gridColumnEnd: ['last'],
+    flexDirection: ['last'],
   },
   plugins: [],
   purge: {

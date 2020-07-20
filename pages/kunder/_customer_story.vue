@@ -1,30 +1,30 @@
 <template>
   <Container>
     <div>
-      <nuxt-link :to="localePath('nyheter')">
+      <nuxt-link :to="localePath('kunder')">
         back to list
       </nuxt-link>
     </div>
 
-    <prismic-rich-text :field="post.data.title" />
-    <prismic-rich-text :field="post.data.content" />
+    <prismic-rich-text :field="post.data.company_name" />
+    <prismic-rich-text :field="post.data.quote" />
   </Container>
 </template>
 
 <script>
 export default {
-  name: 'Post',
+  name: 'CustomerStory',
   nuxtI18n: {
     paths: {
-      sv: '/nyheter/:post',
-      en: '/news/:post',
+      sv: '/kunder/:post',
+      en: '/customers/:post',
     },
   },
   async asyncData({ $prismic, params, error, app }) {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
-    const doc = await $prismic.api.getByUID('post', params.post, {
+    const doc = await $prismic.api.getByUID('customer_story', params.post, {
       lang: currentLocale.iso.toLowerCase(),
     });
     if (doc) {
