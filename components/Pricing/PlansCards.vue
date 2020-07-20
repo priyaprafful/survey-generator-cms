@@ -1,13 +1,19 @@
 <template>
-  <Container>
-    <div class="flex justify-between">
-      <div v-for="(card, index) in data.cards" :key="index">
-        <prismic-rich-text :field="card.plan" />
-        <prismic-rich-text :field="card.description" />
-        <prismic-rich-text :field="card.list" />
+  <Wrapper>
+    <Container>
+      <div class="flex justify-between">
+        <div
+          v-for="(card, index) in data.cards"
+          :key="index"
+          class="bg-green-400 w-1/4 p-6 mr-6 last:mr-0 rounded"
+        >
+          <h3 class="text-center mb-6">{{ $prismic.asText(card.plan) }}</h3>
+          <prismic-rich-text :field="card.description" class="text-sm mb-6" />
+          <prismic-rich-text :field="card.list" />
+        </div>
       </div>
-    </div>
-  </Container>
+    </Container>
+  </Wrapper>
 </template>
 
 <script>

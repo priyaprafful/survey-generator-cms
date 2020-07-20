@@ -11,12 +11,6 @@ module.exports = {
     },
     extend: {
       colors: {
-        bluegray: {
-          '1': '#FAF9FD',
-          '2': '#CFD5E1',
-          '3': '#A4B2C4',
-          '4': '#798ea8',
-        },
         blue: {
           '1': '#43A8D8',
           '2': '#3D97C3',
@@ -28,10 +22,32 @@ module.exports = {
           '8': '#1C2F43',
           '9': '#161E2E',
         },
+        lightblue: {
+          '1': '#EEF7FB',
+          '2': '#DDEFF8',
+          '3': '#CCE7F4',
+          '4': '#BBDFF1',
+          '5': '#AAD7ED',
+          '6': '#98D0EA',
+          '7': '#87C8E6',
+          '8': '#76C0E3',
+          '9': '#65B8DF',
+        },
+        bluegray: {
+          '1': '#FAF9FD',
+          '2': '#CFD5E1',
+          '3': '#A4B2C4',
+          '4': '#798ea8',
+        },
         yellow: {
           '1': '#FFE47B',
           '2': '#FFDE5C',
           '3': '#735C00',
+        },
+        tangerine: {
+          '1': '#ffad5c',
+          '2': '#FF972E',
+          '3': '#FF8100',
         },
       },
       boxShadow: {
