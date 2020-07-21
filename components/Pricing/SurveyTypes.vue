@@ -48,11 +48,6 @@
               svar du vill ha, beroende på om du skickar ut enkäten eller lägger
               upp en länk som respondenten går in på.
             </p>
-            <br />
-            <p class="text-sm">
-              Om du väljer enstaka enkäter får du alltid den mest avancerade
-              versionen, SurveyGenerator Large.
-            </p>
           </div>
         </div>
       </div>

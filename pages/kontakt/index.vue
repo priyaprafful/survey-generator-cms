@@ -12,7 +12,7 @@
 
 <script>
 import ContactInfo from '@/components/Contact/ContactInfo.vue';
-import Team from '@/components/Contact/Team/Team.vue';
+import Team from '@/components/Contact/Team.vue';
 import CTA from '@/components/Common/CTA.vue';
 
 export default {

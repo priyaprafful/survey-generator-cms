@@ -66,6 +66,9 @@ module.exports = {
       zIndex: {
         n1: '-1',
       },
+      gridTemplateColumns: {
+        team: 'repeat(4, minmax(0, 12rem))',
+      },
     },
   },
   variants: {
