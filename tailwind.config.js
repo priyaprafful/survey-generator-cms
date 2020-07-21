@@ -57,6 +57,7 @@ module.exports = {
       },
       boxShadow: {
         post: '0 5px 10px rgba(132, 153, 255, 0.25)',
+        card: '0 5px 10px rgba(104, 125, 177, 0.15)',
       },
       height: {
         almost: 'calc(-16rem + 100vh)',
@@ -82,7 +83,7 @@ module.exports = {
     gridColumnStart: ['last'],
     gridColumnEnd: ['last'],
     flexDirection: ['last'],
-    backgroundColor: ['odd', 'even'],
+    backgroundColor: ['hover', 'odd', 'even'],
   },
   plugins: [],
   purge: {

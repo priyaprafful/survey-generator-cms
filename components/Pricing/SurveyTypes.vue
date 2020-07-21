@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-blue-9">
+  <Wrapper>
     <Container>
       <div class="inline-flex items-center leading-relaxed">
-        <div class="w-1/2 rounded-l text-blue-9">
+        <div class="w-1/2 rounded text-blue-9 shadow-card">
           <div class="p-10 rounded-t bg-bluegray-2">
             <h3 class="text-center">Abonnemang</h3>
           </div>
@@ -26,7 +26,7 @@
           </div>
         </div>
 
-        <div class="w-1/2">
+        <div class="w-1/2 shadow-card">
           <div class="p-10 rounded-tr bg-tangerine-1">
             <h3 class="text-center">Enstaka enkät</h3>
           </div>
@@ -52,7 +52,7 @@
         </div>
       </div>
     </Container>
-  </div>
+  </Wrapper>
 </template>
 
 <script>

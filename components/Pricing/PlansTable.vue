@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white border-b border-bluegray-2">
     <Container>
-      <h2 class="text-center mb-16">Jämför våra prisplaner</h2>
+      <prismic-rich-text :field="data.title" class="text-center mb-16" />
 
       <table class="table w-full text-sm">
         <thead class="bg-lightblue-4">
@@ -34,7 +34,7 @@
             </td>
           </tr>
 
-          <tr class="transition duration-150 ease-in-out">
+          <tr class="hover:bg-white transition duration-150 ease-in-out">
             <th class="p-4 text-left font-normal">
               <prismic-rich-text :field="feature.title" />
             </th>

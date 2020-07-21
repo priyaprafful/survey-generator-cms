@@ -1,28 +1,29 @@
 <template>
   <Wrapper>
     <Container>
-      <div class="grid grid-cols-3 gap-6">
+      <div class="grid grid-cols-3 gap-6 asd">
         <div
           v-for="(card, index) in data.cards"
           :key="index"
-          class="flex bg-green-400 p-6 rounded"
+          class="flex p-6 shadow-card rounded-md overflow-hidden"
           :class="{
-            '-mt-6 border-2 border-blue-9': index === 1,
-            'col-start-1 col-end-4 flex-row items-center': index === 3,
-            'flex-col': index !== 3,
+            '-mt-6': index === 1,
+            'justify-evenly bg-blue-9 text-white col-start-1 col-end-4 flex-row items-center asd':
+              index === 3,
+            'flex-col bg-white border-2 border-lightblue-5': index !== 3,
           }"
         >
-          <h3
-            class="text-center"
-            :class="{ 'mb-6': index !== 3, 'mr-6': index === 3 }"
-          >
+          <h3 class="text-center" :class="{ 'mb-6': index !== 3 }">
             {{ $prismic.asText(card.plan) }}
           </h3>
 
           <prismic-rich-text
             :field="card.description"
-            class="bg-green-500 p-6 -ml-6 -mr-6 text-sm leading-relaxed"
-            :class="{ 'mb-6': index !== 3 }"
+            class="text-sm leading-relaxed"
+            :class="{
+              'mb-6 p-6 -ml-6 -mr-6 bg-lightblue-2 ': index !== 3,
+              'px-6 w-1/2 ': index === 3,
+            }"
           />
 
           <ul v-if="index !== 3" class="mt-auto text-sm leading-loose">
@@ -36,12 +37,7 @@
             </li>
           </ul>
 
-          <MainBtn
-            v-if="index === 3"
-            text="Kontakta oss"
-            to="kontakt"
-            class="ml-6"
-          />
+          <MainBtn v-if="index === 3" text="Kontakta oss" to="kontakt" white />
         </div>
       </div>
     </Container>
@@ -58,3 +54,11 @@ export default {
   },
 };
 </script>
+
+<style>
+.asd {
+  background-image: url('./SVG/Shapes_BG.svg');
+  background-size: cover;
+  /* background-position: center center; */
+}
+</style>

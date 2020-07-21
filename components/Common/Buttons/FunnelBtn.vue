@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     :to="localePath(to)"
-    class="inline-flex items-center font-medium text-blue-6"
+    class="inline-flex items-center whitespace-no-wrap font-medium text-blue-6"
   >
     {{ text }}
     <ChevronRight class="ml-3 h-3 w-3 text-blue-6" />
