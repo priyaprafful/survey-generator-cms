@@ -35,9 +35,14 @@ module.exports = {
         },
         bluegray: {
           '1': '#FAF9FD',
-          '2': '#CFD5E1',
-          '3': '#A4B2C4',
-          '4': '#798ea8',
+          '2': '#EAECF2',
+          '3': '#DADEE8',
+          '4': '#CAD1DD',
+          '5': '#BAC4D3',
+          '6': '#A9B6C8',
+          '7': '#99A9BD',
+          '8': '#899BB3',
+          '9': '#798EA8',
         },
         yellow: {
           '1': '#FFE47B',
@@ -77,6 +82,7 @@ module.exports = {
     gridColumnStart: ['last'],
     gridColumnEnd: ['last'],
     flexDirection: ['last'],
+    backgroundColor: ['odd', 'even'],
   },
   plugins: [],
   purge: {

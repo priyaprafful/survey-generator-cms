@@ -12,9 +12,7 @@ import ChevronRight from './SVG/ChevronRight.vue';
 import Placeholder from './SVG/Placeholder.vue';
 import IconCircle from './Misc/IconCircle.vue';
 import CheckMark from './SVG/CheckMark.vue';
-import CheckMarkRound from './SVG/CheckMarkRound.vue';
 import CloseIcon from './SVG/CloseIcon.vue';
-import CloseCircleIcon from './SVG/CloseCircleIcon.vue';
 
 // This exports the plugin object.
 export default {
@@ -35,8 +33,6 @@ export default {
     Vue.component('Placeholder', Placeholder);
     Vue.component('IconCircle', IconCircle);
     Vue.component('CheckMark', CheckMark);
-    Vue.component('CheckMarkRound', CheckMarkRound);
     Vue.component('CloseIcon', CloseIcon);
-    Vue.component('CloseCircleIcon', CloseCircleIcon);
   },
 };

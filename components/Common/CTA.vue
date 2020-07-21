@@ -36,7 +36,7 @@
               skräddarsy både enkäter, mjukvara och tjänster.
             </p>
 
-            <FunnelBtn text="Priser" navigate-to="priser" />
+            <FunnelBtn text="Priser" to="priser" />
           </div>
 
           <div class="ml-4">
@@ -49,7 +49,7 @@
               paneler, kunder eller ”svenska folket”.
             </p>
 
-            <FunnelBtn text="Verktyget" navigate-to="verktyget" />
+            <FunnelBtn text="Verktyget" to="verktyget" />
           </div>
         </Block>
       </div>

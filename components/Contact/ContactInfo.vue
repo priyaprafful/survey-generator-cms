@@ -29,7 +29,7 @@
               <p class="text-sm text-blue-4">Mån - Fre 10:00 - 17:00</p>
             </div>
 
-            <MainBtn text="Ring oss" navigate-to="tel:08-222265" class="hidden">
+            <MainBtn text="Ring oss" to="tel:08-222265" class="hidden">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path
                   d="M13,8a3,3,0,0,1,3,3,1,1,0,0,0,2,0,5,5,0,0,0-5-5,1,1,0,0,0,0,2Z"

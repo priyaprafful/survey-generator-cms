@@ -1,8 +1,8 @@
 <template>
   <component
     :is="global ? 'a' : 'nuxt-link'"
-    :to="global ? null : localePath(navigateTo)"
-    :href="global ? navigateTo : localePath(navigateTo)"
+    :to="global ? null : localePath(to)"
+    :href="global ? to : localePath(to)"
     class="inline-flex items-center justify-center px-5 py-3 shadow border border-transparent leading-6 font-medium rounded-md text-white bg-blue-4 hover:bg-blue-3 focus:outline-none focus:border-blue-7 transition duration-150 ease-in-out"
   >
     {{ text }}
@@ -18,7 +18,7 @@ export default {
       type: String,
       default: null,
     },
-    navigateTo: {
+    to: {
       type: String,
       default: '/',
     },

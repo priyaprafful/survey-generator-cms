@@ -1,6 +1,6 @@
 <template>
   <nuxt-link
-    :to="localePath(navigateTo)"
+    :to="localePath(to)"
     class="inline-flex items-center font-medium text-blue-6"
   >
     {{ text }}
@@ -16,7 +16,7 @@ export default {
       type: String,
       default: null,
     },
-    navigateTo: {
+    to: {
       type: String,
       default: '/',
     },

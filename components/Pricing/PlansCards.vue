@@ -18,15 +18,18 @@
           >
             {{ $prismic.asText(card.plan) }}
           </h3>
+
           <prismic-rich-text
             :field="card.description"
-            :class="{ 'mb-10': index !== 3 }"
+            class="bg-green-500 p-6 -ml-6 -mr-6 text-sm leading-relaxed"
+            :class="{ 'mb-6': index !== 3 }"
           />
-          <ul v-if="index !== 3" class="mt-auto leading-loose">
+
+          <ul v-if="index !== 3" class="mt-auto text-sm leading-loose">
             <li
               v-for="(item, idx) in card.list"
               :key="idx"
-              class="flex items-center text-sm"
+              class="flex items-center"
             >
               <CheckMark class="w-3 h-3 mr-3" />
               {{ item.text }}
@@ -36,7 +39,7 @@
           <MainBtn
             v-if="index === 3"
             text="Kontakta oss"
-            navigate-to="kontakt"
+            to="kontakt"
             class="ml-6"
           />
         </div>

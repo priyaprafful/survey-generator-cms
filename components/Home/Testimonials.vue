@@ -65,7 +65,7 @@
       </div>
 
       <div class="flex justify-center mt-16">
-        <MainBtn text="Våra kunder" navigate-to="kunder" />
+        <MainBtn text="Våra kunder" to="kunder" />
       </div>
     </Container>
   </Wrapper>
