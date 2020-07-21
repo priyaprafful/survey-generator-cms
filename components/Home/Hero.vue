@@ -1,5 +1,5 @@
 <template>
-  <section class="mainGradient">
+  <section class="mainGradient overflow-hidden">
     <div class="flex justify-center h-almost max-w-screen-xl m-auto p-12">
       <div class="flex">
         <Block half class="flex flex-col justify-center relative">
@@ -28,7 +28,7 @@
             viewBox="0 0 404 384"
             width="404"
             height="384"
-            class="absolute bottom-0 right-half transform -translate-x-32 text-gray-200 fill-current"
+            class="absolute bottom-0 right-1/2 transform -translate-x-32 text-gray-200 fill-current"
           >
             <defs>
               <pattern
@@ -54,7 +54,7 @@
             viewBox="0 0 404 384"
             width="404"
             height="384"
-            class="absolute top-0 left-half transform translate-x-32 text-gray-200 fill-current"
+            class="absolute top-0 left-1/2 transform translate-x-32 text-gray-200 fill-current"
           >
             <defs>
               <pattern

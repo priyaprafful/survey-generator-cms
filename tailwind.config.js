@@ -59,7 +59,8 @@ module.exports = {
       },
       inset: {
         '3': '3rem',
-        half: '50%',
+        '1/2': '50%',
+        '3/4': '75%',
         full: '100%',
       },
       zIndex: {

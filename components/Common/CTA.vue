@@ -65,6 +65,6 @@ export default {};
 .cta-bg {
   background-image: url('./SVG/cta_bg.svg');
   background-size: cover;
-  /* background-position: center center; */
+  background-position: center center;
 }
 </style>

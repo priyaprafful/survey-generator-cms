@@ -4,7 +4,7 @@
       <h2 class="mb-12">Vad vi kan hjälpa dig med</h2>
       <div class="flex justify-between mt-8">
         <Block third>
-          <Placeholder class="w-12" />
+          <Placeholder class="w-12 h-12" />
           <p>
             <b>Skräddarsytt</b>
             Tycker du att de vanliga versionerna har nästan allt – men ändå inte
@@ -14,7 +14,7 @@
           </p>
         </Block>
         <Block third>
-          <Placeholder class="w-12" />
+          <Placeholder class="w-12 h-12" />
           <p>
             <b>Konsulthjälp</b>
             Har du inte tid eller möjlighet att genomföra hela eller delar av
@@ -24,7 +24,7 @@
           </p>
         </Block>
         <Block third>
-          <Placeholder class="w-12" />
+          <Placeholder class="w-12 h-12" />
           <p>
             <b>Mjukvaruutveckling</b>
             Ibland krävs det lite mer. Du kanske behöver en unik lösning för
