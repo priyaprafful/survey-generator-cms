@@ -3,7 +3,7 @@
     <path
       d="M19,13H5a1,1,0,0,1,0-2H19a1,1,0,0,1,0,2Z"
       transform="translate(-4 -11)"
-      fill="#F9ACAA"
+      fill="#A9B6C8"
     />
   </svg>
 </template>

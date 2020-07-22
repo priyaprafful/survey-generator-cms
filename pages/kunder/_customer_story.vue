@@ -35,16 +35,22 @@
 
           <prismic-rich-text :field="post.data.intro" class="mb-10" />
 
-          <div class="text-sm mb-10 relative">
-            <Quote
-              class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 w-6"
-            />
-            <prismic-rich-text :field="post.data.quote" class="mb-2" />
-            <prismic-rich-text
-              :field="post.data.quote_name_and_role"
-              class="font-semibold"
-            />
-          </div>
+          <blockquote
+            class="text-sm mb-10 border-l-4 border-bluegray-2 relative"
+          >
+            <div class="flex mx-6">
+              <Quote
+                class="absolute top-0 left-0 ml-6 transform -translate-x-3 -translate-y-2 w-6"
+              />
+              <div class="z-10">
+                <prismic-rich-text :field="post.data.quote" class="mb-2" />
+                <prismic-rich-text
+                  :field="post.data.quote_name_and_role"
+                  class="font-semibold"
+                />
+              </div>
+            </div>
+          </blockquote>
 
           <div
             v-for="(content, index) in post.data.contents"
