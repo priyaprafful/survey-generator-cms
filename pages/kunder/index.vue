@@ -4,7 +4,7 @@
       :heading="$prismic.asText(customersContent.heading)"
       :subheading="$prismic.asText(customersContent.subheading)"
     />
-    <CustomersIntro />
+    <CustomersIntro :data="customersContent" />
     <Container>
       <div class="flex flex-wrap">
         <article

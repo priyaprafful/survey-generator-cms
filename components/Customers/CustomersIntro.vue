@@ -1,44 +1,41 @@
 <template>
-  <div class="bg-white">
+  <Wrapper>
     <Container>
-      <p>Många områden att utforska</p>
-      <p>
-        Varje kund är givetvis unik och har sina egna specifika behov som vi ser
-        till att tillgodose. Vi hjälper bland annat våra kunder med
-        undersökningar inom följande områden:
-      </p>
-      <div>
-        <p>Internet</p>
-        <p>Arbetsmiljö, ledarskap, intern kommunikation, trivsel</p>
+      <div class="text-center leading-loose mb-16">
+        <prismic-rich-text :field="data.groups_title" class="mb-6" />
+        <prismic-rich-text
+          :field="data.groups_description"
+          class="w-2/3 m-auto"
+        />
       </div>
-      <div>
-        <p>Medlemmar och kunder</p>
-        <p>
-          Nöjdhet, attityd- och varumärkesundersökningar, paneler,
-          undersökningar i pr-syfte, datainsamling, kund- och
-          medlemskommunikation
-        </p>
-      </div>
-      <div>
-        <p>Övriga användningsområden</p>
-        <p>
-          För- och efterstudie i samband med förändringar, kurs- och
-          projektutvärderingar, anmälan och inbjudningar, nyhetsutskick,
-          läsvärdeundersökningar för att bara nämna några
-        </p>
-      </div>
-      <div>
-        <p>Statiska undersökningar</p>
-        <p>”Så tycker svenska folket”</p>
-      </div>
-      <div>
-        <p>Webbtävlingar</p>
-        <p>Länkar kopplade till banners eller tävlingar på den egna hemsidan</p>
+
+      <div class="grid grid-cols-2 gap-12 font-body">
+        <div
+          v-for="(card, index) in data.intro_group"
+          :key="index"
+          class="inline-flex"
+        >
+          <div>
+            <Placeholder class="w-12 h-12 mr-4" />
+          </div>
+
+          <div class="leading-loose">
+            <prismic-rich-text :field="card.group_title" class="mb-2 text-lg" />
+            <prismic-rich-text :field="card.group_content" />
+          </div>
+        </div>
       </div>
     </Container>
-  </div>
+  </Wrapper>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    data: {
+      type: Object,
+      default: null,
+    },
+  },
+};
 </script>
