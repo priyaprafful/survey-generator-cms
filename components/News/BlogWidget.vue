@@ -1,6 +1,5 @@
 <template>
-  <div class="flex flex-col">
-    <time
+  <!-- <time
       :datetime="post.data.date"
       class="text-sm leading-5 text-blue-4 py-2 px-6"
     >
@@ -11,42 +10,38 @@
           day: 'numeric',
         })
       }}
-    </time>
+    </time> -->
 
-    <!-- <prismic-image
+  <nuxt-link
+    :to="
+      localePath({
+        name: 'nyheter-post',
+        params: {
+          post: post.uid,
+        },
+      })
+    "
+    class="filter-100"
+  >
+    <prismic-image
+      v-if="getFirstImage(post.data.content)"
       :field="getFirstImage(post.data.content)"
-      class="w-full h-48 object-cover rounded-t"
-    /> -->
+      class="w-full h-48 object-cover rounded-t filter-95"
+    />
+    <div class="bg-white p-6 rounded shadow-post">
+      <h3 class="text-lg leading-relaxed font-medium font-body mb-2">
+        {{ $prismic.asText(post.data.title) }}
+      </h3>
+      <p class="text-sm leading-normal mb-6">
+        {{ getFirstParagraph($prismic.asText(post.data.content)) }}
+      </p>
 
-    <nuxt-link
-      :to="
-        localePath({
-          name: 'nyheter-post',
-          params: {
-            post: post.uid,
-          },
-        })
-      "
-    >
-      <!-- <prismic-image
-        :field="post.data.company_image"
-        class="w-full h-48 object-cover rounded-t"
-      /> -->
-      <div class="bg-white p-6 rounded shadow-post">
-        <h3 class="text-lg leading-relaxed font-medium font-body mb-2">
-          {{ $prismic.asText(post.data.title) }}
-        </h3>
-        <p class="text-sm leading-normal mb-6">
-          {{ getFirstParagraph($prismic.asText(post.data.content)) }}
-        </p>
-
-        <div class="flex items-center text-blue-6 mt-auto">
-          <span class="font-medium">Läs hela</span>
-          <ChevronRight class="ml-3 h-3 w-3" />
-        </div>
+      <div class="flex items-center text-blue-6 mt-auto">
+        <span class="font-medium">Läs hela</span>
+        <ChevronRight class="ml-3 h-3 w-3" />
       </div>
-    </nuxt-link>
-  </div>
+    </div>
+  </nuxt-link>
 </template>
 
 <script>
@@ -77,3 +72,14 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.filter-95 {
+  filter: brightness(95%);
+  transition: filter 0.2s;
+}
+
+.filter-100:hover .filter-95 {
+  filter: brightness(100%);
+}
+</style>

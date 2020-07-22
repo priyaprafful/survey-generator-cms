@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <div class="flex flex-wrap">
+    <!-- <div class="flex flex-wrap">
       <article
         v-for="post in posts"
         :key="post.id"
@@ -9,12 +9,18 @@
       >
         <BlogWidget :post="post" />
       </article>
-    </div>
+    </div> -->
+    <masonry :cols="2" :gutter="30">
+      <article v-for="post in posts" :key="post.id" class="mb-6">
+        <BlogWidget :post="post" />
+      </article>
+    </masonry>
   </Container>
 </template>
 
 <script>
 import BlogWidget from '@/components/News/BlogWidget.vue';
+
 export default {
   components: {
     BlogWidget,
