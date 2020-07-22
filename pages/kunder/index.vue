@@ -5,24 +5,13 @@
       :subheading="$prismic.asText(customersContent.subheading)"
     />
     <CustomersIntro :data="customersContent" />
-    <Container>
-      <div class="flex flex-wrap">
-        <article
-          v-for="post in posts"
-          :key="post.id"
-          :post="post"
-          class="flex flex-col w-1/2"
-        >
-          <StoryWidget :post="post" />
-        </article>
-      </div>
-    </Container>
+    <Stories :data="customersContent" :posts="posts" />
   </div>
 </template>
 
 <script>
 import CustomersIntro from '@/components/Customers/CustomersIntro.vue';
-import StoryWidget from '@/components/Customers/StoryWidget.vue';
+import Stories from '@/components/Customers/Stories.vue';
 
 export default {
   name: 'Kunder',
@@ -34,7 +23,7 @@ export default {
   },
   components: {
     CustomersIntro,
-    StoryWidget,
+    Stories,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
