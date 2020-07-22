@@ -12,6 +12,12 @@
         })
       }}
     </time>
+
+    <!-- <prismic-image
+      :field="getFirstImage(post.data.content)"
+      class="w-full h-48 object-cover rounded-t"
+    /> -->
+
     <nuxt-link
       :to="
         localePath({
@@ -22,13 +28,22 @@
         })
       "
     >
+      <!-- <prismic-image
+        :field="post.data.company_image"
+        class="w-full h-48 object-cover rounded-t"
+      /> -->
       <div class="bg-white p-6 rounded shadow-post">
-        <h3 class="text-xl leading-7 font-medium font-body mb-2">
+        <h3 class="text-lg leading-relaxed font-medium font-body mb-2">
           {{ $prismic.asText(post.data.title) }}
         </h3>
-        <p class="leading-6">
+        <p class="text-sm leading-normal mb-6">
           {{ getFirstParagraph($prismic.asText(post.data.content)) }}
         </p>
+
+        <div class="flex items-center text-blue-6 mt-auto">
+          <span class="font-medium">Läs hela</span>
+          <ChevronRight class="ml-3 h-3 w-3" />
+        </div>
       </div>
     </nuxt-link>
   </div>
@@ -54,6 +69,10 @@ export default {
       } else {
         return firstParagraph;
       }
+    },
+    getFirstImage(content) {
+      const firstImage = content.find((section) => section.type === 'image');
+      return firstImage;
     },
   },
 };

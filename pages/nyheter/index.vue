@@ -4,23 +4,13 @@
       :heading="$prismic.asText(newsContent.heading)"
       :subheading="$prismic.asText(newsContent.subheading)"
     />
-    <Container>
-      <div class="flex flex-wrap">
-        <article
-          v-for="post in posts"
-          :key="post.id"
-          :post="post"
-          class="flex flex-col w-1/2"
-        >
-          <BlogWidget :post="post" />
-        </article>
-      </div>
-    </Container>
+
+    <News :data="newsContent" :posts="posts" />
   </div>
 </template>
 
 <script>
-import BlogWidget from '@/components/News/BlogWidget.vue';
+import News from '@/components/News/News.vue';
 
 export default {
   name: 'Nyheter',
@@ -31,7 +21,7 @@ export default {
     },
   },
   components: {
-    BlogWidget,
+    News,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(

@@ -1,17 +1,31 @@
 <template>
-  <Container>
-    <div>
-      <nuxt-link :to="localePath('nyheter')">
-        back to list
-      </nuxt-link>
+  <div>
+    <div class="bg-white">
+      <Container>
+        <article class="max-w-screen-sm m-auto leading-loose">
+          <div class="mb-10">
+            <nuxt-link
+              :to="localePath('nyheter')"
+              class="inline-flex items-center text-blue-6 underline"
+            >
+              <ChevronRight class="mr-3 h-3 w-3 transform rotate-180" />
+              Tillbaka till nyheter
+            </nuxt-link>
+          </div>
+
+          <prismic-rich-text :field="post.data.title" class="text-sm mb-6" />
+          <prismic-rich-text :field="post.data.content" class="sg-article" />
+        </article>
+      </Container>
     </div>
 
-    <prismic-rich-text :field="post.data.title" />
-    <prismic-rich-text :field="post.data.content" />
-  </Container>
+    <CTA />
+  </div>
 </template>
 
 <script>
+import CTA from '@/components/Common/CTA.vue';
+
 export default {
   name: 'Post',
   nuxtI18n: {
@@ -19,6 +33,9 @@ export default {
       sv: '/nyheter/:post',
       en: '/news/:post',
     },
+  },
+  components: {
+    CTA,
   },
   async asyncData({ $prismic, params, error, app }) {
     const currentLocale = app.i18n.locales.filter(
@@ -36,34 +53,6 @@ export default {
       error({ statusCode: 404, message: 'Page not found' });
     }
   },
-  /* async asyncData({ $prismic, params, error, app }) {
-    try {
-      const currentLocale = app.i18n.locales.filter(
-        (lang) => lang.code === app.i18n.locale
-      )[0];
-
-      // Query to get post content
-      const post = (
-        await $prismic.api.getByID('post', params.post, {
-          lang: currentLocale.iso.toLowerCase(),
-        })
-      ).data;
-
-      // Returns data to be used in template
-      return {
-        document: post,
-        currentLocale,
-        formattedDate: Intl.DateTimeFormat('en-US', {
-          year: 'numeric',
-          month: 'short',
-          day: '2-digit',
-        }).format(new Date(post.date)),
-      };
-    } catch (e) {
-      // Returns error page
-      error({ statusCode: 404, message: 'Page not found' });
-    }
-  }, */
   head() {
     return {
       title: 'Prismic Nuxt.js Blog',
@@ -71,3 +60,20 @@ export default {
   },
 };
 </script>
+
+<style>
+.sg-article a {
+  background: linear-gradient(to bottom, #bbdff1 0%, #43a8d8 100%);
+  color: inherit;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  text-decoration: none;
+  transition: background-size 0.5s, color 0.5s;
+}
+
+.sg-article a:hover {
+  background-size: 3px 50px;
+  color: #fff;
+}
+</style>
