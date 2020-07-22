@@ -14,14 +14,13 @@
           </p>
 
           <div class="flex items-center">
-            <CTABtn :text="$t('menu.book_demo')" />
-            <nuxt-link
-              :to="localePath('kontakt')"
-              class="flex items-center py-2 px-4"
-            >
-              {{ $t('common.contact_us') }}
-              <ChevronRight class="ml-3 h-3 w-3" />
-            </nuxt-link>
+            <CTABtn />
+
+            <FunnelBtn
+              :text="$prismic.asText($store.state.miscellaneous.second_cta)"
+              :to="$store.state.miscellaneous.second_cta_url.slug"
+              class="py-2 px-4"
+            />
           </div>
         </Block>
 
