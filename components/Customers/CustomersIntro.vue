@@ -13,15 +13,15 @@
         <div
           v-for="(card, index) in data.intro_group"
           :key="index"
-          class="inline-flex"
+          class="flex"
         >
           <div>
             <Placeholder class="w-12 h-12 mr-4" />
           </div>
 
-          <div class="leading-loose">
+          <div class="flex flex-col leading-loose">
             <prismic-rich-text :field="card.group_title" class="mb-2 text-lg" />
-            <prismic-rich-text :field="card.group_content" />
+            <p>{{ $prismic.asText(card.group_content) }}</p>
           </div>
         </div>
       </div>

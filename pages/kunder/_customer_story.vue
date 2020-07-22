@@ -1,17 +1,70 @@
 <template>
-  <Container>
-    <div>
-      <nuxt-link :to="localePath('kunder')">
-        back to list
-      </nuxt-link>
+  <div>
+    <div class="bg-white">
+      <Container>
+        <article class="max-w-screen-sm m-auto leading-loose">
+          <div class="mb-10">
+            <nuxt-link
+              :to="localePath('kunder')"
+              class="inline-flex items-center text-blue-6 underline"
+            >
+              <ChevronRight class="mr-3 h-3 w-3 transform rotate-180" />
+              Tillbaka till kunder
+            </nuxt-link>
+          </div>
+
+          <h2 class="mb-6">
+            {{ $prismic.asText(post.data.company_name) }}
+            <span v-if="post.data.company_type.length > 0">
+              ― {{ $prismic.asText(post.data.company_type) }}
+            </span>
+          </h2>
+
+          <div class="relative mb-6">
+            <prismic-image
+              :field="post.data.company_image"
+              class="w-full h-64 object-cover"
+            />
+
+            <div
+              class="absolute bottom-0 left-0 ml-2 mb-2 bg-white inline-flex h-20 w-20 p-3 shadow-card rounded"
+            >
+              <prismic-image :field="post.data.company_logo" class="w-full" />
+            </div>
+          </div>
+
+          <prismic-rich-text :field="post.data.intro" class="mb-10" />
+
+          <div class="text-sm mb-10 relative">
+            <Quote
+              class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 w-6"
+            />
+            <prismic-rich-text :field="post.data.quote" class="mb-2" />
+            <prismic-rich-text
+              :field="post.data.quote_name_and_role"
+              class="font-semibold"
+            />
+          </div>
+
+          <div
+            v-for="(content, index) in post.data.contents"
+            :key="index"
+            class="mb-10"
+          >
+            <prismic-rich-text :field="content.title" class="text-lg mb-4" />
+            <prismic-rich-text :field="content.description" />
+          </div>
+        </article>
+      </Container>
     </div>
 
-    <prismic-rich-text :field="post.data.company_name" />
-    <prismic-rich-text :field="post.data.quote" />
-  </Container>
+    <CTA />
+  </div>
 </template>
 
 <script>
+import CTA from '@/components/Common/CTA.vue';
+
 export default {
   name: 'CustomerStory',
   nuxtI18n: {
@@ -19,6 +72,9 @@ export default {
       sv: '/kunder/:post',
       en: '/customers/:post',
     },
+  },
+  components: {
+    CTA,
   },
   async asyncData({ $prismic, params, error, app }) {
     const currentLocale = app.i18n.locales.filter(
