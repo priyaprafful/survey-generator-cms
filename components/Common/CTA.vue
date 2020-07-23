@@ -25,30 +25,30 @@
         </Block>
 
         <Block half class="flex">
-          <div class="mr-4">
+          <div class="flex flex-col mr-4">
             <h3 class="mb-6 leading-normal">Prisplan eller skräddarsytt</h3>
 
-            <p class="mb-4 leading-relaxed">
+            <p class="leading-relaxed mb-6">
               Du kan lätt administrera din undersökning från ax till limpa, och
               väljer hur avancerade rapporter du vill ha. Vi tillhandahåller tre
               olika modeller av verktyget, och passar de inte dina behov kan vi
               skräddarsy både enkäter, mjukvara och tjänster.
             </p>
 
-            <FunnelBtn text="Priser" to="priser" />
+            <FunnelBtn text="Priser" to="priser" class="mt-auto" />
           </div>
 
-          <div class="ml-4">
+          <div class="flex flex-col ml-4">
             <h3 class="mb-6 leading-normal">Enkelt och effektivt</h3>
 
-            <p class="mb-4 leading-relaxed">
+            <p class="leading-relaxed mb-6">
               Vårt verktyg är erkänt enkelt och effektivt att arbeta med. Det är
               webbaserat och hjälper dig att snabbt och kostnadseffektivt
               genomföra olika former av undersökningar bland medarbetare,
               paneler, kunder eller ”svenska folket”.
             </p>
 
-            <FunnelBtn text="Verktyget" to="verktyget" />
+            <FunnelBtn text="Verktyget" to="verktyget" class="mt-auto" />
           </div>
         </Block>
       </div>
