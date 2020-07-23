@@ -14,7 +14,7 @@
           </div>
 
           <prismic-rich-text :field="post.data.title" class="text-sm mb-6" />
-          <prismic-rich-text :field="post.data.content" class="sg-article" />
+          <prismic-rich-text :field="post.data.content" class="article" />
         </article>
       </Container>
     </div>
@@ -62,7 +62,11 @@ export default {
 </script>
 
 <style>
-.sg-article a {
+.article .block-img img {
+  margin: auto;
+}
+
+.article a {
   background: linear-gradient(to bottom, #bbdff1 0%, #43a8d8 100%);
   color: inherit;
   background-position: 0 100%;
@@ -72,7 +76,7 @@ export default {
   transition: background-size 0.5s, color 0.5s;
 }
 
-.sg-article a:hover {
+.article a:hover {
   background-size: 3px 50px;
   color: #fff;
 }

@@ -1,17 +1,4 @@
 <template>
-  <!-- <time
-      :datetime="post.data.date"
-      class="text-sm leading-5 text-blue-4 py-2 px-6"
-    >
-      {{
-        new Date(post.data.date).toLocaleDateString($i18n.locale, {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-        })
-      }}
-    </time> -->
-
   <nuxt-link
     :to="
       localePath({
@@ -21,24 +8,41 @@
         },
       })
     "
-    class="filter-100"
   >
-    <prismic-image
-      v-if="getFirstImage(post.data.content)"
-      :field="getFirstImage(post.data.content)"
-      class="w-full h-48 object-cover rounded-t filter-95"
-    />
-    <div class="bg-white p-6 rounded shadow-post">
-      <h3 class="text-lg leading-relaxed font-medium font-body mb-2">
-        {{ $prismic.asText(post.data.title) }}
-      </h3>
-      <p class="text-sm leading-normal mb-6">
-        {{ getFirstParagraph($prismic.asText(post.data.content)) }}
-      </p>
+    <div class="shadow-post rounded-lg">
+      <prismic-image
+        v-if="getFirstImage(post.data.content)"
+        :field="getFirstImage(post.data.content)"
+        class="w-full h-48 object-cover rounded-t-lg"
+      />
 
-      <div class="flex items-center text-blue-6 mt-auto">
-        <span class="font-medium">Läs hela</span>
-        <ChevronRight class="ml-3 h-3 w-3" />
+      <div
+        class="flex flex-col bg-white p-6"
+        :class="{
+          'rounded-lg': !getFirstImage(post.data.content),
+          'rounded-b-lg': getFirstImage(post.data.content),
+        }"
+      >
+        <h3 class="text-lg leading-relaxed font-medium font-body mb-1">
+          {{ $prismic.asText(post.data.title) }}
+        </h3>
+        <time :datetime="post.data.date" class="text-sm text-blue-4 mb-4">
+          {{
+            new Date(post.data.date).toLocaleDateString($i18n.locale, {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            })
+          }}
+        </time>
+        <p class="text-sm leading-normal mb-6">
+          {{ getFirstParagraph($prismic.asText(post.data.content)) }}
+        </p>
+
+        <div class="flex items-center text-blue-6 mt-auto">
+          <span class="font-medium">Läs hela</span>
+          <ChevronRight class="ml-3 h-3 w-3" />
+        </div>
       </div>
     </div>
   </nuxt-link>
@@ -72,14 +76,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.filter-95 {
-  filter: brightness(95%);
-  transition: filter 0.2s;
-}
-
-.filter-100:hover .filter-95 {
-  filter: brightness(100%);
-}
-</style>

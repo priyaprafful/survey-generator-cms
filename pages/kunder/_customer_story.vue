@@ -58,7 +58,7 @@
             class="mb-10"
           >
             <prismic-rich-text :field="content.title" class="text-lg mb-4" />
-            <prismic-rich-text :field="content.description" />
+            <prismic-rich-text :field="content.description" class="article" />
           </div>
         </article>
       </Container>
@@ -98,34 +98,6 @@ export default {
       error({ statusCode: 404, message: 'Page not found' });
     }
   },
-  /* async asyncData({ $prismic, params, error, app }) {
-    try {
-      const currentLocale = app.i18n.locales.filter(
-        (lang) => lang.code === app.i18n.locale
-      )[0];
-
-      // Query to get post content
-      const post = (
-        await $prismic.api.getByID('post', params.post, {
-          lang: currentLocale.iso.toLowerCase(),
-        })
-      ).data;
-
-      // Returns data to be used in template
-      return {
-        document: post,
-        currentLocale,
-        formattedDate: Intl.DateTimeFormat('en-US', {
-          year: 'numeric',
-          month: 'short',
-          day: '2-digit',
-        }).format(new Date(post.date)),
-      };
-    } catch (e) {
-      // Returns error page
-      error({ statusCode: 404, message: 'Page not found' });
-    }
-  }, */
   head() {
     return {
       title: 'Prismic Nuxt.js Blog',
@@ -133,3 +105,20 @@ export default {
   },
 };
 </script>
+
+<style>
+.article a {
+  background: linear-gradient(to bottom, #bbdff1 0%, #43a8d8 100%);
+  color: inherit;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  text-decoration: none;
+  transition: background-size 0.5s, color 0.5s;
+}
+
+.article a:hover {
+  background-size: 3px 50px;
+  color: #fff;
+}
+</style>

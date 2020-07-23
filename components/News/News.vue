@@ -1,21 +1,13 @@
 <template>
-  <Container>
-    <!-- <div class="flex flex-wrap">
-      <article
-        v-for="post in posts"
-        :key="post.id"
-        :post="post"
-        class="flex flex-col w-1/2"
-      >
-        <BlogWidget :post="post" />
-      </article>
-    </div> -->
-    <masonry :cols="2" :gutter="30">
-      <article v-for="post in posts" :key="post.id" class="mb-6">
-        <BlogWidget :post="post" />
-      </article>
-    </masonry>
-  </Container>
+  <Wrapper>
+    <Container>
+      <masonry :cols="2" :gutter="30">
+        <article v-for="post in posts.slice(0, 10)" :key="post.id" class="mb-6">
+          <BlogWidget :post="post" />
+        </article>
+      </masonry>
+    </Container>
+  </Wrapper>
 </template>
 
 <script>

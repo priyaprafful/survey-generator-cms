@@ -8,7 +8,7 @@
         },
       })
     "
-    class="flex flex-col bg-white rounded shadow-post"
+    class="flex flex-col bg-white rounded-lg shadow-post"
   >
     <div class="relative">
       <prismic-image
