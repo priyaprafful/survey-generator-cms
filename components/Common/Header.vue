@@ -16,7 +16,8 @@
             <SGLogoWhite v-else />
           </nuxt-link>
         </li>
-        <li class="flex center-nav">
+
+        <!-- <li class="flex center-nav">
           <nuxt-link :to="localePath('verktyget')">
             {{ $t('menu.platform') }}
           </nuxt-link>
@@ -32,7 +33,19 @@
           <nuxt-link :to="localePath('kontakt')">
             {{ $t('menu.contact') }}
           </nuxt-link>
+        </li> -->
+
+        <li class="flex center-nav">
+          <nuxt-link
+            v-for="(nav, index) in navigation"
+            :key="index"
+            :to="localePath(nav.link)"
+          >
+            <span v-if="$i18n.locale === 'sv'">{{ nav.nameSv }}</span>
+            <span v-if="$i18n.locale === 'en'">{{ nav.nameEn }}</span>
+          </nuxt-link>
         </li>
+
         <li class="flex items-center">
           <nuxt-link :to="localePath('logga-in')">
             {{ $t('menu.login') }}
@@ -55,6 +68,33 @@ export default {
   },
   data: () => ({
     scrollPosition: null,
+    navigation: [
+      {
+        link: 'verktyget',
+        nameSv: 'Verktyget',
+        nameEn: 'Platform',
+      },
+      {
+        link: 'kunder',
+        nameSv: 'Kunder',
+        nameEn: 'Customers',
+      },
+      {
+        link: 'priser',
+        nameSv: 'Priser',
+        nameEn: 'Pricing',
+      },
+      {
+        link: 'nyheter',
+        nameSv: 'Nyheter',
+        nameEn: 'News',
+      },
+      {
+        link: 'kontakt',
+        nameSv: 'Kontakt',
+        nameEn: 'Contact',
+      },
+    ],
   }),
   mounted() {
     window.addEventListener('scroll', this.updateScroll);
