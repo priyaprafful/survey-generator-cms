@@ -4,17 +4,25 @@
       :heading="$prismic.asText(aboutContent.heading)"
       :subheading="$prismic.asText(aboutContent.subheading)"
     />
+    <AboutIntro :data="aboutContent" />
+    <CTA />
   </div>
 </template>
 
 <script>
+import AboutIntro from '@/components/About/AboutIntro.vue';
+import CTA from '@/components/Common/CTA.vue';
+
 export default {
-  name: 'OmOss',
   nuxtI18n: {
     paths: {
       sv: '/om-oss',
       en: '/about',
     },
+  },
+  components: {
+    AboutIntro,
+    CTA,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
