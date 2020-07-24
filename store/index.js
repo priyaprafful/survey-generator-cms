@@ -3,11 +3,11 @@ export const state = () => ({
 });
 
 export const mutations = {
-  SET_MISC(state, misc) {
-    state.miscellaneous = misc;
+  SET_MISC(state, payload) {
+    state.miscellaneous = payload;
   },
-  SET_ERROR(state, error) {
-    state.miscellaneous = error;
+  SET_ERROR(state, payload) {
+    state.miscellaneous = payload;
   },
 };
 

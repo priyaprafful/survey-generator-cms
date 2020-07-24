@@ -17,7 +17,7 @@
       </div>
 
       <ul class="flex justify-center mb-4">
-        <li class="li-middle">
+        <!-- <li class="li-middle">
           <nuxt-link :to="localePath('om-oss')" class="py-2 px-4">
             {{ $t('menu.about') }}
           </nuxt-link>
@@ -30,7 +30,7 @@
           <nuxt-link :to="localePath('integritetspolicy')" class="py-2 px-4">
             {{ $t('menu.privacy_policy') }}
           </nuxt-link>
-        </li>
+        </li> -->
       </ul>
 
       <ul class="flex justify-center mb-4">
