@@ -7,7 +7,7 @@
       <div
         v-for="(benefit, index) in data.benefits"
         :key="index"
-        class="flex mb-16 last:mb-0"
+        class="flex leading-relaxed mb-16 last:mb-0"
         :class="{ 'flex-row-reverse': index % 2 !== 0 }"
       >
         <Block half :row-reverse="index % 2 !== 0">

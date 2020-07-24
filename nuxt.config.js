@@ -33,7 +33,10 @@ export default {
         content: 'Enkätundersökningar för organisationer och företag',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      { rel: 'alternate icon', href: '/favicon.ico' },
+    ],
     bodyAttrs: {
       class: ['font-body', 'bg-bluegray-1'],
     },

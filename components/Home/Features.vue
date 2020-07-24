@@ -1,12 +1,12 @@
 <template>
   <section class="bg-blue-9 text-white">
     <Container>
-      <h2 class="mb-12">Vad vi kan hjälpa dig med</h2>
-      <div class="flex justify-between mt-8">
+      <h2 class="text-center mb-16">Vad vi kan hjälpa dig med</h2>
+      <div class="flex leading-relaxed justify-between mt-8">
         <Block third>
-          <Placeholder class="w-12 h-12" />
+          <Placeholder class="w-12 h-12 mb-6" />
+          <h3 class="mb-2">Skräddarsytt</h3>
           <p>
-            <b>Skräddarsytt</b>
             Tycker du att de vanliga versionerna har nästan allt – men ändå inte
             riktigt? Då kan vi skräddarsy verktyget till att passa just dig och
             dina behov. Vi utformar helt enkelt dina enkäter så att de ser ut
@@ -14,53 +14,28 @@
           </p>
         </Block>
         <Block third>
-          <Placeholder class="w-12 h-12" />
+          <Placeholder class="w-12 h-12 mb-6" />
+          <h3 class="mb-2">Konsulthjälp</h3>
           <p>
-            <b>Konsulthjälp</b>
-            Har du inte tid eller möjlighet att genomföra hela eller delar av
-            undersökningen själv kan vi hjälpa dig. Vi kan också ge dig råd
-            kring alternativa användningsområden av enkätverktyget för att kunna
-            nyttja det maximalt.
+            Har du behov av extra hjälp med själva genomförandet av en
+            undersökning kan vi göra hela eller delar av jobbet. Vi erbjuder
+            konsulttjänster inom bland annat:
           </p>
+          <ul>
+            <li>
+              Projektledning Rådgivning kring genomförande Formulering av frågor
+              Programmering av enkät Formgivning av enkät Kvalitetssäkring
+              Utskick och uppföljning Avancerade rapporter Presentationer
+            </li>
+          </ul>
         </Block>
         <Block third>
-          <Placeholder class="w-12 h-12" />
+          <Placeholder class="w-12 h-12 mb-6" />
+          <h3 class="mb-2">Duis tempus</h3>
           <p>
-            <b>Mjukvaruutveckling</b>
-            Ibland krävs det lite mer. Du kanske behöver en unik lösning för
-            just din verksamhet som helt enkelt inte finns ännu. Då kan vi
-            hjälpa dig med att utveckla helt ny mjukvara för just dina behov. Vi
-            arbetar främst i Microsoftmiljö.
-          </p>
-        </Block>
-      </div>
-
-      <div class="flex">
-        <Block half>
-          <p>
-            Vi är experter på webbundersökningar och bjuder gärna på vår
-            kunskap. Vårt enkätverktyg SurveyGenerator är känt för att vara
-            användarvänligt. Men, om du har ont om tid eller har specifika krav
-            kan vi ge dig allt stöd som du behöver beträffande både teknik och
-            kompetens.
-          </p>
-        </Block>
-        <Block half>
-          <div class="bg-blue-2 w-full h-full" />
-        </Block>
-      </div>
-
-      <div class="flex">
-        <Block half>
-          <div class="bg-blue-2 w-full h-full" />
-        </Block>
-        <Block half>
-          <p>
-            Stärk dina kunskaper kring webbundersökningar med våra utbildningar.
-            Du kanske behöver en grundlig genomgång så att du kan använda det på
-            absolut bästa sätt? Om inte tiden räcker till kan vi göra hela eller
-            delar av jobbet med själva genomförandet av en undersökning, och har
-            du speciella behov kan vi ta fram speciella lösningar.
+            In vitae mattis risus. Curabitur mattis, risus vel rhoncus
+            hendrerit, nunc nisl finibus erat, vitae tempor ex erat in leo. Cras
+            eget mi urna. Duis eget gravida ipsum, a tristique nulla.
           </p>
         </Block>
       </div>
