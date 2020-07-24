@@ -17,20 +17,15 @@
       </div>
 
       <ul class="flex justify-center mb-4">
-        <!-- <li class="li-middle">
-          <nuxt-link :to="localePath('om-oss')" class="py-2 px-4">
-            {{ $t('menu.about') }}
-          </nuxt-link>
-          <nuxt-link :to="localePath('nyheter')" class="py-2 px-4">
-            {{ $t('menu.news') }}
-          </nuxt-link>
-          <nuxt-link :to="localePath('kontakt')" class="py-2 px-4">
-            {{ $t('menu.contact') }}
-          </nuxt-link>
-          <nuxt-link :to="localePath('integritetspolicy')" class="py-2 px-4">
-            {{ $t('menu.privacy_policy') }}
-          </nuxt-link>
-        </li> -->
+        <nuxt-link
+          v-for="(link, index) in links"
+          :key="index"
+          :to="localePath(link.path)"
+          class="py-2 px-4"
+        >
+          <span v-if="$i18n.locale === 'sv'">{{ link.labelSv }}</span>
+          <span v-if="$i18n.locale === 'en'">{{ link.labelEn }}</span>
+        </nuxt-link>
       </ul>
 
       <ul class="flex justify-center mb-4">
@@ -64,5 +59,29 @@ export default {
     Twitter,
     LinkedIn,
   },
+  data: () => ({
+    links: [
+      {
+        path: 'om-oss',
+        labelSv: 'Om oss',
+        labelEn: 'About us',
+      },
+      {
+        path: 'nyheter',
+        labelSv: 'Nyheter',
+        labelEn: 'News',
+      },
+      {
+        path: 'kontakt',
+        labelSv: 'Kontakt',
+        labelEn: 'Contact',
+      },
+      {
+        path: 'integritetspolicy',
+        labelSv: 'Integritetspolicy',
+        labelEn: 'Privacy policy',
+      },
+    ],
+  }),
 };
 </script>

@@ -22,6 +22,11 @@
             v-for="(link, index) in links"
             :key="index"
             :to="localePath(link.path)"
+            class="py-8 mx-4 border-b-4 border-transparent transition duration-200"
+            :class="{
+              'hover:border-lightblue-9': homepage,
+              'hover:border-white': !homepage,
+            }"
           >
             <span v-if="$i18n.locale === 'sv'">{{ link.labelSv }}</span>
             <span v-if="$i18n.locale === 'en'">{{ link.labelEn }}</span>
@@ -29,7 +34,14 @@
         </li>
 
         <li class="flex items-center">
-          <nuxt-link :to="localePath('logga-in')">
+          <nuxt-link
+            :to="localePath('logga-in')"
+            class="py-8 mx-4 border-b-4 border-transparent transition duration-200"
+            :class="{
+              'hover:border-lightblue-9': homepage,
+              'hover:border-white': !homepage,
+            }"
+          >
             {{ $t('menu.login') }}
           </nuxt-link>
           <CTABtn small />
@@ -110,19 +122,8 @@ export default {
 }
 
 li:not(.logo) {
-  a:not(.cta) {
-    padding: 2.25rem 0;
-    margin: 0 1rem;
-    border-bottom: 2px solid transparent;
-    transition: border 0.2s;
-
-    &:hover {
-      border-bottom: 2px solid #43a8d8;
-      transition: border 0.2s;
-    }
-  }
   .nuxt-link-active:not(.cta) {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
   }
 }
 </style>

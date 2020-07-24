@@ -11,9 +11,7 @@
     }
   },
   "menu": {
-    "about": "About us",
     "book_demo": "Book demo",
-    "login": "Sign in",
-    "privacy_policy": "Privacy policy"
+    "login": "Sign in"
   }
 }

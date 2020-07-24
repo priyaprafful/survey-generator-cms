@@ -11,9 +11,7 @@
     }
   },
   "menu": {
-    "about": "Om oss",
     "book_demo": "Boka demo",
-    "login": "Logga in",
-    "privacy_policy": "Integritetspolicy"
+    "login": "Logga in"
   }
 }
