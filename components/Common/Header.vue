@@ -116,7 +116,6 @@ export default {
 
     &:hover {
       filter: opacity(80%);
-      transition: filter 0.2s;
     }
   }
 }

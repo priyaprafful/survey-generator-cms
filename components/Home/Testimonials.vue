@@ -1,12 +1,12 @@
 <template>
-  <Wrapper class="overflow-hidden">
+  <Wrapper class="overflow-hidden relative">
     <Container>
       <div class="flex">
         <Block
           v-for="(testimonial, index) in data.testimonials"
           :key="index"
           half
-          class="flex leading-7 relative"
+          class="flex leading-7"
         >
           <div class="z-10">
             <prismic-image
