@@ -146,10 +146,12 @@
 </template>
 
 <script>
+import IconCircle from '@/components/Common/SVG/IconCircle.vue';
 import GamlaStan from '@/components/Common/SVG/GamlaStan.vue';
 
 export default {
   components: {
+    IconCircle,
     GamlaStan,
   },
 };

@@ -5,10 +5,13 @@
 
       <div class="grid grid-cols-team row-gap-12 justify-between">
         <div v-for="(person, index) in data.team" :key="index">
-          <prismic-image
-            :field="person.first_image"
-            class="w-full h-48 object-cover rounded-full mb-4"
-          />
+          <div class="flex relative mb-4">
+            <div class="lines" />
+            <prismic-image
+              :field="person.first_image"
+              class="w-full h-48 object-cover rounded-full z-10"
+            />
+          </div>
           <!-- <prismic-image :field="person.second_image" /> -->
 
           <prismic-rich-text
@@ -48,3 +51,27 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-image: radial-gradient(#aad7ed 1px, transparent 2px);
+  background-size: calc(10 * 1px) calc(10 * 1px); */
+  /* transform: translate(-20px, -20px);
+  width: 50%;
+  height: 50%; */
+
+  background-image: repeating-linear-gradient(
+    45deg,
+    #cce7f4 0,
+    #cce7f4 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 50px 50px;
+}
+</style>

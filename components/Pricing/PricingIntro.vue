@@ -23,5 +23,11 @@
 </template>
 
 <script>
-export default {};
+import IconCircle from '@/components/Common/SVG/IconCircle.vue';
+
+export default {
+  components: {
+    IconCircle,
+  },
+};
 </script>

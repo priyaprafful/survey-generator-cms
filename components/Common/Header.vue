@@ -52,8 +52,15 @@
 </template>
 
 <script>
+import SGLogo from '@/components/Common/SVG/SGLogo.vue';
+import SGLogoWhite from '@/components/Common/SVG/SGLogoWhite.vue';
+
 export default {
   name: 'Header',
+  components: {
+    SGLogo,
+    SGLogoWhite,
+  },
   props: {
     homepage: {
       type: Boolean,

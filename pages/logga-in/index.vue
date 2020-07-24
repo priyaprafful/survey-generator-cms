@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import SGLogoNoText from '@/components/Common/SVG/SGLogoNoText.vue';
+
 export default {
   name: 'LoggaIn',
   nuxtI18n: {
@@ -39,6 +41,9 @@ export default {
       sv: '/logga-in',
       en: '/login',
     },
+  },
+  components: {
+    SGLogoNoText,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(

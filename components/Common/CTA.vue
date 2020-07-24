@@ -3,7 +3,7 @@
     <Container>
       <div class="flex">
         <Block half>
-          <h2 class="mb-6">
+          <h2 class="mb-2">
             Redo att sätta igång?
           </h2>
           <p class="mb-6 leading-relaxed">

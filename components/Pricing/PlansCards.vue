@@ -58,7 +58,12 @@
 </template>
 
 <script>
+import CheckMark from '@/components/Common/SVG/CheckMark.vue';
+
 export default {
+  components: {
+    CheckMark,
+  },
   props: {
     data: {
       type: Object,
