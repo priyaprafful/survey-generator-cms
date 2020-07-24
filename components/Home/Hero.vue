@@ -15,8 +15,8 @@
               <CTABtn />
 
               <FunnelBtn
-                :text="$prismic.asText($store.state.miscellaneous.second_cta)"
-                :to="$store.state.miscellaneous.second_cta_url.slug"
+                :text="$('menu.get_quote')"
+                :to="'/boka-demo'"
                 class="py-2 px-4"
               />
             </div>

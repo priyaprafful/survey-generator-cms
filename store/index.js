@@ -3,22 +3,22 @@ export const state = () => ({
 });
 
 export const mutations = {
-  SET_MENU(state, payload) {
-    state.miscellaneous = payload;
+  SET_MISC(state, misc) {
+    state.miscellaneous = misc;
   },
-  SET_ERROR(state, payload) {
-    state.miscellaneous = payload;
+  SET_ERROR(state, error) {
+    state.miscellaneous = error;
   },
 };
 
 export const actions = {
-  async fetchContactInformation({ commit }, $prismic) {
+  async fetchMisc({ commit }, $prismic) {
     try {
-      const content = (await $prismic.api.getSingle('miscellaneous')).data;
+      const misc = (await $prismic.api.getSingle('miscellaneous')).data;
 
-      commit('SET_MENU', content);
+      commit('SET_MISC', misc);
     } catch (e) {
-      const error = 'Please create a menu document';
+      const error = 'Please create a document';
 
       commit('SET_ERROR', error);
     }

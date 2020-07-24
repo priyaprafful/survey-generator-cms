@@ -1,11 +1,7 @@
 {
-  "blog": {
-    "all_posts": "All posts",
-    "last_posts": "Lasts posts",
-    "post_of": "By"
-  },
   "common": {
-    "contact_us": "Contact us"
+    "contact_us": "Contact us",
+    "get_quote": "Get a quote"
   },
   "contact": {
     "questions": {
@@ -17,12 +13,7 @@
   "menu": {
     "about": "About us",
     "book_demo": "Book demo",
-    "contact": "Contact",
-    "customers": "Customers",
     "login": "Sign in",
-    "news": "News",
-    "platform": "Platform",
-    "pricing": "Pricing",
     "privacy_policy": "Privacy policy"
   }
 }

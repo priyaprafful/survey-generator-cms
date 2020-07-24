@@ -1,11 +1,7 @@
 {
-  "blog": {
-    "all_posts": "Alla inlägg",
-    "last_posts": "Lasts posts",
-    "post_of": "Av"
-  },
   "common": {
-    "contact_us": "Kontakta oss"
+    "contact_us": "Kontakta oss",
+    "get_quote": "Begär offert"
   },
   "contact": {
     "questions": {
@@ -17,12 +13,7 @@
   "menu": {
     "about": "Om oss",
     "book_demo": "Boka demo",
-    "contact": "Kontakt",
-    "customers": "Kunder",
     "login": "Logga in",
-    "news": "Nyheter",
-    "platform": "Verktyget",
-    "pricing": "Priser",
     "privacy_policy": "Integritetspolicy"
   }
 }

@@ -13,6 +13,10 @@ export default function (doc) {
       return '/';
     }
 
+    if (doc.type === 'customers') {
+      return '/kunder';
+    }
+
     if (doc.type === 'post') {
       return '/nyheter/' + doc.uid;
     }
@@ -26,6 +30,10 @@ export default function (doc) {
   if (doc.lang === 'en-gb') {
     if (doc.type === 'home') {
       return '/en';
+    }
+
+    if (doc.type === 'customers') {
+      return '/en/customers';
     }
 
     if (doc.type === 'post') {

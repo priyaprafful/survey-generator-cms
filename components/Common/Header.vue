@@ -8,58 +8,18 @@
       'border-bluegray-2': homepage && scrollPosition >= 100,
     }"
   >
-    <nav class="max-w-screen-xl m-auto text-sm font-medium px-12">
-      <ul class="flex items-center justify-between">
-        <li class="flex logo">
-          <nuxt-link :to="localePath('/')">
-            <SGLogo v-if="homepage" />
-            <SGLogoWhite v-else />
-          </nuxt-link>
-        </li>
-
-        <!-- <li class="flex center-nav">
-          <nuxt-link :to="localePath('verktyget')">
-            {{ $t('menu.platform') }}
-          </nuxt-link>
-          <nuxt-link :to="localePath('kunder')">
-            {{ $t('menu.customers') }}
-          </nuxt-link>
-          <nuxt-link :to="localePath('priser')">
-            {{ $t('menu.pricing') }}
-          </nuxt-link>
-          <nuxt-link :to="localePath('nyheter')">
-            {{ $t('menu.news') }}
-          </nuxt-link>
-          <nuxt-link :to="localePath('kontakt')">
-            {{ $t('menu.contact') }}
-          </nuxt-link>
-        </li> -->
-
-        <li class="flex center-nav">
-          <nuxt-link
-            v-for="(nav, index) in navigation"
-            :key="index"
-            :to="localePath(nav.link)"
-          >
-            <span v-if="$i18n.locale === 'sv'">{{ nav.nameSv }}</span>
-            <span v-if="$i18n.locale === 'en'">{{ nav.nameEn }}</span>
-          </nuxt-link>
-        </li>
-
-        <li class="flex items-center">
-          <nuxt-link :to="localePath('logga-in')">
-            {{ $t('menu.login') }}
-          </nuxt-link>
-          <CTABtn small />
-        </li>
-      </ul>
-    </nav>
+    <Navigation :homepage="homepage" />
   </header>
 </template>
 
 <script>
+import Navigation from './Navigation.vue';
+
 export default {
   name: 'Header',
+  components: {
+    Navigation,
+  },
   props: {
     homepage: {
       type: Boolean,
@@ -68,33 +28,6 @@ export default {
   },
   data: () => ({
     scrollPosition: null,
-    navigation: [
-      {
-        link: 'verktyget',
-        nameSv: 'Verktyget',
-        nameEn: 'Platform',
-      },
-      {
-        link: 'kunder',
-        nameSv: 'Kunder',
-        nameEn: 'Customers',
-      },
-      {
-        link: 'priser',
-        nameSv: 'Priser',
-        nameEn: 'Pricing',
-      },
-      {
-        link: 'nyheter',
-        nameSv: 'Nyheter',
-        nameEn: 'News',
-      },
-      {
-        link: 'kontakt',
-        nameSv: 'Kontakt',
-        nameEn: 'Contact',
-      },
-    ],
   }),
   mounted() {
     window.addEventListener('scroll', this.updateScroll);
@@ -111,36 +44,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.logo {
-  width: 200px;
-
-  svg {
-    width: 100%;
-    transition: filter 0.2s;
-
-    &:hover {
-      filter: opacity(80%);
-      transition: filter 0.2s;
-    }
-  }
-}
-
-li:not(.logo) {
-  a:not(.cta) {
-    padding: 2.25rem 0;
-    margin: 0 1rem;
-    border-bottom: 2px solid transparent;
-    transition: border 0.2s;
-
-    &:hover {
-      border-bottom: 2px solid #43a8d8;
-      transition: border 0.2s;
-    }
-  }
-  .nuxt-link-active:not(.cta) {
-    border-bottom: 2px solid #ffffff;
-  }
-}
-</style>

@@ -24,7 +24,7 @@ export default {
     };
   },
   async middleware({ store, $prismic }) {
-    await store.dispatch('fetchContactInformation', $prismic);
+    await store.dispatch('fetchMisc', $prismic);
   },
 };
 </script>
