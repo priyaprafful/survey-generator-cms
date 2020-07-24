@@ -1,7 +1,7 @@
 <template>
   <section class="bg-blue-9 text-white">
     <Container>
-      <h2 class="text-center mb-16">Vad vi kan hjälpa dig med</h2>
+      <h2 class="text-center mb-16">Vad du får med SurveyGenerator</h2>
       <div class="flex leading-relaxed justify-between mt-8">
         <Block third>
           <Placeholder class="w-12 h-12 mb-6" />
