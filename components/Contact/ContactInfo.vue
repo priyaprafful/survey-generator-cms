@@ -25,11 +25,17 @@
 
           <div class="flex mb-6">
             <div class="flex flex-col justify-between">
-              <p class="text-lg font-bold mb-2">08-22 22 65</p>
-              <p class="text-sm text-blue-4">Mån - Fre 10:00 - 17:00</p>
+              <prismic-rich-text
+                :field="data.phone"
+                class="text-lg font-bold mb-2"
+              />
+              <prismic-rich-text
+                :field="data.opening_hours"
+                class="text-sm text-blue-4"
+              />
             </div>
 
-            <MainBtn text="Ring oss" to="tel:08-222265" class="hidden">
+            <!-- <MainBtn text="Ring oss" to="tel:08-222265" class="hidden">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path
                   d="M13,8a3,3,0,0,1,3,3,1,1,0,0,0,2,0,5,5,0,0,0-5-5,1,1,0,0,0,0,2Z"
@@ -47,7 +53,7 @@
                   style="fill: #fff;"
                 />
               </svg>
-            </MainBtn>
+            </MainBtn> -->
           </div>
 
           <div class="inline-flex items-center mb-2">
@@ -63,9 +69,7 @@
               />
             </svg>
 
-            <p>
-              info@alstra.se
-            </p>
+            <prismic-rich-text :field="data.email" />
           </div>
 
           <div class="inline-flex items-center mb-8">
@@ -101,14 +105,35 @@
               />
             </svg>
 
-            <p>support@alstra.se</p>
+            <prismic-rich-text :field="data.support_email" />
           </div>
 
           <div>
             <ul class="flex">
-              <li><Facebook class="h-4 w-4" /></li>
-              <li class="mx-8"><Twitter class="h-4 w-4" /></li>
-              <li><LinkedIn class="h-4 w-4" /></li>
+              <li>
+                <a
+                  :href="$store.state.miscellaneous.facebook_url.url"
+                  rel="”noopener”"
+                >
+                  <Facebook class="h-4 w-4" />
+                </a>
+              </li>
+              <li class="mx-8">
+                <a
+                  :href="$store.state.miscellaneous.twitter_url.url"
+                  rel="”noopener”"
+                >
+                  <Twitter class="h-4 w-4" />
+                </a>
+              </li>
+              <li>
+                <a
+                  :href="$store.state.miscellaneous.linkedin_url.url"
+                  rel="”noopener”"
+                >
+                  <LinkedIn class="h-4 w-4" />
+                </a>
+              </li>
             </ul>
           </div>
         </Block>
@@ -216,17 +241,15 @@
             </svg>
           </IconCircle>
 
-          <p class="mb-4">Alstra AB är vi som utvecklar SurveyGenerator.</p>
-          <p class="mb-8">
-            Vårt kontor ligger stategiskt placerat i Gamla Stan och är enkelt
-            att ta sig till oavsett om du går, cyklar, åker med SL eller tar
-            bilen.
-          </p>
+          <prismic-rich-text :field="data.description" class="mb-8" />
+
           <div class="flex justify-between">
             <p class="text-sm font-medium text-blue-4 leading-relaxed">
-              Alstra AB<br />
-              Norra Dryckesgränd 3<br />
-              111 30 Stockholm
+              {{ $prismic.asText($store.state.miscellaneous.company_name) }}
+              <br />
+              {{ $prismic.asText($store.state.miscellaneous.street_address) }}
+              <br />
+              {{ $prismic.asText($store.state.miscellaneous.zip_city) }}
             </p>
             <div>
               <GamlaStan class="w-64" />
@@ -246,6 +269,12 @@ export default {
   components: {
     IconCircle,
     GamlaStan,
+  },
+  props: {
+    data: {
+      type: Object,
+      default: null,
+    },
   },
 };
 </script>

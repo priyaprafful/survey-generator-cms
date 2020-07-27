@@ -29,16 +29,38 @@
       </ul>
 
       <ul class="flex justify-center mb-4">
-        <li class="py-2 px-4"><Facebook class="h-4 w-4" /></li>
-        <li class="py-2 px-4"><Twitter class="h-4 w-4" /></li>
-        <li class="py-2 px-4"><LinkedIn class="h-4 w-4" /></li>
+        <li class="py-2 px-4">
+          <a
+            :href="$store.state.miscellaneous.facebook_url.url"
+            rel="”noopener”"
+          >
+            <Facebook class="h-4 w-4" />
+          </a>
+        </li>
+        <li class="py-2 px-4">
+          <a
+            :href="$store.state.miscellaneous.twitter_url.url"
+            rel="”noopener”"
+          >
+            <Twitter class="h-4 w-4" />
+          </a>
+        </li>
+        <li class="py-2 px-4">
+          <a
+            :href="$store.state.miscellaneous.linkedin_url.url"
+            rel="”noopener”"
+          >
+            <LinkedIn class="h-4 w-4" />
+          </a>
+        </li>
       </ul>
 
       <div class="flex justify-center">
         <p>
           © 2000 - {{ new Date().getFullYear() }} |
           {{ $prismic.asText($store.state.miscellaneous.company_name) }},
-          {{ $prismic.asText($store.state.miscellaneous.address) }}
+          {{ $prismic.asText($store.state.miscellaneous.street_address) }},
+          {{ $prismic.asText($store.state.miscellaneous.zip_city) }}
         </p>
       </div>
     </div>

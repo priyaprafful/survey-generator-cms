@@ -4,7 +4,7 @@
       :heading="$prismic.asText(contactContent.heading)"
       :subheading="$prismic.asText(contactContent.subheading)"
     />
-    <ContactInfo />
+    <ContactInfo :data="contactContent" />
     <Team :data="contactContent" />
     <CTA />
   </div>
@@ -34,7 +34,6 @@ export default {
     )[0];
 
     try {
-      // Query to get blog home content
       const contactContent = (
         await $prismic.api.getSingle('contact', {
           lang: currentLocale.iso.toLowerCase(),
