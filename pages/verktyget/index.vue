@@ -6,7 +6,7 @@
     />
     <PlatformIntro />
     <PlatformDemo />
-    <PlatformOptions />
+    <PlatformOptions :data="platformContent" :posts="posts" />
     <PlatformPartners />
   </div>
 </template>
@@ -37,7 +37,14 @@ export default {
     )[0];
 
     try {
-      // Query to get blog home content
+      const optionPosts = await $prismic.api.query(
+        $prismic.predicates.at('document.type', 'survey_tool_option'),
+        {
+          orderings: '[my.post.date desc]',
+          lang: currentLocale.iso.toLowerCase(),
+        }
+      );
+
       const platformContent = (
         await $prismic.api.getSingle('platform', {
           lang: currentLocale.iso.toLowerCase(),
@@ -46,6 +53,7 @@ export default {
 
       // Returns data to be used in template
       return {
+        posts: optionPosts.results,
         platformContent,
       };
     } catch (e) {
