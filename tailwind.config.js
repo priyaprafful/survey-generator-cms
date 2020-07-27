@@ -75,11 +75,14 @@ module.exports = {
       gridTemplateColumns: {
         team: 'repeat(4, minmax(0, 12rem))',
       },
+      transitionProperty: {
+        spacing: 'margin, padding',
+      },
     },
   },
   variants: {
-    padding: ['responsive', 'first', 'last'],
-    margin: ['responsive', 'first', 'last', 'odd', 'even'],
+    padding: ['group-hover', 'responsive', 'first', 'last'],
+    margin: ['group-hover', 'responsive', 'first', 'last', 'odd', 'even'],
     gridColumnStart: ['last'],
     gridColumnEnd: ['last'],
     flexDirection: ['last'],

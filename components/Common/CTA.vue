@@ -16,10 +16,11 @@
           <div class="flex items-center">
             <CTABtn />
 
-            <FunnelBtn
+            <MainBtn
               :text="$t('common.get_quote')"
               :to="'kontakt'"
               class="py-2 px-4"
+              funnel
             />
           </div>
         </Block>
@@ -35,7 +36,13 @@
               skräddarsy både enkäter, mjukvara och tjänster.
             </p>
 
-            <FunnelBtn text="Priser" to="priser" class="mt-auto" />
+            <MainBtn
+              text="Priser"
+              to="priser"
+              class="mt-auto"
+              funnel
+              left-aligned
+            />
           </div>
 
           <div class="flex flex-col ml-4">
@@ -48,7 +55,13 @@
               paneler, kunder eller ”svenska folket”.
             </p>
 
-            <FunnelBtn text="Verktyget" to="verktyget" class="mt-auto" />
+            <MainBtn
+              text="Verktyget"
+              to="verktyget"
+              class="mt-auto"
+              funnel
+              left-aligned
+            />
           </div>
         </Block>
       </div>

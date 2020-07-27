@@ -3,14 +3,20 @@
     :is="global ? 'a' : 'nuxt-link'"
     :to="global ? null : localePath(to)"
     :href="global ? to : localePath(to)"
-    class="inline-flex items-center justify-center px-5 py-3 whitespace-no-wrap shadow border border-transparent leading-6 font-medium rounded-md text-white transition duration-150 ease-in-out"
+    class="group inline-flex items-center whitespace-no-wrap border border-transparent leading-6 font-medium rounded-md text-white transition duration-150 ease-in-out"
     :class="{
-      'bg-white hover:bg-bluegray-3 text-blue-9': white,
-      'bg-blue-4 hover:bg-blue-3 text-white': !white,
+      'bg-white hover:bg-bluegray-3 text-blue-9 shadow': white,
+      'bg-blue-4 hover:bg-blue-3 text-white shadow': !white && !funnel,
+      'bg-transparent text-blue-6': funnel,
+      'justify-center px-5 py-3': !leftAligned,
+      'justify-start px-0 py-3 ': leftAligned,
     }"
   >
-    {{ text }}
-    <ChevronRight v-if="chevron" class="ml-3 h-3 w-3" />
+    <span>{{ text }}</span>
+    <ChevronRight
+      v-if="chevron"
+      class="h-3 w-3 ml-3 transition-spacing group-hover:ml-4 duration-150"
+    />
   </component>
 </template>
 
@@ -26,6 +32,10 @@ export default {
       type: String,
       default: '/',
     },
+    funnel: {
+      type: Boolean,
+      default: false,
+    },
     global: {
       type: Boolean,
       default: false,
@@ -35,6 +45,10 @@ export default {
       default: true,
     },
     white: {
+      type: Boolean,
+      default: false,
+    },
+    leftAligned: {
       type: Boolean,
       default: false,
     },

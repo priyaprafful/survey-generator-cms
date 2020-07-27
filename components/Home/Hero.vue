@@ -14,11 +14,7 @@
             <div class="flex items-center">
               <CTABtn />
 
-              <FunnelBtn
-                :text="$t('common.get_quote')"
-                :to="'kontakt'"
-                class="py-2 px-4"
-              />
+              <MainBtn :text="$t('common.get_quote')" :to="'kontakt'" funnel />
             </div>
           </div>
 
