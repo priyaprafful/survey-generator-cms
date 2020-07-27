@@ -3,7 +3,7 @@
     <Container>
       <h2 class="text-center mb-16">Vad du får med SurveyGenerator</h2>
       <div class="flex leading-relaxed justify-between mt-8">
-        <Block third>
+        <Block onethird>
           <Placeholder class="w-12 h-12 mb-6" />
           <h3 class="mb-2 text-blue-1">Skräddarsytt</h3>
           <p>
@@ -13,7 +13,7 @@
             och fungerar precis som du vill.
           </p>
         </Block>
-        <Block third>
+        <Block onethird>
           <Placeholder class="w-12 h-12 mb-6" />
           <h3 class="mb-2 text-blue-1">Konsulthjälp</h3>
           <p>
@@ -29,7 +29,7 @@
             </li>
           </ul>
         </Block>
-        <Block third>
+        <Block onethird>
           <Placeholder class="w-12 h-12 mb-6" />
           <h3 class="mb-2 text-blue-1">Duis tempus</h3>
           <p>

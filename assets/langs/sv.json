@@ -13,5 +13,13 @@
   "menu": {
     "book_demo": "Boka demo",
     "login": "Logga in"
+  },
+  "login": {
+    "heading": "Logga in på ditt konto",
+    "email": "Email",
+    "password": "Lösenord",
+    "remember_me": "Kom ihåg",
+    "forgot_pw": "Glömt ditt lösenord?",
+    "sign_in": "Logga in"
   }
 }

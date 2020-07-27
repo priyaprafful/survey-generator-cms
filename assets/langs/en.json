@@ -13,5 +13,13 @@
   "menu": {
     "book_demo": "Book demo",
     "login": "Sign in"
+  },
+  "login": {
+    "heading": "Sign in to your account",
+    "email": "E-mail",
+    "password": "Password",
+    "remember_me": "Remember me",
+    "forgot_pw": "Forgot your password?",
+    "sign_in": "Sign in"
   }
 }
