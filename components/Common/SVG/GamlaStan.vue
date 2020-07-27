@@ -1,1173 +1,1186 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308.19 244.73">
-    <circle cx="49.64" cy="121.71" r="4.57" style="fill: #262026;" />
-    <circle cx="74.87" cy="121.71" r="4.57" style="fill: #262026;" />
-    <circle cx="100.26" cy="121.71" r="4.57" style="fill: #262026;" />
-    <rect
-      x="445.6"
-      y="759.95"
-      width="22.62"
-      height="9.01"
-      transform="translate(-574.13 504.65) rotate(-90)"
-      style="fill: #875b52;"
-    />
-    <rect
-      x="169.57"
-      y="184.73"
-      width="135"
-      height="60"
-      style="fill: #875b52;"
-    />
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.57 425.74">
     <path
-      d="M513.2,961.45V944.86c0-7.3-4.27-13.22-9.55-13.22s-9.55,5.92-9.55,13.22v16.59Z"
-      transform="translate(-266.58 -716.72)"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="169.57"
-      y="88.8"
-      width="135"
-      height="95.92"
-      style="fill: #f9c2a3;"
-    />
-    <rect
-      x="251.08"
-      y="202.8"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="215.83"
-      y="202.8"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="283.48"
-      y="202.8"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="271.79"
-      y="202.8"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="183.67"
-      y="202.8"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="195.12"
-      y="202.8"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="251.08"
-      y="171.94"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="215.83"
-      y="171.94"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="283.48"
-      y="171.94"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="271.79"
-      y="171.94"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="183.67"
-      y="171.94"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="195.12"
-      y="171.94"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="251.08"
-      y="149.18"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="215.83"
-      y="149.18"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="283.48"
-      y="149.18"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="271.79"
-      y="149.18"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="183.67"
-      y="149.18"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="195.12"
-      y="149.18"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="251.08"
-      y="126.42"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="215.83"
-      y="126.42"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="283.48"
-      y="126.42"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="271.79"
-      y="126.42"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="183.67"
-      y="126.42"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="195.12"
-      y="126.42"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <path
-      d="M227.73,179.83H246.3a0,0,0,0,1,0,0v3.44a7.5,7.5,0,0,1-7.5,7.5h-3.58a7.5,7.5,0,0,1-7.5-7.5v-3.44A0,0,0,0,1,227.73,179.83Z"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="227.73"
-      y="129.81"
-      width="18.58"
-      height="58.9"
-      rx="7.5"
-      style="fill: #875b52;"
+      d="M550.55,517c31.72,13.24,49.15,56.47,64.83,96.56,15.34,39.73,28.59,76.68,36.26,117.82s9.76,86.45-8.72,121.31-57.17,58.91-96.56,71.81c-39.74,12.89-79.82,15-117.82,11.15S355,922.4,307.58,914c-47.41-8.72-106.32-15.69-124.79-46.71s3.48-85.76,15.68-133.51,14.29-88.19,30-124.1c16-35.55,45-66.58,80.18-78.08s76.69-3.84,120.26-8S518.82,503.4,550.55,517Z"
+      transform="translate(-175.67 -511.63)"
+      style="fill: #ddeff8;"
     />
     <g>
-      <g>
-        <rect
-          x="241.21"
-          y="163.48"
-          width="2.01"
-          height="9.45"
-          style="opacity: 0.5; isolation: isolate;"
-        />
-        <rect
-          x="241.21"
-          y="172.93"
-          width="2.01"
-          height="3.81"
-          style="opacity: 0.150000005960464; isolation: isolate;"
-        />
-      </g>
-      <g>
-        <rect
-          x="235.98"
-          y="163.48"
-          width="2.01"
-          height="9.45"
-          style="opacity: 0.5; isolation: isolate;"
-        />
-        <rect
-          x="235.98"
-          y="172.93"
-          width="2.01"
-          height="3.81"
-          style="opacity: 0.150000005960464; isolation: isolate;"
-        />
-      </g>
-      <g>
-        <rect
-          x="230.81"
-          y="163.48"
-          width="2.01"
-          height="9.45"
-          style="opacity: 0.5; isolation: isolate;"
-        />
-        <rect
-          x="230.81"
-          y="172.93"
-          width="2.01"
-          height="3.81"
-          style="opacity: 0.150000005960464; isolation: isolate;"
-        />
-      </g>
-    </g>
-    <g>
-      <g>
-        <rect
-          x="241.18"
-          y="141.92"
-          width="2.01"
-          height="9.45"
-          style="opacity: 0.5; isolation: isolate;"
-        />
-        <rect
-          x="241.18"
-          y="151.37"
-          width="2.01"
-          height="3.81"
-          style="opacity: 0.150000005960464; isolation: isolate;"
-        />
-      </g>
-      <g>
-        <rect
-          x="235.94"
-          y="141.92"
-          width="2.01"
-          height="9.45"
-          style="opacity: 0.5; isolation: isolate;"
-        />
-        <rect
-          x="235.94"
-          y="151.37"
-          width="2.01"
-          height="3.81"
-          style="opacity: 0.150000005960464; isolation: isolate;"
-        />
-      </g>
-      <g>
-        <rect
-          x="230.78"
-          y="141.92"
-          width="2.01"
-          height="9.45"
-          style="opacity: 0.5; isolation: isolate;"
-        />
-        <rect
-          x="230.78"
-          y="151.37"
-          width="2.01"
-          height="3.81"
-          style="opacity: 0.150000005960464; isolation: isolate;"
-        />
-      </g>
-    </g>
-    <path
-      d="M507.13,846.53h-1.68a1.8,1.8,0,0,0-1.8-1.79h-.25a1.8,1.8,0,0,0-1.8,1.79h-1.54a5.75,5.75,0,0,0-5.75,5.76v.2h18.57v-.2A5.75,5.75,0,0,0,507.13,846.53Z"
-      transform="translate(-266.58 -716.72)"
-      style="fill: #9c8d71;"
-    />
-    <rect
-      x="169.57"
-      y="103.77"
-      width="135"
-      height="6.69"
-      style="fill: #875b52;"
-    />
-    <path
-      d="M521.16,810.52h0a3.49,3.49,0,0,1,3.5,3.49h0v6.48h-7V814a3.5,3.5,0,0,1,3.5-3.49Z"
-      transform="translate(-266.58 -716.72)"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <path
-      d="M485.91,810.52h0a3.5,3.5,0,0,1,3.5,3.49h0v6.48h-7V814a3.49,3.49,0,0,1,3.5-3.49Z"
-      transform="translate(-266.58 -716.72)"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <path
-      d="M553.56,810.52h0a3.5,3.5,0,0,1,3.5,3.49h0v6.48h-7V814a3.5,3.5,0,0,1,3.5-3.49Z"
-      transform="translate(-266.58 -716.72)"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="169.57"
-      y="103.77"
-      width="135"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <path
-      d="M541.87,810.52h0a3.5,3.5,0,0,1,3.5,3.49h0v6.48h-7V814a3.49,3.49,0,0,1,3.5-3.49Z"
-      transform="translate(-266.58 -716.72)"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <path
-      d="M453.74,810.52h0a3.49,3.49,0,0,1,3.5,3.49h0v6.48h-7V814a3.5,3.5,0,0,1,3.5-3.49Z"
-      transform="translate(-266.58 -716.72)"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <path
-      d="M465.2,810.52h0a3.49,3.49,0,0,1,3.5,3.49h0v6.48h-7V814a3.5,3.5,0,0,1,3.5-3.49Z"
-      transform="translate(-266.58 -716.72)"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <path
-      d="M275.29,93.79h0a3.5,3.5,0,0,1,3.5,3.5v0a0,0,0,0,1,0,0h-7a0,0,0,0,1,0,0v0A3.5,3.5,0,0,1,275.29,93.79Z"
-      style="fill: #5d847c;"
-    />
-    <path
-      d="M287,93.79h0a3.5,3.5,0,0,1,3.5,3.5v0a0,0,0,0,1,0,0h-7a0,0,0,0,1,0,0v0A3.5,3.5,0,0,1,287,93.79Z"
-      style="fill: #5d847c;"
-    />
-    <path
-      d="M219.33,93.79h0a3.5,3.5,0,0,1,3.5,3.5v0a0,0,0,0,1,0,0h-7a0,0,0,0,1,0,0v0A3.5,3.5,0,0,1,219.33,93.79Z"
-      style="fill: #5d847c;"
-    />
-    <path
-      d="M187.17,93.79h0a3.5,3.5,0,0,1,3.5,3.5v0a0,0,0,0,1,0,0h-7a0,0,0,0,1,0,0v0A3.5,3.5,0,0,1,187.17,93.79Z"
-      style="fill: #5d847c;"
-    />
-    <path
-      d="M557.06,948.85v-9.68c0-4.26-4.18-7.72-9.35-7.72s-9.34,3.46-9.34,7.72v9.68Z"
-      transform="translate(-266.58 -716.72)"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <path
-      d="M468.94,948.85v-9.68c0-4.26-4.18-7.72-9.35-7.72s-9.35,3.46-9.35,7.72v9.68Z"
-      transform="translate(-266.58 -716.72)"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="183.58"
-      y="232.13"
-      width="18.54"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="271.86"
-      y="232.13"
-      width="18.54"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="251.08"
-      y="161.96"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="271.79"
-      y="161.96"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="283.48"
-      y="161.96"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="251.08"
-      y="139.2"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="271.79"
-      y="139.2"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="283.48"
-      y="139.2"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="251.08"
-      y="116.59"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="271.79"
-      y="116.59"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="283.48"
-      y="116.59"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="215.83"
-      y="161.86"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="195.12"
-      y="161.96"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="183.67"
-      y="161.86"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="215.83"
-      y="139.2"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="195.12"
-      y="139.2"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="183.67"
-      y="139.2"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="215.83"
-      y="116.44"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="195.12"
-      y="116.44"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="183.67"
-      y="116.44"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="238.87"
-      y="126.42"
-      width="5.44"
-      height="2.01"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="229.58"
-      y="126.42"
-      width="5.44"
-      height="2.01"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="229.58"
-      y="116.44"
-      width="5.44"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="238.87"
-      y="116.44"
-      width="5.44"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <path
-      d="M510.85,829.42H496.32c-1.11,0-2,.67-2,1.51v2.74c0,.79.82,1.43,1.86,1.5v-2h5.44v2h3.84v-2h5.44v2c1.1,0,2-.68,2-1.51v-2.74C512.88,830.09,512,829.42,510.85,829.42Z"
-      transform="translate(-266.58 -716.72)"
-      style="fill: #875b52;"
-    />
-    <path
-      d="M511.52,815.5v-5h3.81a1.16,1.16,0,0,0,1.16-1.16v-2.21H490.82v2.21a1.15,1.15,0,0,0,1.15,1.16h3.57v5h-6.13v5h28.25v-5Z"
-      transform="translate(-266.58 -716.72)"
-      style="fill: #875b52;"
-    />
-    <rect
-      x="251.08"
-      y="192.92"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="271.79"
-      y="192.92"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="283.48"
-      y="192.92"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="215.83"
-      y="192.82"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="195.12"
-      y="192.92"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="183.67"
-      y="192.82"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="229.71"
-      y="192.78"
-      width="5.44"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="238.99"
-      y="192.78"
-      width="5.44"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="238.99"
-      y="202.76"
-      width="5.44"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="229.71"
-      y="202.76"
-      width="5.44"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <polygon
-      points="304.55 85.46 169.57 85.46 175.17 59.05 298.99 59.05 304.55 85.46"
-      style="fill: #3d343c;"
-    />
-    <rect
-      x="165.96"
-      y="85.46"
-      width="142.23"
-      height="3.35"
-      style="fill: #94bf93;"
-    />
-    <rect
-      x="187.17"
-      y="71.9"
-      width="11.46"
-      height="13.55"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="173.58"
-      y="59.05"
-      width="126.86"
-      height="7.32"
-      style="fill: #94bf93;"
-    />
-    <path
-      d="M222.75,64.19h28.64a1.86,1.86,0,0,1,1.86,1.86v2.49a0,0,0,0,1,0,0H220.89a0,0,0,0,1,0,0V66.05A1.86,1.86,0,0,1,222.75,64.19Z"
-      style="fill: #875b52;"
-    />
-    <polygon
-      points="300.44 59.05 173.59 59.05 230.68 34.91 243.35 34.91 300.44 59.05"
-      style="fill: #3d343c;"
-    />
-    <path
-      d="M507.73,743.52a10.47,10.47,0,0,0,1.13-4.83c0-4.31-2.36-7.81-5.27-7.81s-5.26,3.5-5.26,7.81a10.34,10.34,0,0,0,1.13,4.83h-2.2v8.12h12.67v-8.12Z"
-      transform="translate(-266.58 -716.72)"
-      style="fill: #94bf93;"
-    />
-    <rect
-      x="169.57"
-      y="88.8"
-      width="135"
-      height="1.63"
-      style="fill: #875b52;"
-    />
-    <rect
-      x="169.45"
-      y="88.8"
-      width="135"
-      height="1.63"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <path
-      d="M466.45,798.83V787.37a1,1,0,0,0-1-1h-12a1,1,0,0,0-1,1v11.46H436.15v3.35h17.6V788.63H465.2v13.55h18.93v-3.35Z"
-      transform="translate(-266.58 -716.72)"
-      style="fill: #6a8d6d;"
-    />
-    <rect
-      x="274.19"
-      y="71.9"
-      width="11.46"
-      height="13.55"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <path
-      d="M553.48,798.83V787.37a1,1,0,0,0-1-1h-12a1,1,0,0,0-1,1v11.46H523.18v3.35h17.59V788.63h11.46v13.55h18.92v-3.35Z"
-      transform="translate(-266.58 -716.72)"
-      style="fill: #6a8d6d;"
-    />
-    <rect
-      x="253.26"
-      y="78.12"
-      width="3.35"
-      height="7.34"
-      style="fill: #875b52;"
-    />
-    <rect
-      x="217.55"
-      y="78.12"
-      width="3.35"
-      height="7.34"
-      style="fill: #875b52;"
-    />
-    <rect
-      x="220.89"
-      y="68.54"
-      width="32.36"
-      height="16.92"
-      style="fill: #f9c2a3;"
-    />
-    <path
-      d="M237.07,70.78h0A9.27,9.27,0,0,1,246.34,80v5.41a0,0,0,0,1,0,0H227.81a0,0,0,0,1,0,0V80a9.27,9.27,0,0,1,9.27-9.27Z"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <path
-      d="M560,934.09c-6.17-6.54-18.36-6.54-24.53,0L533,931.67c13-7.29,16.34-7.29,29.37,0Z"
-      transform="translate(-266.58 -716.72)"
-      style="fill: #97846a;"
-    />
-    <g style="opacity: 0.22; isolation: isolate;">
+      <circle cx="136.34" cy="205.14" r="4.57" style="fill: #262026;" />
+      <circle cx="161.56" cy="205.14" r="4.57" style="fill: #262026;" />
+      <circle cx="186.95" cy="205.14" r="4.57" style="fill: #262026;" />
+      <rect
+        x="441.39"
+        y="638.29"
+        width="22.62"
+        height="9.01"
+        transform="translate(-365.77 583.86) rotate(-90)"
+        style="fill: #875b52;"
+      />
+      <rect
+        x="256.27"
+        y="268.15"
+        width="135"
+        height="60"
+        style="fill: #875b52;"
+      />
       <path
-        d="M470.09,933.48c-7-7-14-7-21,0L447,931.4c6.32-6.7,18.82-6.7,25.15,0Z"
-        transform="translate(-266.58 -716.72)"
+        d="M509,839.79V823.2c0-7.3-4.28-13.22-9.55-13.22s-9.55,5.92-9.55,13.22v16.59Z"
+        transform="translate(-175.67 -511.63)"
+        style="opacity: 0.5; isolation: isolate;"
       />
-    </g>
-    <rect
-      x="1.22"
-      y="212.31"
-      width="147.69"
-      height="32.32"
-      style="fill: #baa997;"
-    />
-    <rect
-      x="1.22"
-      y="146.3"
-      width="147.69"
-      height="66.01"
-      style="fill: #efce98;"
-    />
-    <rect
-      x="46.14"
-      y="229.86"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="46.14"
-      y="219.89"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="20.59"
-      y="229.86"
-      width="7"
-      height="4.02"
-      style="opacity: 0.150000005960464; isolation: isolate;"
-    />
-    <rect
-      x="20.59"
-      y="219.89"
-      width="7"
-      height="9.98"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <g>
       <rect
-        x="46.14"
-        y="208.29"
+        x="256.27"
+        y="172.23"
+        width="135"
+        height="95.92"
+        style="fill: #f9c2a3;"
+      />
+      <rect
+        x="337.77"
+        y="286.23"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="46.08"
-        y="198.31"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="45.96"
-        y="186.72"
+        x="302.52"
+        y="286.23"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="45.96"
-        y="176.74"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-      <rect
-        x="20.41"
-        y="186.72"
+        x="370.17"
+        y="286.23"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="20.41"
-        y="176.74"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="46.14"
-        y="165.15"
+        x="358.48"
+        y="286.23"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="46.14"
-        y="155.17"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="20.59"
-        y="165.15"
+        x="270.36"
+        y="286.23"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="20.59"
-        y="155.17"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="20.59"
-        y="208.29"
+        x="281.82"
+        y="286.23"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="20.59"
-        y="198.31"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="122.31"
-        y="208.29"
+        x="337.77"
+        y="255.37"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="122.31"
-        y="198.31"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="96.76"
-        y="208.29"
+        x="302.52"
+        y="255.37"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="96.76"
-        y="198.31"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="122.31"
-        y="228.24"
+        x="370.17"
+        y="255.37"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="122.31"
-        y="218.26"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="96.76"
-        y="228.24"
+        x="358.48"
+        y="255.37"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="96.76"
-        y="218.26"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="71.56"
-        y="186.72"
+        x="270.36"
+        y="255.37"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="71.56"
-        y="176.74"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="122.31"
-        y="186.72"
+        x="281.82"
+        y="255.37"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="122.31"
-        y="176.74"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="96.76"
-        y="186.72"
+        x="337.77"
+        y="232.61"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="96.76"
-        y="176.74"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="71.56"
-        y="165.15"
+        x="302.52"
+        y="232.61"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="71.56"
-        y="155.17"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="122.31"
-        y="165.15"
+        x="370.17"
+        y="232.61"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="122.31"
-        y="155.17"
-        width="7"
-        height="9.98"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="96.76"
-        y="165.15"
+        x="358.48"
+        y="232.61"
         width="7"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <rect
-        x="96.76"
-        y="155.17"
+        x="270.36"
+        y="232.61"
+        width="7"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="281.82"
+        y="232.61"
+        width="7"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="337.77"
+        y="209.85"
+        width="7"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="302.52"
+        y="209.85"
+        width="7"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="370.17"
+        y="209.85"
+        width="7"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="358.48"
+        y="209.85"
+        width="7"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="270.36"
+        y="209.85"
+        width="7"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="281.82"
+        y="209.85"
+        width="7"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <path
+        d="M314.42,263.25H333a0,0,0,0,1,0,0v3.44a7.5,7.5,0,0,1-7.5,7.5h-3.58a7.5,7.5,0,0,1-7.5-7.5v-3.44A0,0,0,0,1,314.42,263.25Z"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="314.42"
+        y="213.24"
+        width="18.58"
+        height="58.9"
+        rx="7.5"
+        style="fill: #875b52;"
+      />
+      <g>
+        <g>
+          <rect
+            x="327.9"
+            y="246.91"
+            width="2.01"
+            height="9.45"
+            style="opacity: 0.5; isolation: isolate;"
+          />
+          <rect
+            x="327.9"
+            y="256.36"
+            width="2.01"
+            height="3.81"
+            style="opacity: 0.150000005960464; isolation: isolate;"
+          />
+        </g>
+        <g>
+          <rect
+            x="322.67"
+            y="246.91"
+            width="2.01"
+            height="9.45"
+            style="opacity: 0.5; isolation: isolate;"
+          />
+          <rect
+            x="322.67"
+            y="256.36"
+            width="2.01"
+            height="3.81"
+            style="opacity: 0.150000005960464; isolation: isolate;"
+          />
+        </g>
+        <g>
+          <rect
+            x="317.5"
+            y="246.91"
+            width="2.01"
+            height="9.45"
+            style="opacity: 0.5; isolation: isolate;"
+          />
+          <rect
+            x="317.5"
+            y="256.36"
+            width="2.01"
+            height="3.81"
+            style="opacity: 0.150000005960464; isolation: isolate;"
+          />
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect
+            x="327.87"
+            y="225.35"
+            width="2.01"
+            height="9.45"
+            style="opacity: 0.5; isolation: isolate;"
+          />
+          <rect
+            x="327.87"
+            y="234.8"
+            width="2.01"
+            height="3.81"
+            style="opacity: 0.150000005960464; isolation: isolate;"
+          />
+        </g>
+        <g>
+          <rect
+            x="322.63"
+            y="225.35"
+            width="2.01"
+            height="9.45"
+            style="opacity: 0.5; isolation: isolate;"
+          />
+          <rect
+            x="322.63"
+            y="234.8"
+            width="2.01"
+            height="3.81"
+            style="opacity: 0.150000005960464; isolation: isolate;"
+          />
+        </g>
+        <g>
+          <rect
+            x="317.47"
+            y="225.35"
+            width="2.01"
+            height="9.45"
+            style="opacity: 0.5; isolation: isolate;"
+          />
+          <rect
+            x="317.47"
+            y="234.8"
+            width="2.01"
+            height="3.81"
+            style="opacity: 0.150000005960464; isolation: isolate;"
+          />
+        </g>
+      </g>
+      <path
+        d="M502.92,724.87h-1.69a1.8,1.8,0,0,0-1.79-1.8h-.25a1.81,1.81,0,0,0-1.8,1.8h-1.55a5.76,5.76,0,0,0-5.75,5.75v.21h18.58v-.21A5.76,5.76,0,0,0,502.92,724.87Z"
+        transform="translate(-175.67 -511.63)"
+        style="fill: #9c8d71;"
+      />
+      <rect
+        x="256.27"
+        y="187.2"
+        width="135"
+        height="6.69"
+        style="fill: #875b52;"
+      />
+      <path
+        d="M517,688.85h0a3.5,3.5,0,0,1,3.5,3.5h0v6.48h-7v-6.48a3.5,3.5,0,0,1,3.5-3.5Z"
+        transform="translate(-175.67 -511.63)"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <path
+        d="M481.69,688.85h0a3.5,3.5,0,0,1,3.5,3.5h0v6.48h-7v-6.48a3.5,3.5,0,0,1,3.5-3.5Z"
+        transform="translate(-175.67 -511.63)"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <path
+        d="M549.35,688.85h0a3.5,3.5,0,0,1,3.5,3.5h0v6.48h-7v-6.48a3.5,3.5,0,0,1,3.5-3.5Z"
+        transform="translate(-175.67 -511.63)"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="256.27"
+        y="187.2"
+        width="135"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <path
+        d="M537.65,688.85h0a3.5,3.5,0,0,1,3.5,3.5h0v6.48h-7v-6.48a3.5,3.5,0,0,1,3.5-3.5Z"
+        transform="translate(-175.67 -511.63)"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <path
+        d="M449.53,688.85h0a3.5,3.5,0,0,1,3.5,3.5h0v6.48h-7v-6.48a3.5,3.5,0,0,1,3.5-3.5Z"
+        transform="translate(-175.67 -511.63)"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <path
+        d="M461,688.85h0a3.5,3.5,0,0,1,3.5,3.5h0v6.48h-7v-6.48a3.5,3.5,0,0,1,3.5-3.5Z"
+        transform="translate(-175.67 -511.63)"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <path
+        d="M362,177.22h0a3.5,3.5,0,0,1,3.5,3.5v0a0,0,0,0,1,0,0h-7a0,0,0,0,1,0,0v0A3.5,3.5,0,0,1,362,177.22Z"
+        style="fill: #5d847c;"
+      />
+      <path
+        d="M373.67,177.22h0a3.5,3.5,0,0,1,3.5,3.5v0a0,0,0,0,1,0,0h-7a0,0,0,0,1,0,0v0A3.5,3.5,0,0,1,373.67,177.22Z"
+        style="fill: #5d847c;"
+      />
+      <path
+        d="M306,177.22h0a3.5,3.5,0,0,1,3.5,3.5v0a0,0,0,0,1,0,0h-7a0,0,0,0,1,0,0v0a3.5,3.5,0,0,1,3.5-3.5Z"
+        style="fill: #5d847c;"
+      />
+      <path
+        d="M273.86,177.22h0a3.5,3.5,0,0,1,3.5,3.5v0a0,0,0,0,1,0,0h-7a0,0,0,0,1,0,0v0A3.5,3.5,0,0,1,273.86,177.22Z"
+        style="fill: #5d847c;"
+      />
+      <path
+        d="M552.85,827.19v-9.68c0-4.27-4.19-7.72-9.35-7.72s-9.35,3.45-9.35,7.72v9.68Z"
+        transform="translate(-175.67 -511.63)"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <path
+        d="M464.73,827.19v-9.68c0-4.27-4.19-7.72-9.35-7.72s-9.35,3.45-9.35,7.72v9.68Z"
+        transform="translate(-175.67 -511.63)"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="270.27"
+        y="315.56"
+        width="18.54"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="358.55"
+        y="315.56"
+        width="18.54"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="337.77"
+        y="245.39"
         width="7"
         height="9.98"
         style="opacity: 0.5; isolation: isolate;"
       />
-    </g>
-    <rect
-      x="453.62"
-      y="751.54"
-      width="6.59"
-      height="9.81"
-      transform="translate(-566.11 496.63) rotate(-90)"
-      style="fill: #875b52;"
-    />
-    <rect
-      x="279.18"
-      y="837.27"
-      width="22.62"
-      height="6.89"
-      transform="translate(-816.81 414.48) rotate(-90)"
-      style="fill: #262026;"
-    />
-    <rect
-      x="381.08"
-      y="837.27"
-      width="22.62"
-      height="6.89"
-      transform="translate(-714.91 516.39) rotate(-90)"
-      style="fill: #262026;"
-    />
-    <polygon
-      points="148.91 146.36 1.22 146.36 7.34 121.71 142.83 121.71 148.91 146.36"
-      style="fill: #3d343c;"
-    />
-    <g>
       <rect
-        x="71.56"
-        y="208.29"
+        x="358.48"
+        y="245.39"
         width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="370.17"
+        y="245.39"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="337.77"
+        y="222.63"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="358.48"
+        y="222.63"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="370.17"
+        y="222.63"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="337.77"
+        y="200.02"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="358.48"
+        y="200.02"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="370.17"
+        y="200.02"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="302.52"
+        y="245.29"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="281.82"
+        y="245.39"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="270.36"
+        y="245.29"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="302.52"
+        y="222.63"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="281.82"
+        y="222.63"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="270.36"
+        y="222.63"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="302.52"
+        y="199.87"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="281.82"
+        y="199.87"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="270.36"
+        y="199.87"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="325.56"
+        y="209.85"
+        width="5.44"
+        height="2.01"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="316.28"
+        y="209.85"
+        width="5.44"
+        height="2.01"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="316.28"
+        y="199.87"
+        width="5.44"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="325.56"
+        y="199.87"
+        width="5.44"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <path
+        d="M506.64,707.76H492.11c-1.12,0-2,.67-2,1.51V712c0,.79.82,1.43,1.86,1.5v-2h5.44v2h3.84v-2h5.44v2c1.11,0,2-.69,2-1.51v-2.74C508.66,708.43,507.75,707.76,506.64,707.76Z"
+        transform="translate(-175.67 -511.63)"
+        style="fill: #875b52;"
+      />
+      <path
+        d="M507.31,693.84v-5h3.81a1.15,1.15,0,0,0,1.16-1.15v-2.21H486.6v2.21a1.15,1.15,0,0,0,1.16,1.15h3.57v5h-6.14v5h28.26v-5Z"
+        transform="translate(-175.67 -511.63)"
+        style="fill: #875b52;"
+      />
+      <rect
+        x="337.77"
+        y="276.35"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="358.48"
+        y="276.35"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="370.17"
+        y="276.35"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="302.52"
+        y="276.24"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="281.82"
+        y="276.35"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="270.36"
+        y="276.24"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="316.4"
+        y="276.21"
+        width="5.44"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="325.69"
+        y="276.21"
+        width="5.44"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="325.69"
+        y="286.18"
+        width="5.44"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="316.4"
+        y="286.18"
+        width="5.44"
         height="4.02"
         style="opacity: 0.150000005960464; isolation: isolate;"
       />
       <polygon
-        points="75.06 196.21 71.56 198.31 71.56 208.29 78.56 208.29 78.56 198.31 75.06 196.21"
+        points="391.24 168.88 256.26 168.88 261.86 142.47 385.68 142.47 391.24 168.88"
+        style="fill: #3d343c;"
+      />
+      <rect
+        x="252.65"
+        y="168.89"
+        width="142.23"
+        height="3.35"
+        style="fill: #94bf93;"
+      />
+      <rect
+        x="273.86"
+        y="155.33"
+        width="11.46"
+        height="13.55"
         style="opacity: 0.5; isolation: isolate;"
       />
+      <rect
+        x="260.28"
+        y="142.47"
+        width="126.86"
+        height="7.32"
+        style="fill: #94bf93;"
+      />
+      <path
+        d="M309.45,147.62h28.64a1.86,1.86,0,0,1,1.86,1.86V152a0,0,0,0,1,0,0H307.58a0,0,0,0,1,0,0v-2.49A1.86,1.86,0,0,1,309.45,147.62Z"
+        style="fill: #875b52;"
+      />
+      <polygon
+        points="387.13 142.47 260.28 142.47 317.37 118.34 330.04 118.34 387.13 142.47"
+        style="fill: #3d343c;"
+      />
+      <path
+        d="M503.51,621.85a10.3,10.3,0,0,0,1.13-4.82c0-4.32-2.35-7.81-5.26-7.81s-5.27,3.49-5.27,7.81a10.3,10.3,0,0,0,1.14,4.82h-2.2V630h12.66v-8.13Z"
+        transform="translate(-175.67 -511.63)"
+        style="fill: #94bf93;"
+      />
+      <rect
+        x="256.27"
+        y="172.23"
+        width="135"
+        height="1.63"
+        style="fill: #875b52;"
+      />
+      <rect
+        x="256.14"
+        y="172.23"
+        width="135"
+        height="1.63"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <path
+        d="M462.24,677.17V665.71a1,1,0,0,0-1-1h-12a1,1,0,0,0-1,1v11.46H431.94v3.35h17.59V667H461v13.56h18.92v-3.35Z"
+        transform="translate(-175.67 -511.63)"
+        style="fill: #6a8d6d;"
+      />
+      <rect
+        x="360.88"
+        y="155.33"
+        width="11.46"
+        height="13.55"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <path
+        d="M549.27,677.17V665.71a1,1,0,0,0-1-1h-12a1,1,0,0,0-1,1v11.46H519v3.35h17.59V667H548v13.56h18.92v-3.35Z"
+        transform="translate(-175.67 -511.63)"
+        style="fill: #6a8d6d;"
+      />
+      <rect
+        x="339.95"
+        y="161.55"
+        width="3.35"
+        height="7.34"
+        style="fill: #875b52;"
+      />
+      <rect
+        x="304.24"
+        y="161.55"
+        width="3.35"
+        height="7.34"
+        style="fill: #875b52;"
+      />
+      <rect
+        x="307.58"
+        y="151.97"
+        width="32.36"
+        height="16.92"
+        style="fill: #f9c2a3;"
+      />
+      <path
+        d="M323.77,154.21h0a9.27,9.27,0,0,1,9.27,9.27v5.41a0,0,0,0,1,0,0H314.5a0,0,0,0,1,0,0v-5.41A9.27,9.27,0,0,1,323.77,154.21Z"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <path
+        d="M555.76,812.43c-6.16-6.54-18.36-6.54-24.52,0L528.81,810c13-7.28,16.35-7.28,29.38,0Z"
+        transform="translate(-175.67 -511.63)"
+        style="fill: #97846a;"
+      />
+      <g style="opacity: 0.22; isolation: isolate;">
+        <path
+          d="M465.88,811.82c-7-7-14-7-21,0l-2.08-2.08c6.33-6.7,18.83-6.7,25.16,0Z"
+          transform="translate(-175.67 -511.63)"
+        />
+      </g>
+      <rect
+        x="87.91"
+        y="295.74"
+        width="147.69"
+        height="32.32"
+        style="fill: #baa997;"
+      />
+      <rect
+        x="87.91"
+        y="229.73"
+        width="147.69"
+        height="66.01"
+        style="fill: #efce98;"
+      />
+      <rect
+        x="132.84"
+        y="313.29"
+        width="7"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="132.84"
+        y="303.31"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="107.28"
+        y="313.29"
+        width="7"
+        height="4.02"
+        style="opacity: 0.150000005960464; isolation: isolate;"
+      />
+      <rect
+        x="107.28"
+        y="303.31"
+        width="7"
+        height="9.98"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <g>
+        <rect
+          x="132.84"
+          y="291.72"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="132.77"
+          y="281.74"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="132.66"
+          y="270.15"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="132.66"
+          y="260.17"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+        <rect
+          x="107.1"
+          y="270.15"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="107.1"
+          y="260.17"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="132.84"
+          y="248.57"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="132.84"
+          y="238.59"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="107.28"
+          y="248.57"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="107.28"
+          y="238.59"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="107.28"
+          y="291.72"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="107.28"
+          y="281.74"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="209"
+          y="291.72"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="209"
+          y="281.74"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="183.45"
+          y="291.72"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="183.45"
+          y="281.74"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="209"
+          y="311.67"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="209"
+          y="301.69"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="183.45"
+          y="311.67"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="183.45"
+          y="301.69"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="158.26"
+          y="270.15"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="158.26"
+          y="260.17"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="209"
+          y="270.15"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="209"
+          y="260.17"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="183.45"
+          y="270.15"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="183.45"
+          y="260.17"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="158.26"
+          y="248.57"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="158.26"
+          y="238.59"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="209"
+          y="248.57"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="209"
+          y="238.59"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="183.45"
+          y="248.57"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <rect
+          x="183.45"
+          y="238.59"
+          width="7"
+          height="9.98"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <rect
+        x="449.4"
+        y="629.88"
+        width="6.59"
+        height="9.81"
+        transform="translate(-357.76 575.85) rotate(-90)"
+        style="fill: #875b52;"
+      />
+      <rect
+        x="274.96"
+        y="715.61"
+        width="22.62"
+        height="6.89"
+        transform="translate(-608.46 493.7) rotate(-90)"
+        style="fill: #262026;"
+      />
+      <rect
+        x="376.87"
+        y="715.61"
+        width="22.62"
+        height="6.89"
+        transform="translate(-506.55 595.6) rotate(-90)"
+        style="fill: #262026;"
+      />
+      <polygon
+        points="235.6 229.79 87.91 229.79 94.03 205.14 229.52 205.14 235.6 229.79"
+        style="fill: #3d343c;"
+      />
+      <g>
+        <rect
+          x="158.26"
+          y="291.72"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <polygon
+          points="161.75 279.64 158.25 281.74 158.25 291.72 165.25 291.72 165.25 281.74 161.75 279.64"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <rect
+        x="132.84"
+        y="322.46"
+        width="7"
+        height="5.61"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="107.28"
+        y="322.46"
+        width="7"
+        height="5.61"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <path
+        d="M346.3,833.91v-8c0-6.07-4-11-8.87-11s-8.87,4.91-8.87,11v8l-7,5.79h31.8Z"
+        transform="translate(-175.67 -511.63)"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <polygon
+        points="170.63 322.37 152.88 322.37 145.86 328.15 152.88 328.15 170.63 328.15 177.66 328.15 170.63 322.37"
+        style="opacity: 0.5; isolation: isolate;"
+      />
+      <rect
+        x="86.69"
+        y="226.44"
+        width="150.13"
+        height="3.35"
+        style="fill: #262026;"
+      />
+      <g>
+        <rect
+          x="107.28"
+          y="225.7"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <polygon
+          points="110.78 213.63 107.28 215.73 107.28 225.7 114.28 225.7 114.28 215.73 110.78 213.63"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="132.84"
+          y="225.7"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <polygon
+          points="136.34 213.63 132.84 215.73 132.84 225.7 139.84 225.7 139.84 215.73 136.34 213.63"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="158.26"
+          y="225.7"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <polygon
+          points="161.75 213.63 158.25 215.73 158.25 225.7 165.25 225.7 165.25 215.73 161.75 213.63"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="183.45"
+          y="225.7"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <polygon
+          points="186.95 213.63 183.45 215.73 183.45 225.7 190.45 225.7 190.45 215.73 186.95 213.63"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
+      <g>
+        <rect
+          x="209"
+          y="225.7"
+          width="7"
+          height="4.02"
+          style="opacity: 0.150000005960464; isolation: isolate;"
+        />
+        <polygon
+          points="212.5 213.63 209 215.73 209 225.7 216 225.7 216 215.73 212.5 213.63"
+          style="opacity: 0.5; isolation: isolate;"
+        />
+      </g>
     </g>
-    <rect
-      x="46.14"
-      y="239.03"
-      width="7"
-      height="5.61"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect
-      x="20.59"
-      y="239.03"
-      width="7"
-      height="5.61"
-      style="opacity: 0.5; isolation: isolate;"
-    />
     <path
-      d="M350.52,955.57v-8c0-6.07-4-11-8.88-11s-8.87,4.91-8.87,11v8l-7,5.79h31.8Z"
-      transform="translate(-266.58 -716.72)"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <polygon
-      points="83.94 238.94 66.19 238.94 59.16 244.73 66.19 244.73 83.94 244.73 90.96 244.73 83.94 238.94"
-      style="opacity: 0.5; isolation: isolate;"
-    />
-    <rect y="143.01" width="150.13" height="3.35" style="fill: #262026;" />
-    <g>
-      <rect
-        x="20.59"
-        y="142.28"
-        width="7"
-        height="4.02"
-        style="opacity: 0.150000005960464; isolation: isolate;"
-      />
-      <polygon
-        points="24.09 130.2 20.59 132.3 20.59 142.28 27.59 142.28 27.59 132.3 24.09 130.2"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="46.14"
-        y="142.28"
-        width="7"
-        height="4.02"
-        style="opacity: 0.150000005960464; isolation: isolate;"
-      />
-      <polygon
-        points="49.64 130.2 46.14 132.3 46.14 142.28 53.14 142.28 53.14 132.3 49.64 130.2"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="71.56"
-        y="142.28"
-        width="7"
-        height="4.02"
-        style="opacity: 0.150000005960464; isolation: isolate;"
-      />
-      <polygon
-        points="75.06 130.2 71.56 132.3 71.56 142.28 78.56 142.28 78.56 132.3 75.06 130.2"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="96.76"
-        y="142.28"
-        width="7"
-        height="4.02"
-        style="opacity: 0.150000005960464; isolation: isolate;"
-      />
-      <polygon
-        points="100.25 130.2 96.75 132.3 96.75 142.28 103.75 142.28 103.75 132.3 100.25 130.2"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <g>
-      <rect
-        x="122.31"
-        y="142.28"
-        width="7"
-        height="4.02"
-        style="opacity: 0.150000005960464; isolation: isolate;"
-      />
-      <polygon
-        points="125.81 130.2 122.31 132.3 122.31 142.28 129.31 142.28 129.31 132.3 125.81 130.2"
-        style="opacity: 0.5; isolation: isolate;"
-      />
-    </g>
-    <path
-      d="M391.71,743.34c-1,3.43-2,6.87-3,10.29a3.79,3.79,0,0,1-5.46,2.31,91.69,91.69,0,0,0-13-6.5c-3.71-1.53-1-7.2,2.56-6.28v0a61.76,61.76,0,0,1,7.68,2.94C375,732.24,363,723.23,348.56,718.8c-1.09-.33-1-2.16.27-2.07,15.51,1.12,28.7,12.58,35,26.53.17-.62.34-1.24.52-1.86C385.66,736.67,393.09,738.63,391.71,743.34Z"
-      transform="translate(-266.58 -716.72)"
-      style="fill: #1c1c1b;"
+      d="M406.54,621.68c-1,3.43-2,6.86-3.05,10.29a3.77,3.77,0,0,1-5.46,2.3,91.63,91.63,0,0,0-13-6.49c-3.7-1.53-1-7.21,2.56-6.28v0a61.16,61.16,0,0,1,7.68,2.94c-5.46-13.84-17.45-22.85-31.88-27.28-1.09-.34-1-2.17.27-2.08,15.51,1.13,28.71,12.58,35,26.53.17-.61.34-1.23.52-1.85C400.5,615,407.92,617,406.54,621.68Z"
+      transform="translate(-175.67 -511.63)"
+      style="fill: #214159;"
     />
   </svg>
 </template>

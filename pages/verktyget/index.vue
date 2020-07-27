@@ -5,7 +5,6 @@
       :subheading="$prismic.asText(platformContent.subheading)"
     />
     <PlatformIntro />
-    <PlatformDemo />
     <PlatformOptions :data="platformContent" :posts="posts" />
     <PlatformPartners />
   </div>
@@ -13,7 +12,6 @@
 
 <script>
 import PlatformIntro from '@/components/Platform/PlatformIntro.vue';
-import PlatformDemo from '@/components/Platform/PlatformDemo.vue';
 import PlatformOptions from '@/components/Platform/PlatformOptions.vue';
 import PlatformPartners from '@/components/Platform/PlatformPartners.vue';
 
@@ -27,7 +25,6 @@ export default {
   },
   components: {
     PlatformIntro,
-    PlatformDemo,
     PlatformOptions,
     PlatformPartners,
   },
