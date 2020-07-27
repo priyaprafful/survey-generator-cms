@@ -18,7 +18,7 @@
 
             <FunnelBtn
               :text="$t('common.get_quote')"
-              :to="'boka-demo'"
+              :to="'kontakt'"
               class="py-2 px-4"
             />
           </div>

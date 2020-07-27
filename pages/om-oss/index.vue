@@ -30,7 +30,6 @@ export default {
     )[0];
 
     try {
-      // Query to get blog home content
       const aboutContent = (
         await $prismic.api.getSingle('about', {
           lang: currentLocale.iso.toLowerCase(),

@@ -13,7 +13,7 @@
       <prismic-image
         v-if="getFirstImage(post.data.content)"
         :field="getFirstImage(post.data.content)"
-        class="w-full h-48 object-cover rounded-t-lg"
+        class="w-full h-64 object-cover rounded-t-lg"
       />
 
       <div

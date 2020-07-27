@@ -48,7 +48,7 @@ export default {
 }
 
 .jaja {
-  clip-path: polygon(5% 10%, 100% 0%, 100% 75%, 5% 100%, 100% 100%, 0% 100%);
+  clip-path: polygon(6% 6%, 100% 0%, 100% 89%, 0% 100%);
   margin-left: 40px;
   margin-bottom: 40px;
 }
