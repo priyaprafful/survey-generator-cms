@@ -11,7 +11,7 @@
         :class="{ 'flex-row-reverse': index % 2 !== 0 }"
       >
         <Block half :row-reverse="index % 2 !== 0">
-          <prismic-rich-text :field="benefit.title" class="mb-4" />
+          <prismic-rich-text :field="benefit.title" class="mb-4 text-blue-1" />
           <prismic-rich-text :field="benefit.content" />
         </Block>
 

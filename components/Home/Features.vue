@@ -5,7 +5,7 @@
       <div class="flex leading-relaxed justify-between mt-8">
         <Block third>
           <Placeholder class="w-12 h-12 mb-6" />
-          <h3 class="mb-2">Skräddarsytt</h3>
+          <h3 class="mb-2 text-blue-1">Skräddarsytt</h3>
           <p>
             Tycker du att de vanliga versionerna har nästan allt – men ändå inte
             riktigt? Då kan vi skräddarsy verktyget till att passa just dig och
@@ -15,7 +15,7 @@
         </Block>
         <Block third>
           <Placeholder class="w-12 h-12 mb-6" />
-          <h3 class="mb-2">Konsulthjälp</h3>
+          <h3 class="mb-2 text-blue-1">Konsulthjälp</h3>
           <p>
             Har du behov av extra hjälp med själva genomförandet av en
             undersökning kan vi göra hela eller delar av jobbet. Vi erbjuder
@@ -31,7 +31,7 @@
         </Block>
         <Block third>
           <Placeholder class="w-12 h-12 mb-6" />
-          <h3 class="mb-2">Duis tempus</h3>
+          <h3 class="mb-2 text-blue-1">Duis tempus</h3>
           <p>
             In vitae mattis risus. Curabitur mattis, risus vel rhoncus
             hendrerit, nunc nisl finibus erat, vitae tempor ex erat in leo. Cras

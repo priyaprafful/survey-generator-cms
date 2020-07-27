@@ -4,10 +4,19 @@
       :heading="$prismic.asText(platformContent.heading)"
       :subheading="$prismic.asText(platformContent.subheading)"
     />
+    <PlatformIntro />
+    <PlatformDemo />
+    <PlatformOptions />
+    <PlatformPartners />
   </div>
 </template>
 
 <script>
+import PlatformIntro from '@/components/Platform/PlatformIntro.vue';
+import PlatformDemo from '@/components/Platform/PlatformDemo.vue';
+import PlatformOptions from '@/components/Platform/PlatformOptions.vue';
+import PlatformPartners from '@/components/Platform/PlatformPartners.vue';
+
 export default {
   name: 'Verktyget',
   nuxtI18n: {
@@ -15,6 +24,12 @@ export default {
       sv: '/verktyget',
       en: '/platform',
     },
+  },
+  components: {
+    PlatformIntro,
+    PlatformDemo,
+    PlatformOptions,
+    PlatformPartners,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
