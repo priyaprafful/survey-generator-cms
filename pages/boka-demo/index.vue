@@ -1,11 +1,13 @@
 <template>
   <div>
     <Booking :data="bookingContent" />
+    <Brands />
   </div>
 </template>
 
 <script>
 import Booking from '@/components/Booking/Booking.vue';
+import Brands from '@/components/Booking/Brands.vue';
 
 export default {
   layout: 'demo',
@@ -17,6 +19,7 @@ export default {
   },
   components: {
     Booking,
+    Brands,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(

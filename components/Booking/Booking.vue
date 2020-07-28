@@ -79,7 +79,7 @@
         </Block>
 
         <Block half>
-          <form class="bg-blue-9 p-10 rounded-lg">
+          <form class="bg-blue-9 p-12 rounded-lg">
             <h3 class="text-green-400 text-xl mb-6">
               Fyll i formuläret så kontaktar vi dig!
             </h3>
