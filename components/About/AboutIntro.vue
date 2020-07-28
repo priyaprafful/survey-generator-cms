@@ -7,16 +7,14 @@
           <prismic-rich-text :field="data.section_content" />
         </Block>
 
-        <Block
-          half
-          class="inline-flex flex-col relative"
-          style="height: max-content;"
-        >
+        <Block half class="flex h-full relative">
           <div class="dots" />
-          <prismic-image
-            :field="data.section_image"
-            class="object-cover z-10 jaja"
-          />
+          <div class="dingdong">
+            <prismic-image
+              :field="data.section_image"
+              class="object-cover z-10 jaja"
+            />
+          </div>
         </Block>
       </div>
     </Container>
@@ -47,9 +45,12 @@ export default {
   margin-top: 40px;
 }
 
-.jaja {
-  clip-path: polygon(6% 6%, 100% 0%, 100% 89%, 0% 100%);
+.dingdong {
   margin-left: 40px;
   margin-bottom: 40px;
+}
+
+.jaja {
+  clip-path: polygon(6% 6%, 100% 0%, 100% 89%, 0% 100%);
 }
 </style>

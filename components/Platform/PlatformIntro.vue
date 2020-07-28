@@ -27,9 +27,11 @@
           </p>
         </Block>
 
-        <Block half class="flex items-center relative">
+        <Block half class="flex h-full relative">
           <div class="dots" />
-          <img src="./SG4_Platform1.svg" class="w-full h-full z-10 jaja" />
+          <div class="dingdong w-full z-10">
+            <img src="./SG4_Platform1.svg" class="w-full h-full" />
+          </div>
         </Block>
       </div>
 
@@ -88,7 +90,7 @@ export default {};
   margin-top: 40px;
 }
 
-.jaja {
+.dingdong {
   margin-left: 40px;
   margin-bottom: 40px;
 }
