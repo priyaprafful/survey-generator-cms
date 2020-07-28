@@ -80,7 +80,7 @@
 
         <Block half>
           <form class="bg-blue-9 p-12 rounded-lg">
-            <h3 class="text-green-400 text-xl mb-6">
+            <h3 class="text-lightblue-7 text-xl mb-6">
               Fyll i formuläret så kontaktar vi dig!
             </h3>
 
@@ -133,7 +133,7 @@
 
             <MainBtn
               text="Boka demo"
-              class="w-full text-blue-9 bg-green-400 hover:bg-green-300"
+              class="w-full text-blue-9 bg-lightblue-7 hover:bg-lightblue-8"
             />
           </form>
         </Block>
@@ -166,6 +166,7 @@ export default {
 }
 
 .booking h3 {
+  font-size: 1.125rem;
   margin-bottom: 1rem;
 }
 
