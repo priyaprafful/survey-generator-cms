@@ -142,7 +142,7 @@ export default {
       config.resolve.alias.vue = 'vue/dist/vue.common';
     },
   },
-  export: {
+  generate: {
     fallback: true, // Netlify reads a 404.html, Nuxt will load as an SPA
   },
 };
