@@ -26,8 +26,10 @@
             enkätverktyget.
           </p>
         </Block>
-        <Block half>
-          <div class="bg-blue-2 w-full h-full" />
+
+        <Block half class="flex items-center relative">
+          <div class="dots" />
+          <img src="./SG4_Platform1.svg" class="w-full h-full z-10 jaja" />
         </Block>
       </div>
 
@@ -73,4 +75,21 @@
 export default {};
 </script>
 
-<style></style>
+<style scoped>
+.dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(#aad7ed 1px, transparent 2px);
+  background-size: calc(10 * 1px) calc(10 * 1px);
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.jaja {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+</style>
