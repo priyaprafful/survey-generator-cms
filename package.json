@@ -16,9 +16,11 @@
     "@prismicio/vue": "^2.0.7",
     "nuxt": "^2.14.0",
     "nuxt-i18n": "^6.13.0",
+    "particles.vue": "^2.0.5",
     "prismic-dom": "^2.2.3",
     "prismic-javascript": "^3.0.1",
     "vue-masonry-css": "^1.0.3",
+    "vue-particles": "^1.0.9",
     "vue-slider-component": "^3.2.2"
   },
   "devDependencies": {

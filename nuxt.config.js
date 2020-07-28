@@ -69,10 +69,7 @@ export default {
   plugins: [
     '~/plugins/common.js',
     '~/plugins/vue-masonry.js',
-    {
-      src: '~plugins/vue-slider.js',
-      ssr: false,
-    },
+    '~/plugins/vue-particles.js',
   ],
   /*
    ** Auto import components

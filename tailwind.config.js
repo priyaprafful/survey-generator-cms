@@ -78,6 +78,9 @@ module.exports = {
       transitionProperty: {
         spacing: 'margin, padding',
       },
+      listStyleType: {
+        square: 'square',
+      },
     },
   },
   variants: {

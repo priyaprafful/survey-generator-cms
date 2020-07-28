@@ -2,22 +2,23 @@
   <header
     class="sticky top-0 border-b z-50 transition duration-500"
     :class="{
-      'bg-bluegray-1': homepage,
-      'bg-blue-9 text-white border-white': !homepage,
+      'bg-bluegray-1': homepage || demopage,
+      'bg-blue-9 text-white border-white': !homepage && !demopage,
+      'border-bluegray-1': demopage,
       'border-bluegray-1': homepage && scrollPosition < 100,
       'border-bluegray-2': homepage && scrollPosition >= 100,
     }"
   >
     <nav class="max-w-screen-xl m-auto text-sm font-medium px-12">
       <ul class="flex items-center justify-between">
-        <li class="flex logo">
+        <li class="flex logo" :class="{ 'py-8': demopage }">
           <nuxt-link :to="localePath('/')">
-            <SGLogo v-if="homepage" />
+            <SGLogo v-if="homepage || demopage" />
             <SGLogoWhite v-else />
           </nuxt-link>
         </li>
 
-        <li class="flex">
+        <li v-if="!demopage" class="flex">
           <nuxt-link
             v-for="(link, index) in links"
             :key="index"
@@ -33,7 +34,7 @@
           </nuxt-link>
         </li>
 
-        <li class="flex items-center">
+        <li v-if="!demopage" class="flex items-center">
           <nuxt-link
             :to="localePath('logga-in')"
             class="py-8 mx-4 border-b-4 border-transparent transition duration-200"
@@ -63,6 +64,10 @@ export default {
   },
   props: {
     homepage: {
+      type: Boolean,
+      default: null,
+    },
+    demopage: {
       type: Boolean,
       default: null,
     },

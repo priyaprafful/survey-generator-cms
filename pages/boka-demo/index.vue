@@ -1,20 +1,22 @@
 <template>
   <div>
-    <PageHeader
-      :heading="$prismic.asText(bookingContent.heading)"
-      :subheading="$prismic.asText(bookingContent.subheading)"
-    />
+    <Booking :data="bookingContent" />
   </div>
 </template>
 
 <script>
+import Booking from '@/components/Booking/Booking.vue';
+
 export default {
-  name: 'BokaDemo',
+  layout: 'demo',
   nuxtI18n: {
     paths: {
       sv: '/boka-demo',
       en: '/book-demo',
     },
+  },
+  components: {
+    Booking,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
