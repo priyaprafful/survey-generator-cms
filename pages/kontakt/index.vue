@@ -6,7 +6,6 @@
     />
     <ContactInfo :data="contactContent" />
     <Team :data="contactContent" />
-    <CTA />
   </div>
 </template>
 

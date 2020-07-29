@@ -25,17 +25,6 @@
   font-display: swap;
 }
 
-@media (prefers-reduced-motion) {
-  /* disable animations if user have a reduced motion setting */
-  body *,
-  body *::before,
-  body *::after  {
-    animation: none !important;
-    transition: none !important;
-    transition-duration: none !important;
-  }
-}
-
 * {
   -webkit-font-smoothing: antialiased;
 }

@@ -4,8 +4,7 @@
     :class="{
       'bg-bluegray-1': homepage || demopage,
       'bg-blue-9 text-white border-white': !homepage && !demopage,
-      'border-transparent': demopage,
-      'border-bluegray-1': homepage && scrollPosition < 100,
+      'border-transparent': (homepage || demopage) && scrollPosition < 100,
       'border-bluegray-2': (homepage || demopage) && scrollPosition >= 100,
     }"
   >

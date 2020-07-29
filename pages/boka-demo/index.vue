@@ -1,11 +1,8 @@
 <template>
-  <div>
-    <Wrapper>
-      <Booking :data="bookingContent" />
-      <Brands />
-    </Wrapper>
-    <CTA />
-  </div>
+  <Wrapper>
+    <Booking :data="bookingContent" />
+    <Brands />
+  </Wrapper>
 </template>
 
 <script>
