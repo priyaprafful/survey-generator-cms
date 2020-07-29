@@ -65,7 +65,11 @@
       </div>
 
       <div class="flex justify-center mt-16">
-        <MainBtn text="Våra kunder" to="kunder" />
+        <MainBtn
+          text="Våra kunder"
+          to="kunder"
+          class="bg-blue-4 hover:bg-blue-3 text-white"
+        />
       </div>
     </Container>
   </Wrapper>

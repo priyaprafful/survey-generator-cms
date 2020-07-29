@@ -2,52 +2,33 @@
   <Wrapper>
     <Container>
       <div class="inline-flex items-center leading-relaxed">
-        <div class="w-1/2 rounded text-blue-9 shadow-card">
-          <div class="p-10 rounded-t bg-bluegray-2">
-            <h3 class="text-center">Abonnemang</h3>
+        <div class="w-1/2 rounded-lg text-blue-9 shadow-card">
+          <div class="p-10 rounded-t-lg bg-bluegray-2">
+            <prismic-rich-text
+              :field="data.surveytype_left_title"
+              class="text-center"
+            />
           </div>
-          <div class="p-10 rounded-b bg-white">
-            <p>
-              Med ett abonnemang kan du göra hur många enkäter du vill under
-              abonnemangsperioden.
-            </p>
-            <br />
-            <p>
-              Du bestämmer vilken version av Survey Generator du vill ha och
-              antalet svarande respondenter under perioden, och priset beräknas
-              därifrån.
-            </p>
-            <br />
-            <p>
-              In quis luctus libero. Mauris eu ligula nisi. Nulla vel diam
-              sagittis, vulputate libero sed, cursus quam. Quisque vehicula
-              velit nec arcu tristique, eu consequat justo blandit.
-            </p>
+          <div class="p-10 rounded-b-lg bg-white">
+            <prismic-rich-text
+              :field="data.surveytype_left_content"
+              class="rich-text"
+            />
           </div>
         </div>
 
-        <div class="w-1/2 shadow-card">
-          <div class="p-10 rounded-tr bg-tangerine-1">
-            <h3 class="text-center">Enstaka enkät</h3>
+        <div class="w-1/2 shadow-card text-white">
+          <div class="p-10 rounded-tr-lg bg-blue-4">
+            <prismic-rich-text
+              :field="data.surveytype_right_title"
+              class="text-center"
+            />
           </div>
-          <div class="p-10 rounded-br bg-tangerine-2">
-            <!-- <ul>
-              <li>Inga försbindelser eller avtal</li>
-              <li>
-                Du betalar bara för det du använder, som till exempel antal
-                utskick och svar
-              </li>
-            </ul> -->
-            <p>
-              Med en enstaka enkät binder du dig inte till något långvarigt
-              avtal utan betalar helt enkelt per enkät.
-            </p>
-            <br />
-            <p>
-              Priset beror på hur många utskick du vill göra, eller hur många
-              svar du vill ha, beroende på om du skickar ut enkäten eller lägger
-              upp en länk som respondenten går in på.
-            </p>
+          <div class="p-10 rounded-br-lg bg-blue-9">
+            <prismic-rich-text
+              :field="data.surveytype_right_content"
+              class="rich-text"
+            />
           </div>
         </div>
       </div>
@@ -56,5 +37,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    data: {
+      type: Object,
+      default: null,
+    },
+  },
+};
 </script>

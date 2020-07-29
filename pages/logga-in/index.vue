@@ -50,7 +50,10 @@
             </div>
           </div>
 
-          <MainBtn :text="$t('login.sign_in')" class="w-full" />
+          <MainBtn
+            :text="$t('login.sign_in')"
+            class="w-full bg-blue-4 hover:bg-blue-3 text-white"
+          />
         </form>
       </Block>
 

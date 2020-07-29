@@ -1,6 +1,8 @@
 <template>
   <Wrapper>
     <Container>
+      <prismic-rich-text :field="data.cards_title" class="text-center mb-16" />
+
       <div class="grid grid-cols-3 gap-6">
         <div
           v-for="(card, index) in data.cards"
@@ -49,6 +51,7 @@
               text="Kontakta oss"
               to="kontakt"
               white
+              class="bg-bluegray-1 hover:bg-bluegray-3 text-blue-9"
             />
           </div>
         </div>

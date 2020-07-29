@@ -5,7 +5,7 @@
       :subheading="$prismic.asText(pricingContent.subheading)"
     />
     <PricingIntro :data="pricingContent" />
-    <SurveyTypes />
+    <SurveyTypes :data="pricingContent" />
     <PlansCards :data="pricingContent" />
     <PlansTable :data="pricingContent" />
     <FAQ :data="pricingContent" />
