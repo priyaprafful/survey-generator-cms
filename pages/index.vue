@@ -14,7 +14,6 @@ import Testimonials from '@/components/Home/Testimonials.vue';
 import Features from '@/components/Home/Features.vue';
 
 export default {
-  name: 'Home',
   layout: 'home',
   components: {
     Hero,
@@ -46,7 +45,7 @@ export default {
   },
   head() {
     return {
-      title: 'Prismic Nuxt.js Blog',
+      title: 'SurveyGenerator — ' + this.$t('head_title.homepage'),
     };
   },
 };

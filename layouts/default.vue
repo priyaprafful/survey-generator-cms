@@ -20,7 +20,6 @@ export default {
   },
   head() {
     return {
-      title: 'Prismic Nuxt.js Blog',
       htmlAttrs: {
         lang: this.$i18n.locale,
       },

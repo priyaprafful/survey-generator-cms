@@ -21,5 +21,9 @@
     "remember_me": "Kom ihåg",
     "forgot_pw": "Glömt ditt lösenord?",
     "sign_in": "Logga in"
+  },
+  "head_title": {
+    "homepage": "Enkätundersökningar för företag och organisationer",
+    "platform": "Verktyg"
   }
 }

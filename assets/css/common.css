@@ -82,12 +82,12 @@ svg {
 
 .page-enter-active,
 .page-leave-active {
-  transition-property: opacity;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.1s;
+  opacity: 1;
+  transition: opacity 0.1s linear;
 }
+
 .page-enter,
-.page-leave-to {
+.page-leave-active {
   opacity: 0;
 }
 

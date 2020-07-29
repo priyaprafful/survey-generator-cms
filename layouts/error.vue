@@ -13,11 +13,17 @@
 
 <script>
 export default {
-  // eslint-disable-next-line vue/require-prop-types
-  props: ['error'],
+  props: {
+    error: {
+      type: Object,
+      default: null,
+    },
+  },
   head() {
     return {
-      title: 'Prismic Nuxt.js Blog',
+      htmlAttrs: {
+        lang: this.$i18n.locale,
+      },
     };
   },
 };

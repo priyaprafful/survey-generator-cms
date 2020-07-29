@@ -21,5 +21,9 @@
     "remember_me": "Remember me",
     "forgot_pw": "Forgot your password?",
     "sign_in": "Sign in"
+  },
+  "head_title": {
+    "homepage": "Surveys for businesses and organizations",
+    "platform": "Platform"
   }
 }
