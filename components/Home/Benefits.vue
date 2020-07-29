@@ -4,21 +4,21 @@
       <h2 class="text-center mb-16">
         {{ $prismic.asText(data.benefits_title) }}
       </h2>
-      <div
+      <BlockWrapper
         v-for="(benefit, index) in data.benefits"
         :key="index"
-        class="flex leading-relaxed mb-16 last:mb-0"
-        :class="{ 'flex-row-reverse': index % 2 !== 0 }"
+        :index="index"
+        class="leading-relaxed mb-16 last:mb-0"
       >
-        <Block half :row-reverse="index % 2 !== 0">
+        <Block half :index="index">
           <prismic-rich-text :field="benefit.title" class="mb-4 text-blue-1" />
-          <prismic-rich-text :field="benefit.content" />
+          <prismic-rich-text :field="benefit.content" class="rich-text" />
         </Block>
 
-        <Block half :row-reverse="index % 2 !== 0">
+        <Block half :index="index">
           <div class="bg-blue-2 w-full h-full" />
         </Block>
-      </div>
+      </BlockWrapper>
     </Container>
   </section>
 </template>

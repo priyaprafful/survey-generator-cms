@@ -4,7 +4,7 @@
       :heading="$prismic.asText(platformContent.heading)"
       :subheading="$prismic.asText(platformContent.subheading)"
     />
-    <PlatformIntro />
+    <PlatformIntro :data="platformContent" />
     <PlatformOptions :data="platformContent" :posts="posts" />
     <PlatformPartners />
   </div>

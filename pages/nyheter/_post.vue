@@ -14,7 +14,7 @@
           </div>
 
           <prismic-rich-text :field="post.data.title" class="text-sm mb-6" />
-          <prismic-rich-text :field="post.data.content" class="article" />
+          <prismic-rich-text :field="post.data.content" class="rich-text" />
         </article>
       </Container>
     </div>
@@ -60,9 +60,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.article .block-img img {
-  margin: auto;
-}
-</style>

@@ -1,12 +1,10 @@
 <template>
-  <div class="bg-white">
-    <div class="max-w-screen-xl m-auto py-12 px-12">
-      <div class="flex justify-between">
-        <SEB class="h-8" />
-        <SACO class="h-8" />
-        <AssaAbloy class="h-8" />
-        <SwedishMatch class="h-8" />
-      </div>
+  <div class="max-w-screen-xl m-auto py-12 px-12">
+    <div class="flex justify-between">
+      <SEB class="h-8" />
+      <SACO class="h-8" />
+      <AssaAbloy class="h-8" />
+      <SwedishMatch class="h-8" />
     </div>
   </div>
 </template>

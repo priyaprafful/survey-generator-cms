@@ -80,7 +80,7 @@ svg {
   width: 1px;
 }
 
-.article a {
+.rich-text a {
   background: linear-gradient(to bottom, #bbdff1 0%, #43a8d8 100%);
   color: inherit;
   background-position: 0 100%;
@@ -90,9 +90,24 @@ svg {
   transition: background-size 0.5s, color 0.5s;
 }
 
-.article a:hover {
+.rich-text a:hover {
   background-size: 3px 50px;
   color: #fff;
+}
+
+.rich-text p,
+.rich-text ul {
+  margin-bottom: 1.5rem;
+}
+
+.rich-text p:last-child,
+.rich-text ul:last-child,
+.rich-text li:last-child {
+  margin-bottom: 0;
+}
+
+.rich-text .block-img img {
+  margin: auto;
 }
 
 .page-enter-active,

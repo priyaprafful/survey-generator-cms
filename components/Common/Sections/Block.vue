@@ -5,8 +5,8 @@
       'w-1/2': half,
       'w-1/3': onethird,
       'w-2/3': twothird,
-      'first:mr-8 last:ml-8': !rowReverse,
-      'first:ml-8 last:mr-8': rowReverse,
+      'first:mr-8 last:ml-8': !index % 2 !== 0,
+      'first:ml-8 last:mr-8': index % 2 !== 0,
     }"
   >
     <slot></slot>
@@ -17,6 +17,10 @@
 export default {
   name: 'Block',
   props: {
+    index: {
+      type: [Number, String],
+      default: null,
+    },
     full: {
       type: Boolean,
       default: null,

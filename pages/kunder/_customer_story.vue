@@ -58,7 +58,7 @@
             class="mb-10"
           >
             <prismic-rich-text :field="content.title" class="text-lg mb-4" />
-            <prismic-rich-text :field="content.description" class="article" />
+            <prismic-rich-text :field="content.description" class="rich-text" />
           </div>
         </article>
       </Container>
@@ -105,20 +105,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.article a {
-  background: linear-gradient(to bottom, #bbdff1 0%, #43a8d8 100%);
-  color: inherit;
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 3px 3px;
-  text-decoration: none;
-  transition: background-size 0.5s, color 0.5s;
-}
-
-.article a:hover {
-  background-size: 3px 50px;
-  color: #fff;
-}
-</style>

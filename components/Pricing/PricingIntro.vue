@@ -48,22 +48,15 @@
               </g>
             </svg>
           </IconCircle>
-          <h2 class="mb-6">Lorem ipsum dolor sit</h2>
-          <p>
-            Du kan antingen köpa en enstaka enkät, eller ett abonnemang med
-            obegränsat antal enkäter.
-          </p>
-          <br />
-          <p>
-            Vilken form som passar dig bäst beror på hur många undersökningar,
-            utvärderingar eller andra typer av enkäter du planerar att
-            genomföra. Oavsett betalar du bara för nyttjandet av vårt verktyg,
-            och slipper kostnader för drift och support.
-          </p>
+
+          <prismic-rich-text :field="data.intro_title" class="mb-6" />
+          <prismic-rich-text :field="data.intro_content" class="rich-text" />
         </Block>
 
         <Block half>
-          <div class="bg-blue-2 w-full h-full" />
+          <Dots>
+            <prismic-image v-if="data.intro_image" :field="data.intro_image" />
+          </Dots>
         </Block>
       </div>
     </Container>
@@ -76,6 +69,12 @@ import IconCircle from '@/components/Common/SVG/IconCircle.vue';
 export default {
   components: {
     IconCircle,
+  },
+  props: {
+    data: {
+      type: Object,
+      default: null,
+    },
   },
 };
 </script>

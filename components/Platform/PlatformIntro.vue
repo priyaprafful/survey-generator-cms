@@ -2,58 +2,25 @@
   <Wrapper>
     <Container>
       <div class="text-center leading-loose mb-16">
-        <h2>Inget är omöjligt i vårt enkätverktyg</h2>
+        <prismic-rich-text :field="data.intro_title" />
       </div>
 
-      <div class="flex leading-relaxed mb-16">
-        <Block half>
-          <h3 class="mb-4 text-blue-4">
-            Användarvänligt, kraftfullt och flexibelt enkätverktyg
-          </h3>
-          <p>
-            Vårt verktyg är erkänt enkelt och effektivt att arbeta med, och
-            bland våra kunder finns exempelvis Demoskop och SACO. Du kan lätt
-            administrera din undersökning från ax till limpa, och väljer hur
-            avancerade rapporter du vill ha. Oavsett om det är några få eller
-            hundratusentals respondenter du behöver hantera är det enkelt med
-            verktyget.
-          </p>
-          <br />
-          <p>
-            SurveyGenerator utvecklas självklart hela tiden. Du kommer alltid
-            att ha den senaste tekniken och funktionaliteten. Dina idéer,
-            förslag och behov är viktiga för oss när vi utvecklar
-            enkätverktyget.
-          </p>
+      <BlockWrapper
+        v-for="(section, index) in data.intro_sections"
+        :key="index"
+        :index="index"
+      >
+        <Block half :index="index">
+          <prismic-rich-text :field="section.title" class="mb-4 text-blue-4" />
+          <prismic-rich-text :field="section.content" class="rich-text" />
         </Block>
 
-        <Block half class="flex h-full relative">
-          <div class="dots" />
-          <div class="dingdong w-full z-10">
-            <img src="./SG4_Platform1.svg" class="w-full h-full" />
-          </div>
+        <Block half :index="index">
+          <Dots :index="index">
+            <prismic-image v-if="section.image" :field="section.image" />
+          </Dots>
         </Block>
-      </div>
-
-      <div class="flex leading-relaxed">
-        <Block half>
-          <div class="bg-blue-2 w-full h-full" />
-        </Block>
-        <Block half>
-          <h3 class="mb-4 text-blue-4">Hjälp och självhjälp</h3>
-          <p>
-            Vårt enkätverktyg är enkelt att förstå, men det finns också allt
-            möjligt stöd för att snabbt komma igång. Skulle du behöva hjälp
-            finns vår snabba och personliga support till hands.
-          </p>
-          <br />
-          <p>
-            Vi kan också avlasta dig helt och hållet med allt ifrån upplägg och
-            utformning av din undersökning till att hantera administration och
-            rapporter.
-          </p>
-        </Block>
-      </div>
+      </BlockWrapper>
 
       <div class="flex">
         <p>Demoenkät</p>
@@ -74,24 +41,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    data: {
+      type: Object,
+      default: null,
+    },
+  },
+};
 </script>
-
-<style scoped>
-.dots {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: radial-gradient(#aad7ed 1px, transparent 2px);
-  background-size: calc(10 * 1px) calc(10 * 1px);
-  margin-right: 40px;
-  margin-top: 40px;
-}
-
-.dingdong {
-  margin-left: 40px;
-  margin-bottom: 40px;
-}
-</style>

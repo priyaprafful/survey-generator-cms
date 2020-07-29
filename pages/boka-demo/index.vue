@@ -1,7 +1,9 @@
 <template>
   <div>
-    <Booking :data="bookingContent" />
-    <Brands />
+    <Wrapper>
+      <Booking :data="bookingContent" />
+      <Brands />
+    </Wrapper>
     <CTA />
   </div>
 </template>
