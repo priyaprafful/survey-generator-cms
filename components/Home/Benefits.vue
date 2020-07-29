@@ -4,11 +4,11 @@
       <h2 class="text-center mb-16">
         {{ $prismic.asText(data.benefits_title) }}
       </h2>
+
       <BlockWrapper
         v-for="(benefit, index) in data.benefits"
         :key="index"
         :index="index"
-        class="leading-relaxed mb-16 last:mb-0"
       >
         <Block half :index="index">
           <prismic-rich-text :field="benefit.title" class="mb-4 text-blue-1" />

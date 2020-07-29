@@ -1,7 +1,7 @@
 <template>
   <Wrapper>
     <Container>
-      <div class="inline-flex leading-loose">
+      <!-- <div class="inline-flex leading-loose">
         <Block half class="inline-flex flex-col">
           <prismic-rich-text :field="data.section_title" class="mb-6" />
           <prismic-rich-text :field="data.section_content" />
@@ -15,7 +15,34 @@
             />
           </Dots>
         </Block>
-      </div>
+      </div> -->
+      <BlockWrapper
+        v-for="(section, index) in data.sections"
+        :key="index"
+        :index="index"
+      >
+        <Block half :index="index">
+          <prismic-rich-text
+            v-if="section.title.length > 0"
+            :field="section.title"
+            class="mb-6"
+          />
+          <prismic-rich-text :field="section.content" class="rich-text" />
+        </Block>
+
+        <Block half :index="index">
+          <Dots>
+            <prismic-image
+              :field="section.image"
+              class="object-cover"
+              :class="{
+                'about-image-left': index % 2 !== 0,
+                'about-image-right': !index % 2 !== 0,
+              }"
+            />
+          </Dots>
+        </Block>
+      </BlockWrapper>
     </Container>
   </Wrapper>
 </template>
@@ -32,7 +59,11 @@ export default {
 </script>
 
 <style scoped>
-.about-image {
-  clip-path: polygon(6% 6%, 100% 0%, 100% 89%, 0% 100%);
+.about-image-right {
+  clip-path: polygon(6% 6%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.about-image-left {
+  clip-path: polygon(100% 0%, 90% 100%, 0% 100%, 6% 6%);
 }
 </style>

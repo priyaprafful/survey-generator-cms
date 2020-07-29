@@ -241,7 +241,7 @@
             </svg>
           </IconCircle>
 
-          <prismic-rich-text :field="data.description" class="mb-8" />
+          <prismic-rich-text :field="data.description" class="rich-text mb-8" />
 
           <div class="flex justify-between">
             <p class="text-sm font-medium text-blue-4 leading-relaxed">

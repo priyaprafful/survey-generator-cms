@@ -12,7 +12,10 @@
           </nuxt-link>
         </div>
 
-        <prismic-rich-text :field="post.data.post_description" />
+        <prismic-rich-text
+          :field="post.data.post_description"
+          class="option rich-text"
+        />
       </article>
     </Container>
   </div>
@@ -52,18 +55,8 @@ export default {
 </script>
 
 <style>
-.article a {
-  background: linear-gradient(to bottom, #bbdff1 0%, #43a8d8 100%);
-  color: inherit;
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 3px 3px;
-  text-decoration: none;
-  transition: background-size 0.5s, color 0.5s;
-}
-
-.article a:hover {
-  background-size: 3px 50px;
-  color: #fff;
+.option h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
 }
 </style>

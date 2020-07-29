@@ -10,9 +10,20 @@
     "
     class="flex flex-col bg-white rounded-lg shadow-post"
   >
-    <prismic-rich-text :field="post.data.title" />
-    <prismic-rich-text :field="post.data.description" />
-    <prismic-rich-text :field="post.data.button_text" />
+    <div class="flex flex-col flex-1 p-6">
+      <prismic-rich-text :field="post.data.title" class="mb-6" />
+      <prismic-rich-text
+        :field="post.data.description"
+        class="text-sm leading-6 mb-4 rich-text"
+      />
+
+      <div class="flex items-center text-blue-6 mt-auto">
+        <span class="font-medium">{{
+          $prismic.asText(post.data.button_text)
+        }}</span>
+        <ChevronRight class="ml-3 h-3 w-3" />
+      </div>
+    </div>
   </nuxt-link>
 </template>
 

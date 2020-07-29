@@ -11,7 +11,7 @@
         :index="index"
       >
         <Block half :index="index">
-          <prismic-rich-text :field="section.title" class="mb-4 text-blue-4" />
+          <prismic-rich-text :field="section.title" class="text-blue-4 mb-4" />
           <prismic-rich-text :field="section.content" class="rich-text" />
         </Block>
 
@@ -22,18 +22,22 @@
         </Block>
       </BlockWrapper>
 
-      <div class="flex">
-        <p>Demoenkät</p>
-        <p>
-          För att visa hur en enkät kan se ut och vilka funktioner det finns i
-          verktyget har vi skapat en demoenkät som visar de olika frågetyperna i
-          verktyget. Givetvis går det att förändra utseende och layout efter
-          dina egna önskemål.
-        </p>
+      <div
+        class="flex items-center bg-blue-9 text-white p-6 shadow-card rounded-md leading-relaxed"
+      >
+        <div class="mr-6">
+          <prismic-rich-text
+            :field="data.demo_title"
+            class="text-blue-1 text-lg mb-4"
+          />
+          <prismic-rich-text :field="data.demo_content" class="rich-text" />
+        </div>
+
         <MainBtn
           global
-          text="Till demoenkäten"
-          to="https://reply.surveygenerator.com/InSurvey.aspx?xzy=dlAap9vr0UlyTXKa4vu%2fBcrbSuQRDygQ"
+          :text="$prismic.asText(data.demo_button)"
+          :to="data.demo_url.url"
+          class="bg-blue-4 hover:bg-blue-3 text-white"
         />
       </div>
     </Container>

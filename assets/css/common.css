@@ -122,6 +122,7 @@ svg {
   color: #fff;
 }
 
-.rich-text .block-img img {
+.rich-text .block-img img,
+.rich-text iframe {
   margin: auto;
 }
