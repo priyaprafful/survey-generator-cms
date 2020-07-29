@@ -9,9 +9,13 @@
         v-for="(section, index) in data.intro_sections"
         :key="index"
         :index="index"
+        class="leading-relaxed"
       >
         <Block half :index="index">
-          <prismic-rich-text :field="section.title" class="text-blue-4 mb-4" />
+          <prismic-rich-text
+            :field="section.title"
+            class="text-blue-4 text-lg mb-4"
+          />
           <prismic-rich-text :field="section.content" class="rich-text" />
         </Block>
 
