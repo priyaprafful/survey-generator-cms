@@ -27,15 +27,13 @@
       </BlockWrapper>
 
       <div
-        class="flex items-center bg-blue-9 text-white p-6 shadow-card rounded-md leading-relaxed"
+        class="flex flex-col bg-blue-9 text-white p-6 shadow-card rounded-md leading-relaxed"
       >
-        <div class="mr-6">
-          <prismic-rich-text
-            :field="data.demo_title"
-            class="text-blue-1 text-lg mb-4"
-          />
-          <prismic-rich-text :field="data.demo_content" class="rich-text" />
-        </div>
+        <prismic-rich-text
+          :field="data.demo_title"
+          class="text-blue-1 text-lg mb-4"
+        />
+        <prismic-rich-text :field="data.demo_content" class="rich-text mb-6" />
 
         <MainBtn
           global

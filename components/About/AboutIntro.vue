@@ -1,21 +1,6 @@
 <template>
   <Wrapper>
     <Container>
-      <!-- <div class="inline-flex leading-loose">
-        <Block half class="inline-flex flex-col">
-          <prismic-rich-text :field="data.section_title" class="mb-6" />
-          <prismic-rich-text :field="data.section_content" />
-        </Block>
-
-        <Block half>
-          <Dots>
-            <prismic-image
-              :field="data.section_image"
-              class="object-cover about-image"
-            />
-          </Dots>
-        </Block>
-      </div> -->
       <BlockWrapper
         v-for="(section, index) in data.sections"
         :key="index"
