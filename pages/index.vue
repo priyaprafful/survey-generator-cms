@@ -4,7 +4,6 @@
     <Benefits :data="homepageContent" />
     <Testimonials :data="homepageContent" />
     <Features />
-    <CTA />
   </div>
 </template>
 
@@ -13,7 +12,6 @@ import Hero from '@/components/Home/Hero.vue';
 import Benefits from '@/components/Home/Benefits.vue';
 import Testimonials from '@/components/Home/Testimonials.vue';
 import Features from '@/components/Home/Features.vue';
-import CTA from '@/components/Common/CTA.vue';
 
 export default {
   name: 'Home',
@@ -23,7 +21,6 @@ export default {
     Benefits,
     Testimonials,
     Features,
-    CTA,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(

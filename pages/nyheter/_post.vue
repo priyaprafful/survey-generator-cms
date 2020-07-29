@@ -1,31 +1,25 @@
 <template>
-  <div>
-    <div class="bg-white">
-      <Container>
-        <article class="max-w-screen-sm m-auto leading-loose">
-          <div class="mb-10">
-            <nuxt-link
-              :to="localePath('nyheter')"
-              class="inline-flex items-center text-blue-6 underline"
-            >
-              <ChevronRight class="mr-3 h-3 w-3 transform rotate-180" />
-              Tillbaka till nyheter
-            </nuxt-link>
-          </div>
+  <div class="bg-white">
+    <Container>
+      <article class="max-w-screen-sm m-auto leading-loose">
+        <div class="mb-10">
+          <nuxt-link
+            :to="localePath('nyheter')"
+            class="inline-flex items-center text-blue-6 underline"
+          >
+            <ChevronRight class="mr-3 h-3 w-3 transform rotate-180" />
+            Tillbaka till nyheter
+          </nuxt-link>
+        </div>
 
-          <prismic-rich-text :field="post.data.title" class="text-sm mb-6" />
-          <prismic-rich-text :field="post.data.content" class="rich-text" />
-        </article>
-      </Container>
-    </div>
-
-    <CTA />
+        <prismic-rich-text :field="post.data.title" class="text-sm mb-6" />
+        <prismic-rich-text :field="post.data.content" class="rich-text" />
+      </article>
+    </Container>
   </div>
 </template>
 
 <script>
-import CTA from '@/components/Common/CTA.vue';
-
 export default {
   name: 'Post',
   nuxtI18n: {
@@ -33,9 +27,6 @@ export default {
       sv: '/nyheter/:post',
       en: '/news/:post',
     },
-  },
-  components: {
-    CTA,
   },
   async asyncData({ $prismic, params, error, app }) {
     const currentLocale = app.i18n.locales.filter(

@@ -13,7 +13,6 @@
 <script>
 import ContactInfo from '@/components/Contact/ContactInfo.vue';
 import Team from '@/components/Contact/Team.vue';
-import CTA from '@/components/Common/CTA.vue';
 
 export default {
   name: 'Kontakt',
@@ -26,7 +25,6 @@ export default {
   components: {
     ContactInfo,
     Team,
-    CTA,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(

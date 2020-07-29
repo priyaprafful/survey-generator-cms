@@ -6,14 +6,12 @@
     />
     <CustomersIntro :data="customersContent" />
     <Stories :data="customersContent" :posts="posts" />
-    <CTA />
   </div>
 </template>
 
 <script>
 import CustomersIntro from '@/components/Customers/CustomersIntro.vue';
 import Stories from '@/components/Customers/Stories.vue';
-import CTA from '@/components/Common/CTA.vue';
 
 export default {
   name: 'Kunder',
@@ -26,7 +24,6 @@ export default {
   components: {
     CustomersIntro,
     Stories,
-    CTA,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(

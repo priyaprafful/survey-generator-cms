@@ -2,6 +2,7 @@
   <div>
     <Header />
     <nuxt />
+    <CTA />
     <Footer />
   </div>
 </template>
@@ -9,11 +10,13 @@
 <script>
 import Header from '~/components/Common/Header.vue';
 import Footer from '~/components/Common/Footer.vue';
+import CTA from '~/components/Common/CTA.vue';
 
 export default {
   components: {
     Header,
     Footer,
+    CTA,
   },
   head() {
     return {

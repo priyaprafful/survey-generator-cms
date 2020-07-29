@@ -11,7 +11,6 @@
 <script>
 import Booking from '@/components/Booking/Booking.vue';
 import Brands from '@/components/Booking/Brands.vue';
-import CTA from '@/components/Common/CTA.vue';
 
 export default {
   layout: 'demo',
@@ -24,7 +23,6 @@ export default {
   components: {
     Booking,
     Brands,
-    CTA,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(

@@ -5,13 +5,11 @@
       :subheading="$prismic.asText(aboutContent.subheading)"
     />
     <AboutIntro :data="aboutContent" />
-    <CTA />
   </div>
 </template>
 
 <script>
 import AboutIntro from '@/components/About/AboutIntro.vue';
-import CTA from '@/components/Common/CTA.vue';
 
 export default {
   nuxtI18n: {
@@ -22,7 +20,6 @@ export default {
   },
   components: {
     AboutIntro,
-    CTA,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
