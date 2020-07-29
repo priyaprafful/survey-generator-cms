@@ -4,9 +4,9 @@
     :class="{
       'bg-bluegray-1': homepage || demopage,
       'bg-blue-9 text-white border-white': !homepage && !demopage,
-      'border-bluegray-1': demopage,
+      'border-transparent': demopage,
       'border-bluegray-1': homepage && scrollPosition < 100,
-      'border-bluegray-2': homepage && scrollPosition >= 100,
+      'border-bluegray-2': (homepage || demopage) && scrollPosition >= 100,
     }"
   >
     <nav class="max-w-screen-xl m-auto text-sm font-medium px-12">

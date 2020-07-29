@@ -16,7 +16,6 @@ import PlatformOptions from '@/components/Platform/PlatformOptions.vue';
 import PlatformPartners from '@/components/Platform/PlatformPartners.vue';
 
 export default {
-  name: 'Verktyget',
   nuxtI18n: {
     paths: {
       sv: '/verktyget',
