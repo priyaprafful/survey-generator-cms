@@ -37,7 +37,7 @@
           />
           <prismic-rich-text
             :field="section.section_content"
-            class="privacy-content"
+            class="privacy-content rich-text"
           />
         </div>
       </article>
@@ -84,18 +84,13 @@ export default {
   flex-direction: column;
 }
 
-.privacy-content p,
-.privacy-content h3,
-.privacy-content li {
-  margin-bottom: 0.75rem;
-}
-
 .privacy-content h2 {
   font-size: 1.5rem;
 }
 
 .privacy-content h3 {
   font-size: 1.125rem;
+  margin-bottom: 0.75rem;
 }
 
 .privacy-content h4 {
@@ -108,7 +103,6 @@ export default {
 }
 
 .privacy-content li {
-  font-size: 0.875rem;
   list-style-type: square;
   list-style-position: inside;
 }

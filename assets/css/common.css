@@ -80,6 +80,33 @@ svg {
   width: 1px;
 }
 
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.rich-text p,
+.rich-text ul {
+  margin-bottom: 1.5rem;
+}
+
+.rich-text p:last-child,
+.rich-text ul:last-child,
+.rich-text li:last-child {
+  margin-bottom: 0;
+}
+
+.rich-text li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
 .rich-text a {
   background: linear-gradient(to bottom, #bbdff1 0%, #43a8d8 100%);
   color: inherit;
@@ -95,28 +122,6 @@ svg {
   color: #fff;
 }
 
-.rich-text p,
-.rich-text ul {
-  margin-bottom: 1.5rem;
-}
-
-.rich-text p:last-child,
-.rich-text ul:last-child,
-.rich-text li:last-child {
-  margin-bottom: 0;
-}
-
 .rich-text .block-img img {
   margin: auto;
-}
-
-.page-enter-active,
-.page-leave-active {
-  transition-property: opacity;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.1s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
 }
