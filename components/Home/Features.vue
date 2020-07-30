@@ -1,41 +1,42 @@
 <template>
   <section class="bg-blue-9 text-white">
     <Container>
-      <h2 class="text-center mb-16">Vad du får med SurveyGenerator</h2>
+      <prismic-rich-text
+        :field="data.features_title"
+        class="text-center mb-16"
+      />
+
       <div class="flex leading-relaxed justify-between mt-8">
         <Block onethird>
           <Placeholder class="w-12 h-12 mb-6" />
-          <h3 class="mb-2 text-blue-1">Skräddarsytt</h3>
+          <h3 class="mb-2 text-blue-1">Matrisfrågor</h3>
           <p>
-            Tycker du att de vanliga versionerna har nästan allt – men ändå inte
-            riktigt? Då kan vi skräddarsy verktyget till att passa just dig och
-            dina behov. Vi utformar helt enkelt dina enkäter så att de ser ut
-            och fungerar precis som du vill.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            ipsum urna, ornare vitae lacinia eget, finibus ac augue. Proin
+            convallis euismod rutrum. Sed quam libero, dictum quis tempus eu,
+            rhoncus at tortor. Etiam eget vulputate odio. Donec varius euismod
+            ligula, facilisis tincidunt massa dignissim nec.
           </p>
         </Block>
         <Block onethird>
           <Placeholder class="w-12 h-12 mb-6" />
-          <h3 class="mb-2 text-blue-1">Konsulthjälp</h3>
+          <h3 class="mb-2 text-blue-1">Rådatarapporter</h3>
           <p>
-            Har du behov av extra hjälp med själva genomförandet av en
-            undersökning kan vi göra hela eller delar av jobbet. Vi erbjuder
-            konsulttjänster inom bland annat:
+            Nullam ullamcorper nisl sed quam sagittis efficitur. Donec in mattis
+            quam. Nulla ligula nisl, varius vitae urna ac, suscipit varius
+            neque. Quisque consectetur, augue quis mattis semper, neque est
+            luctus ante, vitae faucibus orci ipsum vel mauris. Phasellus et
+            scelerisque felis, sit amet tempus leo.
           </p>
-          <ul>
-            <li>
-              Projektledning Rådgivning kring genomförande Formulering av frågor
-              Programmering av enkät Formgivning av enkät Kvalitetssäkring
-              Utskick och uppföljning Avancerade rapporter Presentationer
-            </li>
-          </ul>
         </Block>
         <Block onethird>
           <Placeholder class="w-12 h-12 mb-6" />
-          <h3 class="mb-2 text-blue-1">Duis tempus</h3>
+          <h3 class="mb-2 text-blue-1">Tillval</h3>
           <p>
             In vitae mattis risus. Curabitur mattis, risus vel rhoncus
             hendrerit, nunc nisl finibus erat, vitae tempor ex erat in leo. Cras
-            eget mi urna. Duis eget gravida ipsum, a tristique nulla.
+            eget mi urna. Duis eget gravida ipsum, a tristique nulla. Phasellus
+            et scelerisque felis, sit amet tempus leo.
           </p>
         </Block>
       </div>
@@ -45,13 +46,11 @@
 
 <script>
 export default {
-  name: 'Features',
+  props: {
+    data: {
+      type: Object,
+      default: null,
+    },
+  },
 };
 </script>
-
-<style lang="scss">
-.features a {
-  color: red !important;
-  font-weight: 500 !important;
-}
-</style>

@@ -251,9 +251,6 @@
               <br />
               {{ $prismic.asText($store.state.miscellaneous.zip_city) }}
             </p>
-            <!-- <div>
-              <GamlaStan class="w-64" />
-            </div> -->
 
             <Dots index="1">
               <GamlaStan class="w-64" />

@@ -1,26 +1,28 @@
 <template>
   <section class="bg-blue-9 text-white">
     <Container>
-      <h2 class="text-center mb-16">
-        {{ $prismic.asText(data.benefits_title) }}
-      </h2>
+      <prismic-rich-text
+        :field="data.benefits_title"
+        class="text-center mb-16"
+      />
 
       <BlockWrapper
         v-for="(benefit, index) in data.benefits"
         :key="index"
         :index="index"
-        class="leading-relaxed"
       >
         <Block half :index="index">
           <prismic-rich-text
             :field="benefit.title"
-            class="mb-4 text-lg text-blue-1"
+            class="mb-6 text-lg text-blue-1"
           />
           <prismic-rich-text :field="benefit.content" class="rich-text" />
         </Block>
 
         <Block half :index="index">
-          <div class="bg-blue-2 w-full h-full" />
+          <Dots :index="index">
+            <prismic-image :field="benefit.image" />
+          </Dots>
         </Block>
       </BlockWrapper>
     </Container>
@@ -29,7 +31,6 @@
 
 <script>
 export default {
-  name: 'Benefits',
   props: {
     data: {
       type: Object,

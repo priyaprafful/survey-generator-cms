@@ -3,7 +3,7 @@
     <Hero :data="homepageContent" />
     <Benefits :data="homepageContent" />
     <Testimonials :data="homepageContent" />
-    <Features />
+    <Features :data="homepageContent" />
   </div>
 </template>
 

@@ -14,7 +14,7 @@
         <Block half :index="index">
           <prismic-rich-text
             :field="section.title"
-            class="text-blue-4 text-lg mb-4"
+            class="text-lg text-blue-4 mb-6"
           />
           <prismic-rich-text :field="section.content" class="rich-text" />
         </Block>

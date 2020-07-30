@@ -10,7 +10,7 @@
           <prismic-rich-text
             v-if="section.title.length > 0"
             :field="section.title"
-            class="mb-6"
+            class="text-lg text-blue-4 mb-6"
           />
           <prismic-rich-text :field="section.content" class="rich-text" />
         </Block>

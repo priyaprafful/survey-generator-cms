@@ -15,7 +15,7 @@
           <dd class="mt-2 md:mt-0 md:col-span-7">
             <prismic-rich-text
               :field="faq.answer"
-              class="faq rich-text text-blue-4 leading-relaxed"
+              class="faq rich-text text-blue-5 leading-relaxed"
             />
           </dd>
         </div>

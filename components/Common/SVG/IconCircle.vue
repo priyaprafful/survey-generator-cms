@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-full p-5 w-16 h-16 shadow-post mb-6">
+  <div class="iconcircle bg-white rounded-full p-5 w-16 h-16 shadow-post mb-6">
     <slot></slot>
   </div>
 </template>
@@ -9,8 +9,8 @@ export default {};
 </script>
 
 <style scoped>
-svg {
-  width: 100%;
-  height: 100%;
+.iconcircle {
+  min-width: 4rem;
+  min-height: 4rem;
 }
 </style>

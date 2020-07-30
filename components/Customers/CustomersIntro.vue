@@ -15,9 +15,10 @@
           :key="index"
           class="flex"
         >
-          <div>
+          <!-- <div>
             <Placeholder class="w-12 h-12 mr-4" />
-          </div>
+          </div> -->
+          <IconCircle class="mr-4" />
 
           <div class="flex flex-col leading-loose">
             <prismic-rich-text :field="card.group_title" class="mb-2 text-lg" />
