@@ -2,22 +2,22 @@
   <header
     class="sticky top-0 border-b z-50 transition duration-500"
     :class="{
-      'bg-bluegray-1': homepage || demopage,
-      'bg-blue-9 text-white border-white': !homepage && !demopage,
-      'border-transparent': (homepage || demopage) && scrollPosition < 100,
-      'border-bluegray-2': (homepage || demopage) && scrollPosition >= 100,
+      'bg-bluegray-1': homepage || exclusive,
+      'bg-blue-9 text-white border-white': !homepage && !exclusive,
+      'border-transparent': (homepage || exclusive) && scrollPosition < 100,
+      'border-bluegray-2': (homepage || exclusive) && scrollPosition >= 100,
     }"
   >
     <nav class="max-w-screen-xl m-auto text-sm font-medium px-12">
       <ul class="flex items-center justify-between">
-        <li class="flex logo" :class="{ 'py-8': demopage }">
+        <li class="flex logo" :class="{ 'py-8': exclusive }">
           <nuxt-link :to="localePath('/')">
-            <SGLogo v-if="homepage || demopage" />
+            <SGLogo v-if="homepage || exclusive" />
             <SGLogoWhite v-else />
           </nuxt-link>
         </li>
 
-        <li v-if="!demopage" class="flex">
+        <li v-if="!exclusive" class="flex">
           <nuxt-link
             v-for="(link, index) in links"
             :key="index"
@@ -33,7 +33,7 @@
           </nuxt-link>
         </li>
 
-        <li v-if="!demopage" class="flex items-center">
+        <li v-if="!exclusive" class="flex items-center">
           <nuxt-link
             :to="localePath('logga-in')"
             class="py-8 mx-4 border-b-4 border-transparent transition duration-200"
@@ -66,7 +66,7 @@ export default {
       type: Boolean,
       default: null,
     },
-    demopage: {
+    exclusive: {
       type: Boolean,
       default: null,
     },

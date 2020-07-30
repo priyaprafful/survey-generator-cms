@@ -27,20 +27,26 @@
       </BlockWrapper>
 
       <div
-        class="bg-blue-9 text-white p-6 shadow-card rounded-md leading-relaxed"
+        class="flex bg-blue-9 text-white p-6 shadow-card rounded-md leading-relaxed relative"
       >
-        <prismic-rich-text
-          :field="data.demo_title"
-          class="text-blue-1 text-lg mb-4"
-        />
-        <prismic-rich-text :field="data.demo_content" class="rich-text mb-6" />
+        <div class="abstract" />
 
-        <MainBtn
-          global
-          :text="$prismic.asText(data.demo_button)"
-          :to="data.demo_url.url"
-          class="bg-blue-4 hover:bg-blue-3 text-white"
-        />
+        <div class="flex items-center justify-evenly z-10">
+          <prismic-rich-text
+            :field="data.demo_title"
+            class="text-blue-1 text-lg"
+          />
+          <prismic-rich-text
+            :field="data.demo_content"
+            class="rich-text text-sm w-1/2 mx-6"
+          />
+          <MainBtn
+            global
+            :text="$prismic.asText(data.demo_button)"
+            :to="data.demo_url.url"
+            class="bg-blue-4 hover:bg-blue-3 text-white"
+          />
+        </div>
       </div>
     </Container>
   </Wrapper>

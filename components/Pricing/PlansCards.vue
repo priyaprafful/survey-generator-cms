@@ -22,7 +22,7 @@
               'flex-row justify-evenly items-center ': index === 3,
             }"
           >
-            <h3 class="text-center" :class="{ 'mb-6': index !== 3 }">
+            <h3 class="text-center text-lg" :class="{ 'mb-6': index !== 3 }">
               {{ $prismic.asText(card.plan) }}
             </h3>
 
@@ -75,17 +75,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.abstract {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-image: url('./SVG/Shapes_BG.svg');
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.05;
-}
-</style>

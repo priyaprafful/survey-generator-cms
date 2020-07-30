@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header demopage />
+    <Header exclusive />
     <nuxt />
     <CTA />
     <Footer />

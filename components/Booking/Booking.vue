@@ -155,12 +155,6 @@ export default {
 </script>
 
 <style>
-@media (prefers-reduced-motion) {
-  #tsparticles {
-    display: none;
-  }
-}
-
 .booking h3 {
   font-size: 1.125rem;
   margin-bottom: 1rem;

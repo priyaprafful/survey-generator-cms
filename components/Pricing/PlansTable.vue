@@ -4,7 +4,7 @@
       <prismic-rich-text :field="data.title" class="text-center mb-16" />
 
       <table class="table w-full text-sm">
-        <thead class="bg-lightblue-4">
+        <thead>
           <tr>
             <th class="visuallyhidden">Features</th>
             <th
@@ -12,7 +12,7 @@
               :key="index"
               class="text-lg font-medium p-6"
             >
-              <prismic-rich-text :field="card.plan" />
+              <h3>{{ $prismic.asText(card.plan) }}</h3>
             </th>
           </tr>
         </thead>

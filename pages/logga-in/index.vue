@@ -1,6 +1,77 @@
 <template>
-  <Container>
-    <div class="flex">
+  <Container class="flex flex-col relative">
+    <Particles
+      id="tsparticles"
+      class="absolute top-0 right-0 left-0 bottom-0"
+      :options="{
+        fpsLimit: 60,
+        interactivity: {
+          detectsOn: 'canvas',
+          events: {
+            resize: true,
+          },
+          modes: {
+            bubble: {
+              distance: 400,
+              duration: 2,
+              opacity: 0.8,
+              size: 40,
+              speed: 3,
+            },
+            push: {
+              quantity: 4,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+          },
+        },
+        particles: {
+          color: {
+            value: '#DADEE8',
+          },
+          links: {
+            color: '#DADEE8',
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1,
+          },
+          collisions: {
+            enable: true,
+          },
+          move: {
+            direction: 'none',
+            enable: true,
+            outMode: 'bounce',
+            random: false,
+            speed: 1,
+            straight: false,
+          },
+          number: {
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+            value: 80,
+          },
+          opacity: {
+            value: 0.5,
+          },
+          shape: {
+            type: 'circle',
+          },
+          size: {
+            random: true,
+            value: 5,
+          },
+        },
+        detectRetina: true,
+      }"
+    />
+
+    <div class="flex z-10">
       <Block onethird class="flex flex-col">
         <SGLogoNoText class="w-12 h-12 mx-auto mb-6" />
 
@@ -57,8 +128,8 @@
         </form>
       </Block>
 
-      <Block twothird class="relative bg-blue-9">
-        <div class="abstract bg-blue-9" />
+      <Block twothird class="bg-blue-9 relative">
+        <div class="abstract" />
       </Block>
     </div>
   </Container>
@@ -68,6 +139,7 @@
 import SGLogoNoText from '@/components/Common/SVG/SGLogoNoText.vue';
 
 export default {
+  layout: 'exclusive',
   nuxtI18n: {
     paths: {
       sv: '/logga-in',

@@ -6,7 +6,7 @@
           <div class="p-10 rounded-t-lg bg-bluegray-2">
             <prismic-rich-text
               :field="data.surveytype_left_title"
-              class="text-center"
+              class="text-center text-lg"
             />
           </div>
           <div class="p-10 rounded-b-lg bg-white">
@@ -21,7 +21,7 @@
           <div class="p-10 rounded-tr-lg bg-blue-4">
             <prismic-rich-text
               :field="data.surveytype_right_title"
-              class="text-center"
+              class="text-center text-lg"
             />
           </div>
           <div class="p-10 rounded-br-lg bg-blue-9">

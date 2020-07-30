@@ -10,7 +10,7 @@ import Booking from '@/components/Booking/Booking.vue';
 import Brands from '@/components/Booking/Brands.vue';
 
 export default {
-  layout: 'demo',
+  layout: 'exclusive',
   nuxtI18n: {
     paths: {
       sv: '/boka-demo',
