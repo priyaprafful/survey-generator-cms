@@ -9,9 +9,13 @@
         v-for="(benefit, index) in data.benefits"
         :key="index"
         :index="index"
+        class="leading-relaxed"
       >
         <Block half :index="index">
-          <prismic-rich-text :field="benefit.title" class="mb-4 text-blue-1" />
+          <prismic-rich-text
+            :field="benefit.title"
+            class="mb-4 text-lg text-blue-1"
+          />
           <prismic-rich-text :field="benefit.content" class="rich-text" />
         </Block>
 

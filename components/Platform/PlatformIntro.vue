@@ -27,7 +27,7 @@
       </BlockWrapper>
 
       <div
-        class="flex flex-col bg-blue-9 text-white p-6 shadow-card rounded-md leading-relaxed"
+        class="bg-blue-9 text-white p-6 shadow-card rounded-md leading-relaxed"
       >
         <prismic-rich-text
           :field="data.demo_title"

@@ -6,14 +6,12 @@
     />
     <PlatformIntro :data="platformContent" />
     <PlatformOptions :data="platformContent" :posts="posts" />
-    <PlatformPartners />
   </div>
 </template>
 
 <script>
 import PlatformIntro from '@/components/Platform/PlatformIntro.vue';
 import PlatformOptions from '@/components/Platform/PlatformOptions.vue';
-import PlatformPartners from '@/components/Platform/PlatformPartners.vue';
 
 export default {
   nuxtI18n: {
@@ -25,7 +23,6 @@ export default {
   components: {
     PlatformIntro,
     PlatformOptions,
-    PlatformPartners,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
