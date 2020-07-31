@@ -3,6 +3,9 @@
     <Header exclusive />
     <nuxt />
     <CTA />
+    <client-only>
+      <Cookie />
+    </client-only>
     <Footer />
   </div>
 </template>
@@ -11,12 +14,14 @@
 import Header from '~/components/Common/Header.vue';
 import Footer from '~/components/Common/Footer.vue';
 import CTA from '~/components/Common/CTA.vue';
+import Cookie from '~/components/Common/Cookie.vue';
 
 export default {
   components: {
     Header,
     Footer,
     CTA,
+    Cookie,
   },
   head() {
     return {

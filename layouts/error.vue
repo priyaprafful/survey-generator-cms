@@ -8,11 +8,19 @@
     <nuxt-link to="/" style="text-decoration: underline;"
       >Return to home</nuxt-link
     >
+    <client-only>
+      <Cookie />
+    </client-only>
   </div>
 </template>
 
 <script>
+import Cookie from '~/components/Common/Cookie.vue';
+
 export default {
+  components: {
+    Cookie,
+  },
   props: {
     error: {
       type: Object,
