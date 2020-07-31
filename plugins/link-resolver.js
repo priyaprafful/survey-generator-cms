@@ -25,6 +25,10 @@ export default function (doc) {
       return '/kontakt';
     }
 
+    if (doc.type === 'cookie_policy') {
+      return '/om-webbplatsen';
+    }
+
     if (doc.type === 'customer_story') {
       return '/kunder/' + doc.uid;
     }
@@ -74,6 +78,10 @@ export default function (doc) {
 
     if (doc.type === 'contact') {
       return '/en/contact';
+    }
+
+    if (doc.type === 'cookie_policy') {
+      return '/en/cookie-policy';
     }
 
     if (doc.type === 'customer_story') {

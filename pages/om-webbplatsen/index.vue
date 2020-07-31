@@ -1,20 +1,20 @@
 <template>
   <div>
     <PageHeader
-      :heading="$prismic.asText(privacyContent.heading)"
-      :subheading="$prismic.asText(privacyContent.subheading)"
+      :heading="$prismic.asText(cookieContent.heading)"
+      :subheading="$prismic.asText(cookieContent.subheading)"
     />
 
     <Container>
       <article class="max-w-screen-sm m-auto flex flex-col article">
         <time
-          :datetime="privacyContent.last_updated"
+          :datetime="cookieContent.last_updated"
           class="font-medium text-sm mb-6"
         >
           Senast uppdaterad:
 
           {{
-            new Date(privacyContent.last_updated).toLocaleDateString(
+            new Date(cookieContent.last_updated).toLocaleDateString(
               $i18n.locale,
               {
                 year: 'numeric',
@@ -26,7 +26,7 @@
         </time>
 
         <div
-          v-for="(section, index) in privacyContent.sections"
+          v-for="(section, index) in cookieContent.sections"
           :key="index"
           class="mb-6 leading-loose"
         >
@@ -49,8 +49,8 @@
 export default {
   nuxtI18n: {
     paths: {
-      sv: '/integritetspolicy',
-      en: '/privacy-policy',
+      sv: '/om-webbplatsen',
+      en: '/cookie-policy',
     },
   },
   async asyncData({ $prismic, error, app }) {
@@ -60,15 +60,15 @@ export default {
 
     try {
       // Query to get blog home content
-      const privacyContent = (
-        await $prismic.api.getSingle('privacy-policy', {
+      const cookieContent = (
+        await $prismic.api.getSingle('cookie-policy', {
           lang: currentLocale.iso.toLowerCase(),
         })
       ).data;
 
       // Returns data to be used in template
       return {
-        privacyContent,
+        cookieContent,
       };
     } catch (e) {
       // Returns error page

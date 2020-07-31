@@ -89,19 +89,19 @@ export default {
         labelEn: 'About us',
       },
       {
-        path: 'nyheter',
-        labelSv: 'Nyheter',
-        labelEn: 'News',
-      },
-      {
-        path: 'kontakt',
-        labelSv: 'Kontakt',
-        labelEn: 'Contact',
+        path: 'om-webbplatsen',
+        labelSv: 'Om webbplatsen',
+        labelEn: 'Cookie policy',
       },
       {
         path: 'integritetspolicy',
         labelSv: 'Integritetspolicy',
         labelEn: 'Privacy policy',
+      },
+      {
+        path: 'kontakt',
+        labelSv: 'Kontakt',
+        labelEn: 'Contact',
       },
     ],
   }),
