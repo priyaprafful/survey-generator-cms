@@ -46,5 +46,10 @@ export default {
       error({ statusCode: 404, message: 'Page not found' });
     }
   },
+  head() {
+    return {
+      title: this.$t('head_title.contact') + ' — SurveyGenerator',
+    };
+  },
 };
 </script>

@@ -149,5 +149,10 @@ export default {
   components: {
     SGLogoNoText,
   },
+  head() {
+    return {
+      title: this.$t('head_title.login') + ' — SurveyGenerator',
+    };
+  },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <Wrapper>
+  <div class="bg-white border-b border-bluegray-2">
     <Container>
       <prismic-rich-text :field="data.cards_title" class="text-center mb-16" />
 
@@ -57,7 +57,7 @@
         </div>
       </div>
     </Container>
-  </Wrapper>
+  </div>
 </template>
 
 <script>

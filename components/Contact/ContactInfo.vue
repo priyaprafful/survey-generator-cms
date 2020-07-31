@@ -251,10 +251,9 @@
               <br />
               {{ $prismic.asText($store.state.miscellaneous.zip_city) }}
             </p>
-
-            <Dots index="1">
+            <!-- <Dots index="1">
               <GamlaStan class="w-64" />
-            </Dots>
+            </Dots> -->
           </div>
         </Block>
       </div>
@@ -264,12 +263,10 @@
 
 <script>
 import IconCircle from '@/components/Common/SVG/IconCircle.vue';
-import GamlaStan from '@/components/Common/SVG/GamlaStan.vue';
 
 export default {
   components: {
     IconCircle,
-    GamlaStan,
   },
   props: {
     data: {

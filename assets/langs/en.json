@@ -24,6 +24,15 @@
   },
   "head_title": {
     "homepage": "Surveys for businesses and organizations",
-    "platform": "Platform"
+    "platform": "Platform",
+    "customers": "Customers",
+    "pricing": "Pricing",
+    "news": "News",
+    "contact": "Contact",
+    "login": "Sign in",
+    "book_demo": "Book demo",
+    "about": "About",
+    "cookie_policy": "Cookie policy",
+    "privacy_policy": "Privacy policy"
   }
 }

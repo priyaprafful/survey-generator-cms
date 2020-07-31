@@ -1,8 +1,6 @@
 <template>
   <div class="bg-white border-b border-bluegray-2">
     <Container>
-      <prismic-rich-text :field="data.title" class="text-center mb-16" />
-
       <table class="table w-full text-sm">
         <thead>
           <tr>

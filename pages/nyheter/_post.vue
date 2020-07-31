@@ -46,7 +46,7 @@ export default {
   },
   head() {
     return {
-      title: 'Prismic Nuxt.js Blog',
+      title: this.$prismic.asText(this.post.data.title) + ' — SurveyGenerator',
     };
   },
 };
