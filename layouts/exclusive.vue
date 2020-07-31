@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Header exclusive />
-    <nuxt />
-    <CTA />
     <client-only>
       <Cookie />
     </client-only>
+    <Header exclusive />
+    <nuxt />
+    <CTA />
     <Footer />
   </div>
 </template>

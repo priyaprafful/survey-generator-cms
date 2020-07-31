@@ -1,5 +1,8 @@
 <template>
   <div class="outer-container">
+    <client-only>
+      <Cookie />
+    </client-only>
     <div class="back">
       <nuxt-link to="/">back to list</nuxt-link>
     </div>
@@ -8,9 +11,6 @@
     <nuxt-link to="/" style="text-decoration: underline;"
       >Return to home</nuxt-link
     >
-    <client-only>
-      <Cookie />
-    </client-only>
   </div>
 </template>
 
