@@ -96,24 +96,15 @@ export default {
       'nuxt-i18n',
       {
         locales: [
-          {
-            name: 'Svenska',
-            code: 'sv',
-            iso: 'sv-SE',
-            file: 'sv.json',
-          },
-          {
-            name: 'English',
-            code: 'en',
-            iso: 'en-GB',
-            file: 'en.json',
-          },
+          { name: 'Svenska', code: 'sv', iso: 'sv-SE', file: 'sv.json' },
+          { name: 'English', code: 'en', iso: 'en-GB', file: 'en.json' },
         ],
         seo: true,
         strategy: 'prefix_except_default',
         lazy: true,
         langDir: 'assets/langs/',
         defaultLocale: 'sv',
+        detectBrowserLanguage: false,
       },
     ],
     // https://prismic-nuxt.js.org/
