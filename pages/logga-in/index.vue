@@ -74,7 +74,7 @@
     <div class="flex z-10">
       <Block onethird class="flex flex-col">
         <img
-          src="@/assets/icons/sg-logo-notext.svg"
+          src="@/assets/svgs/sg-logo-notext.svg"
           alt="SurveyGenerator"
           class="w-12 h-12 mx-auto mb-6"
         />

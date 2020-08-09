@@ -14,12 +14,12 @@
           <nuxt-link :to="localePath('/')" class="w-full">
             <img
               v-if="homepage || exclusive"
-              src="@/assets/icons/sg-logo.svg"
+              src="@/assets/svgs/sg-logo.svg"
               alt="SurveyGenerator"
             />
             <img
               v-else
-              src="@/assets/icons/sg-logo-white.svg"
+              src="@/assets/svgs/sg-logo-white.svg"
               alt="SurveyGenerator"
             />
           </nuxt-link>

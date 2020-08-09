@@ -16,7 +16,7 @@
 
             <blockquote class="relative mb-6">
               <img
-                src="@/assets/icons/quote.svg"
+                src="@/assets/svgs/quote.svg"
                 alt="Quote"
                 class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 w-6 z-n1"
               />

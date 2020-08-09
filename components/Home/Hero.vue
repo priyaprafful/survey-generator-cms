@@ -43,7 +43,7 @@
 
         <Block half class="flex flex-col items-end justify-center relative">
           <img
-            src="@/assets/icons/platform.svg"
+            src="@/assets/svgs/platform.svg"
             alt="Platform"
             class="w-3/4 z-10"
           />
@@ -75,11 +75,11 @@
 
     <div class="max-w-screen-xl m-auto p-12">
       <div class="flex justify-between">
-        <img src="@/assets/icons/seb.svg" alt="SEB" class="h-8" />
-        <img src="@/assets/icons/saco.svg" alt="Saaco" class="h-8" />
-        <img src="@/assets/icons/assaabloy.svg" alt="Assa Abloy" class="h-8" />
+        <img src="@/assets/svgs/seb.svg" alt="SEB" class="h-8" />
+        <img src="@/assets/svgs/saco.svg" alt="Saaco" class="h-8" />
+        <img src="@/assets/svgs/assaabloy.svg" alt="Assa Abloy" class="h-8" />
         <img
-          src="@/assets/icons/swedishmatch.svg"
+          src="@/assets/svgs/swedishmatch.svg"
           alt="Swedish Match"
           class="h-8"
         />

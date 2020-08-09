@@ -39,7 +39,7 @@
             <td v-if="feature.small_text.length < 1" class="p-4">
               <img
                 v-if="feature.small_check"
-                src="@/assets/icons/checkcircle.svg"
+                src="@/assets/svgs/checkcircle.svg"
                 alt=""
                 class="w-4 h-4 m-auto"
               />
@@ -52,7 +52,7 @@
             <td v-if="feature.medium_text.length < 1" class="p-4">
               <img
                 v-if="feature.medium_check"
-                src="@/assets/icons/checkcircle.svg"
+                src="@/assets/svgs/checkcircle.svg"
                 alt=""
                 class="w-4 h-4 m-auto"
               />
@@ -65,7 +65,7 @@
             <td v-if="feature.large_text.length < 1" class="p-4">
               <img
                 v-if="feature.large_check"
-                src="@/assets/icons/checkcircle.svg"
+                src="@/assets/svgs/checkcircle.svg"
                 alt=""
                 class="w-4 h-4 m-auto"
               />

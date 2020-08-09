@@ -37,7 +37,7 @@
         <blockquote class="text-sm mb-10 border-l-4 border-bluegray-2 relative">
           <div class="flex mx-6">
             <img
-              src="@/assets/icons/quote.svg"
+              src="@/assets/svgs/quote.svg"
               alt="Quote"
               class="absolute top-0 left-0 ml-6 transform -translate-x-3 -translate-y-2 w-6"
             />

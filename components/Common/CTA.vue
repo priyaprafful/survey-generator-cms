@@ -73,7 +73,7 @@ export default {};
 
 <style>
 .cta-bg {
-  background-image: url('../../assets/icons/cta_bg.svg');
+  background-image: url('../../assets/svgs/cta_bg.svg');
   background-size: cover;
   background-position: center;
 }
