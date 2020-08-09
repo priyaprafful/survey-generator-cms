@@ -1,6 +1,4 @@
-<template>
-  <svg
-    id="b93dd231-8cb4-4c70-a304-5fc2f9e5feb4"
+<svg
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 95.33 79.63"
@@ -17,5 +15,4 @@
         style="fill: #a4e9fd;"
       />
     </g>
-  </svg>
-</template>
+</svg>

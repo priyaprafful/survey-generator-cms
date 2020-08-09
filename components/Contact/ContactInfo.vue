@@ -115,7 +115,7 @@
                   :href="$store.state.miscellaneous.facebook_url.url"
                   rel="”noopener”"
                 >
-                  <Facebook class="h-4 w-4" />
+                  <svg-icon icon="facebook" lg />
                 </a>
               </li>
               <li class="mx-8">
@@ -123,7 +123,7 @@
                   :href="$store.state.miscellaneous.twitter_url.url"
                   rel="”noopener”"
                 >
-                  <Twitter class="h-4 w-4" />
+                  <svg-icon icon="twitter" lg />
                 </a>
               </li>
               <li>
@@ -131,7 +131,7 @@
                   :href="$store.state.miscellaneous.linkedin_url.url"
                   rel="”noopener”"
                 >
-                  <LinkedIn class="h-4 w-4" />
+                  <svg-icon icon="linkedin" lg />
                 </a>
               </li>
             </ul>
@@ -262,7 +262,7 @@
 </template>
 
 <script>
-import IconCircle from '@/components/Common/SVG/IconCircle.vue';
+import IconCircle from '@/components/Common/Icons/IconCircle.vue';
 
 export default {
   components: {

@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import IconCircle from '@/components/Common/SVG/IconCircle.vue';
+import IconCircle from '@/components/Common/Icons/IconCircle.vue';
 
 export default {
   components: {

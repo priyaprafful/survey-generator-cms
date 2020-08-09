@@ -8,11 +8,10 @@
           :to="switchLocalePath(locale.code)"
           class="flex items-center font-bold"
         >
-          <BalloonBubble
-            v-if="$i18n.locale !== locale.code"
-            class="w-3 h-3 mr-2"
-          />
-          <span v-if="$i18n.locale !== locale.code">{{ locale.name }}</span>
+          <svg-icon v-if="$i18n.locale !== locale.code" icon="bubble" />
+          <span v-if="$i18n.locale !== locale.code" class="ml-2">
+            {{ locale.name }}
+          </span>
         </nuxt-link>
       </div>
 
@@ -34,7 +33,7 @@
             :href="$store.state.miscellaneous.facebook_url.url"
             rel="”noopener”"
           >
-            <Facebook class="h-4 w-4" />
+            <svg-icon icon="facebook" lg />
           </a>
         </li>
         <li class="py-2 px-4">
@@ -42,7 +41,7 @@
             :href="$store.state.miscellaneous.twitter_url.url"
             rel="”noopener”"
           >
-            <Twitter class="h-4 w-4" />
+            <svg-icon icon="twitter" lg />
           </a>
         </li>
         <li class="py-2 px-4">
@@ -50,7 +49,7 @@
             :href="$store.state.miscellaneous.linkedin_url.url"
             rel="”noopener”"
           >
-            <LinkedIn class="h-4 w-4" />
+            <svg-icon icon="linkedin" lg />
           </a>
         </li>
       </ul>
@@ -68,19 +67,8 @@
 </template>
 
 <script>
-import BalloonBubble from '@/components/Common/SVG/BalloonBubble.vue';
-import Facebook from '@/components/Common/SVG/Facebook.vue';
-import Twitter from '@/components/Common/SVG/Twitter.vue';
-import LinkedIn from '@/components/Common/SVG/LinkedIn.vue';
-
 export default {
   name: 'Footer',
-  components: {
-    BalloonBubble,
-    Facebook,
-    Twitter,
-    LinkedIn,
-  },
   data: () => ({
     links: [
       {

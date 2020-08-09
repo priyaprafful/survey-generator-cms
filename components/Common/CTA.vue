@@ -3,10 +3,10 @@
     <Container>
       <div class="flex">
         <Block half>
-          <h2 class="mb-6">
+          <h2 class="mb-4">
             Redo att sätta igång?
           </h2>
-          <p class="mb-6 leading-relaxed">
+          <p class="mb-10 leading-relaxed">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -73,7 +73,7 @@ export default {};
 
 <style>
 .cta-bg {
-  background-image: url('./SVG/cta_bg.svg');
+  background-image: url('../../assets/icons/cta_bg.svg');
   background-size: cover;
   background-position: center;
 }

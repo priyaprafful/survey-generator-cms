@@ -67,7 +67,7 @@ export default {
    ** https://nuxtjs.org/guide/plugins
    */
   plugins: [
-    '~/plugins/common.js',
+    '~/plugins/sg-common.js',
     '~/plugins/vue-masonry.js',
     '~/plugins/vue-particles.js',
   ],

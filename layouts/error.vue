@@ -1,5 +1,6 @@
 <template>
   <div class="outer-container">
+    <SvgSprite />
     <client-only>
       <Cookie />
     </client-only>
@@ -16,10 +17,12 @@
 
 <script>
 import Cookie from '~/components/Common/Cookie.vue';
+import SvgSprite from '~/components/Common/Icons/SvgSprite.vue';
 
 export default {
   components: {
     Cookie,
+    SvgSprite,
   },
   props: {
     error: {

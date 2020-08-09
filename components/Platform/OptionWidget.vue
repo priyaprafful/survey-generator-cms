@@ -18,10 +18,10 @@
       />
 
       <div class="flex items-center text-blue-6 mt-auto">
-        <span class="font-medium">{{
-          $prismic.asText(post.data.button_text)
-        }}</span>
-        <ChevronRight class="ml-3 h-3 w-3" />
+        <span class="mr-3 font-medium">
+          {{ $prismic.asText(post.data.button_text) }}
+        </span>
+        <svg-icon icon="chevron" />
       </div>
     </div>
   </nuxt-link>

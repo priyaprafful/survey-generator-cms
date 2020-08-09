@@ -7,8 +7,8 @@
             :to="localePath('verktyget')"
             class="inline-flex items-center text-blue-6 underline"
           >
-            <ChevronRight class="mr-3 h-3 w-3 transform rotate-180" />
-            Tillbaka till verktyget
+            <svg-icon icon="chevron" class="transform rotate-180" />
+            <span class="ml-3">Tillbaka till verktyget</span>
           </nuxt-link>
         </div>
 

@@ -42,7 +42,11 @@
         </Block>
 
         <Block half class="flex flex-col items-end justify-center relative">
-          <Platform class="w-3/4 z-10" />
+          <img
+            src="@/assets/icons/platform.svg"
+            alt="Platform"
+            class="w-3/4 z-10"
+          />
 
           <svg
             fill="none"
@@ -71,31 +75,22 @@
 
     <div class="max-w-screen-xl m-auto p-12">
       <div class="flex justify-between">
-        <SEB class="h-8" />
-        <SACO class="h-8" />
-        <AssaAbloy class="h-8" />
-        <SwedishMatch class="h-8" />
+        <img src="@/assets/icons/seb.svg" alt="SEB" class="h-8" />
+        <img src="@/assets/icons/saco.svg" alt="Saaco" class="h-8" />
+        <img src="@/assets/icons/assaabloy.svg" alt="Assa Abloy" class="h-8" />
+        <img
+          src="@/assets/icons/swedishmatch.svg"
+          alt="Swedish Match"
+          class="h-8"
+        />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Platform from '@/components/Common/SVG/Platform.vue';
-import SEB from '@/components/Common/SVG/SEB.vue';
-import SACO from '@/components/Common/SVG/SACO.vue';
-import AssaAbloy from '@/components/Common/SVG/AssaAbloy.vue';
-import SwedishMatch from '@/components/Common/SVG/SwedishMatch.vue';
-
 export default {
   name: 'Home',
-  components: {
-    Platform,
-    SEB,
-    SACO,
-    AssaAbloy,
-    SwedishMatch,
-  },
   props: {
     data: {
       type: Object,

@@ -40,8 +40,8 @@
         </p>
 
         <div class="flex items-center text-blue-6 mt-auto">
-          <span class="font-medium">Läs hela</span>
-          <ChevronRight class="ml-3 h-3 w-3" />
+          <span class="mr-3 font-medium">Läs hela</span>
+          <svg-icon icon="chevron" />
         </div>
       </div>
     </div>

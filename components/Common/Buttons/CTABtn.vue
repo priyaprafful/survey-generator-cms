@@ -7,8 +7,8 @@
       'py-4 px-6 shadow': !small,
     }"
   >
-    {{ $t('menu.book_demo') }}
-    <ChevronRight v-if="!small" class="h-3 w-3 ml-3" />
+    <span class="mr-3">{{ $t('menu.book_demo') }}</span>
+    <svg-icon v-if="!small" icon="chevron" />
   </nuxt-link>
 </template>
 

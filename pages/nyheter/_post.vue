@@ -7,8 +7,8 @@
             :to="localePath('nyheter')"
             class="inline-flex items-center text-blue-6 underline"
           >
-            <ChevronRight class="mr-3 h-3 w-3 transform rotate-180" />
-            Tillbaka till nyheter
+            <svg-icon icon="chevron" class="transform rotate-180" />
+            <span class="ml-3">Tillbaka till nyheter</span>
           </nuxt-link>
         </div>
 

@@ -73,9 +73,13 @@
 
     <div class="flex z-10">
       <Block onethird class="flex flex-col">
-        <SGLogoNoText class="w-12 h-12 mx-auto mb-6" />
+        <img
+          src="@/assets/icons/sg-logo-notext.svg"
+          alt="SurveyGenerator"
+          class="w-12 h-12 mx-auto mb-6"
+        />
 
-        <h2 class="mb-6">{{ $t('login.heading') }}</h2>
+        <h2 class="mb-6 leading-snug">{{ $t('login.heading') }}</h2>
 
         <form>
           <div class="flex flex-col mb-6">
@@ -136,8 +140,6 @@
 </template>
 
 <script>
-import SGLogoNoText from '@/components/Common/SVG/SGLogoNoText.vue';
-
 export default {
   layout: 'exclusive',
   nuxtI18n: {
@@ -145,9 +147,6 @@ export default {
       sv: '/logga-in',
       en: '/login',
     },
-  },
-  components: {
-    SGLogoNoText,
   },
   head() {
     return {

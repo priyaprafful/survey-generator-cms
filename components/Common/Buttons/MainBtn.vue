@@ -9,8 +9,8 @@
       'justify-start px-0 py-3 ': leftAligned,
     }"
   >
-    <span>{{ text }}</span>
-    <ChevronRight v-if="chevron" class="h-3 w-3 ml-3" />
+    <span class="mr-3">{{ text }}</span>
+    <svg-icon v-if="chevron" icon="chevron" />
   </component>
 </template>
 

@@ -1,5 +1,4 @@
-<template>
-  <svg
+<svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 18 18"
     class="fill-current"
@@ -10,5 +9,4 @@
     />
     <rect y="6.3" width="4.5" height="11.7" rx="0.9" />
     <circle cx="2.25" cy="2.25" r="2.25" />
-  </svg>
-</template>
+</svg>

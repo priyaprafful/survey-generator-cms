@@ -41,8 +41,8 @@
                 :key="idx"
                 class="flex items-center"
               >
-                <CheckMark class="w-3 h-3 mr-3" />
-                {{ item.text }}
+                <svg-icon icon="check" />
+                <span class="ml-3">{{ item.text }}</span>
               </li>
             </ul>
 
@@ -61,12 +61,7 @@
 </template>
 
 <script>
-import CheckMark from '@/components/Common/SVG/CheckMark.vue';
-
 export default {
-  components: {
-    CheckMark,
-  },
   props: {
     data: {
       type: Object,

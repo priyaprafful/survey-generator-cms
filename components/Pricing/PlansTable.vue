@@ -37,24 +37,39 @@
               <prismic-rich-text :field="feature.title" />
             </th>
             <td v-if="feature.small_text.length < 1" class="p-4">
-              <CheckCircleIcon v-if="feature.small_check" />
-              <MinusIcon v-else class="w-4 h-4" />
+              <img
+                v-if="feature.small_check"
+                src="@/assets/icons/checkcircle.svg"
+                alt=""
+                class="w-4 h-4 m-auto"
+              />
+              <svg-icon v-else icon="minus" lg class="text-bluegray-6" />
             </td>
             <td v-if="feature.small_text.length > 0" class="p-4">
               <prismic-rich-text :field="feature.small_text" />
             </td>
 
             <td v-if="feature.medium_text.length < 1" class="p-4">
-              <CheckCircleIcon v-if="feature.medium_check" />
-              <MinusIcon v-else class="w-4 h-4" />
+              <img
+                v-if="feature.medium_check"
+                src="@/assets/icons/checkcircle.svg"
+                alt=""
+                class="w-4 h-4 m-auto"
+              />
+              <svg-icon v-else icon="minus" lg class="text-bluegray-6" />
             </td>
             <td v-if="feature.medium_text.length > 0" class="p-4">
               <prismic-rich-text :field="feature.medium_text" />
             </td>
 
             <td v-if="feature.large_text.length < 1" class="p-4">
-              <CheckCircleIcon v-if="feature.large_check" />
-              <MinusIcon v-else class="w-4 h-4" />
+              <img
+                v-if="feature.large_check"
+                src="@/assets/icons/checkcircle.svg"
+                alt=""
+                class="w-4 h-4 m-auto"
+              />
+              <svg-icon v-else icon="minus" lg class="text-bluegray-6" />
             </td>
             <td v-if="feature.large_text.length > 0" class="p-4">
               <prismic-rich-text :field="feature.large_text" />
@@ -67,14 +82,7 @@
 </template>
 
 <script>
-import MinusIcon from './SVG/MinusIcon.vue';
-import CheckCircleIcon from './SVG/CheckCircleIcon.vue';
-
 export default {
-  components: {
-    MinusIcon,
-    CheckCircleIcon,
-  },
   props: {
     data: {
       type: Object,

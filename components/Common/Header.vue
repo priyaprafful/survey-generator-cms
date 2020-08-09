@@ -11,9 +11,17 @@
     <nav class="max-w-screen-xl m-auto text-sm font-medium px-12">
       <ul class="flex items-center justify-between">
         <li class="flex logo" :class="{ 'py-8': exclusive }">
-          <nuxt-link :to="localePath('/')">
-            <SGLogo v-if="homepage || exclusive" />
-            <SGLogoWhite v-else />
+          <nuxt-link :to="localePath('/')" class="w-full">
+            <img
+              v-if="homepage || exclusive"
+              src="@/assets/icons/sg-logo.svg"
+              alt="SurveyGenerator"
+            />
+            <img
+              v-else
+              src="@/assets/icons/sg-logo-white.svg"
+              alt="SurveyGenerator"
+            />
           </nuxt-link>
         </li>
 
@@ -52,15 +60,8 @@
 </template>
 
 <script>
-import SGLogo from '@/components/Common/SVG/SGLogo.vue';
-import SGLogoWhite from '@/components/Common/SVG/SGLogoWhite.vue';
-
 export default {
   name: 'Header',
-  components: {
-    SGLogo,
-    SGLogoWhite,
-  },
   props: {
     homepage: {
       type: Boolean,

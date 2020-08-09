@@ -7,8 +7,8 @@
             :to="localePath('kunder')"
             class="inline-flex items-center text-blue-6 underline"
           >
-            <ChevronRight class="mr-3 h-3 w-3 transform rotate-180" />
-            Tillbaka till kunder
+            <svg-icon icon="chevron" class="transform rotate-180" />
+            <span class="ml-3">Tillbaka till kunder</span>
           </nuxt-link>
         </div>
 
@@ -36,7 +36,9 @@
 
         <blockquote class="text-sm mb-10 border-l-4 border-bluegray-2 relative">
           <div class="flex mx-6">
-            <Quote
+            <img
+              src="@/assets/icons/quote.svg"
+              alt="Quote"
               class="absolute top-0 left-0 ml-6 transform -translate-x-3 -translate-y-2 w-6"
             />
             <div class="z-10">

@@ -125,7 +125,7 @@ svg {
   right: 0;
   left: 0;
   bottom: 0;
-  background-image: url('../../components/Common/SVG/topography.svg');
+  background-image: url('../icons/topography.svg');
   background-size: cover;
   background-position: center;
   opacity: 0.04;

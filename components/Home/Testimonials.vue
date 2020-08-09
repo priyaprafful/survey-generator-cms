@@ -15,7 +15,9 @@
             />
 
             <blockquote class="relative mb-6">
-              <Quote
+              <img
+                src="@/assets/icons/quote.svg"
+                alt="Quote"
                 class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 w-6 z-n1"
               />
               <prismic-rich-text
@@ -76,13 +78,8 @@
 </template>
 
 <script>
-import Quote from '@/components/Common/SVG/Quote.vue';
-
 export default {
   name: 'Testimonials',
-  components: {
-    Quote,
-  },
   props: {
     data: {
       type: Object,
