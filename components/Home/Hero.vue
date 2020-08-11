@@ -13,7 +13,6 @@
 
             <div class="flex items-center">
               <CTABtn />
-
               <MainBtn :text="$t('common.get_quote')" :to="'kontakt'" funnel />
             </div>
           </div>
@@ -41,34 +40,15 @@
           </svg>
         </Block>
 
-        <Block half class="flex flex-col items-end justify-center relative">
-          <img
-            src="@/assets/svgs/platform.svg"
-            alt="Platform"
-            class="w-3/4 z-10"
-          />
-
-          <svg
-            fill="none"
-            viewBox="0 0 404 384"
-            width="404"
-            height="384"
-            class="absolute top-0 left-1/2 transform translate-x-32 text-gray-200 fill-current"
-          >
-            <defs>
-              <pattern
-                id="shape2"
-                x="0"
-                y="0"
-                width="20"
-                height="20"
-                patternUnits="userSpaceOnUse"
-              >
-                <rect x="0" y="0" width="4" height="4" fill="inherit"></rect>
-              </pattern>
-            </defs>
-            <rect width="404" height="384" fill="url(#shape2)"></rect>
-          </svg>
+        <Block half class="flex relative">
+          <div class="dots absolute top-0 left-0 right-0 bottom-0 -mr-16" />
+          <div class="flex justify-end w-full z-10">
+            <img
+              src="@/assets/svgs/platform.svg"
+              alt="Platform"
+              class="w-3/4"
+            />
+          </div>
         </Block>
       </div>
     </div>
@@ -100,10 +80,16 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .gradientText {
   background: linear-gradient(to right, hsl(212, 63%, 23%), hsl(199, 66%, 55%));
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.dots {
+  background-image: linear-gradient(transparent 2px, #ddeff8 2px);
+  background-size: calc(10 * 1px) calc(10 * 1px);
+  clip-path: polygon(100% 0, 100% 100%, 0 50%);
 }
 </style>
