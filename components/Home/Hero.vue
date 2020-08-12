@@ -89,7 +89,7 @@ export default {
 
 .dots {
   background-image: linear-gradient(transparent 2px, #ddeff8 2px);
-  background-size: calc(10 * 1px) calc(10 * 1px);
+  background-size: calc(10 * 2px) calc(10 * 2px);
   clip-path: polygon(100% 0, 100% 100%, 0 50%);
 }
 </style>

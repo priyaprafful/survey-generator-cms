@@ -1,5 +1,5 @@
 <template>
-  <svg class="icon" :class="{ md: !lg, lg: lg, 'icon-spin': spin }">
+  <svg class="icon" :class="{ sm: sm, md: !sm && !lg, lg: lg }">
     <use :xlink:href="`#${icon}`" />
   </svg>
 </template>
@@ -16,6 +16,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    sm: {
+      type: Boolean,
+      default: false,
+    },
     lg: {
       type: Boolean,
       default: false,
@@ -27,6 +31,13 @@ export default {
 <style>
 svg.icon {
   fill: currentColor;
+}
+
+svg.sm {
+  height: 0.65rem;
+  width: 0.65rem;
+  min-width: 0.65rem;
+  min-height: 0.65rem;
 }
 
 svg.md {
@@ -41,18 +52,5 @@ svg.lg {
   width: 1rem;
   min-width: 1rem;
   min-height: 1rem;
-}
-
-svg.icon-spin {
-  animation: icon-spin 2s infinite linear;
-}
-
-@keyframes icon-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
 }
 </style>

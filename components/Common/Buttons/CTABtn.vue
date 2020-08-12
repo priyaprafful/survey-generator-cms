@@ -8,7 +8,7 @@
     }"
   >
     <span :class="{ 'mr-3': !small }">{{ $t('menu.book_demo') }}</span>
-    <svg-icon v-if="!small" icon="chevron" />
+    <svg-icon v-if="!small" icon="chevron" sm class="HoverArrow" />
   </nuxt-link>
 </template>
 
@@ -27,3 +27,20 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.HoverArrow {
+  position: relative;
+  top: 1px;
+  transform: translateX(0);
+  transition: all 150ms;
+}
+
+.cta {
+  &:hover {
+    .HoverArrow {
+      transform: translateX(3px);
+    }
+  }
+}
+</style>
