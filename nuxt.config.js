@@ -75,7 +75,7 @@ export default {
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
    */
-  components: true,
+  components: false,
   /*
    ** Nuxt.js dev-modules
    */
@@ -109,6 +109,7 @@ export default {
     ],
     // https://prismic-nuxt.js.org/
     '@nuxtjs/prismic',
+    '@nuxtjs/svg',
   ],
   prismic: {
     endpoint: process.env.PRISMIC_URL,
@@ -129,6 +130,8 @@ export default {
     extend(config, ctx) {
       config.resolve.alias.vue = 'vue/dist/vue.common';
     },
+    // required for gsap
+    transpile: ['gsap'],
   },
   generate: {
     fallback: true, // Netlify reads a 404.html, Nuxt will load as an SPA

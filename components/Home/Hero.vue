@@ -12,8 +12,8 @@
             </p>
 
             <div class="flex items-center">
-              <CTABtn />
-              <MainBtn :text="$t('common.get_quote')" :to="'kontakt'" funnel />
+              <MainBtn :text="$t('menu.book_demo')" to="boka-demo" cta />
+              <MainBtn :text="$t('common.get_quote')" :to="'kontakt'" />
             </div>
           </div>
 

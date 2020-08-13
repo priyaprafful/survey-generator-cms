@@ -86,11 +86,6 @@ export default {
         labelSv: 'Integritetspolicy',
         labelEn: 'Privacy policy',
       },
-      {
-        path: 'kontakt',
-        labelSv: 'Kontakt',
-        labelEn: 'Contact',
-      },
     ],
   }),
 };

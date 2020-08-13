@@ -3,7 +3,7 @@
     <Container>
       <h2 class="mb-16 text-center">Vi som jobbar med SurveyGenerator</h2>
 
-      <div class="grid grid-cols-team row-gap-12 justify-between">
+      <div class="grid grid-cols-team row-gap-20 justify-between">
         <div v-for="(person, index) in data.team" :key="index">
           <div class="flex relative mb-4">
             <div class="lines" />

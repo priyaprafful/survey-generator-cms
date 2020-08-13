@@ -14,13 +14,12 @@
           </p>
 
           <div class="flex items-center">
-            <CTABtn />
+            <MainBtn :text="$t('menu.book_demo')" to="boka-demo" cta />
 
             <MainBtn
               :text="$t('common.get_quote')"
               :to="'kontakt'"
               class="py-2 px-4"
-              funnel
             />
           </div>
         </Block>
@@ -35,13 +34,7 @@
               tjänster.
             </p>
 
-            <MainBtn
-              text="Priser"
-              to="priser"
-              class="mt-auto"
-              funnel
-              left-aligned
-            />
+            <MainBtn text="Priser" to="priser" class="mt-auto" left-aligned />
           </div>
 
           <div class="flex flex-col ml-4">
@@ -57,7 +50,6 @@
               text="Verktyget"
               to="verktyget"
               class="mt-auto"
-              funnel
               left-aligned
             />
           </div>

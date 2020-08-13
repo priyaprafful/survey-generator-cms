@@ -52,7 +52,7 @@
           >
             {{ $t('menu.login') }}
           </nuxt-link>
-          <CTABtn small />
+          <MainBtn :text="$t('menu.book_demo')" to="boka-demo" cta no-chevron />
         </li>
       </ul>
     </nav>
