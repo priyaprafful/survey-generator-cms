@@ -171,7 +171,7 @@ export default {
   display: inline-block;
   height: 1.25rem;
   width: 1.25rem;
-  background-image: url('./plus.svg');
+  background-image: url('../../assets/svgs/plus.svg');
   background-size: contain;
   background-repeat: no-repeat;
   padding-left: 2rem;
