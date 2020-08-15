@@ -89,7 +89,7 @@
 </template>
 
 <script>
-import { TimelineMax } from 'gsap';
+import { gsap } from 'gsap';
 import IconCircle from '@/components/Common/Icons/IconCircle.vue';
 import ChatIcon from '@/assets/svgs/chat.svg?inline';
 import BuildingIcon from '@/assets/svgs/building.svg?inline';
@@ -108,27 +108,39 @@ export default {
   },
   mounted() {
     this.floatAnimation();
+    this.buildingStagger();
   },
   methods: {
     floatAnimation() {
-      const tlBubble1 = new TimelineMax({ repeat: -1 });
-      tlBubble1
-        .to('.bubble1', 3, { y: '-=1', x: '+=2', rotation: '-=4' })
-        .to('.bubble1', 3, { y: '+=1', x: '-=2', rotation: '-=3' })
-        .to('.bubble1', 3, { y: '-=2', rotation: '+=3' })
-        .to('.bubble1', 3, { y: '+=2', rotation: '+=3' });
+      gsap
+        .timeline({ repeat: -1 })
+        .to('#bubble1', 3, { y: '-=1', x: '+=2', rotation: '-=4' })
+        .to('#bubble1', 3, { y: '+=1', x: '-=2', rotation: '-=3' })
+        .to('#bubble1', 3, { y: '-=2', rotation: '+=3' })
+        .to('#bubble1', 3, { y: '+=2', rotation: '+=3' });
 
-      const tlBubble2 = new TimelineMax({ repeat: -1 });
-      tlBubble2
-        .to('.bubble2', 3, { y: '+=1', x: '-=2', rotation: '-=5' })
-        .to('.bubble2', 2, { y: '-=1', x: '+=2', rotation: '-=5' })
-        .to('.bubble2', 3, { y: '-=2', rotation: '+=5' })
-        .to('.bubble2', 3, { y: '+=2', rotation: '+=5' });
+      gsap
+        .timeline({ repeat: -1 })
+        .to('#bubble2', 3, { y: '+=1', x: '-=2', rotation: '-=5' })
+        .to('#bubble2', 3, { y: '-=1', x: '+=2', rotation: '-=5' })
+        .to('#bubble2', 3, { y: '-=2', rotation: '+=5' })
+        .to('#bubble2', 3, { y: '+=2', rotation: '+=5' });
 
-      const typing = new TimelineMax({ repeat: -1 });
-      typing
-        .to('.typing', 2, { autoAlpha: 0, delay: -1 })
-        .to('.typing', 2, { autoAlpha: 1, delay: 10 });
+      gsap
+        .timeline({ repeat: -1 })
+        .to('.typing', 2, { opacity: 1, delay: 4 }, '-=1')
+        .staggerTo('.typing', 2, { scale: 0 }, 0.25);
+    },
+    buildingStagger() {
+      gsap
+        .timeline({ repeat: -1 })
+        .staggerTo(
+          '.window',
+          2,
+          { x: 20, ease: 'Elastic.easeOut', delay: 8 },
+          0.1
+        )
+        .staggerTo('.window', 2, { x: 0, ease: 'Elastic.easeOut' }, 0.1);
     },
   },
 };
