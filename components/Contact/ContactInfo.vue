@@ -3,9 +3,9 @@
     <Container>
       <div class="flex">
         <Block half class="flex flex-col">
-          <IconCircle>
+          <IconWrapper circle>
             <ChatIcon class="overflow-visible" />
-          </IconCircle>
+          </IconWrapper>
 
           <div class="flex mb-6">
             <div class="flex flex-col justify-between">
@@ -65,9 +65,10 @@
           </div>
         </Block>
         <Block half class="flex flex-col">
-          <IconCircle>
+          <IconWrapper square>
             <BuildingIcon />
-          </IconCircle>
+          </IconWrapper>
+
           <div class="flex justify-between mb-6">
             <p class="text-blue-4 leading-relaxed">
               {{ $prismic.asText($store.state.miscellaneous.company_name) }}
@@ -90,13 +91,11 @@
 
 <script>
 import { gsap } from 'gsap';
-import IconCircle from '@/components/Common/Icons/IconCircle.vue';
 import ChatIcon from '@/assets/svgs/chat.svg?inline';
 import BuildingIcon from '@/assets/svgs/building.svg?inline';
 
 export default {
   components: {
-    IconCircle,
     ChatIcon,
     BuildingIcon,
   },
@@ -128,8 +127,8 @@ export default {
 
       gsap
         .timeline({ repeat: -1 })
-        .to('.typing', 2, { opacity: 1, delay: 4 }, '-=1')
-        .staggerTo('.typing', 2, { scale: 0 }, 0.25);
+        .staggerTo('.typing', 2, { scale: 0, delay: -2 }, 0.15)
+        .staggerTo('.typing', 2, { scale: 1, delay: 4 }, 0.15);
     },
     buildingStagger() {
       gsap

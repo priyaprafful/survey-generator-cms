@@ -3,7 +3,7 @@
     <Container>
       <div class="flex">
         <Block half class="leading-loose">
-          <IconCircle>
+          <IconWrapper>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 26.33">
               <rect
                 x="1"
@@ -19,7 +19,7 @@
                 "
               />
             </svg>
-          </IconCircle>
+          </IconWrapper>
 
           <prismic-rich-text :field="data.intro_title" class="mb-6" />
           <prismic-rich-text :field="data.intro_content" class="rich-text" />
@@ -36,12 +36,7 @@
 </template>
 
 <script>
-import IconCircle from '@/components/Common/Icons/IconCircle.vue';
-
 export default {
-  components: {
-    IconCircle,
-  },
   props: {
     data: {
       type: Object,

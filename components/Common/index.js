@@ -6,7 +6,7 @@ import Block from './Sections/Block.vue';
 import PageHeader from './Sections/PageHeader.vue';
 import MainBtn from './Buttons/MainBtn.vue';
 import Placeholder from './Icons/Placeholder.vue';
-import IconCircle from './Icons/IconCircle.vue';
+import IconWrapper from './Icons/IconWrapper.vue';
 import Dots from './Sections/Dots.vue';
 
 // This exports the plugin object.
@@ -22,7 +22,7 @@ export default {
     Vue.component('PageHeader', PageHeader);
     Vue.component('MainBtn', MainBtn);
     Vue.component('Placeholder', Placeholder);
-    Vue.component('IconCircle', IconCircle);
+    Vue.component('IconWrapper', IconWrapper);
     Vue.component('Dots', Dots);
   },
 };

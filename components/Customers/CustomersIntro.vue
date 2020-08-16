@@ -18,7 +18,7 @@
           <!-- <div>
             <Placeholder class="w-12 h-12 mr-4" />
           </div> -->
-          <IconCircle class="mr-4" />
+          <IconWrapper class="mr-4" />
 
           <div class="flex flex-col leading-loose">
             <prismic-rich-text :field="card.group_title" class="mb-2 text-lg" />

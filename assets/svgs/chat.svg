@@ -3,9 +3,9 @@
   <g id="bubble2">
     <path d="M11,1C5.48,1,1,4.58,1,9a7,7,0,0,0,2,4.78V19l4.83-2.42A12.1,12.1,0,0,0,11,17c5.52,0,10-3.58,10-8S16.52,1,11,1Z" style="fill: #fff;stroke: #161e2e;stroke-linecap: square;stroke-width: 2px"/>
     <g>
-      <circle class="typing opacity-0" cx="6.74" cy="8.89" r="0.99" style="fill: #43a8d8"/>
-      <circle class="typing opacity-0" cx="11" cy="8.89" r="0.99" style="fill: #43a8d8"/>
-      <circle class="typing opacity-0" cx="15.26" cy="8.89" r="0.99" style="fill: #43a8d8"/>
+      <circle class="typing" cx="6.74" cy="8.89" r="0.99" style="fill: #43a8d8"/>
+      <circle class="typing" cx="11" cy="8.89" r="0.99" style="fill: #43a8d8"/>
+      <circle class="typing" cx="15.26" cy="8.89" r="0.99" style="fill: #43a8d8"/>
     </g>
   </g>
 </svg>
