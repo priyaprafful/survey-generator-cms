@@ -3,22 +3,8 @@
     <Container>
       <div class="flex">
         <Block half class="leading-loose">
-          <IconWrapper>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 26.33">
-              <rect
-                x="1"
-                y="1"
-                width="20"
-                height="24.33"
-                rx="2.54"
-                style="
-                  fill: none;
-                  stroke: #161e2e;
-                  stroke-linecap: square;
-                  stroke-width: 2px;
-                "
-              />
-            </svg>
+          <IconWrapper square>
+            <PriceTagsIcon class="overflow-visible" />
           </IconWrapper>
 
           <prismic-rich-text :field="data.intro_title" class="mb-6" />
@@ -36,11 +22,41 @@
 </template>
 
 <script>
+import { gsap } from 'gsap';
+import PriceTagsIcon from '@/assets/svgs/price-tags.svg?inline';
+
 export default {
+  components: {
+    PriceTagsIcon,
+  },
   props: {
     data: {
       type: Object,
       default: null,
+    },
+  },
+  mounted() {
+    this.tagWiggle();
+  },
+  methods: {
+    tagWiggle() {
+      gsap
+        .timeline({ repeat: -1 })
+        .to(
+          '#pricetag',
+          1,
+          {
+            delay: 8,
+            rotation: '-90',
+            ease: 'Power1.easeInOut',
+            repeat: 3,
+            yoyo: true,
+            repeatDelay: 0.15,
+            transformOrigin: '100% 0%',
+          },
+          0.5
+        )
+        .to('#pricetag', 0.25, { rotation: 0 }, '+=0.5');
     },
   },
 };

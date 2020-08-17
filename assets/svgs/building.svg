@@ -1,21 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.88 20.2">
-  <path class="window" d="M11.58,3.25c0-.52.77-.33,1.08-.36.49,0,.29.81.33,1.11a.36.36,0,0,1-.36.36h-.69C11.42,4.37,11.62,3.56,11.58,3.25Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M11.94,5.77c.31,0,1.09-.16,1.08.36h0c0,.31.16,1.07-.36,1.07H12c-.52,0-.33-.79-.36-1.1A.35.35,0,0,1,11.94,5.77Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M11.94,8.66h.72A.37.37,0,0,1,13,9c0,.31.16,1.09-.36,1.08H12c-.52,0-.33-.77-.36-1.08A.35.35,0,0,1,11.94,8.66Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M11.58,11.9c0-.52.77-.33,1.08-.36.48,0,.3.75.33,1.05a.36.36,0,0,1-.36.36c-.31,0-1.06.15-1.05-.36Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M12.63,15.87h-.69c-.52,0-.33-.77-.36-1.08,0-.52.77-.33,1.08-.36.48,0,.3.78.33,1.08a.36.36,0,0,1-.36.36Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M8.66,9A.36.36,0,0,1,9,8.63h.72A.36.36,0,0,1,10.1,9c0,.31.16,1.09-.36,1.08-.31,0-1.11.16-1.1-.36Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M9,2.89c.31,0,1.09-.16,1.08.36,0,.31.16,1.09-.36,1.08-.31,0-1.09.16-1.08-.36C8.69,3.66,8.5,2.88,9,2.89Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M9,5.74c.31,0,1.09-.16,1.08.36,0,.31.16,1.09-.36,1.08-.31,0-1.09.16-1.08-.36C8.69,6.51,8.5,5.73,9,5.74Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M8.66,11.9A.37.37,0,0,1,9,11.54h.72a.37.37,0,0,1,.36.36c0,.31.16,1.08-.36,1.09H9a.37.37,0,0,1-.36-.37Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M6.14,2.89c.31,0,1.09-.16,1.08.36,0,.31.16,1.09-.36,1.08-.31,0-1.09.16-1.08-.36C5.81,3.66,5.62,2.88,6.14,2.89Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M6.14,5.74c.31,0,1.09-.16,1.08.36,0,.31.16,1.09-.36,1.08-.31,0-1.09.16-1.08-.36C5.81,6.51,5.62,5.73,6.14,5.74Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M6.14,8.66c.31,0,1.09-.16,1.08.36,0,.31.16,1.09-.36,1.08-.31,0-1.09.16-1.08-.36C5.81,9.43,5.62,8.65,6.14,8.66Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M7.22,11.9c0,.31.16,1.08-.36,1.09H6.14c-.52,0-.33-.78-.36-1.09a.37.37,0,0,1,.36-.36h.72A.37.37,0,0,1,7.22,11.9Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M3.25,4.33A.37.37,0,0,1,2.94,4V3.25a.37.37,0,0,1,.36-.36c.31,0,1-.14,1,.36h0V4A.35.35,0,0,1,4,4.33Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M2.94,9a.37.37,0,0,1,.36-.36c.31,0,1-.14,1,.36h0v.72A.36.36,0,0,1,4,10.1H3.25C2.79,10.05,3,9.3,2.94,9Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M4,13H3.25a.39.39,0,0,1-.31-.37V11.9a.39.39,0,0,1,.36-.36h.64a.37.37,0,0,1,.37.36h0v.72A.37.37,0,0,1,4,13Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M3.25,15.87c-.46,0-.28-.79-.31-1.08a.37.37,0,0,1,.36-.36c.31,0,1-.14,1,.36h0c0,.31.16,1.09-.36,1.08Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path class="window" d="M3.25,7.21c-.46,0-.27-.81-.31-1.11a.37.37,0,0,1,.36-.36h.64a.38.38,0,0,1,.4.34h0V6.8A.36.36,0,0,1,4,7.21Z" transform="translate(0 0)" style="fill: #3d97c3"/>
-  <path d="M10.1,18.76h4.33V1.44h-13V18.76H5.78V16.23a.36.36,0,0,1,.36-.36h3.6a.36.36,0,0,1,.36.36Zm5.05,1.44H.73A.76.76,0,0,1,0,19.48V.72A.73.73,0,0,1,.73,0H15.15a.73.73,0,0,1,.73.72V19.48A.76.76,0,0,1,15.15,20.2Z" transform="translate(0 0)" style="fill: #214159"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.82 16.08">
+  <g>
+    <path d="M953.78,536.68v13.6H967.1v-13.6a1,1,0,0,0-1-1H954.77A1,1,0,0,0,953.78,536.68Z" transform="translate(-953.03 -534.94)" style="fill: none;stroke: #214159;stroke-linecap: square;stroke-width: 1.5px"/>
+    <path d="M6.57,11.86H8.48a1,1,0,0,1,1,1v2.47a0,0,0,0,1,0,0H5.57a0,0,0,0,1,0,0V12.86A1,1,0,0,1,6.57,11.86Z" style="fill: #214159"/>
+  </g>
+  <g>
+    <rect class="window" x="3.14" y="3.79" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="5.65" y="3.79" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="8.17" y="3.79" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="10.68" y="3.79" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="3.14" y="6.3" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="5.65" y="6.3" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="8.17" y="6.3" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="10.68" y="6.3" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="3.14" y="8.78" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="5.65" y="8.78" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="8.17" y="8.78" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="10.68" y="8.78" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="3.14" y="11.3" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+    <rect class="window" x="10.68" y="11.3" width="1" height="1" rx="0.5" style="fill: #44a8d6"/>
+  </g>
 </svg>
