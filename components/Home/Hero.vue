@@ -66,8 +66,8 @@ export default {
 }
 
 .dots {
-  background-image: radial-gradient(#aad7ed 2px, #eef7fb 2px);
-  background-size: calc(20 * 1px) calc(20 * 1px);
+  background-image: radial-gradient(#aad7ed 1.5px, #eef7fb 1.5px);
+  background-size: calc(25 * 1px) calc(25 * 1px);
   clip-path: polygon(100% 0, 100% 100%, 0 50%);
 }
 </style>

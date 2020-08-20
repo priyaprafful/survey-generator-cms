@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
 .dots {
-  background-image: radial-gradient(#aad7ed 1px, transparent 2px);
-  background-size: calc(20 * 1px) calc(20 * 1px);
+  background-image: radial-gradient(#aad7ed 2px, transparent 2px);
+  background-size: calc(25 * 1px) calc(25 * 1px);
 }
 </style>
