@@ -74,7 +74,7 @@ module.exports = {
         full: '100%',
       },
       borderRadius: {
-        lg: '2rem',
+        xl: '2rem',
       },
       zIndex: {
         n1: '-1',

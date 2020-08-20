@@ -26,7 +26,7 @@
 
         <Block half class="flex">
           <div
-            class="flex flex-col ml-4 p-6 bg-lightblue-3 rounded-tl-lg rounded-br-lg"
+            class="flex flex-col ml-4 p-6 bg-lightblue-3 rounded-tl-xl rounded-br-xl"
           >
             <IconWrapper square>
               <PriceTagsIcon class="overflow-visible" />
@@ -40,7 +40,7 @@
           </div>
 
           <div
-            class="flex flex-col ml-4 p-6 bg-lightblue-3 rounded-tl-lg rounded-br-lg"
+            class="flex flex-col ml-4 p-6 bg-lightblue-3 rounded-tl-xl rounded-br-xl"
           >
             <IconWrapper square>
               <ShapesIcon class="overflow-visible" />

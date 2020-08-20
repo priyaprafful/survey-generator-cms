@@ -17,14 +17,14 @@
           </div>
         </div>
 
-        <div class="w-1/2 shadow-card">
-          <div class="p-10 rounded-tr-lg text-blue-7 bg-lightblue-6">
+        <div class="w-1/2 shadow-card rounded-lg">
+          <div class="p-10 text-blue-7 bg-lightblue-6 rounded-tr-lg">
             <prismic-rich-text
               :field="data.surveytype_right_title"
               class="text-center text-lg"
             />
           </div>
-          <div class="p-10 text-white rounded-br-lg bg-blue-8">
+          <div class="p-10 text-white bg-blue-8 rounded-br-lg">
             <prismic-rich-text
               :field="data.surveytype_right_content"
               class="rich-text"
