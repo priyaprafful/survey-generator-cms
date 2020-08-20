@@ -1,8 +1,8 @@
 <template>
-  <section class="mainGradient overflow-hidden">
+  <section>
     <div class="flex justify-center h-almost max-w-screen-xl m-auto p-12">
       <div class="flex">
-        <Block half class="flex flex-col justify-center relative">
+        <Block half class="flex flex-col justify-center">
           <div class="z-10">
             <h1 class="text-5xl leading-tight mb-6 gradientText">
               {{ $prismic.asText(data.headline) }}
@@ -16,28 +16,6 @@
               <MainBtn :text="$t('common.get_quote')" :to="'kontakt'" />
             </div>
           </div>
-
-          <svg
-            fill="none"
-            viewBox="0 0 404 384"
-            width="404"
-            height="384"
-            class="absolute bottom-0 right-1/2 transform -translate-x-32 text-gray-200 fill-current"
-          >
-            <defs>
-              <pattern
-                id="shape1"
-                x="0"
-                y="0"
-                width="20"
-                height="20"
-                patternUnits="userSpaceOnUse"
-              >
-                <rect x="0" y="0" width="4" height="4" fill="inherit"></rect>
-              </pattern>
-            </defs>
-            <rect width="404" height="384" fill="url(#shape1)"></rect>
-          </svg>
         </Block>
 
         <Block half class="flex relative">
@@ -88,8 +66,8 @@ export default {
 }
 
 .dots {
-  background-image: linear-gradient(transparent 2px, #ddeff8 2px);
-  background-size: calc(10 * 2px) calc(10 * 2px);
+  background-image: radial-gradient(#aad7ed 2px, #eef7fb 2px);
+  background-size: calc(20 * 1px) calc(20 * 1px);
   clip-path: polygon(100% 0, 100% 100%, 0 50%);
 }
 </style>

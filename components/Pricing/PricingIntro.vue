@@ -46,7 +46,7 @@ export default {
           '#pricetag',
           1,
           {
-            delay: 8,
+            delay: 10,
             rotation: '-90',
             ease: 'Power1.easeInOut',
             repeat: 3,

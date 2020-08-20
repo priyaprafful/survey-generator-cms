@@ -7,7 +7,7 @@
     :class="{
       'cta px-5 py-3 shadow bg-yellow-2 hover:bg-yellow-1 text-blue-7': cta,
       'justify-center px-5 py-3': !leftAligned,
-      'justify-start px-0 py-3 ': leftAligned,
+      'justify-start px-0 py-0 ': leftAligned,
     }"
   >
     <span :class="{ 'mr-3': !noChevron }">{{ text }}</span>

@@ -21,13 +21,13 @@
           </div>
 
           <div class="inline-flex items-center mb-2">
-            <svg-icon icon="mail" class="text-blue-2 mr-4" lg />
+            <svg-icon icon="mail" class="text-blue-3 mr-4" lg />
 
             <prismic-rich-text :field="data.email" />
           </div>
 
           <div class="inline-flex items-center mb-4">
-            <svg-icon icon="help" class="text-blue-2 mr-4" lg />
+            <svg-icon icon="help" class="text-blue-3 mr-4" lg />
 
             <prismic-rich-text :field="data.support_email" />
           </div>
@@ -135,11 +135,18 @@ export default {
         .timeline({ repeat: -1 })
         .staggerTo(
           '.window',
-          2,
-          { x: 20, ease: 'Elastic.easeOut', delay: 8 },
+          1,
+          {
+            rotation: '-90',
+            ease: 'Steps.easeOut',
+            delay: 10,
+            repeat: 3,
+            repeatDelay: 0.1,
+            yoyo: true,
+          },
           0.1
         )
-        .staggerTo('.window', 2, { x: 0, ease: 'Elastic.easeOut' }, 0.1);
+        .staggerTo('.window', 10, { x: 0, ease: 'Elastic.easeOut' }, 0.1);
     },
   },
 };

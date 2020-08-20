@@ -25,27 +25,30 @@
         </Block>
 
         <Block half class="flex">
-          <div class="flex flex-col mr-4">
-            <h3 class="mb-6 leading-normal">Prisplan eller skräddarsytt</h3>
-
+          <div
+            class="flex flex-col ml-4 p-6 bg-lightblue-3 rounded-tl-lg rounded-br-lg"
+          >
+            <IconWrapper square>
+              <PriceTagsIcon class="overflow-visible" />
+            </IconWrapper>
+            <h3 class="mb-2 leading-normal">Prisvärt</h3>
             <p class="leading-relaxed mb-4">
-              Vi tillhandahåller tre olika modeller av verktyget, och passar de
-              inte dina behov kan vi skräddarsy både enkäter, mjukvara och
-              tjänster.
+              Välj mellan tre olika prisplaner eller skräddarsytt för dina
+              behov.
             </p>
-
             <MainBtn text="Priser" to="priser" class="mt-auto" left-aligned />
           </div>
 
-          <div class="flex flex-col ml-4">
-            <h3 class="mb-6 leading-normal">Enkelt och effektivt</h3>
-
+          <div
+            class="flex flex-col ml-4 p-6 bg-lightblue-3 rounded-tl-lg rounded-br-lg"
+          >
+            <IconWrapper square>
+              <ShapesIcon class="overflow-visible" />
+            </IconWrapper>
+            <h3 class="mb-2 leading-normal">Enkelt och effektivt</h3>
             <p class="leading-relaxed mb-4">
-              Vårt verktyg är webbaserat och hjälper dig att snabbt och
-              kostnadseffektivt genomföra olika former av undersökningar bland
-              medarbetare, paneler, kunder eller ”svenska folket”.
+              Kostnadseffektiva undersökningar med vårt flexibla enkätverktyg.
             </p>
-
             <MainBtn
               text="Verktyget"
               to="verktyget"
@@ -60,7 +63,101 @@
 </template>
 
 <script>
-export default {};
+import { gsap } from 'gsap';
+import PriceTagsIcon from '@/assets/svgs/price-tags.svg?inline';
+import ShapesIcon from '@/assets/svgs/shapes.svg?inline';
+
+export default {
+  components: {
+    PriceTagsIcon,
+    ShapesIcon,
+  },
+  mounted() {
+    this.tagWiggle();
+    this.moveShapes();
+  },
+  methods: {
+    tagWiggle() {
+      gsap
+        .timeline({ repeat: -1 })
+        .to(
+          '#pricetag',
+          1,
+          {
+            delay: 10,
+            rotation: '-90',
+            ease: 'Power1.easeInOut',
+            repeat: 3,
+            yoyo: true,
+            repeatDelay: 0.15,
+            transformOrigin: '100% 0%',
+          },
+          0.5
+        )
+        .to('#pricetag', 0.25, { rotation: 0 }, '+=0.5');
+    },
+    moveShapes() {
+      gsap
+        .timeline({ repeat: -1 })
+        .to('#shape-circle', 1, {
+          x: 40,
+          rotate: 160,
+          transformOrigin: '50% 50%',
+          delay: 20,
+        })
+        .to(
+          '#shape-square',
+          1,
+          { y: -40, x: -20, rotate: 180, transformOrigin: '50% 50%' },
+          '-=1'
+        )
+        .to(
+          '#shape-triangle',
+          1,
+          { y: 45, x: -15, rotate: 120, transformOrigin: '50% 50%' },
+          '-=1'
+        )
+        .to('#shape-circle', 1, {
+          y: -40,
+          x: 20,
+          rotate: -120,
+          transformOrigin: '50% 50%',
+          delay: 20,
+        })
+        .to(
+          '#shape-square',
+          1,
+          { y: 0, x: -40, rotate: 90, transformOrigin: '50% 50%' },
+          '-=1'
+        )
+        .to(
+          '#shape-triangle',
+          1,
+          { y: 40, x: 25, rotate: 180, transformOrigin: '50% 50%' },
+          '-=1'
+        )
+        .to('#shape-circle', 1, {
+          y: 0,
+          x: 0,
+          rotate: 0,
+          transformOrigin: '50% 50%',
+          delay: 20,
+        })
+        .to(
+          '#shape-square',
+          1,
+          { y: 0, x: 0, rotate: 0, transformOrigin: '50% 50%' },
+          '-=1'
+        )
+        .to(
+          '#shape-triangle',
+          1,
+          { y: 0, x: 0, rotate: 0, transformOrigin: '50% 50%' },
+          '-=1'
+        );
+    },
+  },
+};
 </script>
 
 <style>

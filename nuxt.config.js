@@ -105,6 +105,7 @@ export default {
         langDir: 'assets/langs/',
         defaultLocale: 'sv',
         detectBrowserLanguage: false,
+        parsePages: false,
       },
     ],
     // https://prismic-nuxt.js.org/
