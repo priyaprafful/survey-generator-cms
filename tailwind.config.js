@@ -5,6 +5,9 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true, // remove this in tailwind v2.0
+  },
   theme: {
     fontFamily: {
       body: ['HelveticaNowText, sans-serif'],
