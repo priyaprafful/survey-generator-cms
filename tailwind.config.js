@@ -50,7 +50,8 @@ module.exports = {
         yellow: {
           '1': '#FFE47B',
           '2': '#FFDE5C',
-          '3': '#6C5600',
+          '3': '#B69A2E',
+          '4': '#6C5600',
         },
         tangerine: {
           '1': '#ffad5c',
@@ -97,6 +98,8 @@ module.exports = {
     gridColumnEnd: ['last'],
     flexDirection: ['last'],
     backgroundColor: ['hover', 'odd', 'even'],
+    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    textDecoration: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
   },
   plugins: [require('@tailwindcss/custom-forms')],
   purge: {

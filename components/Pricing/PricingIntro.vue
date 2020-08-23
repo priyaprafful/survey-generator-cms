@@ -51,7 +51,6 @@ export default {
             ease: 'Power1.easeInOut',
             repeat: 3,
             yoyo: true,
-            repeatDelay: 0.15,
             transformOrigin: '100% 0%',
           },
           0.5

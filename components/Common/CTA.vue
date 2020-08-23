@@ -6,11 +6,10 @@
           <h2 class="mb-4">
             Redo att sätta igång?
           </h2>
-          <p class="mb-10 leading-relaxed">
+          <p class="mb-8 leading-relaxed">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            industry. Du kan även kontakta oss för en lösning anpassat för era
+            behov.
           </p>
 
           <div class="flex items-center">
@@ -64,7 +63,7 @@
 
 <script>
 import { gsap } from 'gsap';
-import PriceTagsIcon from '@/assets/svgs/price-tags.svg?inline';
+import PriceTagsIcon from '@/assets/svgs/price-tags-cta.svg?inline';
 import ShapesIcon from '@/assets/svgs/shapes.svg?inline';
 
 export default {
@@ -81,7 +80,7 @@ export default {
       gsap
         .timeline({ repeat: -1 })
         .to(
-          '#pricetag',
+          '#pricetag-cta',
           1,
           {
             delay: 10,
@@ -89,12 +88,11 @@ export default {
             ease: 'Power1.easeInOut',
             repeat: 3,
             yoyo: true,
-            repeatDelay: 0.15,
             transformOrigin: '100% 0%',
           },
           0.5
         )
-        .to('#pricetag', 0.25, { rotation: 0 }, '+=0.5');
+        .to('#pricetag-cta', 0.25, { rotation: 0 }, '+=0.5');
     },
     moveShapes() {
       gsap
