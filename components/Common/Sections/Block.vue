@@ -5,7 +5,7 @@
       'w-1/2': half,
       'w-1/3': onethird,
       'w-2/3': twothird,
-      'first:mr-8 last:ml-8': !index % 2 !== 0,
+      'first:mr-8 last:ml-8': index % 2 === 0,
       'first:ml-8 last:mr-8': index % 2 !== 0,
     }"
   >

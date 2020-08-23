@@ -22,7 +22,7 @@
               class="object-cover"
               :class="{
                 'about-image-left': index % 2 !== 0,
-                'about-image-right': !index % 2 !== 0,
+                'about-image-right': index % 2 === 0,
               }"
             />
           </Dots>

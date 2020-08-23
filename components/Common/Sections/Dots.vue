@@ -3,14 +3,14 @@
     <div
       class="dots absolute top-0 left-0 right-0 bottom-0"
       :class="{
-        'mr-10 mt-10': !index % 2 !== 0,
+        'mr-10 mt-10': index % 2 === 0,
         'ml-10 mt-10': index % 2 !== 0,
       }"
     />
     <div
       class="w-full z-10"
       :class="{
-        'ml-10 mb-10': !index % 2 !== 0,
+        'ml-10 mb-10': index % 2 === 0,
         'mr-10 mb-10': index % 2 !== 0,
       }"
     >
