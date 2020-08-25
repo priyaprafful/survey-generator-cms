@@ -41,7 +41,6 @@ export default {
       class: ['font-body', 'bg-bluegray-1'],
     },
   },
-  resourceHints: false,
   /*
    ** Customize the progress-bar color
    */
