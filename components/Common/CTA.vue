@@ -3,9 +3,7 @@
     <Container>
       <div class="flex">
         <Block half>
-          <h2 class="mb-4">
-            Redo att sätta igång?
-          </h2>
+          <h2 class="mb-4">Redo att sätta igång?</h2>
           <p class="mb-8 leading-relaxed">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Du kan även kontakta oss för en lösning anpassat för era

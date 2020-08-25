@@ -1,19 +1,14 @@
 <template>
   <!-- eslint-disable vue/no-v-html -->
-  <svg
-    width="0"
-    height="0"
-    style="display: none;"
-    v-html="$options.svgSprite"
-  />
+  <svg width="0" height="0" style="display: none" v-html="$options.svgSprite" />
 </template>
 
 <script>
 const svgContext = require.context(
   '!svg-inline-loader?' +
-  'removeTags=true' + // remove title tags, etc.
-  '&removeSVGTagAttrs=true' + // enable removing attributes
-  '&removingTagAttrs=fill' + // remove fill attributes
+    'removeTags=true' + // remove title tags, etc.
+    '&removeSVGTagAttrs=true' + // enable removing attributes
+    '&removingTagAttrs=fill' + // remove fill attributes
     '!@/assets/icons', // search this directory
   true, // search subdirectories
   /\w+\.svg$/i // only include SVG files
