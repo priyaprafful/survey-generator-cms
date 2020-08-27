@@ -20,9 +20,15 @@
         </Block>
 
         <Block half :index="index">
-          <Dots :index="index">
+          <VueStyledShadows
+            :position="index % 2 === 0 ? 'bottomLeft' : 'bottomRight'"
+            color1="#aad7ed"
+            pattern-size="2"
+            bg-size="25"
+            margin="40"
+          >
             <prismic-image :field="benefit.image" />
-          </Dots>
+          </VueStyledShadows>
         </Block>
       </BlockWrapper>
     </Container>

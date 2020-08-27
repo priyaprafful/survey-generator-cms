@@ -12,9 +12,14 @@
         </Block>
 
         <Block half>
-          <Dots>
+          <VueStyledShadows
+            color1="#aad7ed"
+            pattern-size="2"
+            bg-size="25"
+            margin="40"
+          >
             <prismic-image v-if="data.intro_image" :field="data.intro_image" />
-          </Dots>
+          </VueStyledShadows>
         </Block>
       </div>
     </Container>
