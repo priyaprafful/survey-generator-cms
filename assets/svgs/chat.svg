@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 23.62">
-  <path id="bubble1" d="M8.22,17.1A7.08,7.08,0,0,0,10,18.65,8.55,8.55,0,0,0,15,20a10.7,10.7,0,0,0,1.72-.14L21,22V18a5.22,5.22,0,0,0,1.57-2.07c1.81-4.25-2.38-8-7.54-8-5.44,0-9.82,4.26-7.18,8.62Z" style="fill: none;stroke: #43a8d8;stroke-width: 2px"/>
+  <path id="bubble1" d="M8.22,17.1A7.08,7.08,0,0,0,10,18.65,8.55,8.55,0,0,0,15,20a10.7,10.7,0,0,0,1.72-.14L21,22V18a5.22,5.22,0,0,0,1.57-2.07c1.81-4.25-2.38-8-7.54-8-5.44,0-9.82,4.26-7.18,8.62Z" style="fill: none;stroke: #43a8d8;stroke-width: 1.5px"/>
   <g id="bubble2">
-    <path d="M11,1C5.48,1,1,4.58,1,9a7,7,0,0,0,2,4.78V19l4.83-2.42A12.1,12.1,0,0,0,11,17c5.52,0,10-3.58,10-8S16.52,1,11,1Z" style="fill: #FAF9FD;stroke: #214159;stroke-linecap: square;stroke-width: 2px"/>
+    <path d="M11,1C5.48,1,1,4.58,1,9a7,7,0,0,0,2,4.78V19l4.83-2.42A12.1,12.1,0,0,0,11,17c5.52,0,10-3.58,10-8S16.52,1,11,1Z" style="fill: #FAF9FD;stroke: #214159;stroke-linecap: square;stroke-width: 1.5px"/>
     <g>
       <circle class="typing" cx="6.74" cy="8.89" r="0.99" style="fill: #43a8d8"/>
       <circle class="typing" cx="11" cy="8.89" r="0.99" style="fill: #43a8d8"/>

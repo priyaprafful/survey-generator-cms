@@ -45,22 +45,19 @@ export default {
   },
   methods: {
     tagWiggle() {
-      gsap
-        .timeline({ repeat: -1 })
-        .to(
-          '#pricetag',
-          1,
-          {
-            delay: 10,
-            rotation: '-90',
-            ease: 'Power1.easeInOut',
-            repeat: 3,
-            yoyo: true,
-            transformOrigin: '100% 0%',
-          },
-          0.5
-        )
-        .to('#pricetag', 0.25, { rotation: 0 }, '+=0.5');
+      gsap.timeline({ repeat: -1 }).to(
+        '#pricetag',
+        1,
+        {
+          delay: 10,
+          rotation: '-90',
+          ease: 'Power1.easeInOut',
+          repeat: 3,
+          yoyo: true,
+          transformOrigin: '100% 0%',
+        },
+        0.5
+      );
     },
   },
 };
