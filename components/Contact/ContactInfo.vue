@@ -90,7 +90,6 @@
 </template>
 
 <script>
-import { gsap } from 'gsap';
 import ChatIcon from '@/assets/svgs/chat.svg?inline';
 import BuildingIcon from '@/assets/svgs/building.svg?inline';
 
@@ -111,27 +110,27 @@ export default {
   },
   methods: {
     floatAnimation() {
-      gsap
+      this.$gsap
         .timeline({ repeat: -1 })
         .to('#bubble1', 3, { y: '-=1', x: '+=2', rotation: '-=4' })
         .to('#bubble1', 3, { y: '+=1', x: '-=2', rotation: '-=3' })
         .to('#bubble1', 3, { y: '-=2', rotation: '+=3' })
         .to('#bubble1', 3, { y: '+=2', rotation: '+=3' });
 
-      gsap
+      this.$gsap
         .timeline({ repeat: -1 })
         .to('#bubble2', 3, { y: '+=1', x: '-=2', rotation: '-=5' })
         .to('#bubble2', 3, { y: '-=1', x: '+=2', rotation: '-=5' })
         .to('#bubble2', 3, { y: '-=2', rotation: '+=5' })
         .to('#bubble2', 3, { y: '+=2', rotation: '+=5' });
 
-      gsap
+      this.$gsap
         .timeline({ repeat: -1 })
         .staggerTo('.typing', 2, { scale: 0, delay: -2 }, 0.15)
         .staggerTo('.typing', 2, { scale: 1, delay: 4 }, 0.15);
     },
     buildingStagger() {
-      gsap
+      this.$gsap
         .timeline({ repeat: -1 })
         .staggerTo(
           '.window',

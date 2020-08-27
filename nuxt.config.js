@@ -70,6 +70,7 @@ export default {
     '~/plugins/vue-masonry.js',
     '~/plugins/vue-particles.js',
     '~/plugins/vue-styled-shadows.js',
+    '~/plugins/gsap.js',
   ],
   /*
    ** Auto import components

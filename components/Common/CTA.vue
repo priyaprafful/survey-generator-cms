@@ -60,7 +60,6 @@
 </template>
 
 <script>
-import { gsap } from 'gsap';
 import PriceTagsIcon from '@/assets/svgs/price-tags-cta.svg?inline';
 import ShapesIcon from '@/assets/svgs/shapes.svg?inline';
 
@@ -75,7 +74,7 @@ export default {
   },
   methods: {
     tagWiggle() {
-      gsap.timeline({ repeat: -1 }).to(
+      this.$gsap.timeline({ repeat: -1 }).to(
         '#pricetag-cta',
         1,
         {
@@ -90,7 +89,7 @@ export default {
       );
     },
     moveShapes() {
-      gsap
+      this.$gsap
         .timeline({ repeat: -1 })
         .to('#shape-circle', 1, {
           x: 40,

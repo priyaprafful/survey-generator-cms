@@ -1,6 +1,6 @@
 <template>
-  <Wrapper>
-    <Container>
+  <Wrapper class="overflow-visible">
+    <Container class="overflow-visible">
       <div class="flex">
         <Block half class="leading-loose">
           <IconWrapper square>
@@ -18,7 +18,11 @@
             bg-size="25"
             margin="40"
           >
-            <prismic-image v-if="data.intro_image" :field="data.intro_image" />
+            <prismic-image
+              v-if="data.intro_image"
+              :field="data.intro_image"
+              class="testy"
+            />
           </VueStyledShadows>
         </Block>
       </div>
@@ -27,7 +31,6 @@
 </template>
 
 <script>
-import { gsap } from 'gsap';
 import PriceTagsIcon from '@/assets/svgs/price-tags.svg?inline';
 
 export default {
@@ -41,11 +44,12 @@ export default {
     },
   },
   mounted() {
+    this.scroll();
     this.tagWiggle();
   },
   methods: {
     tagWiggle() {
-      gsap.timeline({ repeat: -1 }).to(
+      this.$gsap.timeline({ repeat: -1 }).to(
         '#pricetag',
         1,
         {
@@ -58,6 +62,19 @@ export default {
         },
         0.5
       );
+    },
+    scroll() {
+      this.$gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: '.testy',
+            start: 'top 50%',
+            end: 'bottom 0%',
+            scrub: 0.5,
+            markers: process.env.NODE_ENV !== 'production',
+          },
+        })
+        .to('.testy', { duration: 1, y: '+=180' });
     },
   },
 };
