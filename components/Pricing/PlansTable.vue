@@ -18,7 +18,7 @@
         <tbody
           v-for="(feature, index) in data.features"
           :key="index"
-          class="even:bg-lightblue-1 odd:bg-bluegray-1"
+          class="even:bg-bluegray-1 odd:bg-white"
         >
           <tr
             v-if="feature.group_title.length > 0"
@@ -32,7 +32,7 @@
             </td>
           </tr>
 
-          <tr class="hover:bg-white transition duration-150 ease-in-out">
+          <tr class="hover:bg-lightblue-1 transition duration-150 ease-in-out">
             <th class="p-4 text-left font-normal">
               <prismic-rich-text :field="feature.title" />
             </th>

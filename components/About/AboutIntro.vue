@@ -16,7 +16,13 @@
         </Block>
 
         <Block half :index="index">
-          <Dots>
+          <VueStyledShadows
+            :position="index % 2 === 0 ? 'bottomLeft' : 'bottomRight'"
+            color1="#aad7ed"
+            pattern-size="2"
+            bg-size="25"
+            margin="40"
+          >
             <prismic-image
               :field="section.image"
               class="object-cover"
@@ -25,7 +31,7 @@
                 'about-image-right': index % 2 === 0,
               }"
             />
-          </Dots>
+          </VueStyledShadows>
         </Block>
       </BlockWrapper>
     </Container>

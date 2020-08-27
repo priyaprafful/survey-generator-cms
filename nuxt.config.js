@@ -69,6 +69,7 @@ export default {
     '~/plugins/sg-common.js',
     '~/plugins/vue-masonry.js',
     '~/plugins/vue-particles.js',
+    '~/plugins/vue-styled-shadows.js',
   ],
   /*
    ** Auto import components
