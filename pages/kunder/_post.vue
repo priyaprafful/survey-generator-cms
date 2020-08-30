@@ -66,7 +66,6 @@
 
 <script>
 export default {
-  name: 'CustomerStory',
   nuxtI18n: {
     paths: {
       sv: '/kunder/:post',
@@ -77,7 +76,7 @@ export default {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
-    const doc = await $prismic.api.getByUID('customer_story', params.post, {
+    const doc = await $prismic.api.getByUID('customers_post', params.post, {
       lang: currentLocale.iso.toLowerCase(),
     });
     if (doc) {

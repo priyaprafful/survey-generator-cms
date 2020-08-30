@@ -5,13 +5,13 @@
       :subheading="$prismic.asText(customersContent.subheading)"
     />
     <CustomersIntro :data="customersContent" />
-    <Stories :data="customersContent" :posts="posts" />
+    <CustomersPosts :data="customersContent" :posts="posts" />
   </div>
 </template>
 
 <script>
 import CustomersIntro from '@/components/Customers/CustomersIntro.vue';
-import Stories from '@/components/Customers/Stories.vue';
+import CustomersPosts from '@/components/Customers/CustomersPosts/CustomersPosts.vue';
 
 export default {
   name: 'Kunder',
@@ -23,7 +23,7 @@ export default {
   },
   components: {
     CustomersIntro,
-    Stories,
+    CustomersPosts,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
@@ -32,10 +32,10 @@ export default {
 
     try {
       // Query to get posts content to preview
-      const customerPosts = await $prismic.api.query(
-        $prismic.predicates.at('document.type', 'customer_story'),
+      const customersPosts = await $prismic.api.query(
+        $prismic.predicates.at('document.type', 'customers_post'),
         {
-          orderings: '[my.post.date desc]',
+          orderings: '[document.last_publication_date desc]',
           lang: currentLocale.iso.toLowerCase(),
         }
       );
@@ -48,7 +48,7 @@ export default {
 
       // Returns data to be used in template
       return {
-        posts: customerPosts.results,
+        posts: customersPosts.results,
         customersContent,
       };
     } catch (e) {

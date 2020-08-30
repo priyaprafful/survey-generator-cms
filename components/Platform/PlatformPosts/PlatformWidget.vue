@@ -2,7 +2,7 @@
   <nuxt-link
     :to="
       localePath({
-        name: 'verktyget-option',
+        name: 'verktyget-post',
         params: {
           post: post.uid,
         },
@@ -29,7 +29,6 @@
 
 <script>
 export default {
-  name: 'OptionWidget',
   props: {
     post: {
       type: Object,

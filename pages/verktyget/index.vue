@@ -5,13 +5,13 @@
       :subheading="$prismic.asText(platformContent.subheading)"
     />
     <PlatformIntro :data="platformContent" />
-    <PlatformOptions :data="platformContent" :posts="posts" />
+    <PlatformPosts :data="platformContent" :posts="posts" />
   </div>
 </template>
 
 <script>
 import PlatformIntro from '@/components/Platform/PlatformIntro.vue';
-import PlatformOptions from '@/components/Platform/PlatformOptions.vue';
+import PlatformPosts from '@/components/Platform/PlatformPosts/PlatformPosts.vue';
 
 export default {
   nuxtI18n: {
@@ -22,7 +22,7 @@ export default {
   },
   components: {
     PlatformIntro,
-    PlatformOptions,
+    PlatformPosts,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
@@ -30,10 +30,10 @@ export default {
     )[0];
 
     try {
-      const optionPosts = await $prismic.api.query(
-        $prismic.predicates.at('document.type', 'survey_tool_option'),
+      const platformPosts = await $prismic.api.query(
+        $prismic.predicates.at('document.type', 'platform_post'),
         {
-          orderings: '[my.post.date desc]',
+          orderings: '[document.last_publication_date desc]',
           lang: currentLocale.iso.toLowerCase(),
         }
       );
@@ -46,7 +46,7 @@ export default {
 
       // Returns data to be used in template
       return {
-        posts: optionPosts.results,
+        posts: platformPosts.results,
         platformContent,
       };
     } catch (e) {

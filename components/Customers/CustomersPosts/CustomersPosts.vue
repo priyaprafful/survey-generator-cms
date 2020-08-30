@@ -2,12 +2,16 @@
   <Wrapper>
     <Container>
       <div class="text-center leading-loose mb-16">
-        <h2>Tillval i vårt enkätverktyg</h2>
+        <prismic-rich-text :field="data.stories_title" class="mb-6" />
+        <prismic-rich-text
+          :field="data.stories_description"
+          class="w-2/3 m-auto"
+        />
       </div>
 
       <div class="grid grid-cols-3 gap-10">
         <article v-for="post in posts" :key="post.id" :post="post" class="flex">
-          <OptionWidget :post="post" />
+          <CustomersWidget :post="post" />
         </article>
       </div>
     </Container>
@@ -15,11 +19,11 @@
 </template>
 
 <script>
-import OptionWidget from '@/components/Platform/OptionWidget.vue';
+import CustomersWidget from '@/components/Customers/CustomersPosts/CustomersWidget.vue';
 
 export default {
   components: {
-    OptionWidget,
+    CustomersWidget,
   },
   props: {
     data: {

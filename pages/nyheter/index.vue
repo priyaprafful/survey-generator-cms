@@ -30,7 +30,7 @@ export default {
 
     try {
       // Query to get posts content to preview
-      const blogPosts = await $prismic.api.query(
+      const newsPosts = await $prismic.api.query(
         $prismic.predicates.at('document.type', 'post'),
         {
           orderings: '[my.post.date desc]',
@@ -46,7 +46,7 @@ export default {
 
       // Returns data to be used in template
       return {
-        posts: blogPosts.results,
+        posts: newsPosts.results,
         newsContent,
       };
     } catch (e) {

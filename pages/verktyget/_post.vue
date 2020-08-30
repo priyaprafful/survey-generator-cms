@@ -13,7 +13,7 @@
         </div>
 
         <prismic-rich-text
-          :field="post.data.post_description"
+          :field="post.data.post_content"
           class="option rich-text"
         />
       </article>
@@ -23,7 +23,6 @@
 
 <script>
 export default {
-  name: 'Option',
   nuxtI18n: {
     paths: {
       sv: '/verktyget/:post',
@@ -34,7 +33,7 @@ export default {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
-    const doc = await $prismic.api.getByUID('survey_tool_option', params.post, {
+    const doc = await $prismic.api.getByUID('platform_post', params.post, {
       lang: currentLocale.iso.toLowerCase(),
     });
     if (doc) {

@@ -2,7 +2,7 @@
   <nuxt-link
     :to="
       localePath({
-        name: 'kunder-customer_story',
+        name: 'kunder-post',
         params: {
           post: post.uid,
         },
@@ -38,7 +38,6 @@
 
 <script>
 export default {
-  name: 'StoryWidget',
   props: {
     post: {
       type: Object,
