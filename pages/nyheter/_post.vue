@@ -32,7 +32,7 @@ export default {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
-    const doc = await $prismic.api.getByUID('post', params.post, {
+    const doc = await $prismic.api.getByUID('news_post', params.post, {
       lang: currentLocale.iso.toLowerCase(),
     });
     if (doc) {

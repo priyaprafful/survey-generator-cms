@@ -54,10 +54,10 @@
         <div
           v-for="(content, index) in post.data.contents"
           :key="index"
-          class="mb-10"
+          class="rich-text mb-10"
         >
-          <prismic-rich-text :field="content.title" class="text-lg mb-4" />
-          <prismic-rich-text :field="content.description" class="rich-text" />
+          <prismic-rich-text :field="content.title" />
+          <prismic-rich-text :field="content.description" />
         </div>
       </article>
     </Container>

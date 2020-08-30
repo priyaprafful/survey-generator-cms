@@ -12,10 +12,7 @@
           </nuxt-link>
         </div>
 
-        <prismic-rich-text
-          :field="post.data.post_content"
-          class="option rich-text"
-        />
+        <prismic-rich-text :field="post.data.post_content" class="rich-text" />
       </article>
     </Container>
   </div>
@@ -52,10 +49,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.option h3 {
-  font-size: 1.125rem;
-  margin-bottom: 0.75rem;
-}
-</style>

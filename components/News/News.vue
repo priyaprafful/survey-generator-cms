@@ -1,9 +1,9 @@
 <template>
   <Wrapper>
     <Container>
-      <masonry :cols="2" :gutter="30">
+      <masonry :cols="3" :gutter="30">
         <article v-for="post in posts.slice(0, 10)" :key="post.id" class="mb-6">
-          <BlogWidget :post="post" />
+          <NewsWidget :post="post" />
         </article>
       </masonry>
     </Container>
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import BlogWidget from '@/components/News/BlogWidget.vue';
+import NewsWidget from '@/components/News/NewsWidget.vue';
 
 export default {
   components: {
-    BlogWidget,
+    NewsWidget,
   },
   props: {
     data: {

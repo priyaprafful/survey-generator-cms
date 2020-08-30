@@ -31,9 +31,9 @@ export default {
     try {
       // Query to get posts content to preview
       const newsPosts = await $prismic.api.query(
-        $prismic.predicates.at('document.type', 'post'),
+        $prismic.predicates.at('document.type', 'news_post'),
         {
-          orderings: '[my.post.date desc]',
+          orderings: '[document.last_publication_date desc]',
           lang: currentLocale.iso.toLowerCase(),
         }
       );

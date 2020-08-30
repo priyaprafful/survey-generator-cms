@@ -50,7 +50,6 @@
 
 <script>
 export default {
-  name: 'BlogWidget',
   props: {
     post: {
       type: Object,

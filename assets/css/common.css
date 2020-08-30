@@ -133,13 +133,18 @@ svg {
 
 .rich-text p,
 .rich-text ul {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .rich-text p:last-child,
 .rich-text ul:last-child,
 .rich-text li:last-child {
   margin-bottom: 0;
+}
+
+.rich-text h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .rich-text li {
