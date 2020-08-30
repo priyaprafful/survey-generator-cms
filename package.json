@@ -17,13 +17,13 @@
     "gsap": "^3.5.1",
     "nuxt": "^2.14.4",
     "nuxt-i18n": "^6.13.12",
-    "particles.vue": "^2.0.9",
+    "particles.vue": "^2.0.10",
     "prismic-dom": "^2.2.3",
     "prismic-javascript": "^3.0.2",
     "vue-masonry-css": "^1.0.3",
     "vue-particles": "^1.0.9",
     "vue-slider-component": "^3.2.5",
-    "vue-styled-shadows": "^0.1.6"
+    "vue-styled-shadows": "^0.1.8"
   },
   "devDependencies": {
     "@nuxtjs/dotenv": "^1.4.1",

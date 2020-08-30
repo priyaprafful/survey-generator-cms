@@ -46,6 +46,25 @@ export default {
       default: null,
     },
   },
+  mounted() {
+    this.parallax();
+  },
+  methods: {
+    parallax() {
+      this.$gsap.utils.toArray('.vue-styled-shadows img').forEach((elem) => {
+        this.$gsap.to(elem, {
+          y: -25,
+          scrollTrigger: {
+            trigger: elem,
+            start: 'top 75%',
+            end: 'bottom',
+            scrub: true,
+            // markers: process.env.NODE_ENV !== 'production',
+          },
+        });
+      });
+    },
+  },
 };
 </script>
 

@@ -18,11 +18,7 @@
             bg-size="25"
             margin="40"
           >
-            <prismic-image
-              v-if="data.intro_image"
-              :field="data.intro_image"
-              class="testy"
-            />
+            <prismic-image v-if="data.intro_image" :field="data.intro_image" />
           </VueStyledShadows>
         </Block>
       </div>
@@ -44,37 +40,18 @@ export default {
     },
   },
   mounted() {
-    this.scroll();
     this.tagWiggle();
   },
   methods: {
     tagWiggle() {
-      this.$gsap.timeline({ repeat: -1 }).to(
-        '#pricetag',
-        1,
-        {
-          delay: 10,
-          rotation: '-90',
-          ease: 'Power1.easeInOut',
-          repeat: 3,
-          yoyo: true,
-          transformOrigin: '100% 0%',
-        },
-        0.5
-      );
-    },
-    scroll() {
-      this.$gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: '.testy',
-            start: 'top 50%',
-            end: 'bottom 0%',
-            scrub: 0.5,
-            markers: process.env.NODE_ENV !== 'production',
-          },
-        })
-        .to('.testy', { duration: 1, y: '+=180' });
+      this.$gsap.timeline({ repeat: -1 }).to('#pricetag', 1, {
+        delay: 10,
+        rotation: '-90',
+        ease: 'Power1.easeInOut',
+        repeat: 3,
+        yoyo: true,
+        transformOrigin: '100% 0%',
+      });
     },
   },
 };

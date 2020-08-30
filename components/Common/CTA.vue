@@ -69,33 +69,24 @@ export default {
     ShapesIcon,
   },
   mounted() {
-    this.tagWiggle();
     this.moveShapes();
   },
   methods: {
-    tagWiggle() {
-      this.$gsap.timeline({ repeat: -1 }).to(
-        '#pricetag-cta',
-        1,
-        {
+    moveShapes() {
+      this.$gsap
+        .timeline({ repeat: -1 })
+        .to('#pricetag-cta', 1, {
           delay: 10,
           rotation: '-90',
           ease: 'Power1.easeInOut',
           repeat: 3,
           yoyo: true,
           transformOrigin: '100% 0%',
-        },
-        0.5
-      );
-    },
-    moveShapes() {
-      this.$gsap
-        .timeline({ repeat: -1 })
+        })
         .to('#shape-circle', 1, {
           x: 40,
           rotate: 160,
           transformOrigin: '50% 50%',
-          delay: 20,
         })
         .to(
           '#shape-square',
@@ -109,12 +100,19 @@ export default {
           { y: 45, x: -15, rotate: 120, transformOrigin: '50% 50%' },
           '-=1'
         )
+        .to('#pricetag-cta', 1, {
+          delay: 10,
+          rotation: '-90',
+          ease: 'Power1.easeInOut',
+          repeat: 3,
+          yoyo: true,
+          transformOrigin: '100% 0%',
+        })
         .to('#shape-circle', 1, {
           y: -40,
           x: 20,
           rotate: -120,
           transformOrigin: '50% 50%',
-          delay: 20,
         })
         .to(
           '#shape-square',
@@ -128,12 +126,19 @@ export default {
           { y: 40, x: 25, rotate: 180, transformOrigin: '50% 50%' },
           '-=1'
         )
+        .to('#pricetag-cta', 1, {
+          delay: 10,
+          rotation: '-90',
+          ease: 'Power1.easeInOut',
+          repeat: 3,
+          yoyo: true,
+          transformOrigin: '100% 0%',
+        })
         .to('#shape-circle', 1, {
           y: 0,
           x: 0,
           rotate: 0,
           transformOrigin: '50% 50%',
-          delay: 20,
         })
         .to(
           '#shape-square',
