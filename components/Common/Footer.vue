@@ -78,11 +78,6 @@ export default {
   data: () => ({
     links: [
       {
-        path: 'om-oss',
-        labelSv: 'Om oss',
-        labelEn: 'About us',
-      },
-      {
         path: 'om-webbplatsen',
         labelSv: 'Om webbplatsen',
         labelEn: 'Cookie policy',

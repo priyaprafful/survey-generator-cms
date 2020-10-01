@@ -5,12 +5,14 @@
       :subheading="$prismic.asText(contactContent.subheading)"
     />
     <ContactInfo :data="contactContent" />
+    <About :data="contactContent" />
     <Team :data="contactContent" />
   </div>
 </template>
 
 <script>
 import ContactInfo from '@/components/Contact/ContactInfo.vue';
+import About from '@/components/Contact/About.vue';
 import Team from '@/components/Contact/Team.vue';
 
 export default {
@@ -23,6 +25,7 @@ export default {
   },
   components: {
     ContactInfo,
+    About,
     Team,
   },
   async asyncData({ $prismic, error, app }) {

@@ -3,13 +3,6 @@
     "contact_us": "Contact us",
     "get_quote": "Get a quote"
   },
-  "contact": {
-    "questions": {
-      "background": "What is your background/education?",
-      "question": "What is your favourite question?",
-      "tasks": "What are your tasks at Alstra?"
-    }
-  },
   "menu": {
     "book_demo": "Book a Demo",
     "login": "Sign in"
@@ -31,7 +24,6 @@
     "contact": "Contact",
     "login": "Sign in",
     "book_demo": "Book a Demo",
-    "about": "About",
     "cookie_policy": "Cookie policy",
     "privacy_policy": "Privacy policy"
   }

@@ -13,10 +13,6 @@ export default function (doc) {
       return '/';
     }
 
-    if (doc.type === 'about') {
-      return '/om-oss';
-    }
-
     if (doc.type === 'book_demo') {
       return '/boka-demo';
     }
@@ -66,10 +62,6 @@ export default function (doc) {
   if (doc.lang === 'en-gb') {
     if (doc.type === 'home') {
       return '/en';
-    }
-
-    if (doc.type === 'about') {
-      return '/en/about';
     }
 
     if (doc.type === 'book_demo') {

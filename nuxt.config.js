@@ -8,11 +8,6 @@ export default {
     },
   },
   /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  mode: 'universal',
-  /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
@@ -106,7 +101,6 @@ export default {
         langDir: 'assets/langs/',
         defaultLocale: 'sv',
         detectBrowserLanguage: false,
-        parsePages: false,
       },
     ],
     // https://prismic-nuxt.js.org/

@@ -12,13 +12,13 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
-    "@nuxtjs/prismic": "^1.2.3",
+    "@nuxtjs/prismic": "^1.2.4",
     "@prismicio/vue": "^2.0.7",
     "gsap": "^3.5.1",
     "nuxt": "^2.14.4",
     "nuxt-i18n": "^6.13.12",
     "particles.vue": "^2.0.10",
-    "prismic-dom": "^2.2.3",
+    "prismic-dom": "^2.2.4",
     "prismic-javascript": "^3.0.2",
     "vue-masonry-css": "^1.0.3",
     "vue-particles": "^1.0.9",
@@ -35,13 +35,13 @@
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.2",
     "eslint": "^7.8.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
     "node-sass": "^4.14.1",
     "prettier": "^2.1.1",
     "sass-loader": "^10.0.1",
     "svg-inline-loader": "^0.8.2",
-    "webpack": "^4.44.1"
+    "webpack": "^4.44.2"
   }
 }

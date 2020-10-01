@@ -12,8 +12,6 @@
               class="w-full h-48 object-cover rounded-full z-10"
             />
           </div>
-          <!-- <prismic-image :field="person.second_image" /> -->
-
           <prismic-rich-text
             :field="person.name"
             class="text-lg font-medium mb-2"
@@ -28,13 +26,6 @@
             :field="person.phone"
             class="text-xs text-blue-4"
           />
-
-          <!-- <p>{{ $t('contact.questions.background') }}</p>
-          <prismic-rich-text :field="person.background" />
-          <p>{{ $t('contact.questions.tasks') }}</p>
-          <prismic-rich-text :field="person.tasks" />
-          <p>{{ $t('contact.questions.question') }}</p>
-          <prismic-rich-text :field="person.question" /> -->
         </div>
       </div>
     </Container>

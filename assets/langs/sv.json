@@ -3,13 +3,6 @@
     "contact_us": "Kontakta oss",
     "get_quote": "Begär offert"
   },
-  "contact": {
-    "questions": {
-      "background": "Vad har du för bakgrund/utbildning?",
-      "question": "Vilken är din favoritfråga?",
-      "tasks": "Vad är dina arbetsuppgifter på Alstra?"
-    }
-  },
   "menu": {
     "book_demo": "Boka demo",
     "login": "Logga in"
@@ -31,7 +24,6 @@
     "contact": "Kontakt",
     "login": "Logga in",
     "book_demo": "Boka demo",
-    "about": "Om oss",
     "cookie_policy": "Om webbplatsen",
     "privacy_policy": "Integritetspolicy"
   }

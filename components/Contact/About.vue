@@ -1,8 +1,10 @@
 <template>
   <Wrapper>
     <Container>
+      <h2 class="mb-16 text-center">Om oss</h2>
+
       <BlockWrapper
-        v-for="(section, index) in data.sections"
+        v-for="(section, index) in data.about"
         :key="index"
         :index="index"
       >
