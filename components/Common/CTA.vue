@@ -15,7 +15,7 @@
 
             <MainBtn
               :text="$t('common.get_quote')"
-              :to="'kontakt'"
+              :to="'offert'"
               class="py-2 px-4"
             />
           </div>

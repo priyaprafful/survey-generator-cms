@@ -17,6 +17,10 @@ export default function (doc) {
       return '/boka-demo';
     }
 
+    if (doc.type === 'get_quote') {
+      return '/offert';
+    }
+
     if (doc.type === 'contact') {
       return '/kontakt';
     }
@@ -66,6 +70,10 @@ export default function (doc) {
 
     if (doc.type === 'book_demo') {
       return '/en/book-demo';
+    }
+
+    if (doc.type === 'get_quote') {
+      return '/get-quote';
     }
 
     if (doc.type === 'contact') {

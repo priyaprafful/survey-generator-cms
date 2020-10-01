@@ -13,7 +13,7 @@
 
             <div class="flex items-center">
               <MainBtn :text="$t('menu.book_demo')" to="boka-demo" cta />
-              <MainBtn :text="$t('common.get_quote')" :to="'kontakt'" />
+              <MainBtn :text="$t('common.get_quote')" :to="'offert'" />
             </div>
           </div>
         </Block>
