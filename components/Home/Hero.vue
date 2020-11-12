@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="max-w-screen-xl m-auto p-12">
+    <div class="max-w-screen-xl m-auto px-12 pb-12">
       <div class="flex justify-between items-end">
         <img src="@/assets/svgs/demoskop.svg" alt="Demoskop" class="demoskop" />
         <img
