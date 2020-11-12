@@ -32,15 +32,19 @@
     </div>
 
     <div class="max-w-screen-xl m-auto p-12">
-      <div class="flex justify-between">
-        <img src="@/assets/svgs/seb.svg" alt="SEB" class="h-8" />
-        <img src="@/assets/svgs/saco.svg" alt="Saaco" class="h-8" />
-        <img src="@/assets/svgs/assaabloy.svg" alt="Assa Abloy" class="h-8" />
+      <div class="flex justify-between items-end">
+        <img src="@/assets/svgs/demoskop.svg" alt="Demoskop" class="demoskop" />
         <img
-          src="@/assets/svgs/swedishmatch.svg"
-          alt="Swedish Match"
-          class="h-8"
+          src="@/assets/svgs/fhm2.svg"
+          alt="Folkhälsomyndigheten"
+          class="logo"
         />
+        <img
+          src="@/assets/svgs/skr.svg"
+          alt="Sveriges Kommuner och Regioner"
+          class="logo"
+        />
+        <img src="@/assets/svgs/saco.svg" alt="Saco" class="logo" />
       </div>
     </div>
   </section>
@@ -69,5 +73,13 @@ export default {
   background-image: radial-gradient(#aad7ed 1.5px, #eef7fb 1.5px);
   background-size: calc(25px) calc(25px);
   clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+.logo {
+  height: 4rem;
+}
+
+.demoskop {
+  height: 2.5rem;
 }
 </style>
