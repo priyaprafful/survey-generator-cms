@@ -3,28 +3,29 @@
     "contact_us": "Kontakta oss",
     "get_quote": "Begär offert"
   },
-  "menu": {
+  "head_title": {
     "book_demo": "Boka demo",
-    "login": "Logga in"
+    "contact": "Kontakt",
+    "cookie_policy": "Om webbplatsen",
+    "customers": "Kunder",
+    "homepage": "Enkätundersökningar för företag och organisationer",
+    "login": "Logga in",
+    "news": "Nyheter",
+    "platform": "Verktyget",
+    "pricing": "Priser",
+    "privacy_policy": "Integritetspolicy"
   },
   "login": {
-    "heading": "Logga in på ditt konto",
     "email": "Email",
+    "forgot_pw": "Glömt ditt lösenord?",
+    "heading": "Logga in på ditt konto",
     "password": "Lösenord",
     "remember_me": "Kom ihåg",
-    "forgot_pw": "Glömt ditt lösenord?",
     "sign_in": "Logga in"
   },
-  "head_title": {
-    "homepage": "Enkätundersökningar för företag och organisationer",
-    "platform": "Verktyget",
-    "customers": "Kunder",
-    "pricing": "Priser",
-    "news": "Nyheter",
-    "contact": "Kontakt",
-    "login": "Logga in",
+  "menu": {
     "book_demo": "Boka demo",
-    "cookie_policy": "Om webbplatsen",
-    "privacy_policy": "Integritetspolicy"
+    "help": "Hjälp",
+    "login": "Logga in"
   }
 }
