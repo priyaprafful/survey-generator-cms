@@ -12,8 +12,8 @@
             </p>
 
             <div class="flex items-center">
-              <MainBtn :text="$t('menu.book_demo')" to="boka-demo" cta />
-              <MainBtn :text="$t('common.get_quote')" :to="'offert'" />
+              <MainBtn :text="$t('menu.book_demo')" to="book-demo" cta />
+              <MainBtn :text="$t('common.get_quote')" to="get-quote" />
             </div>
           </div>
         </Block>

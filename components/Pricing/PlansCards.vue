@@ -49,7 +49,7 @@
             <MainBtn
               v-if="index === 3"
               text="Kontakta oss"
-              to="kontakt"
+              to="contact"
               white
               class="bg-bluegray-1 hover:bg-bluegray-3 text-blue-9"
             />

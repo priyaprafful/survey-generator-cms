@@ -4,7 +4,7 @@
       <article class="max-w-screen-sm m-auto leading-loose">
         <div class="mb-10">
           <nuxt-link
-            :to="localePath('kunder')"
+            :to="localePath('customers')"
             class="inline-flex items-center text-blue-6 underline"
           >
             <svg-icon icon="chevron" class="transform rotate-180" />

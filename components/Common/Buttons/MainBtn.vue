@@ -5,8 +5,8 @@
     :href="global ? to : localePath(to)"
     class="main-btn inline-flex items-center whitespace-no-wrap border border-transparent leading-normal font-medium rounded-md transition duration-150 ease-in-out"
     :class="{
-      'cta px-5 py-3 shadow bg-yellow-2 hover:bg-yellow-1 text-blue-7': cta,
-      'justify-center px-5 py-3': !leftAligned,
+      'cta shadow bg-yellow-2 hover:bg-yellow-1 text-blue-7': cta,
+      'justify-center px-4 py-2': !leftAligned,
       'justify-start px-0 py-0 ': leftAligned,
     }"
   >

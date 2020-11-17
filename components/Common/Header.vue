@@ -43,7 +43,7 @@
 
         <li v-if="!exclusive" class="flex items-center">
           <nuxt-link
-            :to="localePath('logga-in')"
+            :to="localePath('login')"
             class="py-8 mx-4 border-b-4 border-transparent transition duration-200"
             :class="{
               'hover:border-lightblue-9': homepage,
@@ -52,7 +52,7 @@
           >
             {{ $t('menu.login') }}
           </nuxt-link>
-          <MainBtn :text="$t('menu.book_demo')" to="boka-demo" cta no-chevron />
+          <MainBtn :text="$t('menu.book_demo')" to="book-demo" cta no-chevron />
         </li>
       </ul>
     </nav>
@@ -76,27 +76,27 @@ export default {
     scrollPosition: null,
     links: [
       {
-        path: 'verktyget',
+        path: 'platform',
         labelSv: 'Verktyget',
         labelEn: 'Platform',
       },
       {
-        path: 'kunder',
+        path: 'customers',
         labelSv: 'Kunder',
         labelEn: 'Customers',
       },
       {
-        path: 'priser',
+        path: 'pricing',
         labelSv: 'Priser',
         labelEn: 'Pricing',
       },
       {
-        path: 'nyheter',
+        path: 'news',
         labelSv: 'Nyheter',
         labelEn: 'News',
       },
       {
-        path: 'kontakt',
+        path: 'contact',
         labelSv: 'Kontakt',
         labelEn: 'Contact',
       },

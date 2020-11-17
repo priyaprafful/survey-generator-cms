@@ -2,7 +2,7 @@
   <nuxt-link
     :to="
       localePath({
-        name: 'verktyget-post',
+        name: 'platform-post',
         params: {
           post: post.uid,
         },

@@ -11,11 +11,10 @@
           </p>
 
           <div class="flex items-center">
-            <MainBtn :text="$t('menu.book_demo')" to="boka-demo" cta />
-
+            <MainBtn :text="$t('menu.book_demo')" to="book-demo" cta />
             <MainBtn
               :text="$t('common.get_quote')"
-              :to="'offert'"
+              to="get-quote"
               class="py-2 px-4"
             />
           </div>
@@ -33,7 +32,7 @@
               Välj mellan tre olika prisplaner eller skräddarsytt för dina
               behov.
             </p>
-            <MainBtn text="Priser" to="priser" class="mt-auto" left-aligned />
+            <MainBtn text="Priser" to="pricing" class="mt-auto" left-aligned />
           </div>
 
           <div
@@ -48,7 +47,7 @@
             </p>
             <MainBtn
               text="Verktyget"
-              to="verktyget"
+              to="platform"
               class="mt-auto"
               left-aligned
             />

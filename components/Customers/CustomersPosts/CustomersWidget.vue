@@ -2,7 +2,7 @@
   <nuxt-link
     :to="
       localePath({
-        name: 'kunder-post',
+        name: 'customers-post',
         params: {
           post: post.uid,
         },
