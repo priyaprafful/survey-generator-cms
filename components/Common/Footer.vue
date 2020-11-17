@@ -78,12 +78,12 @@ export default {
   data: () => ({
     links: [
       {
-        path: 'om-webbplatsen',
+        path: 'cookie-policy',
         labelSv: 'Om webbplatsen',
         labelEn: 'Cookie policy',
       },
       {
-        path: 'integritetspolicy',
+        path: 'privacy-policy',
         labelSv: 'Integritetspolicy',
         labelEn: 'Privacy policy',
       },
