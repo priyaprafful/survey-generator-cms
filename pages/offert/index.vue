@@ -8,15 +8,15 @@
 import GetQuote from '@/components/Quote/GetQuote.vue';
 
 export default {
+  components: {
+    GetQuote,
+  },
   layout: 'exclusive',
   nuxtI18n: {
     paths: {
       sv: '/offert',
       en: '/get-quote',
     },
-  },
-  components: {
-    GetQuote,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(

@@ -19,7 +19,7 @@
         </Block>
 
         <Block half class="flex relative">
-          <div class="dots absolute top-0 left-0 right-0 bottom-0 -mr-16" />
+          <div class="dots absolute top-0 left-0 right-0 bottom-0" />
           <div class="flex justify-end w-full z-10">
             <img
               src="@/assets/svgs/platform.svg"

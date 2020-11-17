@@ -14,13 +14,13 @@ import Testimonials from '@/components/Home/Testimonials.vue';
 import Features from '@/components/Home/Features.vue';
 
 export default {
-  layout: 'home',
   components: {
     Hero,
     Benefits,
     Testimonials,
     Features,
   },
+  layout: 'home',
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale

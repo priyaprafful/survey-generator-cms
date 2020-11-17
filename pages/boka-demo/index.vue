@@ -10,16 +10,16 @@ import Booking from '@/components/Booking/Booking.vue';
 import Brands from '@/components/Booking/Brands.vue';
 
 export default {
+  components: {
+    Booking,
+    Brands,
+  },
   layout: 'exclusive',
   nuxtI18n: {
     paths: {
       sv: '/boka-demo',
       en: '/book-demo',
     },
-  },
-  components: {
-    Booking,
-    Brands,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(

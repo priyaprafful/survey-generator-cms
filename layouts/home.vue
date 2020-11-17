@@ -26,15 +26,15 @@ export default {
     Cookie,
     SvgSprite,
   },
+  async middleware({ store, $prismic }) {
+    await store.dispatch('fetchMisc', $prismic);
+  },
   head() {
     return {
       htmlAttrs: {
         lang: this.$i18n.locale,
       },
     };
-  },
-  async middleware({ store, $prismic }) {
-    await store.dispatch('fetchMisc', $prismic);
   },
 };
 </script>
