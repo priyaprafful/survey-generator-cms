@@ -40,7 +40,7 @@ export default {
   },
   head() {
     return {
-      title: this.$t('menu.help') + ' — SurveyGenerator',
+      title: this.$t('menu.help') + ' — Survey Generator',
     };
   },
 };
