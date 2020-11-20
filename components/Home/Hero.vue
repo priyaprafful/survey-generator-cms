@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="flex justify-center h-almost max-w-screen-xl m-auto p-12">
+    <div class="flex justify-center min-h-almost max-w-screen-xl m-auto p-12">
       <div class="flex">
         <Block half class="flex flex-col justify-center">
           <div class="z-10">

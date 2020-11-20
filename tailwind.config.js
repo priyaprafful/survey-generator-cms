@@ -65,8 +65,10 @@ module.exports = {
         banner: '0 5px 20px rgba(132, 153, 255, 0.25)',
       },
       height: {
-        almost: 'calc(-16rem + 100vh)',
         '1/2-screen': '50vh',
+      },
+      minHeight: {
+        almost: '75vh',
       },
       inset: {
         3: '3rem',
