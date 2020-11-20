@@ -5,11 +5,17 @@
       :subheading="$prismic.asText(helpContent.subheading)"
     />
     <HelpBoxes />
+    <HelpCategories />
+    <HelpFeaturedArticles />
+    <HelpCTA />
   </div>
 </template>
 
 <script>
 import HelpBoxes from '@/components/Help/HelpBoxes.vue';
+import HelpCategories from '@/components/Help/HelpCategories.vue';
+import HelpFeaturedArticles from '@/components/Help/HelpFeaturedArticles.vue';
+import HelpCTA from '@/components/Help/HelpCTA.vue';
 
 export default {
   nuxtI18n: {
@@ -20,6 +26,9 @@ export default {
   },
   components: {
     HelpBoxes,
+    HelpCategories,
+    HelpFeaturedArticles,
+    HelpCTA,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
