@@ -4,17 +4,22 @@
       :heading="$prismic.asText(helpContent.heading)"
       :subheading="$prismic.asText(helpContent.subheading)"
     />
-    <p>Hjälpen</p>
+    <HelpBoxes />
   </div>
 </template>
 
 <script>
+import HelpBoxes from '@/components/Help/HelpBoxes.vue';
+
 export default {
   nuxtI18n: {
     paths: {
       sv: '/hjalpen',
       en: '/help',
     },
+  },
+  components: {
+    HelpBoxes,
   },
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
