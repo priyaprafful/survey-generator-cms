@@ -24,8 +24,8 @@
       <p v-if="$i18n.locale === 'sv'">
         Vi använder kakor för att förbättra din upplevelse på webbplatsen. Läs
         mer om
-        <nuxt-link :to="localePath('om-webbplatsen')">kakor</nuxt-link> och vår
-        <nuxt-link :to="localePath('integritetspolicy')">
+        <nuxt-link :to="localePath('cookie-policy')">kakor</nuxt-link> och vår
+        <nuxt-link :to="localePath('privacy-policy')">
           integritetspolicy</nuxt-link
         >.
       </p>
@@ -34,8 +34,7 @@
         We use cookies to improve the experience on the website. Read more about
         <nuxt-link :to="localePath('om-webbplatsen')">cookies</nuxt-link> and
         our
-        <nuxt-link :to="localePath('integritetspolicy')">
-          privacy policy</nuxt-link
+        <nuxt-link :to="localePath('privacy-policy')"> privacy policy</nuxt-link
         >.
       </p>
     </div>

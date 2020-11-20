@@ -3,11 +3,15 @@
     <SGSection>
       <SGBlockWrapper>
         <SGBlock size="1/2">
-          <div>Artiklar</div>
+          <div>
+            <nuxt-link :to="localePath('help-articles')">Artiklar</nuxt-link>
+          </div>
         </SGBlock>
 
         <SGBlock size="1/2">
-          <div>Vanliga frågor</div>
+          <div>
+            <nuxt-link :to="localePath('help-faq')">Vanliga frågor</nuxt-link>
+          </div>
         </SGBlock>
       </SGBlockWrapper>
     </SGSection>

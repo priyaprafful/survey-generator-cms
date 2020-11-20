@@ -20,7 +20,6 @@ import PlansTable from '@/components/Pricing/PlansTable.vue';
 import FAQ from '@/components/Pricing/FAQ.vue';
 
 export default {
-  name: 'Priser',
   nuxtI18n: {
     paths: {
       sv: '/priser',
