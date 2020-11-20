@@ -3,11 +3,11 @@
     <Container>
       <div class="flex">
         <Block half>
-          <h2 class="mb-4">Redo att sätta igång?</h2>
+          <h2 class="mb-4">Vill du veta mer?</h2>
           <p class="mb-8 leading-relaxed">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Du kan även kontakta oss för en lösning anpassat för era
-            behov.
+            Att komma igång med SurveryGenerator är smidigt, du kan snabbt och
+            enkelt integrera verktyget med andra eventuella system och börja
+            skapa enkäter och rapporter.
           </p>
 
           <div class="flex items-center">
@@ -21,33 +21,34 @@
         </Block>
 
         <Block half class="flex">
-          <div
-            class="flex flex-col ml-4 p-6 bg-lightblue-3 rounded-tl-xl rounded-br-xl"
-          >
-            <IconWrapper square>
-              <PriceTagsIcon class="overflow-visible" />
-            </IconWrapper>
-            <h3 class="mb-2 leading-normal">Prisvärt</h3>
-            <p class="leading-relaxed mb-4">
-              Välj mellan tre olika prisplaner eller skräddarsytt för dina
-              behov.
-            </p>
-            <MainBtn text="Priser" to="pricing" class="mt-auto" left-aligned />
-          </div>
-
-          <div
-            class="flex flex-col ml-4 p-6 bg-lightblue-3 rounded-tl-xl rounded-br-xl"
-          >
+          <div class="flex flex-col ml-4">
             <IconWrapper square>
               <ShapesIcon class="overflow-visible" />
             </IconWrapper>
-            <h3 class="mb-2 leading-normal">Enkelt och effektivt</h3>
+            <h3 class="mb-2 leading-normal">Flexibelt & effektivt</h3>
             <p class="leading-relaxed mb-4">
-              Kostnadseffektiva undersökningar med vårt flexibla enkätverktyg.
+              Lite som att skapa ett eget verktyg, men allt du behöver finns
+              redan på plats.
             </p>
             <MainBtn
-              text="Verktyget"
+              text="Mer om verktyget"
               to="platform"
+              class="mt-auto"
+              left-aligned
+            />
+          </div>
+
+          <div class="flex flex-col ml-4">
+            <IconWrapper square>
+              <PriceTagsIcon class="overflow-visible" />
+            </IconWrapper>
+            <h3 class="mb-2 leading-normal">Kostnadseffektivt</h3>
+            <p class="leading-relaxed mb-4">
+              Välj bland olika abonnemang och prisplaner eller skräddarsy.
+            </p>
+            <MainBtn
+              text="Våra priser"
+              to="pricing"
               class="mt-auto"
               left-aligned
             />

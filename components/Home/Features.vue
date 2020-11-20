@@ -9,34 +9,34 @@
       <div class="flex leading-relaxed justify-between mt-8">
         <Block onethird>
           <Placeholder class="w-12 h-12 mb-6" />
-          <h3 class="mb-2 text-blue-1">Matrisfrågor</h3>
+          <h3 class="mb-2 text-blue-1">Matematiska formler</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            ipsum urna, ornare vitae lacinia eget, finibus ac augue. Proin
-            convallis euismod rutrum. Sed quam libero, dictum quis tempus eu,
-            rhoncus at tortor. Etiam eget vulputate odio. Donec varius euismod
-            ligula, facilisis tincidunt massa dignissim nec.
+            Med SurveryGenerator kan du skapa dynamiska frågeformulär. Du kan
+            ange formler på en, flera eller alla respondenter och med hjälp av
+            de fyra räknesätten räkna fram ett värde utifrån respondentens svar,
+            andra värden på respondenten och/eller konstanter.
           </p>
         </Block>
         <Block onethird>
           <Placeholder class="w-12 h-12 mb-6" />
-          <h3 class="mb-2 text-blue-1">Rådatarapporter</h3>
+          <h3 class="mb-2 text-blue-1">Multirapporter</h3>
           <p>
-            Nullam ullamcorper nisl sed quam sagittis efficitur. Donec in mattis
-            quam. Nulla ligula nisl, varius vitae urna ac, suscipit varius
-            neque. Quisque consectetur, augue quis mattis semper, neque est
-            luctus ante, vitae faucibus orci ipsum vel mauris. Phasellus et
-            scelerisque felis, sit amet tempus leo.
+            Multirapporter används bland annat i medarbetarundersökningar där
+            varje chef behöver en egen rapport med svar från sina närmaste
+            medarbetare. Med multirapporter kan du skapa en mall för hur svaren
+            ska visas, gruppera resultatet på egenskaper och generera en rapport
+            för varje grupp.
           </p>
         </Block>
         <Block onethird>
           <Placeholder class="w-12 h-12 mb-6" />
-          <h3 class="mb-2 text-blue-1">Tillval</h3>
+          <h3 class="mb-2 text-blue-1">50 olika språk</h3>
           <p>
-            In vitae mattis risus. Curabitur mattis, risus vel rhoncus
-            hendrerit, nunc nisl finibus erat, vitae tempor ex erat in leo. Cras
-            eget mi urna. Duis eget gravida ipsum, a tristique nulla. Phasellus
-            et scelerisque felis, sit amet tempus leo.
+            Med 50 tillgängliga språk i verktyget kan du få både enkäter och
+            rapporter på det språk du önskar. Du kan skapa frågeformuläret på
+            ett huvudspråk och sedan enkelt översätta det till fler. Dessutom
+            kan respondenten själv bestämma vilket språk enkäten ska fyllas i
+            på.
           </p>
         </Block>
       </div>
