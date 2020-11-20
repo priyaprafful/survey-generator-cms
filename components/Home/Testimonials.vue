@@ -68,7 +68,7 @@
 
       <div class="flex justify-center mt-16">
         <MainBtn
-          text="Våra kunder"
+          text="Fler kunder"
           to="customers"
           class="bg-blue-4 hover:bg-blue-3 text-white"
         />
