@@ -6,7 +6,7 @@
     class="main-btn inline-flex items-center whitespace-no-wrap border border-transparent leading-normal font-medium rounded-md transition duration-150 ease-in-out"
     :class="{
       'cta shadow bg-yellow-2 hover:bg-yellow-1 text-blue-7': cta,
-      'justify-center px-4 py-2': !leftAligned,
+      'justify-center px-4 py-3': !leftAligned,
       'justify-start px-0 py-0 ': leftAligned,
     }"
   >

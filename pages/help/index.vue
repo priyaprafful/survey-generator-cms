@@ -12,7 +12,7 @@
 export default {
   nuxtI18n: {
     paths: {
-      sv: '/hjalp',
+      sv: '/hjalpen',
       en: '/help',
     },
   },
