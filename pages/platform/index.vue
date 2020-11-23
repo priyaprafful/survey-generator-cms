@@ -11,7 +11,7 @@
 
 <script>
 import PlatformIntro from '@/components/Platform/PlatformIntro.vue';
-import PlatformPosts from '@/components/Platform/PlatformPosts/PlatformPosts.vue';
+import PlatformPosts from '@/components/Platform/PlatformPosts.vue';
 
 export default {
   nuxtI18n: {
