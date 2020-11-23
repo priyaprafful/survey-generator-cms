@@ -1,8 +1,8 @@
 <template>
-  <Wrapper>
-    <Container>
+  <SGBackground>
+    <SGSection>
       <div class="text-center leading-loose mb-16">
-        <h2>Tillval i vårt enkätverktyg</h2>
+        <prismic-rich-text :field="data.options_title" />
       </div>
 
       <div class="grid grid-cols-3 gap-10">
@@ -39,8 +39,8 @@
           </nuxt-link>
         </article>
       </div>
-    </Container>
-  </Wrapper>
+    </SGSection>
+  </SGBackground>
 </template>
 
 <script>
