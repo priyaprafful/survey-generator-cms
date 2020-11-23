@@ -3,16 +3,13 @@
     <div class="grid grid-cols-4">
       <div v-for="(category, i) in categories" :key="i">
         <img src="@/assets/svgs/articles.svg" class="h-8" />
-        <h3>{{ $prismic.asText(category.title) }}</h3>
+        <h3>{{ category.title }}</h3>
 
-        <div
-          v-for="(post, idx) in findCategory($prismic.asText(category.title))"
-          :key="idx"
-        >
+        <div v-for="(post, idx) in findCategory(category.title)" :key="idx">
           <nuxt-link
             :to="
               localePath({
-                name: 'news-post',
+                name: 'help-post',
                 params: {
                   post: post.uid,
                 },
