@@ -11,7 +11,7 @@
           <Placeholder class="w-12 h-12 mb-6" />
           <h3 class="mb-2 text-blue-1">Matematiska formler</h3>
           <p>
-            Med SurveryGenerator kan du skapa dynamiska frågeformulär. Du kan
+            Med SurveyGenerator kan du skapa dynamiska frågeformulär. Du kan
             ange formler på en, flera eller alla respondenter och med hjälp av
             de fyra räknesätten räkna fram ett värde utifrån respondentens svar,
             andra värden på respondenten och/eller konstanter.
