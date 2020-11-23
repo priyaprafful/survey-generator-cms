@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <SGBackground>
     <PageHeader
       :heading="$prismic.asText(helpContent.heading)"
       :subheading="$prismic.asText(helpContent.subheading)"
@@ -8,7 +8,7 @@
     <HelpCategories />
     <HelpFeaturedArticles />
     <HelpCTA />
-  </div>
+  </SGBackground>
 </template>
 
 <script>
