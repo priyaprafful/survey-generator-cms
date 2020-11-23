@@ -1,25 +1,25 @@
 <template>
-  <Wrapper>
-    <Container>
+  <SGBackground border>
+    <SGSection>
       <div class="text-center leading-loose mb-16">
         <prismic-rich-text :field="data.intro_title" />
       </div>
 
-      <BlockWrapper
+      <SGBlockWrapper
         v-for="(section, index) in data.intro_sections"
         :key="index"
         :index="index"
         class="leading-relaxed"
       >
-        <Block half :index="index">
+        <SGBlock :index="index">
           <prismic-rich-text
             :field="section.title"
             class="text-lg text-blue-4 mb-6"
           />
           <prismic-rich-text :field="section.content" class="rich-text" />
-        </Block>
+        </SGBlock>
 
-        <Block half :index="index">
+        <SGBlock :index="index">
           <VueStyledShadows
             :position="index % 2 === 0 ? 'bottomLeft' : 'bottomRight'"
             color1="#aad7ed"
@@ -29,8 +29,8 @@
           >
             <prismic-image v-if="section.image" :field="section.image" />
           </VueStyledShadows>
-        </Block>
-      </BlockWrapper>
+        </SGBlock>
+      </SGBlockWrapper>
 
       <div
         class="flex bg-blue-9 text-white p-6 shadow-card rounded-md leading-relaxed relative"
@@ -46,16 +46,17 @@
             :field="data.demo_content"
             class="rich-text text-sm w-1/2 mx-6"
           />
-          <MainBtn
+          <SGButton
             global
-            :text="$prismic.asText(data.demo_button)"
             :to="data.demo_url.url"
-            class="bg-blue-4 hover:bg-blue-3 text-white"
+            :label="$prismic.asText(data.demo_button)"
+            color="blue-light"
+            chevron
           />
         </div>
       </div>
-    </Container>
-  </Wrapper>
+    </SGSection>
+  </SGBackground>
 </template>
 
 <script>

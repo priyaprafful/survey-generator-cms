@@ -13,7 +13,7 @@ export default {
     },
     size: {
       type: String,
-      default: 'half',
+      default: '1/2',
       validator(value) {
         return ['full', '1/2', '1/3', '2/3'].includes(value) !== -1;
       },

@@ -21,21 +21,13 @@
     @focusin="$emit('focusin')"
     @focusout="$emit('focusout')"
   >
-    <div v-if="this.$slots.default" class="sg-btn__icon">
-      <slot />
-    </div>
-
-    <slot name="label" :label="label">
-      <span
-        v-if="label"
-        class="sg-btn__label"
-        :class="{
-          'sg-btn__label--margin': this.$slots.default,
-        }"
-      >
-        {{ label }}
-      </span>
-    </slot>
+    {{ label }}
+    <svg-icon
+      v-if="chevron"
+      icon="chevron"
+      sm
+      class="sg-btn__hover-arrow ml-3"
+    />
   </component>
 </template>
 
@@ -81,18 +73,24 @@ export default {
       type: String,
       default: null,
     },
+    chevron: {
+      type: Boolean,
+      default: true,
+    },
   },
   computed: {
     classes() {
       return {
+        'sg-btn': true,
         'inline-flex items-center whitespace-no-wrap rounded border border-transparent transition duration-100 ease-in-out': true,
         'bg-blue-9 hover:bg-blue-8 text-white': this.color === 'blue-dark',
+        'bg-blue-4 hover:bg-blue-3 text-white': this.color === 'blue-light',
         'bg-yellow-2 hover:bg-yellow-1 text-blue-9':
           this.color === 'yellow-light',
         'bg-yellow-4 hover:bg-yellow-3 text-white':
           this.color === 'yellow-dark',
         'text-sm px-3 py-2': this.size === 'small',
-        'text-sm px-3 py-3': this.size === 'medium',
+        'text-sm px-4 py-3': this.size === 'medium',
         'text-base px-4 py-3': this.size === 'large',
       };
     },
@@ -106,72 +104,21 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-/* .sg-btn {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 0.25rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border: 1px solid transparent;
-  transition: background 0.1s, border 0.1s;
-
-  .sg-btn__icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    svg {
-      transition: fill 0.1s;
-
-      * {
-        fill: currentColor;
-      }
-    }
+<style lang="scss" scoped>
+.sg-btn {
+  .sg-btn__hover-arrow {
+    position: relative;
+    top: 1px;
+    transform: translateX(0);
+    transition: all 150ms;
   }
 
-  .sg-btn__label {
-    &--hide {
-      position: relative;
-      color: transparent;
+  &:hover {
+    .sg-btn__hover-arrow {
+      transform: translateX(3px);
+      backface-visibility: hidden;
+      perspective: 1000px;
     }
   }
-
-  &--primary {
-    background: black;
-    color: white;
-
-    &:hover:not([disabled]) {
-      background: mix(white, black, 15%);
-    }
-  }
-
-  &--medium {
-    .sg-btn__label {
-      &--margin {
-        margin-left: 0.5rem;
-      }
-    }
-
-    svg {
-      width: 0.75rem;
-      height: 0.75rem;
-    }
-  }
-
-  &--large {
-    .sg-btn__label {
-      &--margin {
-        margin-left: 0.5rem;
-      }
-    }
-
-    svg {
-      width: 0.9rem;
-      height: 0.9rem;
-    }
-  }
-} */
+}
 </style>
