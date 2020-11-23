@@ -23,17 +23,22 @@
 export default {
   nuxtI18n: {
     paths: {
-      sv: '/hjalpen/:post',
-      en: '/help/:post',
+      sv: '/hjalpen/:postCategory',
+      en: '/help/:postCategory',
     },
   },
   async asyncData({ $prismic, params, error, app }) {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
-    const doc = await $prismic.api.getByUID('help_category_post', params.post, {
-      lang: currentLocale.iso.toLowerCase(),
-    });
+    const doc = await $prismic.api.getByUID(
+      'help_category_post',
+      params.postCategory,
+      {
+        lang: currentLocale.iso.toLowerCase(),
+      }
+    );
+
     if (doc) {
       return {
         post: doc.results || doc,

@@ -1,5 +1,7 @@
 <template>
   <SGSection>
+    <h2>Kategorier</h2>
+
     <div class="grid grid-cols-4">
       <div v-for="(category, i) in categories" :key="i">
         <img src="@/assets/svgs/articles.svg" class="h-8" />
@@ -9,10 +11,8 @@
           <nuxt-link
             :to="
               localePath({
-                name: 'help-post',
-                params: {
-                  post: post.uid,
-                },
+                name: 'help-postCategory',
+                params: { postCategory: post.uid },
               })
             "
           >
