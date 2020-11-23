@@ -1,8 +1,8 @@
 <template>
   <section class="bg-bgMain cta-bg">
-    <Container>
+    <SGSection>
       <div class="flex">
-        <Block half>
+        <SGBlock>
           <h2 class="mb-4">Vill du veta mer?</h2>
           <p class="mb-8 leading-relaxed">
             Att komma igång med SurveryGenerator är smidigt, du kan snabbt och
@@ -11,16 +11,22 @@
           </p>
 
           <div class="flex items-center">
-            <MainBtn :text="$t('menu.book_demo')" to="book-demo" cta />
-            <MainBtn
-              :text="$t('common.get_quote')"
+            <SGButton
+              color="yellow-light"
+              size="medium"
+              :label="$t('menu.book_demo')"
+              to="book-demo"
+            />
+            <SGButton
+              color="transparent"
+              size="medium"
+              :label="$t('common.get_quote')"
               to="get-quote"
-              class="py-2 px-4"
             />
           </div>
-        </Block>
+        </SGBlock>
 
-        <Block half class="flex">
+        <SGBlock class="flex">
           <div class="flex flex-col ml-4">
             <IconWrapper square>
               <ShapesIcon class="overflow-visible" />
@@ -30,11 +36,12 @@
               Lite som att skapa ett eget verktyg, men allt du behöver finns
               redan på plats.
             </p>
-            <MainBtn
-              text="Mer om verktyget"
-              to="platform"
+            <SGButton
               class="mt-auto"
-              left-aligned
+              color="transparent"
+              size="none"
+              label="Mer om verktyget"
+              to="platform"
             />
           </div>
 
@@ -46,16 +53,17 @@
             <p class="leading-relaxed mb-4">
               Välj bland olika abonnemang och prisplaner eller skräddarsy.
             </p>
-            <MainBtn
-              text="Våra priser"
-              to="pricing"
+            <SGButton
               class="mt-auto"
-              left-aligned
+              color="transparent"
+              size="none"
+              label="Våra priser"
+              to="pricing"
             />
           </div>
-        </Block>
+        </SGBlock>
       </div>
-    </Container>
+    </SGSection>
   </section>
 </template>
 
