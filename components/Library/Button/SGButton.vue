@@ -85,14 +85,14 @@ export default {
   computed: {
     classes() {
       return {
-        'sg-btn font-medium inline-flex items-center shadow whitespace-no-wrap rounded border border-transparent transition duration-100 ease-in-out': true,
+        'sg-btn font-medium inline-flex items-center whitespace-no-wrap rounded border border-transparent transition duration-100 ease-in-out': true,
         'bg-blue-9 hover:bg-blue-8 text-white': this.color === 'blue-dark',
         'bg-blue-4 hover:bg-blue-3 text-white': this.color === 'blue-light',
         'bg-yellow-2 hover:bg-yellow-1 text-blue-9':
           this.color === 'yellow-light',
         'bg-yellow-4 hover:bg-yellow-3 text-white':
           this.color === 'yellow-dark',
-        'shadow-none': this.color === 'transparent',
+        '': this.color === 'transparent',
         'p-0': this.size === 'none',
         'text-sm px-3 py-2': this.size === 'small',
         'text-sm px-4 py-3': this.size === 'medium',
