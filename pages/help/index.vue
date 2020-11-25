@@ -4,12 +4,14 @@
       :heading="$prismic.asText(helpContent.heading)"
       :subheading="$prismic.asText(helpContent.subheading)"
     />
+
     <HelpBoxes />
     <HelpCategories
       :categories="helpContent.category"
       :posts="category_posts"
     />
-    <HelpFeaturedArticles />
+    <HelpFeaturedArticles :posts="article_posts" />
+
     <HelpCTA />
   </SGBackground>
 </template>
@@ -48,6 +50,14 @@ export default {
         }
       );
 
+      const helpArticlePosts = await $prismic.api.query(
+        $prismic.predicates.at('document.type', 'help_article_post'),
+        {
+          orderings: '[document.last_publication_date desc]',
+          lang: currentLocale.iso.toLowerCase(),
+        }
+      );
+
       const helpContent = (
         await $prismic.api.getSingle('help', {
           lang: currentLocale.iso.toLowerCase(),
@@ -57,6 +67,7 @@ export default {
       // Returns data to be used in template
       return {
         category_posts: categoryPosts.results,
+        article_posts: helpArticlePosts.results,
         helpContent,
       };
     } catch (e) {

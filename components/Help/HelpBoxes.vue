@@ -1,41 +1,49 @@
 <template>
-  <SGSection>
-    <SGBlockWrapper>
-      <SGBlock size="1/2" class="help-box bg-lightblue-4 text-blue-9">
-        <div class="help-box__left">
-          <h3 class="help-box__title">Artiklar</h3>
-          <p class="help-box__desc">
-            Lorem ipsum dolor sit amet, consectetur elit.
-          </p>
-          <div class="help-box__btn">
-            <SGButton size="medium" label="Se artiklar" to="help-articles" />
+  <SGBackground border>
+    <SGSection>
+      <SGBlockWrapper>
+        <SGBlock size="1/2" class="help-box bg-lightblue-4 text-blue-9">
+          <div class="help-box__left">
+            <h3 class="help-box__title">Artiklar</h3>
+            <p class="help-box__desc">
+              Lorem ipsum dolor sit amet, consectetur elit.
+            </p>
+            <div class="help-box__btn">
+              <SGButton
+                size="medium"
+                :chevron="false"
+                label="Se artiklar"
+                to="help-articles"
+              />
+            </div>
           </div>
-        </div>
 
-        <div class="circle bg-blue-9" />
-      </SGBlock>
+          <div class="circle bg-blue-9" />
+        </SGBlock>
 
-      <SGBlock size="1/2" class="help-box bg-yellow-1 text-yellow-4">
-        <div class="help-box__left">
-          <h3 class="help-box__title">Vanliga frågor</h3>
-          <p class="help-box__desc">
-            Lorem ipsum dolor sit amet, consectetur elit.
-          </p>
+        <SGBlock size="1/2" class="help-box bg-yellow-1 text-yellow-4">
+          <div class="help-box__left">
+            <h3 class="help-box__title">Vanliga frågor</h3>
+            <p class="help-box__desc">
+              Lorem ipsum dolor sit amet, consectetur elit.
+            </p>
 
-          <div class="help-box__btn">
-            <SGButton
-              color="yellow-dark"
-              size="medium"
-              label="Finn dina svar"
-              to="help-faq"
-            />
+            <div class="help-box__btn">
+              <SGButton
+                color="yellow-dark"
+                size="medium"
+                :chevron="false"
+                label="Finn dina svar"
+                to="help-faq"
+              />
+            </div>
           </div>
-        </div>
 
-        <div class="circle bg-yellow-4" />
-      </SGBlock>
-    </SGBlockWrapper>
-  </SGSection>
+          <div class="circle bg-yellow-4" />
+        </SGBlock>
+      </SGBlockWrapper>
+    </SGSection>
+  </SGBackground>
 </template>
 
 <script>

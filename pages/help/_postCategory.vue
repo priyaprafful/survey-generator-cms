@@ -14,6 +14,9 @@
 
         <prismic-rich-text :field="post.data.title" class="text-sm mb-6" />
         <prismic-rich-text :field="post.data.content" class="rich-text" />
+
+        <h3>{{ post.data.link.slug }} ja</h3>
+        <h3>{{ something }} ok</h3>
       </article>
     </Container>
   </div>
@@ -23,35 +26,31 @@
 export default {
   nuxtI18n: {
     paths: {
-      sv: '/hjalpen/:postCategory',
-      en: '/help/:postCategory',
+      sv: '/hjalpen/kategori/:uid',
+      en: '/help/kategori/:uid',
     },
   },
   async asyncData({ $prismic, params, error, app }) {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
     )[0];
-    const doc = await $prismic.api.getByUID(
+    const result = await $prismic.api.getByUID(
       'help_category_post',
-      params.postCategory,
+      params.uid,
       {
         lang: currentLocale.iso.toLowerCase(),
       }
     );
 
-    if (doc) {
+    if (result) {
       return {
-        post: doc.results || doc,
+        something: result.data.link.slug,
+        post: result.results || result,
         currentLocale,
       };
     } else {
       error({ statusCode: 404, message: 'Page not found' });
     }
-  },
-  head() {
-    return {
-      title: this.$prismic.asText(this.post.data.title) + ' — SurveyGenerator',
-    };
   },
 };
 </script>

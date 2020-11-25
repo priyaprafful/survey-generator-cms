@@ -15,7 +15,7 @@ export default {
   computed: {
     classes() {
       return {
-        'flex leading-relaxed mb-24 last:mb-0': true,
+        'flex leading-relaxed': true,
         'flex-row-reverse': this.index % 2 !== 0,
       };
     },
