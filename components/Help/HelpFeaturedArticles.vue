@@ -8,10 +8,8 @@
           <nuxt-link
             :to="
               localePath({
-                name: 'help-articles-post',
-                params: {
-                  post: post.uid,
-                },
+                name: 'help-articles-postArticle',
+                params: { postArticle: post.uid },
               })
             "
           >

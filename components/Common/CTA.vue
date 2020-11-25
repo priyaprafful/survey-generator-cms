@@ -5,7 +5,7 @@
         <SGBlock>
           <h2 class="mb-4">Vill du veta mer?</h2>
           <p class="mb-8 leading-relaxed">
-            Att komma igång med SurveryGenerator är smidigt, du kan snabbt och
+            Att komma igång med Survey Generator är smidigt, du kan snabbt och
             enkelt integrera verktyget med andra eventuella system och börja
             skapa enkäter och rapporter.
           </p>

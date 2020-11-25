@@ -23,8 +23,8 @@
 export default {
   nuxtI18n: {
     paths: {
-      sv: '/hjalpen/artiklar/:uid',
-      en: '/help/articles/:uid',
+      sv: '/hjalpen/artiklar/:postArticle',
+      en: '/help/articles/:postArticle',
     },
   },
   async asyncData({ $prismic, params, error, app }) {
@@ -33,7 +33,7 @@ export default {
     )[0];
     const result = await $prismic.api.getByUID(
       'help_article_post',
-      params.uid,
+      params.postArticle,
       {
         lang: currentLocale.iso.toLowerCase(),
       }

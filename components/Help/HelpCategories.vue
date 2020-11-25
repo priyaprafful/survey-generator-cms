@@ -9,7 +9,7 @@
           <h3 class="mb-2">{{ category.title }}</h3>
 
           <div v-for="(post, idx) in findCategory(category.title)" :key="idx">
-            <nuxt-link
+            <!-- <nuxt-link
               :to="
                 localePath({
                   name: 'help-kategori-postCategory',
@@ -18,7 +18,7 @@
               "
             >
               {{ $prismic.asText(post.data.title) }}
-            </nuxt-link>
+            </nuxt-link> -->
           </div>
         </div>
       </div>
