@@ -14,9 +14,6 @@
 
         <prismic-rich-text :field="post.data.title" class="text-sm mb-6" />
         <prismic-rich-text :field="post.data.content" class="rich-text" />
-
-        <h3>{{ post.data.link.slug }} ja</h3>
-        <h3>{{ something }} ok</h3>
       </article>
     </Container>
   </div>
@@ -26,8 +23,8 @@
 export default {
   nuxtI18n: {
     paths: {
-      sv: '/hjalpen/kategori/:uid',
-      en: '/help/kategori/:uid',
+      sv: '/hjalpen/test/:postCategory',
+      en: '/help/test/:postCategory',
     },
   },
   async asyncData({ $prismic, params, error, app }) {
@@ -36,10 +33,8 @@ export default {
     )[0];
     const result = await $prismic.api.getByUID(
       'help_category_post',
-      params.uid,
-      {
-        lang: currentLocale.iso.toLowerCase(),
-      }
+      params.postCategory,
+      { lang: currentLocale.iso.toLowerCase() }
     );
 
     if (result) {
