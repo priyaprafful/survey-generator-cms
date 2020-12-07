@@ -76,10 +76,6 @@ export default {
     BaseIcon
   },
   props: {
-    altLangs: {
-      type: Array,
-      default: null
-    },
     content: {
       type: Object,
       default: null
