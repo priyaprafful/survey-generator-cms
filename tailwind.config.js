@@ -7,11 +7,9 @@
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true, // remove this in tailwind v2.0
+    purgeLayersByDefault: true // remove this in tailwind v2.0
   },
   theme: {
-    fontFamily: {
-      body: ['HelveticaNowText, sans-serif'],
-    },
     extend: {
       colors: {
         blue: {
@@ -23,7 +21,7 @@ module.exports = {
           6: '#27526E',
           7: '#214159',
           8: '#1C2F43',
-          9: '#161E2E',
+          9: '#161E2E'
         },
         lightblue: {
           1: '#EEF7FB',
@@ -34,7 +32,7 @@ module.exports = {
           6: '#98D0EA',
           7: '#87C8E6',
           8: '#76C0E3',
-          9: '#65B8DF',
+          9: '#65B8DF'
         },
         bluegray: {
           1: '#FAF9FD',
@@ -45,53 +43,52 @@ module.exports = {
           6: '#A9B6C8',
           7: '#99A9BD',
           8: '#899BB3',
-          9: '#798EA8',
+          9: '#798EA8'
         },
         yellow: {
           1: '#FFE47B',
           2: '#FFDE5C',
           3: '#B69A2E',
-          4: '#6C5600',
+          4: '#6C5600'
         },
         tangerine: {
           1: '#ffad5c',
           2: '#FF972E',
-          3: '#FF8100',
-        },
+          3: '#FF8100'
+        }
       },
       boxShadow: {
-        post: '0 5px 10px rgba(132, 153, 255, 0.15)',
-        card: '0 5px 10px rgba(104, 125, 177, 0.15)',
-        banner: '0 5px 20px rgba(132, 153, 255, 0.25)',
+        card: '0 5px 20px rgba(132, 153, 255, 0.25)'
       },
-      height: {
-        '1/2-screen': '50vh',
-      },
+      /* height: {
+        '1/2-screen': '50vh'
+      }, */
       minHeight: {
-        almost: '75vh',
+        almost: '75vh'
       },
-      inset: {
+      lineHeight: {
+        hero: '1.15'
+      },
+      /* inset: {
         3: '3rem',
         '1/2': '50%',
         '3/4': '75%',
-        full: '100%',
-      },
-      borderRadius: {
-        xl: '2rem',
-      },
-      zIndex: {
-        n1: '-1',
-      },
+        full: '100%'
+      }, */
+      /* borderRadius: {
+        xl: '2rem'
+      }, */
       gridTemplateColumns: {
         team: 'repeat(4, minmax(0, 12rem))',
+        logos: 'repeat(5, minmax(0, 8rem))'
       },
       transitionProperty: {
-        spacing: 'margin, padding',
+        spacing: 'margin, padding'
       },
       listStyleType: {
-        square: 'square',
-      },
-    },
+        square: 'square'
+      }
+    }
   },
   variants: {
     padding: ['group-hover', 'responsive', 'first', 'last'],
@@ -101,18 +98,17 @@ module.exports = {
     flexDirection: ['last'],
     backgroundColor: ['hover', 'odd', 'even'],
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
-    textDecoration: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    textDecoration: ['responsive', 'hover', 'focus', 'active', 'group-hover']
   },
   plugins: [require('@tailwindcss/custom-forms')],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
-    enabled: process.env.NODE_ENV === 'production',
     content: [
       'components/**/*.vue',
       'layouts/**/*.vue',
       'pages/**/*.vue',
       'plugins/**/*.js',
-      'nuxt.config.js',
-    ],
-  },
+      'nuxt.config.js'
+    ]
+  }
 };
