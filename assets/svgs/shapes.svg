@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.49 72.49">
+  <g id="shape-triangle">
+    <path d="M879.09,543h24.58l-17-30-12.28,21.66" transform="translate(-849.93 -511.26)" style="fill: none;stroke: #214159;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.5px"/>
+    <path d="M870.85,540.93,869.67,543h2.59" transform="translate(-849.93 -511.26)" style="fill: none;stroke: #44a8d6;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.5px"/>
+  </g>
+  <g id="shape-circle">
+    <path d="M880.63,561.54a15.45,15.45,0,0,0-4.94-6.52" transform="translate(-849.93 -511.26)" style="fill: none;stroke: #44a8d6;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.5px"/>
+    <path d="M869.23,552.22c-9.58-1.56-18.8,7.23-17.41,16.91,1.31,9.13,11.6,15.14,20.21,11.88a15.31,15.31,0,0,0,9.56-12.5" transform="translate(-849.93 -511.26)" style="fill: none;stroke: #214159;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.5px"/>
+  </g>
+  <g id="shape-square">
+    <polyline points="45.74 40.74 41.74 40.74 41.74 44.74" style="fill: none;stroke: #44a8d6;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.5px"/>
+    <polyline points="41.74 50.74 41.74 70.74 71.74 70.74 71.74 40.74 51.41 40.74" style="fill: none;stroke: #214159;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.5px"/>
+  </g>
+</svg>

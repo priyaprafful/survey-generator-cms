@@ -1,0 +1,31 @@
+{
+  "common": {
+    "contact_us": "Kontakta oss",
+    "get_quote": "Begär offert"
+  },
+  "head_title": {
+    "book_demo": "Boka demo",
+    "contact": "Kontakt",
+    "cookie_policy": "Om webbplatsen",
+    "customers": "Kunder",
+    "homepage": "Enkätundersökningar för företag och organisationer",
+    "login": "Logga in",
+    "news": "Nyheter",
+    "platform": "Verktyget",
+    "pricing": "Priser",
+    "privacy_policy": "Integritetspolicy"
+  },
+  "login": {
+    "email": "Email",
+    "forgot_pw": "Glömt ditt lösenord?",
+    "heading": "Logga in på ditt konto",
+    "password": "Lösenord",
+    "remember_me": "Kom ihåg",
+    "sign_in": "Logga in"
+  },
+  "menu": {
+    "book_demo": "Boka demo",
+    "help": "Hjälpen",
+    "login": "Logga in"
+  }
+}

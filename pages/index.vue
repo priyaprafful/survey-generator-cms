@@ -1,26 +1,26 @@
 <template>
-  <section class="home">
-    <a href="/">Home</a>
-    <a href="/blog">Blog</a>
-
-    <div
-      class="blog-avatar"
-      :style="{ backgroundImage: 'url(' + image + ')' }"
-    ></div>
-    <!-- Template for page title -->
-    <h1 class="blog-title">
-      {{ $prismic.asText(homepageContent.headline) }}
-    </h1>
-    <!-- Template for page description -->
-    <p class="blog-description">
-      {{ $prismic.asText(homepageContent.description) }}
-    </p>
-  </section>
+  <div>
+    <Hero :data="homepageContent" />
+    <Benefits :data="homepageContent" />
+    <Testimonials :data="homepageContent" />
+    <Features :data="homepageContent" />
+  </div>
 </template>
 
 <script>
+import Hero from '@/components/Home/Hero.vue';
+import Benefits from '@/components/Home/Benefits.vue';
+import Testimonials from '@/components/Home/Testimonials.vue';
+import Features from '@/components/Home/Features.vue';
+
 export default {
-  name: 'Home',
+  components: {
+    Hero,
+    Benefits,
+    Testimonials,
+    Features,
+  },
+  layout: 'home',
   async asyncData({ $prismic, error, app }) {
     const currentLocale = app.i18n.locales.filter(
       (lang) => lang.code === app.i18n.locale
@@ -29,7 +29,7 @@ export default {
     try {
       // Query to get blog home content
       const homepageContent = (
-        await $prismic.api.getSingle('blog_home', {
+        await $prismic.api.getSingle('home', {
           lang: currentLocale.iso.toLowerCase(),
         })
       ).data;
@@ -37,7 +37,6 @@ export default {
       // Returns data to be used in template
       return {
         homepageContent,
-        image: homepageContent.image.url,
       };
     } catch (e) {
       // Returns error page
@@ -46,29 +45,8 @@ export default {
   },
   head() {
     return {
-      title: 'Prismic Nuxt.js Blog',
+      title: 'SurveyGenerator — ' + this.$t('head_title.homepage'),
     };
   },
 };
 </script>
-
-<style lang="sass" scoped>
-.home
-  max-width: 700px
-  margin: auto
-  text-align: center
-  .blog-avatar
-    height: 140px
-    width: 140px
-    border-radius: 50%
-    background-position: center
-    background-size: cover
-    margin: 1em auto
-  .blog-description
-    font-size: 18px
-    color: #9A9A9A
-    line-height: 30px
-    margin-bottom: 3rem
-    padding-bottom: 3rem
-    border-bottom: 1px solid #DADADA
-</style>

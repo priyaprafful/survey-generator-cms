@@ -1,9 +1,12 @@
+// Load environment variables declared in .env into env.process
+require('dotenv').config();
+
 export default {
-  /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  mode: 'universal',
+  vue: {
+    config: {
+      devtools: true,
+    },
+  },
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -25,30 +28,56 @@ export default {
         content: 'Enkätundersökningar för organisationer och företag',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      { rel: 'alternate icon', href: '/favicon.ico' },
+    ],
+    bodyAttrs: {
+      class: ['font-body', 'bg-bluegray-1'],
+    },
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: process.env.NODE_ENV !== 'production',
+  /*
+   ** Layout and page transitions
+   ** See https://nuxtjs.org/api/configuration-transition/
+   */
+  layoutTransition: {
+    name: 'page',
+    mode: 'out-in',
+  },
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in',
+  },
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/resetr.css', '@/assets/css/common.css'],
+  css: ['@/assets/css/common.css'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [
+    '~/plugins/sg-common.js',
+    '~/plugins/vue-masonry.js',
+    '~/plugins/vue-particles.js',
+    '~/plugins/vue-styled-shadows.js',
+    '~/plugins/gsap.js',
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
    */
-  components: true,
+  components: false,
   /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    // Doc: https://github.com/nuxt-community/dotenv-module
+    '@nuxtjs/dotenv',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
@@ -59,35 +88,30 @@ export default {
    */
   modules: [
     // Doc: https://nuxt-community.github.io/nuxt-i18n/
-    'nuxt-i18n',
-    // https://prismic-nuxt.js.org/
-    '@nuxtjs/prismic',
-  ],
-  /**
-   * I18n module configuration
-   * See https://nuxt-community.github.io/nuxt-i18n/options-reference.html
-   */
-  i18n: {
-    locales: [
+    [
+      'nuxt-i18n',
       {
-        name: 'Svenska',
-        code: 'sv',
-        iso: 'sv-SE',
-        file: 'sv.js',
-      },
-      {
-        name: 'English',
-        code: 'en',
-        iso: 'en-GB',
-        file: 'en.js',
+        locales: [
+          { name: 'Svenska', code: 'sv', iso: 'sv-SE', file: 'sv.json' },
+          { name: 'English', code: 'en', iso: 'en-GB', file: 'en.json' },
+        ],
+        seo: true,
+        strategy: 'prefix_except_default',
+        lazy: true,
+        langDir: 'assets/langs/',
+        defaultLocale: 'sv',
+        detectBrowserLanguage: false,
       },
     ],
-    lazy: true,
-    langDir: 'langs/',
-    defaultLocale: 'sv',
-  },
+    // https://prismic-nuxt.js.org/
+    '@nuxtjs/prismic',
+    '@nuxtjs/svg',
+  ],
   prismic: {
-    endpoint: 'https://surveygenerator-cms.cdn.prismic.io/api/v2',
+    endpoint: process.env.PRISMIC_URL,
+    apiOptions: {
+      accessToken: process.env.PRISMIC_API_KEY,
+    },
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
   },
@@ -102,8 +126,10 @@ export default {
     extend(config, ctx) {
       config.resolve.alias.vue = 'vue/dist/vue.common';
     },
+    // required for gsap
+    transpile: ['gsap'],
   },
   generate: {
-    fallback: '404.html', // Netlify reads a 404.html, Nuxt will load as an SPA
+    fallback: true, // Netlify reads a 404.html, Nuxt will load as an SPA
   },
 };

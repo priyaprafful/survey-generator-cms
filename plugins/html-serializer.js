@@ -8,7 +8,7 @@ import linkResolver from './link-resolver';
 
 const Elements = prismicDOM.RichText.Elements;
 
-export default function (type, element, content, children) {
+export default function (type, element, content) {
   // Generate links to Prismic Documents as <router-link> components
   // Present by default, it is recommended to keep this
   if (type === Elements.hyperlink) {
@@ -16,7 +16,10 @@ export default function (type, element, content, children) {
     const url = prismicDOM.Link.url(element.data, linkResolver);
 
     if (element.data.link_type === 'Document') {
-      result = `<nuxt-link to="${url}">${content}</nuxt-link>`;
+      // Issue with <nuxt-link> in Prismic
+      // https://github.com/nuxt-community/prismic-module/issues/60
+      // result = `<nuxt-link to="${url}">${content}</nuxt-link>`;
+      result = `<a href="${url}" data-nuxt-link>${content}</a>`;
     } else {
       const target = element.data.target
         ? `target="'${element.data.target}'" rel="noopener"`

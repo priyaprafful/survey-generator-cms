@@ -14,7 +14,7 @@ $ npm run build
 $ npm run start
 
 # generate static project
-$ npm run build && npm run export
+$ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

@@ -1,23 +1,39 @@
 <template>
-  <div class="font-body">
+  <div>
+    <SvgSprite />
+    <client-only>
+      <Cookie />
+    </client-only>
     <Header />
     <nuxt />
-    <footer-prismic />
+    <CTA />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from '~/components/Header.vue';
-import FooterPrismic from '~/components/FooterPrismic.vue';
+import Header from '~/components/Common/Header.vue';
+import Footer from '~/components/Common/Footer.vue';
+import CTA from '~/components/Common/CTA.vue';
+import Cookie from '~/components/Common/Cookie.vue';
+import SvgSprite from '~/components/Common/Icons/SvgSprite.vue';
 
 export default {
   components: {
     Header,
-    FooterPrismic,
+    Footer,
+    CTA,
+    Cookie,
+    SvgSprite,
+  },
+  async middleware({ store, $prismic }) {
+    await store.dispatch('fetchMisc', $prismic);
   },
   head() {
     return {
-      title: 'Prismic Nuxt.js Blog',
+      htmlAttrs: {
+        lang: this.$i18n.locale,
+      },
     };
   },
 };

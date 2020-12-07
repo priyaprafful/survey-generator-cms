@@ -1,0 +1,31 @@
+{
+  "common": {
+    "contact_us": "Contact us",
+    "get_quote": "Get a quote"
+  },
+  "head_title": {
+    "book_demo": "Book a Demo",
+    "contact": "Contact",
+    "cookie_policy": "Cookie policy",
+    "customers": "Customers",
+    "homepage": "Surveys for businesses and organizations",
+    "login": "Sign in",
+    "news": "News",
+    "platform": "Platform",
+    "pricing": "Pricing",
+    "privacy_policy": "Privacy policy"
+  },
+  "login": {
+    "email": "E-mail",
+    "forgot_pw": "Forgot your password?",
+    "heading": "Sign in to your account",
+    "password": "Password",
+    "remember_me": "Remember me",
+    "sign_in": "Sign in"
+  },
+  "menu": {
+    "book_demo": "Book a Demo",
+    "help": "Help",
+    "login": "Sign in"
+  }
+}
