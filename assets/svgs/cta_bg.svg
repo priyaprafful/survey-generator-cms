@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 458">
-  <polygon points="850 0 390.79 458 1920 458 1920 0 850 0" style="fill: #aad7ed"/>
-  <polygon points="181 0 0 364 0 458 390.79 458 850 0 181 0" style="fill: #98d0ea"/>
-  <polygon points="0 0 0 364 181 0 0 0" style="fill: #65b8df"/>
-  <path d="M1309.17,935.91h363.21C1710.58,794,1800.19,673.24,1920,594.73V477.91H1521.1A943.63,943.63,0,0,0,1309.17,935.91Z" transform="translate(0 -477.91)" style="fill: #98d0ea"/>
-</svg>

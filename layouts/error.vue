@@ -1,41 +1,29 @@
 <template>
-  <div class="outer-container">
-    <SvgSprite />
-    <client-only>
-      <Cookie />
-    </client-only>
-    <div class="back">
-      <nuxt-link to="/">back to list</nuxt-link>
+  <div>
+    <!-- Vue tag to add header component -->
+    <SiteHeader />
+    <div class="container">
+      <h1>Page not found</h1>
+      <p>Sorry we were unable to find the page you are looking for.</p>
+      <p>
+        <nuxt-link to="/" style="text-decoration: underline;">
+          Back to home
+        </nuxt-link>
+      </p>
     </div>
-    <h1 v-if="error.statusCode === 404">Page not found</h1>
-    <h1 v-else>An error occurred</h1>
-    <nuxt-link to="/" style="text-decoration: underline">
-      Return to home
-    </nuxt-link>
+    <SiteFooter />
   </div>
 </template>
 
 <script>
-import Cookie from '~/components/Common/Cookie.vue';
-import SvgSprite from '~/components/Common/Icons/SvgSprite.vue';
+import SiteHeader from '../components/SiteHeader.vue';
+import SiteFooter from '~/components/SiteFooter';
 
 export default {
+  name: 'NotFound',
   components: {
-    Cookie,
-    SvgSprite,
-  },
-  props: {
-    error: {
-      type: Object,
-      default: null,
-    },
-  },
-  head() {
-    return {
-      htmlAttrs: {
-        lang: this.$i18n.locale,
-      },
-    };
-  },
+    SiteHeader,
+    SiteFooter
+  }
 };
 </script>
