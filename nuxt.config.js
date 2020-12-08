@@ -59,7 +59,15 @@ export default {
   prismic: {
     endpoint: process.env.PRISMIC_URL,
     apiOptions: {
-      accessToken: process.env.PRISMIC_API_KEY
+      /* routes: [
+        {
+          type: 'post',
+          path: '/:lang/:category/:uid',
+          resolvers: {
+            category: 'category' // id of the content relationship in the article mask
+          }
+        }
+      ] */
     },
     disableGenerator: false
   },
