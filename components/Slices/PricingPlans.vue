@@ -2,23 +2,56 @@
   <BaseSection gradient border flex-col>
     <prismic-rich-text :field="slice.primary.title" class="text-center mb-16" />
 
-    <div class="grid grid-cols-4 gap-4">
+    <div
+      class="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4"
+    >
       <div
         v-for="(card, index) in slice.items"
         :key="index"
-        class="flex flex-col p-4 shadow-card rounded bg-white border-2 border-lightblue-5"
+        class="border border-bluegray-3 rounded-lg shadow-sm divide-y divide-gray-200"
       >
-        <prismic-rich-text :field="card.card_title" class="text-center mb-4" />
+        <div
+          class="flex flex-col p-6"
+          :class="{ 'h-full': index + 1 === slice.items.length }"
+        >
+          <prismic-rich-text :field="card.card_title" />
 
-        <prismic-rich-text
-          :field="card.card_description"
-          class="mb-4 p-4 -ml-4 -mr-4 bg-lightblue-2 text-sm leading-relaxed"
-        />
+          <prismic-rich-text
+            :field="card.card_description"
+            class="mt-4 text-sm text-blue-4 rich-text"
+          />
 
-        <prismic-rich-text
-          :field="card.card_list"
-          class="pricing-plans__list mt-auto text-sm leading-loose"
-        />
+          <p class="flex items-baseline mt-8">
+            <span class="text-base font-medium text-blue-4 mr-2">
+              {{ $prismic.asText(card.card_from) }}
+            </span>
+            <span class="text-4xl font-extrabold">
+              {{ $prismic.asText(card.card_price) }}
+            </span>
+            <span class="text-base font-medium text-blue-4 ml-1">
+              {{ $prismic.asText(card.card_price_date) }}
+            </span>
+          </p>
+
+          <BaseButton
+            :label="card.card_cta"
+            :to="card.card_link"
+            :chevron="false"
+            class="mt-8 w-full"
+            :class="{ 'mt-auto': index + 1 === slice.items.length }"
+          />
+        </div>
+
+        <div v-if="index + 1 !== slice.items.length" class="pt-6 pb-8 px-6">
+          <h4 class="text-xs font-medium tracking-wide uppercase">
+            {{ $prismic.asText(card.card_included) }}
+          </h4>
+
+          <prismic-rich-text
+            :field="card.card_list"
+            class="pricing-plans__list mt-6 text-sm"
+          />
+        </div>
       </div>
     </div>
   </BaseSection>
@@ -26,11 +59,13 @@
 
 <script>
 import BaseSection from '@/components/Library/BaseSection.vue';
+import BaseButton from '@/components/Library/BaseButton.vue';
 
 export default {
   name: 'PricingPlans',
   components: {
-    BaseSection
+    BaseSection,
+    BaseButton
   },
   props: {
     slice: {
@@ -45,6 +80,11 @@ export default {
 .pricing-plans__list li {
   display: flex;
   align-items: center;
+  margin-bottom: 0.75rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:before {
     display: block;
@@ -54,8 +94,7 @@ export default {
     height: 0.75rem;
     width: 0.75rem;
     margin-right: 0.75rem;
-    fill: currentColor;
-    color: red;
+    flex-shrink: 0;
   }
 }
 </style>
