@@ -40,6 +40,9 @@
       <template v-if="slice.slice_type === 'login'">
         <Login :slice="slice" />
       </template>
+      <template v-if="slice.slice_type === 'pricing_types'">
+        <PricingTypes :slice="slice" />
+      </template>
     </section>
   </main>
 </template>
@@ -58,6 +61,7 @@ import Showcase from '@/components/Slices/Showcase.vue';
 import Booking from '@/components/Slices/Booking.vue';
 import LogoCloud from '@/components/Slices/LogoCloud.vue';
 import Login from '@/components/Slices/Login.vue';
+import PricingTypes from '@/components/Slices/PricingTypes.vue';
 
 export default {
   name: 'BaseSlices',
@@ -74,7 +78,8 @@ export default {
     Showcase,
     Booking,
     LogoCloud,
-    Login
+    Login,
+    PricingTypes
   },
   props: {
     slices: {

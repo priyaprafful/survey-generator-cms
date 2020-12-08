@@ -8,7 +8,11 @@
 
     <div v-for="(col, i) in slice.items" :key="col + i" :class="block(i)">
       <div class="w-1/2" :class="{ 'mr-8': i % 2 === 0, 'ml-8': i % 2 !== 0 }">
-        <prismic-image :field="col.column_icon" class="w-10 mb-8" />
+        <prismic-image
+          v-if="col.column_icon"
+          :field="col.column_icon"
+          class="w-10 mb-8"
+        />
         <prismic-rich-text
           :field="col.column_title"
           class="rich-text mb-4 text-lg"
