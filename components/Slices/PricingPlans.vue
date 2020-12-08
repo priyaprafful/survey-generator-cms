@@ -9,6 +9,7 @@
         v-for="(card, index) in slice.items"
         :key="index"
         class="border border-bluegray-3 rounded-lg shadow-sm divide-y divide-gray-200"
+        :class="{ 'bg-blue-9 text-white': index + 1 === slice.items.length }"
       >
         <div
           class="flex flex-col p-6"
@@ -18,7 +19,11 @@
 
           <prismic-rich-text
             :field="card.card_description"
-            class="mt-4 text-sm text-blue-4 rich-text"
+            class="mt-4 text-sm rich-text"
+            :class="{
+              'text-blue-4': index + 1 !== slice.items.length,
+              'text-blue-1': index + 1 === slice.items.length
+            }"
           />
 
           <p class="flex items-baseline mt-8">
@@ -36,6 +41,9 @@
           <BaseButton
             :label="card.card_cta"
             :to="card.card_link"
+            :color="
+              index + 1 !== slice.items.length ? 'blue-dark' : 'blue-light'
+            "
             :chevron="false"
             class="mt-8 w-full"
             :class="{ 'mt-auto': index + 1 === slice.items.length }"

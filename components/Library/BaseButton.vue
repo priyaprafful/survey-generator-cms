@@ -57,6 +57,7 @@ export default {
             'blue-dark',
             'yellow-light',
             'yellow-dark',
+            'white',
             'transparent'
           ].includes(value) !== -1
         );
@@ -87,11 +88,13 @@ export default {
       return {
         'base-btn font-medium inline-flex items-center justify-center whitespace-no-wrap rounded border border-transparent transition duration-100 ease-in-out': true,
         'bg-blue-9 hover:bg-blue-8 text-white': this.color === 'blue-dark',
-        'bg-blue-4 hover:bg-blue-3 text-white': this.color === 'blue-light',
+        'bg-blue-1 hover:bg-lightblue-9 text-blue-9':
+          this.color === 'blue-light',
         'bg-yellow-2 hover:bg-yellow-1 text-blue-9':
           this.color === 'yellow-light',
         'bg-yellow-4 hover:bg-yellow-3 text-white':
           this.color === 'yellow-dark',
+        'bg-white text-blue-7 hover:bg-bluegray-3': this.color === 'white',
         '': this.color === 'transparent',
         'p-0': this.size === 'none',
         'text-sm px-3 py-2': this.size === 'small',
