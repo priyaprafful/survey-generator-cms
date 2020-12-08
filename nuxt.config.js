@@ -59,7 +59,7 @@ export default {
   prismic: {
     endpoint: process.env.PRISMIC_URL,
     apiOptions: {
-      /* routes: [
+      routes: [
         {
           type: 'post',
           path: '/:lang/:category/:uid',
@@ -67,7 +67,7 @@ export default {
             category: 'category' // id of the content relationship in the article mask
           }
         }
-      ] */
+      ]
     },
     disableGenerator: false
   },

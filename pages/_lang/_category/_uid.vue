@@ -2,7 +2,6 @@
   <div>
     <SiteHeader :menu="menuContent" />
     <p>POST!!!</p>
-    {{ document.data.category.uid }}
     <SiteFooter :alt-langs="altLangs" :content="footerContent" />
   </div>
 </template>
