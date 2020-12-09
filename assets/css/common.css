@@ -72,6 +72,11 @@ h3 {
 .rich-text li {
   list-style-type: square;
   list-style-position: inside;
+  margin-bottom: 1rem;
+}
+
+.rich-text li:last-child {
+  margin-bottom: 0;
 }
 
 .rich-text p:last-child,
