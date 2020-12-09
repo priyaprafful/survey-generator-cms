@@ -6,7 +6,7 @@
         <nav>
           <ul>
             <li class="flex w-48">
-              <nuxt-link
+              <!-- <nuxt-link
                 :to="altLangs[0].lang === 'en' ? './' : '/en'"
                 class="w-full no-border"
               >
@@ -20,7 +20,7 @@
                   src="@/assets/svg/sg-logo-white.svg"
                   alt="SurveyGenerator"
                 />
-              </nuxt-link>
+              </nuxt-link> -->
             </li>
           </ul>
         </nav>
