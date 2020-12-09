@@ -1,5 +1,5 @@
 <template>
-  <BaseSection gradient border flex-col>
+  <BaseSection white border flex-col>
     <prismic-rich-text :field="slice.primary.title" class="text-center mb-16" />
 
     <div
@@ -9,7 +9,9 @@
         v-for="(card, index) in slice.items"
         :key="index"
         class="border border-bluegray-3 rounded-lg shadow-sm divide-y divide-gray-200"
-        :class="{ 'bg-blue-9 text-white': index + 1 === slice.items.length }"
+        :class="{
+          'bg-blue-9 text-white border-none': index + 1 === slice.items.length
+        }"
       >
         <div
           class="flex flex-col p-6"
