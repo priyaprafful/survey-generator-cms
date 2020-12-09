@@ -1,5 +1,5 @@
 <template>
-  <BaseSection gradient border>
+  <BaseSection white border>
     <table class="table w-full text-sm">
       <thead>
         <tr>

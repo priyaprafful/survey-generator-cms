@@ -49,6 +49,9 @@
       <template v-if="slice.slice_type === 'pricing_table'">
         <PricingTable :slice="slice" />
       </template>
+      <template v-if="slice.slice_type === 'faq'">
+        <FAQ :slice="slice" />
+      </template>
     </section>
   </main>
 </template>
@@ -70,6 +73,7 @@ import Login from '@/components/Slices/Login.vue';
 import PricingTypes from '@/components/Slices/PricingTypes.vue';
 import PricingPlans from '@/components/Slices/PricingPlans.vue';
 import PricingTable from '@/components/Slices/PricingTable.vue';
+import FAQ from '@/components/Slices/FAQ.vue';
 
 export default {
   name: 'BaseSlices',
@@ -89,7 +93,8 @@ export default {
     Login,
     PricingTypes,
     PricingPlans,
-    PricingTable
+    PricingTable,
+    FAQ
   },
   props: {
     slices: {
