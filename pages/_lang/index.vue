@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SiteHeader home :menu="menuContent" />
+    <SiteHeader home :menu="menuContent" :alt-langs="altLangs" />
     <BaseSlices :slices="slices.body" />
     <SiteCTA :content="ctaContent" />
     <SiteFooter :alt-langs="altLangs" :content="footerContent" />

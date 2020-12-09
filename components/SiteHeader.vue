@@ -6,7 +6,10 @@
         <nav>
           <ul>
             <li class="flex w-48">
-              <nuxt-link to="./" class="w-full no-border">
+              <nuxt-link
+                :to="altLangs[0].lang === 'en' ? './' : '/en'"
+                class="w-full no-border"
+              >
                 <img
                   v-if="home"
                   src="@/assets/svg/sg-logo.svg"
@@ -91,6 +94,10 @@ export default {
     },
     menu: {
       type: Object,
+      default: null
+    },
+    altLangs: {
+      type: Array,
       default: null
     }
   },

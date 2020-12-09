@@ -64,7 +64,7 @@ export default {
           type: 'post',
           path: '/:lang/:category/:uid',
           resolvers: {
-            category: 'category' // id of the content relationship in the article mask
+            category: 'category' // id of the content relationship in the post mask
           }
         }
       ]

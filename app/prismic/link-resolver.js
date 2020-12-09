@@ -8,17 +8,17 @@ export default function(doc) {
     return '/not-found';
   }
 
-  if (doc.type === 'homepage') {
+  if (doc.type === 'homepage' && doc.lang === 'sv') {
+    return '/';
+  }
+
+  if (doc.type === 'homepage' && doc.lang !== 'sv') {
     return `/${doc.lang}`;
   }
 
   if (doc.type === 'page') {
     return `/${doc.lang}/${doc.uid}`;
   }
-
-  /* if (doc.type === 'post') {
-    return `/${doc.lang}/blog/${doc.uid}`;
-  } */
 
   return '/not-found';
 }
